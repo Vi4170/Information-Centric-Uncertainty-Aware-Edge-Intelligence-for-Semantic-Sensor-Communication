@@ -1,0 +1,6 @@
+Metric,Value
+Number of observations with raw VoI < 0,0.0
+Number of observations with raw VoI > 1,0.0
+Number where raw VoI != clipped VoI,0.0
+Minimum raw VoI,0.0053
+Maximum raw VoI,0.6576

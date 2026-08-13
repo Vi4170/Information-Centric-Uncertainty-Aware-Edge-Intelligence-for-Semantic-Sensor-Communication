@@ -1,0 +1,2 @@
+total_observations,n_discard,n_buffer,n_summary,n_transmit,pct_transmitted,pct_suppressed,mean_voi_score,mean_raw_voi_score,min_voi_score,max_voi_score,min_raw_voi_score,max_raw_voi_score
+1000,324,489,187,0,0.0,100.0,0.3355,0.3355,0.0053,0.6576,0.0053,0.6576

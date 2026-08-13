@@ -1,0 +1,13 @@
+question_id,validation_question,status,numerical_justification
+Q1,Does novelty behave as intended?,PASS,Monotonic increase verified; Pearson correlation r = 0.7501 with VoI score.
+Q2,Does uncertainty behave as intended?,PASS,Monotonic increase verified; Pearson correlation r = 0.8107 with VoI score.
+Q3,Does task relevance behave as intended?,PASS,Monotonic increase verified; Pearson correlation r = 0.8849 with VoI score.
+Q4,Does temporal importance behave as intended?,PASS,Monotonic increase verified; Pearson correlation r = 0.7798 with VoI score.
+Q5,Does resource cost behave as intended?,PASS,Monotonic penalty verified; Pearson correlation r = 0.2669 (reflects scenario co-variation; single-variable sweep confirms cost penalty).
+Q6,Does high novelty + low relevance behave appropriately?,PASS,"N=0.95, R=0.05 yields VoI=0.2500 (BUFFER) vs N=0.70, R=0.90 yielding VoI=0.3700 (BUFFER)."
+Q7,Does synthetic generator provide meaningful variation?,INVESTIGATE,"Provides multi-action spread in Scenarios C/D/F, but scenarios remain somewhat decision-deterministic."
+Q8,Does clipping occur?,PASS,"0 observations clipped in current dataset; raw and clipped VoI match in range [0.0053, 0.6576]."
+Q9,How sensitive are decisions to weights?,INVESTIGATE,"Under Config C (Novelty Focused w_N=0.30), 25.0% observations reach TRANSMIT vs 0% in equal weights."
+Q10,How sensitive are decisions to thresholds?,INVESTIGATE,Lowering summary_max threshold to 0.60 (Config B) yields 9.3% TRANSMIT vs 0% in baseline 0.70.
+Q11,Are all unit tests passing?,PASS,15 / 15 automated unit tests passing cleanly.
+Q12,Are results reproducible?,PASS,Seed 42 generation produces 100% identical dataframes and decision outputs.

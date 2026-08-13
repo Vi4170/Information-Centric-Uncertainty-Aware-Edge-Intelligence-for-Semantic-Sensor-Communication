@@ -1,0 +1,4 @@
+threshold_config,discard_max,buffer_max,summary_max,n_discard,n_buffer,n_summary,n_transmit,pct_transmitted,pct_suppressed
+Config A (Baseline: 0.25/0.50/0.70),0.25,0.5,0.7,324,489,187,0,0.0,100.0
+Config B (Shifted Down: 0.20/0.40/0.60),0.2,0.4,0.6,255,265,412,68,6.8,93.2
+Config C (Shifted Up: 0.30/0.55/0.75),0.3,0.55,0.75,442,414,144,0,0.0,100.0

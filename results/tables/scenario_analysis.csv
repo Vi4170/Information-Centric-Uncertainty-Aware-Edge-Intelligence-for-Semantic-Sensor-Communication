@@ -1,0 +1,7 @@
+scenario,n_observations,mean_novelty,mean_uncertainty,mean_task_relevance,mean_temporal_importance,mean_resource_cost,mean_raw_voi,mean_clipped_voi,min_voi,max_voi,n_discard,n_buffer,n_summary,n_transmit,pct_discard,pct_buffer,pct_summary,pct_transmit
+Scenario A: Normal / Low Info,200,0.1226,0.1257,0.1281,0.1218,0.1927,0.0611,0.0611,0.0053,0.1099,200,0,0,0,100.0,0.0,0.0,0.0
+Scenario B: Sudden Important Event,150,0.858,0.7233,0.8529,0.8504,0.2983,0.5972,0.5972,0.5263,0.6576,0,0,150,0,0.0,0.0,100.0,0.0
+Scenario C: Gradual Trend,200,0.5043,0.3032,0.5043,0.5043,0.296,0.304,0.304,0.0533,0.5488,74,115,11,0,37.0,57.5,5.5,0.0
+Scenario D: High Uncertainty,150,0.604,0.912,0.8005,0.3057,0.2473,0.475,0.475,0.4139,0.5242,0,124,26,0,0.0,82.67,17.33,0.0
+Scenario E: High Cost Event,150,0.8701,0.405,0.8732,0.8734,0.9155,0.4213,0.4213,0.3758,0.4714,0,150,0,0,0.0,100.0,0.0,0.0
+Scenario F: High Novelty / Low Relevance,150,0.9121,0.2964,0.086,0.2912,0.3047,0.2562,0.2562,0.1901,0.3145,50,100,0,0,33.33,66.67,0.0,0.0

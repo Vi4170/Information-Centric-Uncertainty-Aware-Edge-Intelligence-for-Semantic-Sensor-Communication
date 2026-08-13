@@ -1,0 +1,3 @@
+observation,novelty,uncertainty,task_relevance,temporal_importance,resource_cost,raw_voi_score,voi_score,decision
+Obs 1: High Novelty / Low Relevance,0.95,0.5,0.05,0.5,0.2,0.36,0.36,BUFFER
+Obs 2: Moderate Novelty / High Relevance,0.7,0.5,0.9,0.5,0.2,0.48,0.48,BUFFER
