@@ -1,0 +1,83 @@
+[
+  {
+    "model": "Isolation Forest",
+    "threshold": -0.10203914868465049,
+    "validation_f1": 0.9438543247344461,
+    "test_roc_auc": 0.30611876988335107,
+    "test_pr_auc": 0.875800845489598,
+    "test_precision": 0.8917748917748918,
+    "test_recall": 0.8738069989395546,
+    "test_f1": 0.8826995179432244,
+    "false_positive_rate": 1.0,
+    "normal_score_mean": -0.05703999393756276,
+    "normal_score_std": 0.006994618527035366,
+    "anomaly_score_mean": -0.06905135758063081,
+    "anomaly_score_std": 0.020710722271151522,
+    "confusion_matrix": [
+      [
+        0,
+        100
+      ],
+      [
+        119,
+        824
+      ]
+    ],
+    "train_time_seconds": 0.6140640999983589,
+    "inference_time_seconds": 0.10946809999950347
+  },
+  {
+    "model": "One-Class SVM",
+    "threshold": -0.741991589130541,
+    "validation_f1": 0.9438543247344461,
+    "test_roc_auc": 0.6967656415694591,
+    "test_pr_auc": 0.9602172160097923,
+    "test_precision": 0.9020568070519099,
+    "test_recall": 0.9766702014846236,
+    "test_f1": 0.9378818737270875,
+    "false_positive_rate": 1.0,
+    "normal_score_mean": 0.02199275246625577,
+    "normal_score_std": 0.0716157797788992,
+    "anomaly_score_mean": 0.08104390187131469,
+    "anomaly_score_std": 0.2583497304778531,
+    "confusion_matrix": [
+      [
+        0,
+        100
+      ],
+      [
+        22,
+        921
+      ]
+    ],
+    "train_time_seconds": 0.016790199999377364,
+    "inference_time_seconds": 0.2757105999990017
+  },
+  {
+    "model": "CNN Autoencoder",
+    "threshold": 0.02051659567864859,
+    "validation_f1": 0.9994706193753309,
+    "test_roc_auc": 1.0,
+    "test_pr_auc": 1.0,
+    "test_precision": 0.9989406779661016,
+    "test_recall": 1.0,
+    "test_f1": 0.9994700582935877,
+    "false_positive_rate": 0.01,
+    "normal_score_mean": 0.016246534883975983,
+    "normal_score_std": 0.001494246651418507,
+    "anomaly_score_mean": 0.9255241751670837,
+    "anomaly_score_std": 0.33766570687294006,
+    "confusion_matrix": [
+      [
+        99,
+        1
+      ],
+      [
+        0,
+        943
+      ]
+    ],
+    "train_time_seconds": 11.716174600001978,
+    "inference_time_seconds": 0.8552213000002666
+  }
+]

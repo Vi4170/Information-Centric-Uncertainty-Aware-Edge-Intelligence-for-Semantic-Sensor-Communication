@@ -1,0 +1,115 @@
+{
+  "experiment": "Leave-one-load-out robustness",
+  "loads": [
+    "0HP",
+    "1HP",
+    "2HP",
+    "3HP"
+  ],
+  "results": [
+    {
+      "held_out_load": "0HP",
+      "model": "Frequency One-Class SVM",
+      "train_normal_samples": 300,
+      "test_samples": 1690,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "precision": 0.9408284023668639,
+      "recall": 1.0,
+      "f1": 0.9695121951219512,
+      "false_positive_rate": 1.0,
+      "threshold": 0.0005027829192523203,
+      "normal_score_mean": 1.6036971451780533,
+      "anomaly_score_mean": 1.6103547408998984,
+      "confusion_matrix": [
+        [
+          0,
+          100
+        ],
+        [
+          0,
+          1590
+        ]
+      ]
+    },
+    {
+      "held_out_load": "1HP",
+      "model": "Frequency One-Class SVM",
+      "train_normal_samples": 300,
+      "test_samples": 1631,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "precision": 0.9986953685583823,
+      "recall": 1.0,
+      "f1": 0.9993472584856397,
+      "false_positive_rate": 0.02,
+      "threshold": 0.0004138390590304919,
+      "normal_score_mean": -0.38085866373772576,
+      "anomaly_score_mean": 1.7911200546084909,
+      "confusion_matrix": [
+        [
+          98,
+          2
+        ],
+        [
+          0,
+          1531
+        ]
+      ]
+    },
+    {
+      "held_out_load": "2HP",
+      "model": "Frequency One-Class SVM",
+      "train_normal_samples": 300,
+      "test_samples": 1632,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "precision": 0.9980456026058632,
+      "recall": 1.0,
+      "f1": 0.9990218454515813,
+      "false_positive_rate": 0.03,
+      "threshold": 0.00037710789020379144,
+      "normal_score_mean": -0.3805960844649944,
+      "anomaly_score_mean": 1.791054956631268,
+      "confusion_matrix": [
+        [
+          97,
+          3
+        ],
+        [
+          0,
+          1532
+        ]
+      ]
+    },
+    {
+      "held_out_load": "3HP",
+      "model": "Frequency One-Class SVM",
+      "train_normal_samples": 300,
+      "test_samples": 1633,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "precision": 0.9387630128597673,
+      "recall": 1.0,
+      "f1": 0.9684144030322173,
+      "false_positive_rate": 1.0,
+      "threshold": 0.000356216919609631,
+      "normal_score_mean": 1.603944980582688,
+      "anomaly_score_mean": 1.9721357488371078,
+      "confusion_matrix": [
+        [
+          0,
+          100
+        ],
+        [
+          0,
+          1533
+        ]
+      ]
+    }
+  ],
+  "mean_roc_auc": 1.0,
+  "mean_pr_auc": 1.0,
+  "mean_f1": 0.9840739255228474,
+  "mean_fpr": 0.5125
+}

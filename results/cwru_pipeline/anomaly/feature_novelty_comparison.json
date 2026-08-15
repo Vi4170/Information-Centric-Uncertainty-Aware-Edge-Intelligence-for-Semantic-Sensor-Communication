@@ -1,0 +1,56 @@
+[
+  {
+    "model": "Feature Isolation Forest",
+    "threshold": 0.07119132719145554,
+    "validation_f1": 0.9984118581259925,
+    "test_roc_auc": 0.9944750795334041,
+    "test_pr_auc": 0.999399918126656,
+    "test_precision": 0.9802494802494802,
+    "test_recall": 1.0,
+    "test_f1": 0.9900262467191601,
+    "false_positive_rate": 0.19,
+    "normal_score_mean": 0.04747163943343268,
+    "normal_score_std": 0.025247540818191718,
+    "anomaly_score_mean": 0.1665167594204668,
+    "anomaly_score_std": 0.036126672901930106,
+    "confusion_matrix": [
+      [
+        81,
+        19
+      ],
+      [
+        0,
+        943
+      ]
+    ],
+    "train_time_seconds": 0.5092584000012721,
+    "inference_time_seconds": 0.05823360000067623
+  },
+  {
+    "model": "Feature One-Class SVM",
+    "threshold": 0.9429637912541289,
+    "validation_f1": 1.0,
+    "test_roc_auc": 1.0,
+    "test_pr_auc": 1.0,
+    "test_precision": 1.0,
+    "test_recall": 1.0,
+    "test_f1": 1.0,
+    "false_positive_rate": 0.0,
+    "normal_score_mean": 0.9032353687944753,
+    "normal_score_std": 0.024259272909430894,
+    "anomaly_score_mean": 0.9429637912541291,
+    "anomaly_score_std": 2.220446049250313e-16,
+    "confusion_matrix": [
+      [
+        100,
+        0
+      ],
+      [
+        0,
+        943
+      ]
+    ],
+    "train_time_seconds": 0.0026321999976062216,
+    "inference_time_seconds": 0.0114125000036438
+  }
+]

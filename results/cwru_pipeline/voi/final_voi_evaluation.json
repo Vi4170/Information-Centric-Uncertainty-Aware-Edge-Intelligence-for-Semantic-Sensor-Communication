@@ -1,0 +1,142 @@
+{
+    "experiment": "Uncertainty-aware Value-of-Information Edge-Cloud Bearing Fault Diagnosis",
+    "dataset": "CWRU",
+    "test_samples": 1043,
+    "classes": [
+        "Ball Fault",
+        "Inner Race Fault",
+        "Normal",
+        "Outer Race Fault"
+    ],
+    "edge_only": {
+        "accuracy": 0.7305848513902206,
+        "weighted_precision": 0.7551131266842525,
+        "weighted_recall": 0.7305848513902206,
+        "weighted_f1": 0.7193740305220812
+    },
+    "cloud_only": {
+        "accuracy": 0.8053691275167785,
+        "weighted_precision": 0.8219876882684667,
+        "weighted_recall": 0.8053691275167785,
+        "weighted_f1": 0.7993250847648583
+    },
+    "recommended_operating_point": {
+        "threshold": 0.05000000074505806,
+        "transmitted_samples": 495,
+        "local_samples": 548,
+        "transmission_rate": 0.47459252157238735,
+        "communication_saving": 0.5254074784276126,
+        "accuracy": 0.7957813998082455,
+        "weighted_precision": 0.8142880678170453,
+        "weighted_recall": 0.7957813998082455,
+        "weighted_f1": 0.7890727921062805,
+        "accuracy_gain_vs_edge": 0.06519654841802491,
+        "accuracy_difference_from_cloud": -0.009587727708533
+    },
+    "threshold_sweep": [
+        {
+            "threshold": 0.0,
+            "transmission_rate": 1.0,
+            "communication_saving": 0.0,
+            "final_accuracy": 0.8053691387176514,
+            "weighted_f1": 0.7993251085281372,
+            "accuracy_gain_vs_edge": 0.0747842788696289
+        },
+        {
+            "threshold": 0.05000000074505806,
+            "transmission_rate": 0.47459250688552856,
+            "communication_saving": 0.5254074931144714,
+            "final_accuracy": 0.7957813739776611,
+            "weighted_f1": 0.7890728116035461,
+            "accuracy_gain_vs_edge": 0.06519655138254166
+        },
+        {
+            "threshold": 0.10000000149011612,
+            "transmission_rate": 0.3374880254268646,
+            "communication_saving": 0.662511944770813,
+            "final_accuracy": 0.7833173274993896,
+            "weighted_f1": 0.7762966752052307,
+            "accuracy_gain_vs_edge": 0.052732501178979874
+        },
+        {
+            "threshold": 0.15000000596046448,
+            "transmission_rate": 0.26366251707077026,
+            "communication_saving": 0.7363374829292297,
+            "final_accuracy": 0.7660594582557678,
+            "weighted_f1": 0.7576429843902588,
+            "accuracy_gain_vs_edge": 0.035474590957164764
+        },
+        {
+            "threshold": 0.20000000298023224,
+            "transmission_rate": 0.21380633115768433,
+            "communication_saving": 0.7861936688423157,
+            "final_accuracy": 0.7526366114616394,
+            "weighted_f1": 0.7427887320518494,
+            "accuracy_gain_vs_edge": 0.022051773965358734
+        },
+        {
+            "threshold": 0.25,
+            "transmission_rate": 0.17449665069580078,
+            "communication_saving": 0.8255033493041992,
+            "final_accuracy": 0.7468839883804321,
+            "weighted_f1": 0.7368689775466919,
+            "accuracy_gain_vs_edge": 0.016299137845635414
+        },
+        {
+            "threshold": 0.30000001192092896,
+            "transmission_rate": 0.13710451126098633,
+            "communication_saving": 0.8628954887390137,
+            "final_accuracy": 0.7382550239562988,
+            "weighted_f1": 0.7281532883644104,
+            "accuracy_gain_vs_edge": 0.007670182269066572
+        },
+        {
+            "threshold": 0.4000000059604645,
+            "transmission_rate": 0.08341322839260101,
+            "communication_saving": 0.9165867567062378,
+            "final_accuracy": 0.7315436005592346,
+            "weighted_f1": 0.719860315322876,
+            "accuracy_gain_vs_edge": 0.0009587727836333215
+        },
+        {
+            "threshold": 0.5,
+            "transmission_rate": 0.03259827569127083,
+            "communication_saving": 0.9674017429351807,
+            "final_accuracy": 0.7286673188209534,
+            "weighted_f1": 0.7171776294708252,
+            "accuracy_gain_vs_edge": -0.001917545567266643
+        }
+    ],
+    "uncertainty_statistics": {
+        "mean": 0.11218933016061783,
+        "median": 0.04294741153717041,
+        "minimum": 0.0,
+        "maximum": 0.6454071998596191
+    },
+    "confusion_matrix_voi": [
+        [
+            189,
+            51,
+            0,
+            54
+        ],
+        [
+            0,
+            141,
+            0,
+            95
+        ],
+        [
+            0,
+            0,
+            100,
+            0
+        ],
+        [
+            13,
+            0,
+            0,
+            400
+        ]
+    ]
+}

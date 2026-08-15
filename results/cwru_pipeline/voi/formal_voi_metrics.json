@@ -1,0 +1,199 @@
+{
+    "formulation": {
+        "edge_expected_utility": "calibrated probability that edge decision is correct",
+        "cloud_expected_utility": "calibrated probability that cloud decision is correct",
+        "information_benefit": "EU_cloud - EU_edge",
+        "voi": "information_benefit - communication_cost",
+        "decision_rule": "Transmit when VoI > 0",
+        "utility_definition": {
+            "correct_prediction": 1.0,
+            "incorrect_prediction": 0.0
+        }
+    },
+    "validation": {
+        "edge_accuracy": 0.8745210727969349,
+        "cloud_accuracy": 0.9626436781609196,
+        "accuracy_benefit": 0.08812260536398464,
+        "mean_information_benefit": 0.08812260627746582,
+        "calibration_method": "Isotonic regression"
+    },
+    "test": {
+        "edge_accuracy": 0.7305848513902206,
+        "cloud_accuracy": 0.8053691275167785,
+        "cloud_accuracy_gain": 0.07478427612655791,
+        "mean_edge_utility": 0.8222415447235107,
+        "mean_cloud_utility": 0.8911663889884949,
+        "mean_information_benefit": 0.06892489641904831
+    },
+    "cost_results": [
+        {
+            "communication_cost": 0.0,
+            "transmitted_samples": 513,
+            "transmission_rate": 0.49185043144774687,
+            "communication_savings": 0.5081495685522531,
+            "final_accuracy": 0.763183125599233,
+            "weighted_precision": 0.7840582185151797,
+            "weighted_recall": 0.763183125599233,
+            "weighted_f1": 0.7547822661345212,
+            "accuracy_gain": 0.0325982742090124,
+            "mean_estimated_voi": 0.06892489641904831,
+            "positive_voi_rate": 0.49185043144774687
+        },
+        {
+            "communication_cost": 0.05000000074505806,
+            "transmitted_samples": 439,
+            "transmission_rate": 0.42090124640460214,
+            "communication_savings": 0.5790987535953979,
+            "final_accuracy": 0.7497603068072867,
+            "weighted_precision": 0.7712726256677874,
+            "weighted_recall": 0.7497603068072867,
+            "weighted_f1": 0.740287534928844,
+            "accuracy_gain": 0.019175455417066112,
+            "mean_estimated_voi": 0.01892489194869995,
+            "positive_voi_rate": 0.42090124640460214
+        },
+        {
+            "communication_cost": 0.10000000149011612,
+            "transmitted_samples": 326,
+            "transmission_rate": 0.31255992329817833,
+            "communication_savings": 0.6874400767018216,
+            "final_accuracy": 0.738255033557047,
+            "weighted_precision": 0.7613021794406392,
+            "weighted_recall": 0.738255033557047,
+            "weighted_f1": 0.7281332876289385,
+            "accuracy_gain": 0.007670182166826467,
+            "mean_estimated_voi": -0.03107510507106781,
+            "positive_voi_rate": 0.31255992329817833
+        },
+        {
+            "communication_cost": 0.15000000596046448,
+            "transmitted_samples": 211,
+            "transmission_rate": 0.20230105465004794,
+            "communication_savings": 0.7976989453499521,
+            "final_accuracy": 0.7315436241610739,
+            "weighted_precision": 0.7567738260691707,
+            "weighted_recall": 0.7315436241610739,
+            "weighted_f1": 0.7206625113239661,
+            "accuracy_gain": 0.0009587727708533222,
+            "mean_estimated_voi": -0.08107510954141617,
+            "positive_voi_rate": 0.20230105465004794
+        },
+        {
+            "communication_cost": 0.20000000298023224,
+            "transmitted_samples": 190,
+            "transmission_rate": 0.18216682646212848,
+            "communication_savings": 0.8178331735378715,
+            "final_accuracy": 0.7296260786193672,
+            "weighted_precision": 0.7547671675040838,
+            "weighted_recall": 0.7296260786193672,
+            "weighted_f1": 0.7183265118583341,
+            "accuracy_gain": -0.0009587727708533222,
+            "mean_estimated_voi": -0.13107511401176453,
+            "positive_voi_rate": 0.18216682646212848
+        },
+        {
+            "communication_cost": 0.25,
+            "transmitted_samples": 183,
+            "transmission_rate": 0.17545541706615533,
+            "communication_savings": 0.8245445829338447,
+            "final_accuracy": 0.7267497603068073,
+            "weighted_precision": 0.7523021610212673,
+            "weighted_recall": 0.7267497603068073,
+            "weighted_f1": 0.7155691943250797,
+            "accuracy_gain": -0.003835091083413289,
+            "mean_estimated_voi": -0.1810751110315323,
+            "positive_voi_rate": 0.17545541706615533
+        },
+        {
+            "communication_cost": 0.30000001192092896,
+            "transmitted_samples": 178,
+            "transmission_rate": 0.17066155321188878,
+            "communication_savings": 0.8293384467881112,
+            "final_accuracy": 0.7248322147651006,
+            "weighted_precision": 0.7511436724021029,
+            "weighted_recall": 0.7248322147651006,
+            "weighted_f1": 0.7132259626348851,
+            "accuracy_gain": -0.0057526366251199335,
+            "mean_estimated_voi": -0.23107512295246124,
+            "positive_voi_rate": 0.17066155321188878
+        },
+        {
+            "communication_cost": 0.3499999940395355,
+            "transmitted_samples": 135,
+            "transmission_rate": 0.12943432406519656,
+            "communication_savings": 0.8705656759348035,
+            "final_accuracy": 0.7238734419942474,
+            "weighted_precision": 0.7514888653862161,
+            "weighted_recall": 0.7238734419942474,
+            "weighted_f1": 0.7123889293061156,
+            "accuracy_gain": -0.006711409395973145,
+            "mean_estimated_voi": -0.2810750901699066,
+            "positive_voi_rate": 0.12943432406519656
+        },
+        {
+            "communication_cost": 0.4000000059604645,
+            "transmitted_samples": 103,
+            "transmission_rate": 0.0987535953978907,
+            "communication_savings": 0.9012464046021093,
+            "final_accuracy": 0.7181208053691275,
+            "weighted_precision": 0.7464693148674345,
+            "weighted_recall": 0.7181208053691275,
+            "weighted_f1": 0.7065255443419985,
+            "accuracy_gain": -0.012464046021093078,
+            "mean_estimated_voi": -0.33107510209083557,
+            "positive_voi_rate": 0.0987535953978907
+        },
+        {
+            "communication_cost": 0.5,
+            "transmitted_samples": 44,
+            "transmission_rate": 0.04218600191754554,
+            "communication_savings": 0.9578139980824545,
+            "final_accuracy": 0.7229146692233941,
+            "weighted_precision": 0.7495058649123365,
+            "weighted_recall": 0.7229146692233941,
+            "weighted_f1": 0.7118427748852332,
+            "accuracy_gain": -0.007670182166826467,
+            "mean_estimated_voi": -0.4310750961303711,
+            "positive_voi_rate": 0.04218600191754554
+        }
+    ],
+    "best_accuracy": {
+        "communication_cost": 0.0,
+        "transmitted_samples": 513,
+        "transmission_rate": 0.49185043144774687,
+        "communication_savings": 0.5081495685522531,
+        "final_accuracy": 0.763183125599233,
+        "weighted_precision": 0.7840582185151797,
+        "weighted_recall": 0.763183125599233,
+        "weighted_f1": 0.7547822661345212,
+        "accuracy_gain": 0.0325982742090124,
+        "mean_estimated_voi": 0.06892489641904831,
+        "positive_voi_rate": 0.49185043144774687
+    },
+    "best_weighted_f1": {
+        "communication_cost": 0.0,
+        "transmitted_samples": 513,
+        "transmission_rate": 0.49185043144774687,
+        "communication_savings": 0.5081495685522531,
+        "final_accuracy": 0.763183125599233,
+        "weighted_precision": 0.7840582185151797,
+        "weighted_recall": 0.763183125599233,
+        "weighted_f1": 0.7547822661345212,
+        "accuracy_gain": 0.0325982742090124,
+        "mean_estimated_voi": 0.06892489641904831,
+        "positive_voi_rate": 0.49185043144774687
+    },
+    "best_accuracy_with_communication_saving": {
+        "communication_cost": 0.0,
+        "transmitted_samples": 513,
+        "transmission_rate": 0.49185043144774687,
+        "communication_savings": 0.5081495685522531,
+        "final_accuracy": 0.763183125599233,
+        "weighted_precision": 0.7840582185151797,
+        "weighted_recall": 0.763183125599233,
+        "weighted_f1": 0.7547822661345212,
+        "accuracy_gain": 0.0325982742090124,
+        "mean_estimated_voi": 0.06892489641904831,
+        "positive_voi_rate": 0.49185043144774687
+    }
+}

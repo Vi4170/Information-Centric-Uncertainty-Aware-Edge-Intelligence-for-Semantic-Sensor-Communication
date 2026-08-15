@@ -1,0 +1,85 @@
+{
+    "model": "cloud_cnn",
+    "test_loss": 0.7384971380233765,
+    "test_accuracy": 0.8053691387176514,
+    "num_parameters": 504580,
+    "train_samples": 4499,
+    "validation_samples": 1044,
+    "test_samples": 1043,
+    "classes": [
+        "Ball Fault",
+        "Inner Race Fault",
+        "Normal",
+        "Outer Race Fault"
+    ],
+    "classification_report": {
+        "Ball Fault": {
+            "precision": 0.9428571428571428,
+            "recall": 0.673469387755102,
+            "f1-score": 0.7857142857142857,
+            "support": 294.0
+        },
+        "Inner Race Fault": {
+            "precision": 0.7421052631578947,
+            "recall": 0.597457627118644,
+            "f1-score": 0.6619718309859155,
+            "support": 236.0
+        },
+        "Normal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 100.0
+        },
+        "Outer Race Fault": {
+            "precision": 0.7384898710865562,
+            "recall": 0.9709443099273608,
+            "f1-score": 0.8389121338912134,
+            "support": 413.0
+        },
+        "accuracy": 0.8053691275167785,
+        "macro avg": {
+            "precision": 0.8558630692753985,
+            "recall": 0.8104678312002768,
+            "f1-score": 0.8216495626478536,
+            "support": 1043.0
+        },
+        "weighted avg": {
+            "precision": 0.8219876882684667,
+            "recall": 0.8053691275167785,
+            "f1-score": 0.7993250847648583,
+            "support": 1043.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            198,
+            49,
+            0,
+            47
+        ],
+        [
+            0,
+            141,
+            0,
+            95
+        ],
+        [
+            0,
+            0,
+            100,
+            0
+        ],
+        [
+            12,
+            0,
+            0,
+            401
+        ]
+    ],
+    "training_epochs_completed": 17,
+    "normalization": {
+        "mean": -0.0003931181854368372,
+        "std": 0.9999789198417386
+    }
+}

@@ -1,0 +1,287 @@
+{
+    "experiment": "Formal Value-of-Information Edge-Cloud Diagnostic Decision",
+    "dataset": "CWRU",
+    "classes": [
+        "Ball Fault",
+        "Inner Race Fault",
+        "Normal",
+        "Outer Race Fault"
+    ],
+    "methodology": {
+        "calibration_set": "Validation split",
+        "final_evaluation_set": "Test split",
+        "utility_definition": "1 for correct diagnosis, 0 for incorrect diagnosis",
+        "voi_definition": "P(cloud correct | x) - P(edge correct | x) - communication cost",
+        "decision_rule": "Transmit when VoI > 0",
+        "edge_features": [
+            "confidence",
+            "uncertainty",
+            "entropy",
+            "top1_top2_margin"
+        ],
+        "calibration_model": "Logistic Regression",
+        "communication_cost": "Normalized relative communication cost",
+        "uncertainty_baseline": "Exact rate-matched highest-uncertainty selection"
+    },
+    "dataset_sizes": {
+        "training": 4499,
+        "validation": 1044,
+        "test": 1043
+    },
+    "edge_only": {
+        "accuracy": 0.7305848513902206,
+        "weighted_precision": 0.7551131266842525,
+        "weighted_recall": 0.7305848513902206,
+        "weighted_f1": 0.7193740305220812
+    },
+    "cloud_only": {
+        "accuracy": 0.8053691275167785,
+        "weighted_precision": 0.8219876882684667,
+        "weighted_recall": 0.8053691275167785,
+        "weighted_f1": 0.7993250847648583
+    },
+    "rate_matched_uncertainty": {
+        "accuracy": 0.7871524448705657,
+        "weighted_precision": 0.805852265692106,
+        "weighted_recall": 0.7871524448705657,
+        "weighted_f1": 0.7802937471337006,
+        "transmitted_samples": 374,
+        "local_samples": 669,
+        "transmission_rate": 0.3585810162991371,
+        "communication_saving": 0.6414189837008629,
+        "target_transmission_rate": 0.3585810162991371
+    },
+    "formal_voi_primary": {
+        "accuracy": 0.7612655800575263,
+        "weighted_precision": 0.7823648046858686,
+        "weighted_recall": 0.7612655800575263,
+        "weighted_f1": 0.7527082591872583,
+        "transmitted_samples": 374,
+        "local_samples": 669,
+        "transmission_rate": 0.3585810162991371,
+        "communication_saving": 0.6414189837008629,
+        "communication_cost": 0.05,
+        "mean_voi": 0.04787030126595886,
+        "accuracy_gain_vs_edge": 0.030680728667305757,
+        "accuracy_difference_from_cloud": -0.04410354745925216,
+        "accuracy_gain_vs_matched_uncertainty": -0.025886864813039367,
+        "cloud_accuracy_gain_retained": 0.4102564102564095,
+        "bootstrap_95_ci": {
+            "lower": 0.7353547459252158,
+            "upper": 0.7862176414189835
+        }
+    },
+    "cost_sensitivity": [
+        {
+            "accuracy": 0.7708533077660594,
+            "weighted_precision": 0.7910221981518728,
+            "weighted_recall": 0.7708533077660594,
+            "weighted_f1": 0.7628406441773331,
+            "transmitted_samples": 908,
+            "local_samples": 135,
+            "transmission_rate": 0.8705656759348035,
+            "communication_saving": 0.1294343240651965,
+            "communication_cost": 0.0,
+            "mean_voi": 0.09787030126595886,
+            "accuracy_gain_vs_edge": 0.04026845637583887,
+            "accuracy_difference_from_cloud": -0.034515819750719046
+        },
+        {
+            "accuracy": 0.7612655800575263,
+            "weighted_precision": 0.7823648046858686,
+            "weighted_recall": 0.7612655800575263,
+            "weighted_f1": 0.7527082591872583,
+            "transmitted_samples": 374,
+            "local_samples": 669,
+            "transmission_rate": 0.3585810162991371,
+            "communication_saving": 0.6414189837008629,
+            "communication_cost": 0.05,
+            "mean_voi": 0.04787030126595886,
+            "accuracy_gain_vs_edge": 0.030680728667305757,
+            "accuracy_difference_from_cloud": -0.04410354745925216
+        },
+        {
+            "accuracy": 0.7545541706615532,
+            "weighted_precision": 0.7766853348346421,
+            "weighted_recall": 0.7545541706615532,
+            "weighted_f1": 0.7452860394167906,
+            "transmitted_samples": 282,
+            "local_samples": 761,
+            "transmission_rate": 0.27037392138063276,
+            "communication_saving": 0.7296260786193672,
+            "communication_cost": 0.1,
+            "mean_voi": -0.002129698734041158,
+            "accuracy_gain_vs_edge": 0.023969319271332612,
+            "accuracy_difference_from_cloud": -0.0508149568552253
+        },
+        {
+            "accuracy": 0.7497603068072867,
+            "weighted_precision": 0.7732084697998729,
+            "weighted_recall": 0.7497603068072867,
+            "weighted_f1": 0.7401321038711013,
+            "transmitted_samples": 242,
+            "local_samples": 801,
+            "transmission_rate": 0.23202301054650049,
+            "communication_saving": 0.7679769894534996,
+            "communication_cost": 0.15,
+            "mean_voi": -0.052129698734041115,
+            "accuracy_gain_vs_edge": 0.019175455417066112,
+            "accuracy_difference_from_cloud": -0.0556088207094918
+        },
+        {
+            "accuracy": 0.7440076701821668,
+            "weighted_precision": 0.7670030016126326,
+            "weighted_recall": 0.7440076701821668,
+            "weighted_f1": 0.7337593974060403,
+            "transmitted_samples": 214,
+            "local_samples": 829,
+            "transmission_rate": 0.20517737296260785,
+            "communication_saving": 0.7948226270373921,
+            "communication_cost": 0.2,
+            "mean_voi": -0.10212969873404114,
+            "accuracy_gain_vs_edge": 0.01342281879194629,
+            "accuracy_difference_from_cloud": -0.061361457334611624
+        },
+        {
+            "accuracy": 0.7411313518696069,
+            "weighted_precision": 0.7648208596487532,
+            "weighted_recall": 0.7411313518696069,
+            "weighted_f1": 0.7304589636952507,
+            "transmitted_samples": 192,
+            "local_samples": 851,
+            "transmission_rate": 0.1840843720038351,
+            "communication_saving": 0.8159156279961649,
+            "communication_cost": 0.25,
+            "mean_voi": -0.15212969873404114,
+            "accuracy_gain_vs_edge": 0.010546500479386323,
+            "accuracy_difference_from_cloud": -0.06423777564717159
+        },
+        {
+            "accuracy": 0.7344199424736337,
+            "weighted_precision": 0.7585951532633851,
+            "weighted_recall": 0.7344199424736337,
+            "weighted_f1": 0.7233922116949557,
+            "transmitted_samples": 173,
+            "local_samples": 870,
+            "transmission_rate": 0.16586768935762225,
+            "communication_saving": 0.8341323106423777,
+            "communication_cost": 0.3,
+            "mean_voi": -0.20212969873404113,
+            "accuracy_gain_vs_edge": 0.003835091083413178,
+            "accuracy_difference_from_cloud": -0.07094918504314474
+        },
+        {
+            "accuracy": 0.7325023969319271,
+            "weighted_precision": 0.7574377905200796,
+            "weighted_recall": 0.7325023969319271,
+            "weighted_f1": 0.721420649777557,
+            "transmitted_samples": 157,
+            "local_samples": 886,
+            "transmission_rate": 0.15052732502396932,
+            "communication_saving": 0.8494726749760306,
+            "communication_cost": 0.35,
+            "mean_voi": -0.2521296987340412,
+            "accuracy_gain_vs_edge": 0.0019175455417065335,
+            "accuracy_difference_from_cloud": -0.07286673058485138
+        },
+        {
+            "accuracy": 0.7286673058485139,
+            "weighted_precision": 0.7542200379027815,
+            "weighted_recall": 0.7286673058485139,
+            "weighted_f1": 0.717721275642753,
+            "transmitted_samples": 138,
+            "local_samples": 905,
+            "transmission_rate": 0.13231064237775647,
+            "communication_saving": 0.8676893576222435,
+            "communication_cost": 0.4,
+            "mean_voi": -0.3021296987340411,
+            "accuracy_gain_vs_edge": -0.0019175455417066445,
+            "accuracy_difference_from_cloud": -0.07670182166826456
+        },
+        {
+            "accuracy": 0.7181208053691275,
+            "weighted_precision": 0.7444435674654258,
+            "weighted_recall": 0.7181208053691275,
+            "weighted_f1": 0.7068112821305549,
+            "transmitted_samples": 120,
+            "local_samples": 923,
+            "transmission_rate": 0.11505273250239693,
+            "communication_saving": 0.8849472674976031,
+            "communication_cost": 0.45,
+            "mean_voi": -0.35212969873404115,
+            "accuracy_gain_vs_edge": -0.012464046021093078,
+            "accuracy_difference_from_cloud": -0.08724832214765099
+        },
+        {
+            "accuracy": 0.7152444870565676,
+            "weighted_precision": 0.742656462171859,
+            "weighted_recall": 0.7152444870565676,
+            "weighted_f1": 0.7039939753209897,
+            "transmitted_samples": 106,
+            "local_samples": 937,
+            "transmission_rate": 0.10162991371045062,
+            "communication_saving": 0.8983700862895494,
+            "communication_cost": 0.5,
+            "mean_voi": -0.40212969873404114,
+            "accuracy_gain_vs_edge": -0.015340364333652934,
+            "accuracy_difference_from_cloud": -0.09012464046021085
+        }
+    ],
+    "transmitted_sample_analysis": {
+        "transmitted_samples": 374,
+        "edge_accuracy": 0.5748663101604278,
+        "cloud_accuracy": 0.660427807486631,
+        "edge_wrong_cloud_correct": 0.22459893048128343,
+        "edge_correct_cloud_wrong": 0.13903743315508021,
+        "useful_transmission_gain": 0.08556149732620322
+    },
+    "per_class": {
+        "Ball Fault": {
+            "precision": 0.9027027027027027,
+            "recall": 0.5680272108843537,
+            "f1": 0.697286012526096,
+            "support": 294
+        },
+        "Inner Race Fault": {
+            "precision": 0.6884422110552764,
+            "recall": 0.5805084745762712,
+            "f1": 0.6298850574712643,
+            "support": 236
+        },
+        "Normal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 100
+        },
+        "Outer Race Fault": {
+            "precision": 0.6976744186046512,
+            "recall": 0.9443099273607748,
+            "f1": 0.8024691358024691,
+            "support": 413
+        }
+    },
+    "bootstrap_confidence_intervals": {
+        "edge_only": {
+            "lower": 0.7037392138063279,
+            "upper": 0.7574304889741131
+        },
+        "matched_uncertainty": {
+            "lower": 0.7612655800575263,
+            "upper": 0.8111217641418984
+        },
+        "formal_voi": {
+            "lower": 0.7353547459252158,
+            "upper": 0.7862176414189835
+        },
+        "cloud_only": {
+            "lower": 0.7813998082454459,
+            "upper": 0.8293384467881112
+        }
+    },
+    "sanity_checks": {
+        "voi_transmitted_samples": 374,
+        "uncertainty_transmitted_samples": 374,
+        "transmission_counts_match": true
+    }
+}
