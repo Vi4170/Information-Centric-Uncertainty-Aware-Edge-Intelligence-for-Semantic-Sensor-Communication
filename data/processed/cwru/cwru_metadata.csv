@@ -1,0 +1,2321 @@
+observation_id,split,window_index,source_file,file_id,fault_label,fault_type,fault_size,load_hp,rpm,sampling_rate,sensor_location
+cwru_097_w0000_train,train,0,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0001_train,train,1,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0002_train,train,2,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0003_train,train,3,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0004_train,train,4,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0005_train,train,5,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0006_train,train,6,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0007_train,train,7,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0008_train,train,8,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0009_train,train,9,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0010_train,train,10,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0011_train,train,11,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0012_train,train,12,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0013_train,train,13,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0014_train,train,14,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0015_train,train,15,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0016_train,train,16,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0017_train,train,17,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0018_train,train,18,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0019_train,train,19,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0020_train,train,20,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0021_train,train,21,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0022_train,train,22,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0023_train,train,23,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0024_train,train,24,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0025_train,train,25,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0026_train,train,26,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0027_train,train,27,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0028_train,train,28,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0029_train,train,29,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0030_train,train,30,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0031_train,train,31,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0032_train,train,32,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0033_train,train,33,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0034_train,train,34,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0035_train,train,35,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0036_train,train,36,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0037_train,train,37,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0038_train,train,38,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0039_train,train,39,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0040_train,train,40,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0041_train,train,41,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0042_train,train,42,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0043_train,train,43,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0044_train,train,44,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0045_train,train,45,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0046_train,train,46,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0047_train,train,47,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0048_train,train,48,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0049_train,train,49,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0050_train,train,50,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0051_train,train,51,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0052_train,train,52,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0053_train,train,53,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0054_train,train,54,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0055_train,train,55,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0056_train,train,56,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_097_w0057_train,train,57,97.mat,97,0,Normal,0.0,0,1797,12000,DE
+cwru_099_w0000_train,train,0,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0001_train,train,1,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0002_train,train,2,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0003_train,train,3,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0004_train,train,4,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0005_train,train,5,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0006_train,train,6,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0007_train,train,7,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0008_train,train,8,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0009_train,train,9,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0010_train,train,10,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0011_train,train,11,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0012_train,train,12,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0013_train,train,13,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0014_train,train,14,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0015_train,train,15,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0016_train,train,16,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0017_train,train,17,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0018_train,train,18,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0019_train,train,19,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0020_train,train,20,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0021_train,train,21,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0022_train,train,22,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0023_train,train,23,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0024_train,train,24,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0025_train,train,25,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0026_train,train,26,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0027_train,train,27,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0028_train,train,28,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0029_train,train,29,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0030_train,train,30,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0031_train,train,31,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0032_train,train,32,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0033_train,train,33,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0034_train,train,34,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0035_train,train,35,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0036_train,train,36,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0037_train,train,37,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0038_train,train,38,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0039_train,train,39,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0040_train,train,40,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0041_train,train,41,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0042_train,train,42,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0043_train,train,43,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0044_train,train,44,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0045_train,train,45,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0046_train,train,46,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0047_train,train,47,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0048_train,train,48,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0049_train,train,49,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0050_train,train,50,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0051_train,train,51,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0052_train,train,52,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0053_train,train,53,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0054_train,train,54,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0055_train,train,55,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0056_train,train,56,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_099_w0057_train,train,57,99.mat,99,0,Normal,0.0,2,1750,12000,DE
+cwru_210_w0000_train,train,0,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0001_train,train,1,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0002_train,train,2,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0003_train,train,3,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0004_train,train,4,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0005_train,train,5,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0006_train,train,6,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0007_train,train,7,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0008_train,train,8,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0009_train,train,9,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0010_train,train,10,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0011_train,train,11,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0012_train,train,12,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0013_train,train,13,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0014_train,train,14,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0015_train,train,15,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0016_train,train,16,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0017_train,train,17,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0018_train,train,18,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0019_train,train,19,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0020_train,train,20,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0021_train,train,21,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0022_train,train,22,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0023_train,train,23,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0024_train,train,24,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0025_train,train,25,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0026_train,train,26,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0027_train,train,27,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0028_train,train,28,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0029_train,train,29,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0030_train,train,30,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0031_train,train,31,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0032_train,train,32,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0033_train,train,33,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0034_train,train,34,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0035_train,train,35,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0036_train,train,36,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0037_train,train,37,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0038_train,train,38,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0039_train,train,39,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0040_train,train,40,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0041_train,train,41,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0042_train,train,42,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0043_train,train,43,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0044_train,train,44,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0045_train,train,45,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0046_train,train,46,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0047_train,train,47,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0048_train,train,48,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0049_train,train,49,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0050_train,train,50,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0051_train,train,51,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0052_train,train,52,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0053_train,train,53,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0054_train,train,54,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0055_train,train,55,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0056_train,train,56,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_210_w0057_train,train,57,210.mat,210,1,Inner Race Fault,0.021,1,1772,12000,DE
+cwru_212_w0000_train,train,0,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0001_train,train,1,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0002_train,train,2,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0003_train,train,3,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0004_train,train,4,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0005_train,train,5,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0006_train,train,6,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0007_train,train,7,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0008_train,train,8,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0009_train,train,9,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0010_train,train,10,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0011_train,train,11,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0012_train,train,12,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0013_train,train,13,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0014_train,train,14,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0015_train,train,15,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0016_train,train,16,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0017_train,train,17,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0018_train,train,18,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0019_train,train,19,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0020_train,train,20,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0021_train,train,21,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0022_train,train,22,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0023_train,train,23,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0024_train,train,24,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0025_train,train,25,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0026_train,train,26,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0027_train,train,27,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0028_train,train,28,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0029_train,train,29,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0030_train,train,30,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0031_train,train,31,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0032_train,train,32,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0033_train,train,33,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0034_train,train,34,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0035_train,train,35,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0036_train,train,36,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0037_train,train,37,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0038_train,train,38,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0039_train,train,39,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0040_train,train,40,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0041_train,train,41,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0042_train,train,42,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0043_train,train,43,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0044_train,train,44,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0045_train,train,45,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0046_train,train,46,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0047_train,train,47,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0048_train,train,48,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0049_train,train,49,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0050_train,train,50,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0051_train,train,51,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0052_train,train,52,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0053_train,train,53,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0054_train,train,54,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0055_train,train,55,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0056_train,train,56,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_212_w0057_train,train,57,212.mat,212,1,Inner Race Fault,0.021,3,1730,12000,DE
+cwru_105_w0000_train,train,0,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0001_train,train,1,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0002_train,train,2,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0003_train,train,3,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0004_train,train,4,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0005_train,train,5,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0006_train,train,6,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0007_train,train,7,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0008_train,train,8,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0009_train,train,9,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0010_train,train,10,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0011_train,train,11,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0012_train,train,12,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0013_train,train,13,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0014_train,train,14,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0015_train,train,15,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0016_train,train,16,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0017_train,train,17,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0018_train,train,18,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0019_train,train,19,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0020_train,train,20,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0021_train,train,21,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0022_train,train,22,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0023_train,train,23,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0024_train,train,24,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0025_train,train,25,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0026_train,train,26,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0027_train,train,27,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0028_train,train,28,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0029_train,train,29,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0030_train,train,30,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0031_train,train,31,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0032_train,train,32,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0033_train,train,33,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0034_train,train,34,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0035_train,train,35,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0036_train,train,36,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0037_train,train,37,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0038_train,train,38,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0039_train,train,39,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0040_train,train,40,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0041_train,train,41,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0042_train,train,42,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0043_train,train,43,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0044_train,train,44,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0045_train,train,45,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0046_train,train,46,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0047_train,train,47,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0048_train,train,48,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0049_train,train,49,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0050_train,train,50,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0051_train,train,51,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0052_train,train,52,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0053_train,train,53,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0054_train,train,54,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0055_train,train,55,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0056_train,train,56,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_105_w0057_train,train,57,105.mat,105,1,Inner Race Fault,0.007,0,1797,12000,DE
+cwru_108_w0000_train,train,0,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0001_train,train,1,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0002_train,train,2,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0003_train,train,3,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0004_train,train,4,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0005_train,train,5,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0006_train,train,6,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0007_train,train,7,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0008_train,train,8,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0009_train,train,9,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0010_train,train,10,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0011_train,train,11,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0012_train,train,12,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0013_train,train,13,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0014_train,train,14,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0015_train,train,15,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0016_train,train,16,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0017_train,train,17,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0018_train,train,18,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0019_train,train,19,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0020_train,train,20,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0021_train,train,21,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0022_train,train,22,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0023_train,train,23,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0024_train,train,24,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0025_train,train,25,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0026_train,train,26,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0027_train,train,27,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0028_train,train,28,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0029_train,train,29,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0030_train,train,30,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0031_train,train,31,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0032_train,train,32,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0033_train,train,33,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0034_train,train,34,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0035_train,train,35,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0036_train,train,36,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0037_train,train,37,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0038_train,train,38,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0039_train,train,39,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0040_train,train,40,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0041_train,train,41,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0042_train,train,42,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0043_train,train,43,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0044_train,train,44,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0045_train,train,45,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0046_train,train,46,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0047_train,train,47,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0048_train,train,48,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0049_train,train,49,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0050_train,train,50,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0051_train,train,51,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0052_train,train,52,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0053_train,train,53,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0054_train,train,54,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0055_train,train,55,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0056_train,train,56,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_108_w0057_train,train,57,108.mat,108,1,Inner Race Fault,0.007,3,1730,12000,DE
+cwru_170_w0000_train,train,0,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0001_train,train,1,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0002_train,train,2,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0003_train,train,3,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0004_train,train,4,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0005_train,train,5,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0006_train,train,6,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0007_train,train,7,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0008_train,train,8,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0009_train,train,9,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0010_train,train,10,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0011_train,train,11,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0012_train,train,12,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0013_train,train,13,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0014_train,train,14,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0015_train,train,15,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0016_train,train,16,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0017_train,train,17,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0018_train,train,18,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0019_train,train,19,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0020_train,train,20,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0021_train,train,21,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0022_train,train,22,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0023_train,train,23,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0024_train,train,24,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0025_train,train,25,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0026_train,train,26,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0027_train,train,27,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0028_train,train,28,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0029_train,train,29,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0030_train,train,30,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0031_train,train,31,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0032_train,train,32,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0033_train,train,33,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0034_train,train,34,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0035_train,train,35,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0036_train,train,36,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0037_train,train,37,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0038_train,train,38,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0039_train,train,39,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0040_train,train,40,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0041_train,train,41,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0042_train,train,42,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0043_train,train,43,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0044_train,train,44,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0045_train,train,45,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0046_train,train,46,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0047_train,train,47,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0048_train,train,48,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0049_train,train,49,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0050_train,train,50,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0051_train,train,51,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0052_train,train,52,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0053_train,train,53,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0054_train,train,54,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0055_train,train,55,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0056_train,train,56,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_170_w0057_train,train,57,170.mat,170,1,Inner Race Fault,0.014,1,1772,12000,DE
+cwru_209_w0000_train,train,0,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0001_train,train,1,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0002_train,train,2,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0003_train,train,3,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0004_train,train,4,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0005_train,train,5,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0006_train,train,6,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0007_train,train,7,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0008_train,train,8,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0009_train,train,9,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0010_train,train,10,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0011_train,train,11,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0012_train,train,12,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0013_train,train,13,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0014_train,train,14,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0015_train,train,15,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0016_train,train,16,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0017_train,train,17,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0018_train,train,18,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0019_train,train,19,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0020_train,train,20,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0021_train,train,21,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0022_train,train,22,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0023_train,train,23,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0024_train,train,24,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0025_train,train,25,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0026_train,train,26,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0027_train,train,27,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0028_train,train,28,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0029_train,train,29,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0030_train,train,30,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0031_train,train,31,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0032_train,train,32,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0033_train,train,33,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0034_train,train,34,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0035_train,train,35,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0036_train,train,36,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0037_train,train,37,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0038_train,train,38,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0039_train,train,39,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0040_train,train,40,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0041_train,train,41,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0042_train,train,42,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0043_train,train,43,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0044_train,train,44,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0045_train,train,45,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0046_train,train,46,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0047_train,train,47,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0048_train,train,48,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0049_train,train,49,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0050_train,train,50,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0051_train,train,51,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0052_train,train,52,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0053_train,train,53,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0054_train,train,54,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0055_train,train,55,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0056_train,train,56,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_209_w0057_train,train,57,209.mat,209,1,Inner Race Fault,0.021,0,1797,12000,DE
+cwru_107_w0000_train,train,0,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0001_train,train,1,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0002_train,train,2,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0003_train,train,3,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0004_train,train,4,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0005_train,train,5,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0006_train,train,6,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0007_train,train,7,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0008_train,train,8,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0009_train,train,9,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0010_train,train,10,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0011_train,train,11,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0012_train,train,12,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0013_train,train,13,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0014_train,train,14,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0015_train,train,15,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0016_train,train,16,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0017_train,train,17,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0018_train,train,18,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0019_train,train,19,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0020_train,train,20,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0021_train,train,21,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0022_train,train,22,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0023_train,train,23,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0024_train,train,24,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0025_train,train,25,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0026_train,train,26,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0027_train,train,27,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0028_train,train,28,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0029_train,train,29,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0030_train,train,30,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0031_train,train,31,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0032_train,train,32,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0033_train,train,33,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0034_train,train,34,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0035_train,train,35,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0036_train,train,36,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0037_train,train,37,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0038_train,train,38,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0039_train,train,39,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0040_train,train,40,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0041_train,train,41,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0042_train,train,42,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0043_train,train,43,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0044_train,train,44,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0045_train,train,45,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0046_train,train,46,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0047_train,train,47,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0048_train,train,48,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0049_train,train,49,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0050_train,train,50,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0051_train,train,51,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0052_train,train,52,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0053_train,train,53,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0054_train,train,54,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0055_train,train,55,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0056_train,train,56,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_107_w0057_train,train,57,107.mat,107,1,Inner Race Fault,0.007,2,1750,12000,DE
+cwru_106_w0000_train,train,0,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0001_train,train,1,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0002_train,train,2,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0003_train,train,3,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0004_train,train,4,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0005_train,train,5,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0006_train,train,6,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0007_train,train,7,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0008_train,train,8,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0009_train,train,9,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0010_train,train,10,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0011_train,train,11,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0012_train,train,12,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0013_train,train,13,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0014_train,train,14,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0015_train,train,15,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0016_train,train,16,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0017_train,train,17,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0018_train,train,18,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0019_train,train,19,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0020_train,train,20,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0021_train,train,21,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0022_train,train,22,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0023_train,train,23,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0024_train,train,24,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0025_train,train,25,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0026_train,train,26,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0027_train,train,27,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0028_train,train,28,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0029_train,train,29,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0030_train,train,30,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0031_train,train,31,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0032_train,train,32,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0033_train,train,33,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0034_train,train,34,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0035_train,train,35,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0036_train,train,36,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0037_train,train,37,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0038_train,train,38,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0039_train,train,39,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0040_train,train,40,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0041_train,train,41,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0042_train,train,42,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0043_train,train,43,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0044_train,train,44,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0045_train,train,45,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0046_train,train,46,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0047_train,train,47,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0048_train,train,48,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0049_train,train,49,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0050_train,train,50,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0051_train,train,51,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0052_train,train,52,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0053_train,train,53,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0054_train,train,54,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0055_train,train,55,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0056_train,train,56,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_106_w0057_train,train,57,106.mat,106,1,Inner Race Fault,0.007,1,1772,12000,DE
+cwru_224_w0000_train,train,0,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0001_train,train,1,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0002_train,train,2,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0003_train,train,3,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0004_train,train,4,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0005_train,train,5,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0006_train,train,6,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0007_train,train,7,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0008_train,train,8,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0009_train,train,9,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0010_train,train,10,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0011_train,train,11,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0012_train,train,12,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0013_train,train,13,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0014_train,train,14,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0015_train,train,15,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0016_train,train,16,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0017_train,train,17,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0018_train,train,18,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0019_train,train,19,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0020_train,train,20,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0021_train,train,21,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0022_train,train,22,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0023_train,train,23,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0024_train,train,24,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0025_train,train,25,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0026_train,train,26,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0027_train,train,27,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0028_train,train,28,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0029_train,train,29,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0030_train,train,30,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0031_train,train,31,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0032_train,train,32,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0033_train,train,33,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0034_train,train,34,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0035_train,train,35,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0036_train,train,36,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0037_train,train,37,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0038_train,train,38,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0039_train,train,39,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0040_train,train,40,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0041_train,train,41,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0042_train,train,42,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0043_train,train,43,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0044_train,train,44,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0045_train,train,45,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0046_train,train,46,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0047_train,train,47,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0048_train,train,48,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0049_train,train,49,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0050_train,train,50,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0051_train,train,51,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0052_train,train,52,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0053_train,train,53,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0054_train,train,54,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0055_train,train,55,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0056_train,train,56,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_224_w0057_train,train,57,224.mat,224,2,Ball Fault,0.021,2,1750,12000,DE
+cwru_223_w0000_train,train,0,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0001_train,train,1,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0002_train,train,2,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0003_train,train,3,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0004_train,train,4,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0005_train,train,5,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0006_train,train,6,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0007_train,train,7,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0008_train,train,8,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0009_train,train,9,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0010_train,train,10,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0011_train,train,11,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0012_train,train,12,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0013_train,train,13,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0014_train,train,14,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0015_train,train,15,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0016_train,train,16,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0017_train,train,17,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0018_train,train,18,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0019_train,train,19,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0020_train,train,20,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0021_train,train,21,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0022_train,train,22,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0023_train,train,23,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0024_train,train,24,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0025_train,train,25,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0026_train,train,26,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0027_train,train,27,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0028_train,train,28,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0029_train,train,29,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0030_train,train,30,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0031_train,train,31,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0032_train,train,32,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0033_train,train,33,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0034_train,train,34,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0035_train,train,35,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0036_train,train,36,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0037_train,train,37,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0038_train,train,38,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0039_train,train,39,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0040_train,train,40,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0041_train,train,41,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0042_train,train,42,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0043_train,train,43,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0044_train,train,44,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0045_train,train,45,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0046_train,train,46,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0047_train,train,47,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0048_train,train,48,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0049_train,train,49,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0050_train,train,50,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0051_train,train,51,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0052_train,train,52,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0053_train,train,53,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0054_train,train,54,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0055_train,train,55,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0056_train,train,56,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_223_w0057_train,train,57,223.mat,223,2,Ball Fault,0.021,1,1772,12000,DE
+cwru_118_w0000_train,train,0,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0001_train,train,1,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0002_train,train,2,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0003_train,train,3,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0004_train,train,4,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0005_train,train,5,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0006_train,train,6,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0007_train,train,7,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0008_train,train,8,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0009_train,train,9,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0010_train,train,10,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0011_train,train,11,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0012_train,train,12,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0013_train,train,13,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0014_train,train,14,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0015_train,train,15,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0016_train,train,16,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0017_train,train,17,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0018_train,train,18,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0019_train,train,19,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0020_train,train,20,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0021_train,train,21,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0022_train,train,22,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0023_train,train,23,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0024_train,train,24,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0025_train,train,25,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0026_train,train,26,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0027_train,train,27,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0028_train,train,28,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0029_train,train,29,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0030_train,train,30,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0031_train,train,31,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0032_train,train,32,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0033_train,train,33,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0034_train,train,34,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0035_train,train,35,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0036_train,train,36,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0037_train,train,37,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0038_train,train,38,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0039_train,train,39,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0040_train,train,40,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0041_train,train,41,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0042_train,train,42,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0043_train,train,43,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0044_train,train,44,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0045_train,train,45,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0046_train,train,46,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0047_train,train,47,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0048_train,train,48,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0049_train,train,49,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0050_train,train,50,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0051_train,train,51,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0052_train,train,52,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0053_train,train,53,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0054_train,train,54,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0055_train,train,55,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0056_train,train,56,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_118_w0057_train,train,57,118.mat,118,2,Ball Fault,0.007,0,1797,12000,DE
+cwru_222_w0000_train,train,0,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0001_train,train,1,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0002_train,train,2,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0003_train,train,3,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0004_train,train,4,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0005_train,train,5,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0006_train,train,6,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0007_train,train,7,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0008_train,train,8,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0009_train,train,9,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0010_train,train,10,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0011_train,train,11,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0012_train,train,12,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0013_train,train,13,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0014_train,train,14,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0015_train,train,15,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0016_train,train,16,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0017_train,train,17,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0018_train,train,18,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0019_train,train,19,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0020_train,train,20,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0021_train,train,21,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0022_train,train,22,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0023_train,train,23,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0024_train,train,24,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0025_train,train,25,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0026_train,train,26,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0027_train,train,27,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0028_train,train,28,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0029_train,train,29,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0030_train,train,30,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0031_train,train,31,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0032_train,train,32,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0033_train,train,33,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0034_train,train,34,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0035_train,train,35,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0036_train,train,36,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0037_train,train,37,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0038_train,train,38,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0039_train,train,39,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0040_train,train,40,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0041_train,train,41,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0042_train,train,42,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0043_train,train,43,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0044_train,train,44,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0045_train,train,45,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0046_train,train,46,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0047_train,train,47,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0048_train,train,48,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0049_train,train,49,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0050_train,train,50,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0051_train,train,51,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0052_train,train,52,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0053_train,train,53,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0054_train,train,54,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0055_train,train,55,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0056_train,train,56,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_222_w0057_train,train,57,222.mat,222,2,Ball Fault,0.021,0,1797,12000,DE
+cwru_187_w0000_train,train,0,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0001_train,train,1,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0002_train,train,2,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0003_train,train,3,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0004_train,train,4,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0005_train,train,5,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0006_train,train,6,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0007_train,train,7,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0008_train,train,8,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0009_train,train,9,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0010_train,train,10,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0011_train,train,11,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0012_train,train,12,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0013_train,train,13,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0014_train,train,14,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0015_train,train,15,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0016_train,train,16,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0017_train,train,17,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0018_train,train,18,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0019_train,train,19,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0020_train,train,20,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0021_train,train,21,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0022_train,train,22,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0023_train,train,23,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0024_train,train,24,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0025_train,train,25,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0026_train,train,26,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0027_train,train,27,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0028_train,train,28,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0029_train,train,29,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0030_train,train,30,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0031_train,train,31,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0032_train,train,32,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0033_train,train,33,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0034_train,train,34,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0035_train,train,35,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0036_train,train,36,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0037_train,train,37,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0038_train,train,38,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0039_train,train,39,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0040_train,train,40,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0041_train,train,41,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0042_train,train,42,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0043_train,train,43,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0044_train,train,44,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0045_train,train,45,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0046_train,train,46,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0047_train,train,47,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0048_train,train,48,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0049_train,train,49,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0050_train,train,50,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0051_train,train,51,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0052_train,train,52,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0053_train,train,53,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0054_train,train,54,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0055_train,train,55,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0056_train,train,56,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_187_w0057_train,train,57,187.mat,187,2,Ball Fault,0.014,2,1750,12000,DE
+cwru_121_w0000_train,train,0,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0001_train,train,1,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0002_train,train,2,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0003_train,train,3,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0004_train,train,4,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0005_train,train,5,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0006_train,train,6,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0007_train,train,7,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0008_train,train,8,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0009_train,train,9,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0010_train,train,10,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0011_train,train,11,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0012_train,train,12,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0013_train,train,13,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0014_train,train,14,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0015_train,train,15,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0016_train,train,16,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0017_train,train,17,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0018_train,train,18,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0019_train,train,19,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0020_train,train,20,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0021_train,train,21,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0022_train,train,22,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0023_train,train,23,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0024_train,train,24,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0025_train,train,25,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0026_train,train,26,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0027_train,train,27,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0028_train,train,28,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0029_train,train,29,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0030_train,train,30,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0031_train,train,31,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0032_train,train,32,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0033_train,train,33,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0034_train,train,34,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0035_train,train,35,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0036_train,train,36,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0037_train,train,37,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0038_train,train,38,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0039_train,train,39,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0040_train,train,40,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0041_train,train,41,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0042_train,train,42,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0043_train,train,43,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0044_train,train,44,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0045_train,train,45,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0046_train,train,46,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0047_train,train,47,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0048_train,train,48,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0049_train,train,49,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0050_train,train,50,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0051_train,train,51,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0052_train,train,52,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0053_train,train,53,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0054_train,train,54,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0055_train,train,55,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0056_train,train,56,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_121_w0057_train,train,57,121.mat,121,2,Ball Fault,0.007,3,1730,12000,DE
+cwru_119_w0000_train,train,0,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0001_train,train,1,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0002_train,train,2,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0003_train,train,3,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0004_train,train,4,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0005_train,train,5,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0006_train,train,6,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0007_train,train,7,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0008_train,train,8,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0009_train,train,9,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0010_train,train,10,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0011_train,train,11,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0012_train,train,12,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0013_train,train,13,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0014_train,train,14,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0015_train,train,15,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0016_train,train,16,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0017_train,train,17,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0018_train,train,18,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0019_train,train,19,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0020_train,train,20,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0021_train,train,21,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0022_train,train,22,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0023_train,train,23,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0024_train,train,24,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0025_train,train,25,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0026_train,train,26,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0027_train,train,27,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0028_train,train,28,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0029_train,train,29,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0030_train,train,30,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0031_train,train,31,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0032_train,train,32,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0033_train,train,33,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0034_train,train,34,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0035_train,train,35,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0036_train,train,36,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0037_train,train,37,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0038_train,train,38,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0039_train,train,39,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0040_train,train,40,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0041_train,train,41,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0042_train,train,42,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0043_train,train,43,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0044_train,train,44,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0045_train,train,45,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0046_train,train,46,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0047_train,train,47,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0048_train,train,48,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0049_train,train,49,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0050_train,train,50,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0051_train,train,51,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0052_train,train,52,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0053_train,train,53,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0054_train,train,54,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0055_train,train,55,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0056_train,train,56,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_119_w0057_train,train,57,119.mat,119,2,Ball Fault,0.007,1,1772,12000,DE
+cwru_185_w0000_train,train,0,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0001_train,train,1,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0002_train,train,2,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0003_train,train,3,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0004_train,train,4,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0005_train,train,5,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0006_train,train,6,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0007_train,train,7,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0008_train,train,8,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0009_train,train,9,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0010_train,train,10,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0011_train,train,11,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0012_train,train,12,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0013_train,train,13,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0014_train,train,14,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0015_train,train,15,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0016_train,train,16,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0017_train,train,17,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0018_train,train,18,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0019_train,train,19,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0020_train,train,20,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0021_train,train,21,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0022_train,train,22,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0023_train,train,23,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0024_train,train,24,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0025_train,train,25,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0026_train,train,26,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0027_train,train,27,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0028_train,train,28,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0029_train,train,29,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0030_train,train,30,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0031_train,train,31,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0032_train,train,32,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0033_train,train,33,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0034_train,train,34,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0035_train,train,35,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0036_train,train,36,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0037_train,train,37,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0038_train,train,38,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0039_train,train,39,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0040_train,train,40,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0041_train,train,41,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0042_train,train,42,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0043_train,train,43,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0044_train,train,44,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0045_train,train,45,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0046_train,train,46,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0047_train,train,47,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0048_train,train,48,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0049_train,train,49,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0050_train,train,50,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0051_train,train,51,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0052_train,train,52,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0053_train,train,53,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0054_train,train,54,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0055_train,train,55,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0056_train,train,56,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_185_w0057_train,train,57,185.mat,185,2,Ball Fault,0.014,0,1797,12000,DE
+cwru_200_w0000_train,train,0,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0001_train,train,1,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0002_train,train,2,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0003_train,train,3,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0004_train,train,4,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0005_train,train,5,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0006_train,train,6,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0007_train,train,7,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0008_train,train,8,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0009_train,train,9,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0010_train,train,10,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0011_train,train,11,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0012_train,train,12,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0013_train,train,13,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0014_train,train,14,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0015_train,train,15,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0016_train,train,16,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0017_train,train,17,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0018_train,train,18,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0019_train,train,19,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0020_train,train,20,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0021_train,train,21,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0022_train,train,22,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0023_train,train,23,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0024_train,train,24,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0025_train,train,25,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0026_train,train,26,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0027_train,train,27,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0028_train,train,28,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0029_train,train,29,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0030_train,train,30,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0031_train,train,31,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0032_train,train,32,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0033_train,train,33,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0034_train,train,34,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0035_train,train,35,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0036_train,train,36,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0037_train,train,37,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0038_train,train,38,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0039_train,train,39,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0040_train,train,40,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0041_train,train,41,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0042_train,train,42,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0043_train,train,43,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0044_train,train,44,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0045_train,train,45,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0046_train,train,46,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0047_train,train,47,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0048_train,train,48,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0049_train,train,49,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0050_train,train,50,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0051_train,train,51,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0052_train,train,52,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0053_train,train,53,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0054_train,train,54,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0055_train,train,55,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0056_train,train,56,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_200_w0057_train,train,57,200.mat,200,3,Outer Race Fault,0.014,3,1730,12000,DE
+cwru_197_w0000_train,train,0,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0001_train,train,1,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0002_train,train,2,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0003_train,train,3,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0004_train,train,4,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0005_train,train,5,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0006_train,train,6,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0007_train,train,7,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0008_train,train,8,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0009_train,train,9,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0010_train,train,10,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0011_train,train,11,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0012_train,train,12,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0013_train,train,13,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0014_train,train,14,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0015_train,train,15,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0016_train,train,16,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0017_train,train,17,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0018_train,train,18,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0019_train,train,19,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0020_train,train,20,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0021_train,train,21,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0022_train,train,22,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0023_train,train,23,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0024_train,train,24,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0025_train,train,25,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0026_train,train,26,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0027_train,train,27,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0028_train,train,28,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0029_train,train,29,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0030_train,train,30,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0031_train,train,31,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0032_train,train,32,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0033_train,train,33,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0034_train,train,34,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0035_train,train,35,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0036_train,train,36,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0037_train,train,37,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0038_train,train,38,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0039_train,train,39,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0040_train,train,40,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0041_train,train,41,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0042_train,train,42,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0043_train,train,43,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0044_train,train,44,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0045_train,train,45,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0046_train,train,46,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0047_train,train,47,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0048_train,train,48,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0049_train,train,49,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0050_train,train,50,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0051_train,train,51,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0052_train,train,52,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0053_train,train,53,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0054_train,train,54,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0055_train,train,55,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0056_train,train,56,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_197_w0057_train,train,57,197.mat,197,3,Outer Race Fault,0.014,0,1797,12000,DE
+cwru_236_w0000_train,train,0,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0001_train,train,1,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0002_train,train,2,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0003_train,train,3,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0004_train,train,4,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0005_train,train,5,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0006_train,train,6,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0007_train,train,7,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0008_train,train,8,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0009_train,train,9,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0010_train,train,10,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0011_train,train,11,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0012_train,train,12,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0013_train,train,13,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0014_train,train,14,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0015_train,train,15,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0016_train,train,16,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0017_train,train,17,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0018_train,train,18,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0019_train,train,19,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0020_train,train,20,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0021_train,train,21,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0022_train,train,22,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0023_train,train,23,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0024_train,train,24,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0025_train,train,25,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0026_train,train,26,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0027_train,train,27,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0028_train,train,28,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0029_train,train,29,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0030_train,train,30,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0031_train,train,31,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0032_train,train,32,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0033_train,train,33,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0034_train,train,34,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0035_train,train,35,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0036_train,train,36,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0037_train,train,37,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0038_train,train,38,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0039_train,train,39,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0040_train,train,40,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0041_train,train,41,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0042_train,train,42,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0043_train,train,43,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0044_train,train,44,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0045_train,train,45,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0046_train,train,46,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0047_train,train,47,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0048_train,train,48,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0049_train,train,49,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0050_train,train,50,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0051_train,train,51,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0052_train,train,52,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0053_train,train,53,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0054_train,train,54,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0055_train,train,55,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0056_train,train,56,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_236_w0057_train,train,57,236.mat,236,3,Outer Race Fault,0.021,2,1750,12000,DE
+cwru_133_w0000_train,train,0,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0001_train,train,1,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0002_train,train,2,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0003_train,train,3,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0004_train,train,4,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0005_train,train,5,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0006_train,train,6,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0007_train,train,7,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0008_train,train,8,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0009_train,train,9,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0010_train,train,10,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0011_train,train,11,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0012_train,train,12,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0013_train,train,13,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0014_train,train,14,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0015_train,train,15,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0016_train,train,16,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0017_train,train,17,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0018_train,train,18,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0019_train,train,19,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0020_train,train,20,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0021_train,train,21,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0022_train,train,22,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0023_train,train,23,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0024_train,train,24,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0025_train,train,25,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0026_train,train,26,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0027_train,train,27,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0028_train,train,28,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0029_train,train,29,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0030_train,train,30,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0031_train,train,31,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0032_train,train,32,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0033_train,train,33,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0034_train,train,34,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0035_train,train,35,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0036_train,train,36,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0037_train,train,37,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0038_train,train,38,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0039_train,train,39,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0040_train,train,40,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0041_train,train,41,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0042_train,train,42,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0043_train,train,43,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0044_train,train,44,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0045_train,train,45,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0046_train,train,46,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0047_train,train,47,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0048_train,train,48,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0049_train,train,49,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0050_train,train,50,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0051_train,train,51,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0052_train,train,52,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0053_train,train,53,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0054_train,train,54,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0055_train,train,55,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0056_train,train,56,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_133_w0057_train,train,57,133.mat,133,3,Outer Race Fault,0.007,3,1730,12000,DE
+cwru_131_w0000_train,train,0,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0001_train,train,1,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0002_train,train,2,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0003_train,train,3,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0004_train,train,4,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0005_train,train,5,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0006_train,train,6,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0007_train,train,7,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0008_train,train,8,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0009_train,train,9,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0010_train,train,10,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0011_train,train,11,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0012_train,train,12,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0013_train,train,13,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0014_train,train,14,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0015_train,train,15,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0016_train,train,16,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0017_train,train,17,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0018_train,train,18,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0019_train,train,19,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0020_train,train,20,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0021_train,train,21,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0022_train,train,22,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0023_train,train,23,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0024_train,train,24,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0025_train,train,25,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0026_train,train,26,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0027_train,train,27,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0028_train,train,28,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0029_train,train,29,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0030_train,train,30,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0031_train,train,31,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0032_train,train,32,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0033_train,train,33,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0034_train,train,34,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0035_train,train,35,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0036_train,train,36,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0037_train,train,37,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0038_train,train,38,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0039_train,train,39,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0040_train,train,40,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0041_train,train,41,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0042_train,train,42,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0043_train,train,43,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0044_train,train,44,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0045_train,train,45,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0046_train,train,46,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0047_train,train,47,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0048_train,train,48,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0049_train,train,49,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0050_train,train,50,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0051_train,train,51,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0052_train,train,52,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0053_train,train,53,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0054_train,train,54,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0055_train,train,55,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0056_train,train,56,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_131_w0057_train,train,57,131.mat,131,3,Outer Race Fault,0.007,1,1772,12000,DE
+cwru_199_w0000_train,train,0,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0001_train,train,1,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0002_train,train,2,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0003_train,train,3,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0004_train,train,4,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0005_train,train,5,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0006_train,train,6,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0007_train,train,7,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0008_train,train,8,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0009_train,train,9,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0010_train,train,10,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0011_train,train,11,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0012_train,train,12,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0013_train,train,13,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0014_train,train,14,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0015_train,train,15,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0016_train,train,16,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0017_train,train,17,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0018_train,train,18,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0019_train,train,19,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0020_train,train,20,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0021_train,train,21,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0022_train,train,22,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0023_train,train,23,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0024_train,train,24,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0025_train,train,25,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0026_train,train,26,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0027_train,train,27,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0028_train,train,28,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0029_train,train,29,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0030_train,train,30,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0031_train,train,31,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0032_train,train,32,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0033_train,train,33,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0034_train,train,34,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0035_train,train,35,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0036_train,train,36,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0037_train,train,37,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0038_train,train,38,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0039_train,train,39,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0040_train,train,40,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0041_train,train,41,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0042_train,train,42,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0043_train,train,43,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0044_train,train,44,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0045_train,train,45,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0046_train,train,46,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0047_train,train,47,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0048_train,train,48,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0049_train,train,49,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0050_train,train,50,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0051_train,train,51,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0052_train,train,52,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0053_train,train,53,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0054_train,train,54,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0055_train,train,55,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0056_train,train,56,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_199_w0057_train,train,57,199.mat,199,3,Outer Race Fault,0.014,2,1750,12000,DE
+cwru_132_w0000_train,train,0,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0001_train,train,1,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0002_train,train,2,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0003_train,train,3,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0004_train,train,4,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0005_train,train,5,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0006_train,train,6,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0007_train,train,7,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0008_train,train,8,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0009_train,train,9,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0010_train,train,10,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0011_train,train,11,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0012_train,train,12,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0013_train,train,13,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0014_train,train,14,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0015_train,train,15,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0016_train,train,16,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0017_train,train,17,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0018_train,train,18,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0019_train,train,19,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0020_train,train,20,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0021_train,train,21,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0022_train,train,22,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0023_train,train,23,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0024_train,train,24,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0025_train,train,25,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0026_train,train,26,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0027_train,train,27,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0028_train,train,28,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0029_train,train,29,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0030_train,train,30,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0031_train,train,31,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0032_train,train,32,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0033_train,train,33,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0034_train,train,34,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0035_train,train,35,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0036_train,train,36,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0037_train,train,37,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0038_train,train,38,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0039_train,train,39,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0040_train,train,40,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0041_train,train,41,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0042_train,train,42,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0043_train,train,43,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0044_train,train,44,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0045_train,train,45,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0046_train,train,46,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0047_train,train,47,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0048_train,train,48,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0049_train,train,49,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0050_train,train,50,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0051_train,train,51,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0052_train,train,52,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0053_train,train,53,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0054_train,train,54,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0055_train,train,55,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0056_train,train,56,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_132_w0057_train,train,57,132.mat,132,3,Outer Race Fault,0.007,2,1750,12000,DE
+cwru_130_w0000_train,train,0,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0001_train,train,1,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0002_train,train,2,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0003_train,train,3,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0004_train,train,4,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0005_train,train,5,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0006_train,train,6,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0007_train,train,7,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0008_train,train,8,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0009_train,train,9,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0010_train,train,10,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0011_train,train,11,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0012_train,train,12,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0013_train,train,13,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0014_train,train,14,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0015_train,train,15,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0016_train,train,16,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0017_train,train,17,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0018_train,train,18,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0019_train,train,19,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0020_train,train,20,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0021_train,train,21,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0022_train,train,22,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0023_train,train,23,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0024_train,train,24,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0025_train,train,25,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0026_train,train,26,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0027_train,train,27,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0028_train,train,28,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0029_train,train,29,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0030_train,train,30,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0031_train,train,31,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0032_train,train,32,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0033_train,train,33,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0034_train,train,34,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0035_train,train,35,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0036_train,train,36,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0037_train,train,37,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0038_train,train,38,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0039_train,train,39,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0040_train,train,40,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0041_train,train,41,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0042_train,train,42,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0043_train,train,43,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0044_train,train,44,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0045_train,train,45,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0046_train,train,46,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0047_train,train,47,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0048_train,train,48,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0049_train,train,49,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0050_train,train,50,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0051_train,train,51,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0052_train,train,52,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0053_train,train,53,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0054_train,train,54,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0055_train,train,55,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0056_train,train,56,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_130_w0057_train,train,57,130.mat,130,3,Outer Race Fault,0.007,0,1797,12000,DE
+cwru_100_w0000_val,val,0,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0001_val,val,1,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0002_val,val,2,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0003_val,val,3,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0004_val,val,4,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0005_val,val,5,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0006_val,val,6,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0007_val,val,7,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0008_val,val,8,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0009_val,val,9,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0010_val,val,10,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0011_val,val,11,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0012_val,val,12,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0013_val,val,13,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0014_val,val,14,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0015_val,val,15,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0016_val,val,16,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0017_val,val,17,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0018_val,val,18,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0019_val,val,19,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0020_val,val,20,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0021_val,val,21,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0022_val,val,22,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0023_val,val,23,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0024_val,val,24,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0025_val,val,25,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0026_val,val,26,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0027_val,val,27,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0028_val,val,28,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0029_val,val,29,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0030_val,val,30,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0031_val,val,31,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0032_val,val,32,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0033_val,val,33,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0034_val,val,34,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0035_val,val,35,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0036_val,val,36,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0037_val,val,37,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0038_val,val,38,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0039_val,val,39,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0040_val,val,40,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0041_val,val,41,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0042_val,val,42,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0043_val,val,43,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0044_val,val,44,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0045_val,val,45,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0046_val,val,46,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0047_val,val,47,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0048_val,val,48,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0049_val,val,49,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0050_val,val,50,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0051_val,val,51,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0052_val,val,52,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0053_val,val,53,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0054_val,val,54,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0055_val,val,55,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0056_val,val,56,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_100_w0057_val,val,57,100.mat,100,0,Normal,0.0,3,1730,12000,DE
+cwru_171_w0000_val,val,0,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0001_val,val,1,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0002_val,val,2,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0003_val,val,3,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0004_val,val,4,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0005_val,val,5,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0006_val,val,6,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0007_val,val,7,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0008_val,val,8,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0009_val,val,9,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0010_val,val,10,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0011_val,val,11,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0012_val,val,12,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0013_val,val,13,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0014_val,val,14,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0015_val,val,15,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0016_val,val,16,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0017_val,val,17,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0018_val,val,18,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0019_val,val,19,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0020_val,val,20,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0021_val,val,21,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0022_val,val,22,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0023_val,val,23,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0024_val,val,24,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0025_val,val,25,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0026_val,val,26,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0027_val,val,27,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0028_val,val,28,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0029_val,val,29,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0030_val,val,30,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0031_val,val,31,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0032_val,val,32,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0033_val,val,33,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0034_val,val,34,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0035_val,val,35,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0036_val,val,36,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0037_val,val,37,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0038_val,val,38,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0039_val,val,39,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0040_val,val,40,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0041_val,val,41,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0042_val,val,42,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0043_val,val,43,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0044_val,val,44,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0045_val,val,45,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0046_val,val,46,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0047_val,val,47,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0048_val,val,48,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0049_val,val,49,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0050_val,val,50,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0051_val,val,51,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0052_val,val,52,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0053_val,val,53,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0054_val,val,54,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0055_val,val,55,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0056_val,val,56,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_171_w0057_val,val,57,171.mat,171,1,Inner Race Fault,0.014,2,1750,12000,DE
+cwru_169_w0000_val,val,0,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0001_val,val,1,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0002_val,val,2,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0003_val,val,3,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0004_val,val,4,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0005_val,val,5,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0006_val,val,6,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0007_val,val,7,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0008_val,val,8,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0009_val,val,9,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0010_val,val,10,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0011_val,val,11,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0012_val,val,12,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0013_val,val,13,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0014_val,val,14,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0015_val,val,15,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0016_val,val,16,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0017_val,val,17,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0018_val,val,18,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0019_val,val,19,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0020_val,val,20,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0021_val,val,21,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0022_val,val,22,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0023_val,val,23,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0024_val,val,24,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0025_val,val,25,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0026_val,val,26,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0027_val,val,27,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0028_val,val,28,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0029_val,val,29,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0030_val,val,30,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0031_val,val,31,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0032_val,val,32,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0033_val,val,33,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0034_val,val,34,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0035_val,val,35,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0036_val,val,36,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0037_val,val,37,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0038_val,val,38,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0039_val,val,39,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0040_val,val,40,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0041_val,val,41,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0042_val,val,42,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0043_val,val,43,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0044_val,val,44,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0045_val,val,45,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0046_val,val,46,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0047_val,val,47,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0048_val,val,48,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0049_val,val,49,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0050_val,val,50,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0051_val,val,51,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0052_val,val,52,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0053_val,val,53,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0054_val,val,54,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0055_val,val,55,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0056_val,val,56,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_169_w0057_val,val,57,169.mat,169,1,Inner Race Fault,0.014,0,1797,12000,DE
+cwru_186_w0000_val,val,0,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0001_val,val,1,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0002_val,val,2,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0003_val,val,3,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0004_val,val,4,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0005_val,val,5,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0006_val,val,6,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0007_val,val,7,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0008_val,val,8,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0009_val,val,9,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0010_val,val,10,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0011_val,val,11,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0012_val,val,12,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0013_val,val,13,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0014_val,val,14,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0015_val,val,15,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0016_val,val,16,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0017_val,val,17,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0018_val,val,18,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0019_val,val,19,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0020_val,val,20,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0021_val,val,21,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0022_val,val,22,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0023_val,val,23,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0024_val,val,24,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0025_val,val,25,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0026_val,val,26,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0027_val,val,27,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0028_val,val,28,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0029_val,val,29,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0030_val,val,30,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0031_val,val,31,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0032_val,val,32,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0033_val,val,33,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0034_val,val,34,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0035_val,val,35,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0036_val,val,36,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0037_val,val,37,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0038_val,val,38,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0039_val,val,39,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0040_val,val,40,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0041_val,val,41,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0042_val,val,42,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0043_val,val,43,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0044_val,val,44,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0045_val,val,45,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0046_val,val,46,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0047_val,val,47,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0048_val,val,48,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0049_val,val,49,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0050_val,val,50,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0051_val,val,51,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0052_val,val,52,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0053_val,val,53,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0054_val,val,54,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0055_val,val,55,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0056_val,val,56,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_186_w0057_val,val,57,186.mat,186,2,Ball Fault,0.014,1,1772,12000,DE
+cwru_120_w0000_val,val,0,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0001_val,val,1,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0002_val,val,2,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0003_val,val,3,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0004_val,val,4,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0005_val,val,5,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0006_val,val,6,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0007_val,val,7,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0008_val,val,8,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0009_val,val,9,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0010_val,val,10,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0011_val,val,11,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0012_val,val,12,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0013_val,val,13,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0014_val,val,14,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0015_val,val,15,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0016_val,val,16,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0017_val,val,17,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0018_val,val,18,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0019_val,val,19,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0020_val,val,20,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0021_val,val,21,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0022_val,val,22,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0023_val,val,23,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0024_val,val,24,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0025_val,val,25,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0026_val,val,26,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0027_val,val,27,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0028_val,val,28,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0029_val,val,29,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0030_val,val,30,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0031_val,val,31,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0032_val,val,32,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0033_val,val,33,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0034_val,val,34,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0035_val,val,35,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0036_val,val,36,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0037_val,val,37,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0038_val,val,38,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0039_val,val,39,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0040_val,val,40,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0041_val,val,41,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0042_val,val,42,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0043_val,val,43,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0044_val,val,44,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0045_val,val,45,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0046_val,val,46,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0047_val,val,47,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0048_val,val,48,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0049_val,val,49,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0050_val,val,50,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0051_val,val,51,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0052_val,val,52,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0053_val,val,53,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0054_val,val,54,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0055_val,val,55,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0056_val,val,56,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_120_w0057_val,val,57,120.mat,120,2,Ball Fault,0.007,2,1750,12000,DE
+cwru_234_w0000_val,val,0,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0001_val,val,1,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0002_val,val,2,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0003_val,val,3,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0004_val,val,4,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0005_val,val,5,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0006_val,val,6,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0007_val,val,7,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0008_val,val,8,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0009_val,val,9,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0010_val,val,10,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0011_val,val,11,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0012_val,val,12,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0013_val,val,13,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0014_val,val,14,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0015_val,val,15,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0016_val,val,16,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0017_val,val,17,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0018_val,val,18,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0019_val,val,19,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0020_val,val,20,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0021_val,val,21,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0022_val,val,22,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0023_val,val,23,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0024_val,val,24,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0025_val,val,25,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0026_val,val,26,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0027_val,val,27,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0028_val,val,28,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0029_val,val,29,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0030_val,val,30,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0031_val,val,31,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0032_val,val,32,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0033_val,val,33,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0034_val,val,34,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0035_val,val,35,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0036_val,val,36,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0037_val,val,37,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0038_val,val,38,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0039_val,val,39,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0040_val,val,40,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0041_val,val,41,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0042_val,val,42,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0043_val,val,43,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0044_val,val,44,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0045_val,val,45,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0046_val,val,46,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0047_val,val,47,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0048_val,val,48,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0049_val,val,49,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0050_val,val,50,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0051_val,val,51,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0052_val,val,52,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0053_val,val,53,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0054_val,val,54,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0055_val,val,55,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0056_val,val,56,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_234_w0057_val,val,57,234.mat,234,3,Outer Race Fault,0.021,0,1797,12000,DE
+cwru_198_w0000_val,val,0,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0001_val,val,1,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0002_val,val,2,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0003_val,val,3,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0004_val,val,4,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0005_val,val,5,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0006_val,val,6,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0007_val,val,7,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0008_val,val,8,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0009_val,val,9,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0010_val,val,10,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0011_val,val,11,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0012_val,val,12,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0013_val,val,13,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0014_val,val,14,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0015_val,val,15,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0016_val,val,16,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0017_val,val,17,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0018_val,val,18,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0019_val,val,19,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0020_val,val,20,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0021_val,val,21,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0022_val,val,22,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0023_val,val,23,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0024_val,val,24,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0025_val,val,25,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0026_val,val,26,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0027_val,val,27,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0028_val,val,28,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0029_val,val,29,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0030_val,val,30,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0031_val,val,31,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0032_val,val,32,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0033_val,val,33,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0034_val,val,34,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0035_val,val,35,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0036_val,val,36,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0037_val,val,37,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0038_val,val,38,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0039_val,val,39,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0040_val,val,40,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0041_val,val,41,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0042_val,val,42,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0043_val,val,43,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0044_val,val,44,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0045_val,val,45,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0046_val,val,46,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0047_val,val,47,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0048_val,val,48,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0049_val,val,49,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0050_val,val,50,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0051_val,val,51,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0052_val,val,52,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0053_val,val,53,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0054_val,val,54,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0055_val,val,55,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0056_val,val,56,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_198_w0057_val,val,57,198.mat,198,3,Outer Race Fault,0.014,1,1772,12000,DE
+cwru_098_w0000_test,test,0,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0001_test,test,1,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0002_test,test,2,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0003_test,test,3,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0004_test,test,4,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0005_test,test,5,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0006_test,test,6,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0007_test,test,7,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0008_test,test,8,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0009_test,test,9,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0010_test,test,10,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0011_test,test,11,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0012_test,test,12,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0013_test,test,13,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0014_test,test,14,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0015_test,test,15,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0016_test,test,16,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0017_test,test,17,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0018_test,test,18,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0019_test,test,19,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0020_test,test,20,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0021_test,test,21,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0022_test,test,22,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0023_test,test,23,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0024_test,test,24,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0025_test,test,25,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0026_test,test,26,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0027_test,test,27,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0028_test,test,28,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0029_test,test,29,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0030_test,test,30,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0031_test,test,31,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0032_test,test,32,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0033_test,test,33,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0034_test,test,34,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0035_test,test,35,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0036_test,test,36,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0037_test,test,37,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0038_test,test,38,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0039_test,test,39,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0040_test,test,40,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0041_test,test,41,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0042_test,test,42,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0043_test,test,43,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0044_test,test,44,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0045_test,test,45,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0046_test,test,46,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0047_test,test,47,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0048_test,test,48,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0049_test,test,49,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0050_test,test,50,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0051_test,test,51,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0052_test,test,52,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0053_test,test,53,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0054_test,test,54,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0055_test,test,55,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0056_test,test,56,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_098_w0057_test,test,57,98.mat,98,0,Normal,0.0,1,1772,12000,DE
+cwru_172_w0000_test,test,0,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0001_test,test,1,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0002_test,test,2,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0003_test,test,3,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0004_test,test,4,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0005_test,test,5,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0006_test,test,6,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0007_test,test,7,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0008_test,test,8,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0009_test,test,9,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0010_test,test,10,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0011_test,test,11,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0012_test,test,12,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0013_test,test,13,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0014_test,test,14,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0015_test,test,15,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0016_test,test,16,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0017_test,test,17,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0018_test,test,18,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0019_test,test,19,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0020_test,test,20,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0021_test,test,21,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0022_test,test,22,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0023_test,test,23,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0024_test,test,24,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0025_test,test,25,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0026_test,test,26,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0027_test,test,27,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0028_test,test,28,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0029_test,test,29,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0030_test,test,30,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0031_test,test,31,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0032_test,test,32,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0033_test,test,33,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0034_test,test,34,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0035_test,test,35,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0036_test,test,36,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0037_test,test,37,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0038_test,test,38,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0039_test,test,39,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0040_test,test,40,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0041_test,test,41,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0042_test,test,42,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0043_test,test,43,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0044_test,test,44,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0045_test,test,45,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0046_test,test,46,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0047_test,test,47,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0048_test,test,48,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0049_test,test,49,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0050_test,test,50,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0051_test,test,51,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0052_test,test,52,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0053_test,test,53,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0054_test,test,54,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0055_test,test,55,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0056_test,test,56,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_172_w0057_test,test,57,172.mat,172,1,Inner Race Fault,0.014,3,1730,12000,DE
+cwru_211_w0000_test,test,0,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0001_test,test,1,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0002_test,test,2,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0003_test,test,3,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0004_test,test,4,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0005_test,test,5,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0006_test,test,6,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0007_test,test,7,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0008_test,test,8,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0009_test,test,9,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0010_test,test,10,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0011_test,test,11,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0012_test,test,12,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0013_test,test,13,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0014_test,test,14,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0015_test,test,15,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0016_test,test,16,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0017_test,test,17,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0018_test,test,18,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0019_test,test,19,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0020_test,test,20,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0021_test,test,21,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0022_test,test,22,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0023_test,test,23,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0024_test,test,24,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0025_test,test,25,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0026_test,test,26,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0027_test,test,27,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0028_test,test,28,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0029_test,test,29,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0030_test,test,30,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0031_test,test,31,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0032_test,test,32,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0033_test,test,33,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0034_test,test,34,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0035_test,test,35,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0036_test,test,36,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0037_test,test,37,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0038_test,test,38,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0039_test,test,39,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0040_test,test,40,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0041_test,test,41,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0042_test,test,42,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0043_test,test,43,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0044_test,test,44,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0045_test,test,45,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0046_test,test,46,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0047_test,test,47,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0048_test,test,48,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0049_test,test,49,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0050_test,test,50,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0051_test,test,51,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0052_test,test,52,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0053_test,test,53,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0054_test,test,54,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0055_test,test,55,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0056_test,test,56,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_211_w0057_test,test,57,211.mat,211,1,Inner Race Fault,0.021,2,1750,12000,DE
+cwru_225_w0000_test,test,0,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0001_test,test,1,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0002_test,test,2,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0003_test,test,3,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0004_test,test,4,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0005_test,test,5,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0006_test,test,6,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0007_test,test,7,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0008_test,test,8,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0009_test,test,9,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0010_test,test,10,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0011_test,test,11,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0012_test,test,12,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0013_test,test,13,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0014_test,test,14,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0015_test,test,15,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0016_test,test,16,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0017_test,test,17,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0018_test,test,18,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0019_test,test,19,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0020_test,test,20,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0021_test,test,21,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0022_test,test,22,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0023_test,test,23,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0024_test,test,24,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0025_test,test,25,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0026_test,test,26,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0027_test,test,27,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0028_test,test,28,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0029_test,test,29,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0030_test,test,30,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0031_test,test,31,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0032_test,test,32,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0033_test,test,33,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0034_test,test,34,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0035_test,test,35,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0036_test,test,36,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0037_test,test,37,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0038_test,test,38,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0039_test,test,39,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0040_test,test,40,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0041_test,test,41,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0042_test,test,42,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0043_test,test,43,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0044_test,test,44,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0045_test,test,45,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0046_test,test,46,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0047_test,test,47,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0048_test,test,48,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0049_test,test,49,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0050_test,test,50,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0051_test,test,51,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0052_test,test,52,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0053_test,test,53,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0054_test,test,54,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0055_test,test,55,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0056_test,test,56,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_225_w0057_test,test,57,225.mat,225,2,Ball Fault,0.021,3,1730,12000,DE
+cwru_188_w0000_test,test,0,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0001_test,test,1,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0002_test,test,2,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0003_test,test,3,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0004_test,test,4,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0005_test,test,5,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0006_test,test,6,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0007_test,test,7,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0008_test,test,8,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0009_test,test,9,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0010_test,test,10,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0011_test,test,11,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0012_test,test,12,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0013_test,test,13,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0014_test,test,14,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0015_test,test,15,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0016_test,test,16,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0017_test,test,17,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0018_test,test,18,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0019_test,test,19,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0020_test,test,20,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0021_test,test,21,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0022_test,test,22,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0023_test,test,23,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0024_test,test,24,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0025_test,test,25,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0026_test,test,26,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0027_test,test,27,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0028_test,test,28,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0029_test,test,29,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0030_test,test,30,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0031_test,test,31,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0032_test,test,32,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0033_test,test,33,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0034_test,test,34,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0035_test,test,35,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0036_test,test,36,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0037_test,test,37,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0038_test,test,38,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0039_test,test,39,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0040_test,test,40,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0041_test,test,41,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0042_test,test,42,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0043_test,test,43,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0044_test,test,44,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0045_test,test,45,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0046_test,test,46,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0047_test,test,47,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0048_test,test,48,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0049_test,test,49,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0050_test,test,50,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0051_test,test,51,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0052_test,test,52,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0053_test,test,53,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0054_test,test,54,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0055_test,test,55,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0056_test,test,56,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_188_w0057_test,test,57,188.mat,188,2,Ball Fault,0.014,3,1730,12000,DE
+cwru_235_w0000_test,test,0,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0001_test,test,1,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0002_test,test,2,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0003_test,test,3,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0004_test,test,4,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0005_test,test,5,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0006_test,test,6,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0007_test,test,7,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0008_test,test,8,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0009_test,test,9,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0010_test,test,10,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0011_test,test,11,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0012_test,test,12,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0013_test,test,13,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0014_test,test,14,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0015_test,test,15,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0016_test,test,16,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0017_test,test,17,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0018_test,test,18,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0019_test,test,19,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0020_test,test,20,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0021_test,test,21,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0022_test,test,22,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0023_test,test,23,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0024_test,test,24,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0025_test,test,25,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0026_test,test,26,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0027_test,test,27,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0028_test,test,28,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0029_test,test,29,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0030_test,test,30,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0031_test,test,31,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0032_test,test,32,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0033_test,test,33,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0034_test,test,34,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0035_test,test,35,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0036_test,test,36,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0037_test,test,37,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0038_test,test,38,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0039_test,test,39,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0040_test,test,40,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0041_test,test,41,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0042_test,test,42,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0043_test,test,43,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0044_test,test,44,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0045_test,test,45,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0046_test,test,46,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0047_test,test,47,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0048_test,test,48,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0049_test,test,49,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0050_test,test,50,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0051_test,test,51,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0052_test,test,52,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0053_test,test,53,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0054_test,test,54,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0055_test,test,55,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0056_test,test,56,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_235_w0057_test,test,57,235.mat,235,3,Outer Race Fault,0.021,1,1772,12000,DE
+cwru_237_w0000_test,test,0,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0001_test,test,1,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0002_test,test,2,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0003_test,test,3,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0004_test,test,4,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0005_test,test,5,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0006_test,test,6,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0007_test,test,7,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0008_test,test,8,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0009_test,test,9,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0010_test,test,10,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0011_test,test,11,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0012_test,test,12,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0013_test,test,13,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0014_test,test,14,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0015_test,test,15,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0016_test,test,16,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0017_test,test,17,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0018_test,test,18,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0019_test,test,19,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0020_test,test,20,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0021_test,test,21,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0022_test,test,22,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0023_test,test,23,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0024_test,test,24,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0025_test,test,25,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0026_test,test,26,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0027_test,test,27,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0028_test,test,28,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0029_test,test,29,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0030_test,test,30,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0031_test,test,31,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0032_test,test,32,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0033_test,test,33,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0034_test,test,34,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0035_test,test,35,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0036_test,test,36,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0037_test,test,37,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0038_test,test,38,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0039_test,test,39,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0040_test,test,40,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0041_test,test,41,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0042_test,test,42,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0043_test,test,43,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0044_test,test,44,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0045_test,test,45,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0046_test,test,46,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0047_test,test,47,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0048_test,test,48,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0049_test,test,49,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0050_test,test,50,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0051_test,test,51,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0052_test,test,52,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0053_test,test,53,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0054_test,test,54,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0055_test,test,55,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0056_test,test,56,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE
+cwru_237_w0057_test,test,57,237.mat,237,3,Outer Race Fault,0.021,3,1730,12000,DE

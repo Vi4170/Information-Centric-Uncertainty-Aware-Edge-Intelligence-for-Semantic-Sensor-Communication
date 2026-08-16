@@ -1,0 +1,81 @@
+{
+  "pipeline_version": "v1.0",
+  "dataset_name": "CWRU Bearing Vibration Dataset (12k DE Baseline)",
+  "window_size": 2048,
+  "step_size": 2048,
+  "sampling_rate_hz": 12000,
+  "preferred_channel": "DE",
+  "random_seed": 42,
+  "train_mean": 1.4509753782476764e-05,
+  "train_std": 0.2791556417942047,
+  "source_files_processed": 40,
+  "train_files": [
+    "107.mat",
+    "200.mat",
+    "210.mat",
+    "224.mat",
+    "132.mat",
+    "97.mat",
+    "118.mat",
+    "199.mat",
+    "197.mat",
+    "133.mat",
+    "170.mat",
+    "121.mat",
+    "130.mat",
+    "236.mat",
+    "99.mat",
+    "131.mat",
+    "222.mat",
+    "108.mat",
+    "223.mat",
+    "105.mat",
+    "185.mat",
+    "119.mat",
+    "212.mat",
+    "209.mat",
+    "187.mat",
+    "106.mat"
+  ],
+  "val_files": [
+    "171.mat",
+    "234.mat",
+    "169.mat",
+    "198.mat",
+    "100.mat",
+    "186.mat",
+    "120.mat"
+  ],
+  "test_files": [
+    "172.mat",
+    "235.mat",
+    "98.mat",
+    "225.mat",
+    "211.mat",
+    "237.mat",
+    "188.mat"
+  ],
+  "total_windows": 2320,
+  "shape_X_train": [
+    1508,
+    2048,
+    1
+  ],
+  "shape_X_val": [
+    406,
+    2048,
+    1
+  ],
+  "shape_X_test": [
+    406,
+    2048,
+    1
+  ],
+  "class_distribution_total": {
+    "Normal": 232,
+    "Inner Race Fault": 696,
+    "Ball Fault": 696,
+    "Outer Race Fault": 696
+  },
+  "discarded_tail_samples": 48640
+}

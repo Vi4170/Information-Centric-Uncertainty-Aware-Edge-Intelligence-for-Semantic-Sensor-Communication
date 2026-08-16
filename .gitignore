@@ -41,3 +41,9 @@ env/
 # OS generated
 .DS_Store
 Thumbs.db
+
+# Raw CWRU .mat dataset files — obtain from CWRU Bearing Data Center manually
+data/raw/
+
+# Scratch / temporary files
+scratch/

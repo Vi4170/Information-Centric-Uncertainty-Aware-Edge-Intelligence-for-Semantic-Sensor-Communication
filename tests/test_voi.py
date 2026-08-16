@@ -219,15 +219,17 @@ class TestVoIEngine(unittest.TestCase):
 
     def test_15_decision_reachability_analysis(self):
         """15. Test decision reachability analysis calculation."""
+        import tempfile
         df_synthetic = generate_synthetic_dataset(output_path=None, num_observations=1000, seed=42)
         res_df = self.engine.compute_batch(df_synthetic)
-        reachability_df = run_decision_reachability_analysis(res_df, fig_dir="scratch", table_dir="scratch")
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            reachability_df = run_decision_reachability_analysis(res_df, fig_dir=tmp_dir, table_dir=tmp_dir)
 
-        max_clipped_val = reachability_df.loc[reachability_df["Metric"] == "Maximum clipped VoI", "Value"].values[0]
-        n_capable = reachability_df.loc[reachability_df["Metric"] == "Observations capable of reaching TRANSMIT", "Value"].values[0]
+            max_clipped_val = reachability_df.loc[reachability_df["Metric"] == "Maximum clipped VoI", "Value"].values[0]
+            n_capable = reachability_df.loc[reachability_df["Metric"] == "Observations capable of reaching TRANSMIT", "Value"].values[0]
 
-        self.assertLess(max_clipped_val, 0.70)
-        self.assertEqual(n_capable, 0)
+            self.assertLess(max_clipped_val, 0.70)
+            self.assertEqual(n_capable, 0)
 
 
 if __name__ == "__main__":
