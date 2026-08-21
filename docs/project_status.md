@@ -10,7 +10,7 @@
 - [x] CWRU preprocessing
 - [x] 2048-sample windowing
 - [ ] CNN training
-- [ ] CNN evaluation
+- [x] CNN evaluation
 - [ ] CNN embedding extraction
 - [ ] Novelty estimation
 - [ ] Uncertainty estimation
