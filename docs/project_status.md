@@ -11,8 +11,8 @@
 - [x] 2048-sample windowing
 - [x] CNN training
 - [x] CNN evaluation
-- [ ] CNN embedding extraction
-- [ ] Novelty estimation
+- [x] CNN embedding extraction
+- [x] Novelty estimation
 - [ ] Uncertainty estimation
 
 ---
