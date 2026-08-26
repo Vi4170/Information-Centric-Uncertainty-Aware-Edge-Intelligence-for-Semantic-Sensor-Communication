@@ -13,7 +13,7 @@
 - [x] CNN evaluation
 - [x] CNN embedding extraction
 - [x] Novelty estimation
-- [ ] Uncertainty estimation
+- [x] Uncertainty estimation
 
 ---
 
