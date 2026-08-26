@@ -1,0 +1,407 @@
+observation_id,true_label,novelty_score
+0,Normal,0.80914515
+1,Normal,0.33598408
+2,Normal,0.41683233
+3,Normal,0.13121273
+4,Normal,0.29688534
+5,Normal,0.09609012
+6,Normal,0.26971504
+7,Normal,0.5937707
+8,Normal,0.1332008
+9,Normal,0.13055003
+10,Normal,0.15175612
+11,Normal,0.54804504
+12,Normal,0.21338634
+13,Normal,0.23194169
+14,Normal,0.19151756
+15,Normal,0.15109344
+16,Normal,0.62690526
+17,Normal,0.91385025
+18,Normal,0.4062293
+19,Normal,0.71835655
+20,Normal,0.08813784
+21,Normal,0.81577206
+22,Normal,0.16898608
+23,Normal,0.14247847
+24,Normal,0.21007289
+25,Normal,0.091451295
+26,Normal,0.871438
+27,Normal,0.15175612
+28,Normal,0.37640822
+29,Normal,0.952949
+30,Normal,0.12723657
+31,Normal,0.28561962
+32,Normal,0.105367795
+33,Normal,0.61829025
+34,Normal,0.17362492
+35,Normal,0.612326
+36,Normal,0.25579855
+37,Normal,0.65473825
+38,Normal,0.32538104
+39,Normal,0.17627569
+40,Normal,0.45990723
+41,Normal,0.47713718
+42,Normal,0.07090788
+43,Normal,0.4479788
+44,Normal,0.39562625
+45,Normal,0.33996025
+46,Normal,0.20212062
+47,Normal,0.71835655
+48,Normal,0.42544731
+49,Normal,0.09476475
+50,Normal,0.3280318
+51,Normal,0.056328695
+52,Normal,0.124585815
+53,Normal,0.62756795
+54,Normal,0.12259775
+55,Normal,0.28230616
+56,Normal,0.11133201
+57,Normal,0.31742877
+58,Ball Fault,0.8078197
+59,Ball Fault,0.4764745
+60,Ball Fault,0.90457255
+61,Ball Fault,0.71106696
+62,Ball Fault,0.51358515
+63,Ball Fault,0.44665343
+64,Ball Fault,0.2935719
+65,Ball Fault,0.9867462
+66,Ball Fault,0.9628893
+67,Ball Fault,0.85023195
+68,Ball Fault,0.71835655
+69,Ball Fault,0.6500994
+70,Ball Fault,0.1332008
+71,Ball Fault,0.77335984
+72,Ball Fault,0.47713718
+73,Ball Fault,0.3717694
+74,Ball Fault,0.70907885
+75,Ball Fault,0.8595096
+76,Ball Fault,0.62094104
+77,Ball Fault,0.9536117
+78,Ball Fault,0.95427436
+79,Ball Fault,0.86282307
+80,Ball Fault,0.9761431
+81,Ball Fault,0.8011928
+82,Ball Fault,0.7070908
+83,Ball Fault,0.78926444
+84,Ball Fault,0.54009277
+85,Ball Fault,0.9628893
+86,Ball Fault,0.7985421
+87,Ball Fault,0.8946322
+88,Ball Fault,0.6898608
+89,Ball Fault,0.54141814
+90,Ball Fault,0.509609
+91,Ball Fault,0.9920477
+92,Ball Fault,0.8316766
+93,Ball Fault,0.81577206
+94,Ball Fault,0.9297548
+95,Ball Fault,0.90457255
+96,Ball Fault,0.16235918
+97,Ball Fault,0.48508945
+98,Ball Fault,0.9662028
+99,Ball Fault,0.509609
+100,Ball Fault,0.25314778
+101,Ball Fault,0.84029156
+102,Ball Fault,0.952949
+103,Ball Fault,0.7329357
+104,Ball Fault,0.8111332
+105,Ball Fault,0.9867462
+106,Ball Fault,0.96819085
+107,Ball Fault,0.97548044
+108,Ball Fault,0.82239896
+109,Ball Fault,0.45129225
+110,Ball Fault,0.54937047
+111,Ball Fault,0.55666006
+112,Ball Fault,0.25513586
+113,Ball Fault,0.8727634
+114,Ball Fault,0.52352554
+115,Ball Fault,0.35387674
+116,Ball Fault,0.5785288
+117,Ball Fault,0.6998012
+118,Ball Fault,0.5036448
+119,Ball Fault,0.7647449
+120,Ball Fault,0.9436713
+121,Ball Fault,0.6461233
+122,Ball Fault,0.6739563
+123,Ball Fault,0.63817096
+124,Ball Fault,0.1471173
+125,Ball Fault,0.73691183
+126,Ball Fault,0.8860172
+127,Ball Fault,0.57654077
+128,Ball Fault,0.6090126
+129,Ball Fault,0.9012591
+130,Ball Fault,0.8257124
+131,Ball Fault,0.54738235
+132,Ball Fault,0.62491715
+133,Ball Fault,0.62491715
+134,Ball Fault,0.8515573
+135,Ball Fault,0.26507622
+136,Ball Fault,0.7137177
+137,Ball Fault,0.3280318
+138,Ball Fault,0.8721007
+139,Ball Fault,0.39562625
+140,Ball Fault,0.6096753
+141,Ball Fault,0.84360504
+142,Ball Fault,0.9536117
+143,Ball Fault,0.9648774
+144,Ball Fault,0.5805169
+145,Ball Fault,0.51623595
+146,Ball Fault,0.80649436
+147,Ball Fault,0.9430086
+148,Ball Fault,0.9628893
+149,Ball Fault,0.935719
+150,Ball Fault,0.92113984
+151,Ball Fault,0.8727634
+152,Ball Fault,0.6706428
+153,Ball Fault,0.9257787
+154,Ball Fault,0.68919814
+155,Ball Fault,0.8853545
+156,Ball Fault,0.323393
+157,Ball Fault,0.17362492
+158,Ball Fault,0.41616964
+159,Ball Fault,0.5553347
+160,Ball Fault,0.6500994
+161,Ball Fault,0.9019218
+162,Ball Fault,0.46653414
+163,Ball Fault,0.9098741
+164,Ball Fault,0.5884692
+165,Ball Fault,0.6865474
+166,Ball Fault,0.79257786
+167,Ball Fault,0.8257124
+168,Ball Fault,0.93373096
+169,Ball Fault,0.6865474
+170,Ball Fault,0.42876077
+171,Ball Fault,0.92113984
+172,Ball Fault,0.6865474
+173,Ball Fault,0.54009277
+174,Inner Race Fault,0.92710406
+175,Inner Race Fault,0.5089463
+176,Inner Race Fault,0.8740888
+177,Inner Race Fault,0.8952949
+178,Inner Race Fault,0.5626243
+179,Inner Race Fault,0.4459907
+180,Inner Race Fault,0.57786614
+181,Inner Race Fault,0.740888
+182,Inner Race Fault,0.38303512
+183,Inner Race Fault,0.6931743
+184,Inner Race Fault,0.90457255
+185,Inner Race Fault,0.60371107
+186,Inner Race Fault,1.0
+187,Inner Race Fault,0.13518886
+188,Inner Race Fault,0.9383698
+189,Inner Race Fault,0.5420808
+190,Inner Race Fault,0.40424123
+191,Inner Race Fault,0.79390323
+192,Inner Race Fault,0.58383036
+193,Inner Race Fault,0.31809145
+194,Inner Race Fault,0.7011266
+195,Inner Race Fault,0.3783963
+196,Inner Race Fault,0.77932405
+197,Inner Race Fault,0.56792575
+198,Inner Race Fault,0.4327369
+199,Inner Race Fault,0.9602386
+200,Inner Race Fault,0.952949
+201,Inner Race Fault,1.0
+202,Inner Race Fault,0.20212062
+203,Inner Race Fault,0.7899271
+204,Inner Race Fault,0.7011266
+205,Inner Race Fault,0.39695162
+206,Inner Race Fault,0.32074222
+207,Inner Race Fault,0.9324056
+208,Inner Race Fault,0.9363817
+209,Inner Race Fault,0.45990723
+210,Inner Race Fault,0.45062956
+211,Inner Race Fault,0.9562624
+212,Inner Race Fault,0.99602383
+213,Inner Race Fault,0.9085487
+214,Inner Race Fault,0.6600398
+215,Inner Race Fault,0.46056992
+216,Inner Race Fault,0.9019218
+217,Inner Race Fault,0.7137177
+218,Inner Race Fault,0.80649436
+219,Inner Race Fault,0.9019218
+220,Inner Race Fault,0.9430086
+221,Inner Race Fault,0.9456594
+222,Inner Race Fault,0.3280318
+223,Inner Race Fault,0.72299534
+224,Inner Race Fault,0.75944334
+225,Inner Race Fault,0.4950298
+226,Inner Race Fault,0.6971504
+227,Inner Race Fault,0.6640159
+228,Inner Race Fault,0.89396954
+229,Inner Race Fault,0.9151756
+230,Inner Race Fault,0.72299534
+231,Inner Race Fault,0.9589132
+232,Inner Race Fault,0.52352554
+233,Inner Race Fault,1.0
+234,Inner Race Fault,0.9151756
+235,Inner Race Fault,0.12657389
+236,Inner Race Fault,0.89330685
+237,Inner Race Fault,0.9854208
+238,Inner Race Fault,0.49834326
+239,Inner Race Fault,0.42809808
+240,Inner Race Fault,0.27700463
+241,Inner Race Fault,0.6998012
+242,Inner Race Fault,0.6149768
+243,Inner Race Fault,0.35851556
+244,Inner Race Fault,0.49436712
+245,Inner Race Fault,0.79390323
+246,Inner Race Fault,0.94102055
+247,Inner Race Fault,0.33863485
+248,Inner Race Fault,0.9330683
+249,Inner Race Fault,0.5387674
+250,Inner Race Fault,0.8959576
+251,Inner Race Fault,0.6991385
+252,Inner Race Fault,0.64479786
+253,Inner Race Fault,0.92710406
+254,Inner Race Fault,0.63220674
+255,Inner Race Fault,0.41616964
+256,Inner Race Fault,0.434725
+257,Inner Race Fault,0.9701789
+258,Inner Race Fault,0.63817096
+259,Inner Race Fault,0.9940358
+260,Inner Race Fault,0.40954274
+261,Inner Race Fault,0.7919152
+262,Inner Race Fault,0.6865474
+263,Inner Race Fault,0.6368456
+264,Inner Race Fault,0.6302187
+265,Inner Race Fault,0.90656066
+266,Inner Race Fault,0.9569251
+267,Inner Race Fault,0.9728297
+268,Inner Race Fault,0.36050364
+269,Inner Race Fault,0.7541418
+270,Inner Race Fault,1.0
+271,Inner Race Fault,0.62690526
+272,Inner Race Fault,0.8946322
+273,Inner Race Fault,0.50762093
+274,Inner Race Fault,0.4824387
+275,Inner Race Fault,0.20212062
+276,Inner Race Fault,0.31676608
+277,Inner Race Fault,0.51424783
+278,Inner Race Fault,0.89330685
+279,Inner Race Fault,0.97813123
+280,Inner Race Fault,0.44665343
+281,Inner Race Fault,0.88469183
+282,Inner Race Fault,0.80053014
+283,Inner Race Fault,0.5818423
+284,Inner Race Fault,0.61895293
+285,Inner Race Fault,0.51623595
+286,Inner Race Fault,0.9622266
+287,Inner Race Fault,0.8489066
+288,Inner Race Fault,0.4632207
+289,Inner Race Fault,0.9589132
+290,Outer Race Fault,0.10735586
+291,Outer Race Fault,0.028495692
+292,Outer Race Fault,0.1119947
+293,Outer Race Fault,0.019218026
+294,Outer Race Fault,0.9582505
+295,Outer Race Fault,0.6706428
+296,Outer Race Fault,0.008614977
+297,Outer Race Fault,0.20808482
+298,Outer Race Fault,0.24453281
+299,Outer Race Fault,0.047051027
+300,Outer Race Fault,0.105367795
+301,Outer Race Fault,0.22995362
+302,Outer Race Fault,0.40225315
+303,Outer Race Fault,0.022531478
+304,Outer Race Fault,0.056328695
+305,Outer Race Fault,0.99734926
+306,Outer Race Fault,0.13585156
+307,Outer Race Fault,0.03843605
+308,Outer Race Fault,0.119284295
+309,Outer Race Fault,0.2577866
+310,Outer Race Fault,0.00066269055
+311,Outer Race Fault,0.25314778
+312,Outer Race Fault,0.05367793
+313,Outer Race Fault,0.02385686
+314,Outer Race Fault,0.82107353
+315,Outer Race Fault,0.1610338
+316,Outer Race Fault,0.48508945
+317,Outer Race Fault,0.053015243
+318,Outer Race Fault,0.6196156
+319,Outer Race Fault,0.13386348
+320,Outer Race Fault,0.0053015244
+321,Outer Race Fault,0.080185555
+322,Outer Race Fault,0.5089463
+323,Outer Race Fault,0.66865474
+324,Outer Race Fault,0.08614977
+325,Outer Race Fault,0.26110005
+326,Outer Race Fault,0.35917827
+327,Outer Race Fault,0.08747515
+328,Outer Race Fault,0.14247847
+329,Outer Race Fault,0.81577206
+330,Outer Race Fault,0.06958251
+331,Outer Race Fault,0.75878066
+332,Outer Race Fault,0.31742877
+333,Outer Race Fault,0.027170312
+334,Outer Race Fault,0.20543407
+335,Outer Race Fault,0.20477137
+336,Outer Race Fault,0.25447315
+337,Outer Race Fault,0.1047051
+338,Outer Race Fault,0.0046388335
+339,Outer Race Fault,0.09211398
+340,Outer Race Fault,0.03909874
+341,Outer Race Fault,0.0046388335
+342,Outer Race Fault,0.060967527
+343,Outer Race Fault,0.1404904
+344,Outer Race Fault,0.053015243
+345,Outer Race Fault,0.07819748
+346,Outer Race Fault,0.0490391
+347,Outer Race Fault,0.033797216
+348,Outer Race Fault,0.20212062
+349,Outer Race Fault,0.08151093
+350,Outer Race Fault,0.8316766
+351,Outer Race Fault,0.02385686
+352,Outer Race Fault,0.6156395
+353,Outer Race Fault,0.25513586
+354,Outer Race Fault,0.7508284
+355,Outer Race Fault,0.3432737
+356,Outer Race Fault,0.13386348
+357,Outer Race Fault,0.3353214
+358,Outer Race Fault,0.047051027
+359,Outer Race Fault,0.38104704
+360,Outer Race Fault,0.14247847
+361,Outer Race Fault,0.26110005
+362,Outer Race Fault,0.22862823
+363,Outer Race Fault,0.20808482
+364,Outer Race Fault,0.06958251
+365,Outer Race Fault,0.36249173
+366,Outer Race Fault,0.3777336
+367,Outer Race Fault,0.14844267
+368,Outer Race Fault,0.6003976
+369,Outer Race Fault,0.13916501
+370,Outer Race Fault,0.03644798
+371,Outer Race Fault,0.5619616
+372,Outer Race Fault,0.060967527
+373,Outer Race Fault,0.6262425
+374,Outer Race Fault,0.033797216
+375,Outer Race Fault,0.20477137
+376,Outer Race Fault,0.0490391
+377,Outer Race Fault,0.13518886
+378,Outer Race Fault,0.713055
+379,Outer Race Fault,0.043737575
+380,Outer Race Fault,0.6666667
+381,Outer Race Fault,0.08151093
+382,Outer Race Fault,0.20145792
+383,Outer Race Fault,0.102717035
+384,Outer Race Fault,0.13187541
+385,Outer Race Fault,0.24320742
+386,Outer Race Fault,0.06825712
+387,Outer Race Fault,0.3717694
+388,Outer Race Fault,0.17097415
+389,Outer Race Fault,0.091451295
+390,Outer Race Fault,0.12988734
+391,Outer Race Fault,0.4691849
+392,Outer Race Fault,0.66865474
+393,Outer Race Fault,0.0490391
+394,Outer Race Fault,0.7905898
+395,Outer Race Fault,0.4618953
+396,Outer Race Fault,0.35785288
+397,Outer Race Fault,0.5215374
+398,Outer Race Fault,0.28164348
+399,Outer Race Fault,0.29025844
+400,Outer Race Fault,0.33929756
+401,Outer Race Fault,0.6799205
+402,Outer Race Fault,0.34062293
+403,Outer Race Fault,0.26043737
+404,Outer Race Fault,0.23856859
+405,Outer Race Fault,0.99867463
