@@ -4,6 +4,7 @@ Phase 1 (Task 17): adaptation buffer.
 Phase 2 (Task 18): read-only condition monitor.
 Phase 3 (Task 19): versioned multi-prototype novelty reference.
 Phase 4A (Task 20): safety + regression gate.
+Phase 4B (Task 21): gated prototype admission controller.
 """
 
 from src.continual.adaptation_buffer import AdaptationBuffer, AdaptationRecord, LabelStatus, check_no_overlap
@@ -17,6 +18,7 @@ from src.continual.safety_regression_gate import (
     SafetyRegressionGate,
     SafetyRegressionGateConfig,
 )
+from src.continual.admission_controller import AdmissionResult, GatedPrototypeAdmissionController
 
 __all__ = [
     "AdaptationBuffer",
@@ -35,4 +37,6 @@ __all__ = [
     "SafetyCheckReport",
     "SafetyRegressionGate",
     "SafetyRegressionGateConfig",
+    "AdmissionResult",
+    "GatedPrototypeAdmissionController",
 ]
