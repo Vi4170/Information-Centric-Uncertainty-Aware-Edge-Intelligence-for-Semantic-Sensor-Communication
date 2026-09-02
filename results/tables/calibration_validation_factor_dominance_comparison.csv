@@ -1,0 +1,3 @@
+config,novelty_mean_contribution,novelty_share_pct,uncertainty_mean_contribution,uncertainty_share_pct,task_relevance_mean_contribution,task_relevance_share_pct,temporal_importance_mean_contribution,temporal_importance_share_pct,resource_cost_mean_contribution
+before,0.1266250527578011,27.23,0.00017411785964816933,0.04,0.16285724656041622,35.02,0.17542316019535065,37.72,-0.10098303556442256
+after,0.1899375791367016,32.02,4.352946491204233e-05,0.01,0.2850001814807283,48.05,0.11813497700421094,19.92,-0.05049151778221128

@@ -1,0 +1,3 @@
+config,n,naive_baseline_pct_transmitted,actual_pct_full_transmit,pct_not_fully_transmitted (DISCARD+BUFFER+SUMMARY)
+before,406,100.0,0.0,100.0
+after,406,100.0,14.04,85.96
