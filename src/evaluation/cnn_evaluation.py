@@ -36,7 +36,7 @@ from sklearn.metrics import (
 # Constants
 # ---------------------------------------------------------------------------
 
-CLASS_NAMES: List[str] = ["Normal", "Ball Fault", "Inner Race Fault", "Outer Race Fault"]
+CLASS_NAMES: List[str] = ["Normal", "Inner Race Fault", "Ball Fault", "Outer Race Fault"]
 NUM_CLASSES: int = 4
 
 FIGURE_DIR: str = os.path.join("results", "figures")

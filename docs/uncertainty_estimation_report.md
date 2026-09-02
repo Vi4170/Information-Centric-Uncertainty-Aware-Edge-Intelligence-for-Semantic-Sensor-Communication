@@ -58,13 +58,13 @@ Evaluated on 4-class Softmax probabilities extracted from `models/cwru_cnn_basel
 | **Validation Set Overall** | 406 | 0.000604 | 0.000230 | 0.000000 | 0.015722 | 0.001371 |
 | **Test Set Overall** | 406 | 0.000871 | 0.000263 | 0.000001 | 0.028488 | 0.002695 |
 | **Test: Class 0 (Normal)** | 58 | 0.000049 | 0.000048 | 0.000039 | 0.000058 | 0.000004 |
-| **Test: Class 1 (Ball Fault)** | 116 | 0.000012 | 0.000008 | 0.000001 | 0.000134 | 0.000015 |
-| **Test: Class 2 (Inner Race)** | 116 | **0.002443** | 0.000658 | 0.000159 | 0.028488 | 0.004647 |
+| **Test: Class 1 (Inner Race)** | 116 | 0.000012 | 0.000008 | 0.000001 | 0.000134 | 0.000015 |
+| **Test: Class 2 (Ball Fault)** | 116 | **0.002443** | 0.000658 | 0.000159 | 0.028488 | 0.004647 |
 | **Test: Class 3 (Outer Race)** | 116 | 0.000568 | 0.000462 | 0.000177 | 0.003945 | 0.000428 |
 
 ### Key Observations
 1. **High Model Confidence**: Across all dataset splits, the mean predictive entropy is $< 0.001$, reflecting the baseline CNN's strong classification performance ($100\%$ test accuracy).
-2. **Relative Class Variation**: Inner Race Fault (Class 2) exhibits the highest relative uncertainty among test samples (mean $U = 0.002443$), whereas Ball Fault (Class 1) exhibits the lowest uncertainty (mean $U = 0.000012$).
+2. **Relative Class Variation**: Ball Fault (Class 2) exhibits the highest relative uncertainty among test samples (mean $U = 0.002443$), whereas Inner Race Fault (Class 1) exhibits the lowest uncertainty (mean $U = 0.000012$).
 
 ### Generated Visualizations
 - Distribution Plot: [`results/figures/uncertainty_score_distribution.png`](file:///c:/Users/kingb/Desktop/7th_fyp/results/figures/uncertainty_score_distribution.png)

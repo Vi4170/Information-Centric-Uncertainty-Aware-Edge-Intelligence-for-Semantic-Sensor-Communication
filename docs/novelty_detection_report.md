@@ -61,8 +61,8 @@ Evaluated on 64-D CNN embeddings extracted from the CWRU processed dataset (`dat
 | **Validation Set Overall** | 406 | 0.6393 | 0.0004 | 0.9780 | 0.2921 |
 | **Test Set Overall** | 406 | 0.6331 | 0.0000 | 0.9224 | 0.2835 |
 | **Test: Class 0 (Normal)** | 58 | **0.0044** | 0.0000 | 0.0140 | 0.0034 |
-| **Test: Class 1 (Ball Fault)** | 116 | **0.8827** | 0.8205 | 0.9224 | 0.0190 |
-| **Test: Class 2 (Inner Race Fault)** | 116 | **0.5699** | 0.5141 | 0.6153 | 0.0230 |
+| **Test: Class 1 (Inner Race Fault)** | 116 | **0.8827** | 0.8205 | 0.9224 | 0.0190 |
+| **Test: Class 2 (Ball Fault)** | 116 | **0.5699** | 0.5141 | 0.6153 | 0.0230 |
 | **Test: Class 3 (Outer Race Fault)** | 116 | **0.7611** | 0.7271 | 0.7882 | 0.0118 |
 
 ### Key Observations

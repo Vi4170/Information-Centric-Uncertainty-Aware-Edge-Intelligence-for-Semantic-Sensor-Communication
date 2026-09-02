@@ -246,7 +246,7 @@ def run_uncertainty_pipeline(
         {"split": "test", "mean": float(np.mean(scores_test)), "median": float(np.median(scores_test)), "min": float(np.min(scores_test)), "max": float(np.max(scores_test)), "std": float(np.std(scores_test))},
     ]
 
-    class_names = {0: "Normal", 1: "Ball Fault", 2: "Inner Race Fault", 3: "Outer Race Fault"}
+    class_names = {0: "Normal", 1: "Inner Race Fault", 2: "Ball Fault", 3: "Outer Race Fault"}
     for label_id, name in class_names.items():
         mask = y_test == label_id
         if np.sum(mask) > 0:

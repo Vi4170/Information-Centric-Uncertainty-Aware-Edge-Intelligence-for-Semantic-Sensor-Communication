@@ -294,7 +294,7 @@ def run_novelty_pipeline(
         {"split": "test", "mean_score": float(np.mean(scores_test)), "min_score": float(np.min(scores_test)), "max_score": float(np.max(scores_test)), "std_score": float(np.std(scores_test))},
     ]
 
-    class_names = {0: "Normal", 1: "Ball Fault", 2: "Inner Race Fault", 3: "Outer Race Fault"}
+    class_names = {0: "Normal", 1: "Inner Race Fault", 2: "Ball Fault", 3: "Outer Race Fault"}
     for label_id, name in class_names.items():
         mask = y_test == label_id
         if np.sum(mask) > 0:

@@ -50,11 +50,11 @@ For each of the four baseline classes:
 
 The $4 \times 4$ confusion matrix maps ground truth vs predicted health states:
 
-| Actual \ Predicted | Normal (0) | Ball Fault (1) | Inner Race Fault (2) | Outer Race Fault (3) |
+| Actual \ Predicted | Normal (0) | Inner Race Fault (1) | Ball Fault (2) | Outer Race Fault (3) |
 | :--- | :---: | :---: | :---: | :---: |
 | **Normal (0)** | $C_{00}$ | $C_{01}$ | $C_{02}$ | $C_{03}$ |
-| **Ball Fault (1)** | $C_{10}$ | $C_{11}$ | $C_{12}$ | $C_{13}$ |
-| **Inner Race Fault (2)** | $C_{20}$ | $C_{21}$ | $C_{22}$ | $C_{23}$ |
+| **Inner Race Fault (1)** | $C_{10}$ | $C_{11}$ | $C_{12}$ | $C_{13}$ |
+| **Ball Fault (2)** | $C_{20}$ | $C_{21}$ | $C_{22}$ | $C_{23}$ |
 | **Outer Race Fault (3)** | $C_{30}$ | $C_{31}$ | $C_{32}$ | $C_{33}$ |
 
 The confusion matrix identifies inter-fault confusion (e.g., misclassifying ball faults as inner race faults) versus critical safety errors (e.g., false negatives where a fault is classified as Normal).
@@ -76,8 +76,8 @@ The processed CWRU dataset has the following window distribution across 40 sourc
 | Class | Health State | Total Windows | Percentage |
 | :---: | :--- | :---: | :---: |
 | **0** | Normal Baseline | 232 | 10.0% |
-| **1** | Ball Fault | 696 | 30.0% |
-| **2** | Inner Race Fault | 696 | 30.0% |
+| **1** | Inner Race Fault | 696 | 30.0% |
+| **2** | Ball Fault | 696 | 30.0% |
 | **3** | Outer Race Fault | 696 | 30.0% |
 | **Total** | — | **2,320** | **100.0%** |
 

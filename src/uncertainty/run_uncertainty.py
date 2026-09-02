@@ -58,8 +58,8 @@ PLOT_FILE = (
 
 CLASS_NAMES = [
     "Normal",
-    "Ball Fault",
     "Inner Race Fault",
+    "Ball Fault",
     "Outer Race Fault",
 ]
 
