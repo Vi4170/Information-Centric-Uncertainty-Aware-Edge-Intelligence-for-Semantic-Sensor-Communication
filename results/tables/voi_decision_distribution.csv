@@ -1,8 +1,8 @@
 group,n,DISCARD_count,DISCARD_pct,BUFFER_count,BUFFER_pct,SUMMARY_count,SUMMARY_pct,TRANSMIT_count,TRANSMIT_pct
-train,1508,132,8.75,1376,91.25,0,0.0,0,0.0
-val,406,62,15.27,344,84.73,0,0.0,0,0.0
-test,406,62,15.27,344,84.73,0,0.0,0,0.0
+train,1508,116,7.69,51,3.38,944,62.6,397,26.33
+val,406,58,14.29,23,5.67,268,66.01,57,14.04
+test,406,58,14.29,4,0.99,287,70.69,57,14.04
 test_class_0_Normal,58,58,100.0,0,0.0,0,0.0,0,0.0
-test_class_1_Inner_Race_Fault,116,0,0.0,116,100.0,0,0.0,0,0.0
-test_class_2_Ball_Fault,116,2,1.72,114,98.28,0,0.0,0,0.0
-test_class_3_Outer_Race_Fault,116,2,1.72,114,98.28,0,0.0,0,0.0
+test_class_1_Inner_Race_Fault,116,0,0.0,0,0.0,59,50.86,57,49.14
+test_class_2_Ball_Fault,116,0,0.0,2,1.72,114,98.28,0,0.0
+test_class_3_Outer_Race_Fault,116,0,0.0,2,1.72,114,98.28,0,0.0

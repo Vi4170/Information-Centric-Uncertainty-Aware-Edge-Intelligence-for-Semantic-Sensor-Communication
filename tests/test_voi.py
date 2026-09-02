@@ -139,9 +139,10 @@ class TestVoIEngine(unittest.TestCase):
         self.assertEqual(res_min.voi_score, 0.0)
 
         res_max = self.engine.compute(1.0, 1.0, 1.0, 1.0, 0.0)
-        # Equal weights 0.2: 4*0.2 - 0 = 0.8
-        self.assertAlmostEqual(res_max.raw_voi_score, 0.8, places=5)
-        self.assertAlmostEqual(res_max.voi_score, 0.8, places=5)
+        # Version 0.2 calibrated default weights (Task 14):
+        # 0.30 + 0.05 + 0.35 + 0.20 - 0 = 0.90
+        self.assertAlmostEqual(res_max.raw_voi_score, 0.90, places=5)
+        self.assertAlmostEqual(res_max.voi_score, 0.90, places=5)
 
     def test_10_invalid_and_out_of_bounds_inputs(self):
         """10. Test rejection of NaN, Inf, non-numeric, and out-of-bounds inputs."""
@@ -174,7 +175,8 @@ class TestVoIEngine(unittest.TestCase):
             resource_cost=1.0,
         )
         res = calculate_voi_score(inputs, clip_output=True)
-        self.assertAlmostEqual(res.raw_voi_score, -0.20, places=5)
+        # Version 0.2 calibrated default resource_cost weight (Task 14): -0.10 * 1.0
+        self.assertAlmostEqual(res.raw_voi_score, -0.10, places=5)
         self.assertEqual(res.voi_score, 0.0)
 
         clipping_engine = VoIEngine(clip_inputs=True)
@@ -218,7 +220,14 @@ class TestVoIEngine(unittest.TestCase):
             normalize_min_max(5, 10, 10)
 
     def test_15_decision_reachability_analysis(self):
-        """15. Test decision reachability analysis calculation."""
+        """15. Test decision reachability analysis calculation.
+
+        Version 0.1 equal weights made TRANSMIT structurally unreachable
+        (max clipped VoI < 0.70, 0 observations capable). Task 14 calibrated
+        the default weights specifically to fix this; this test now confirms
+        TRANSMIT is reachable under the calibrated defaults, using the same
+        seeded synthetic dataset as before.
+        """
         import tempfile
         df_synthetic = generate_synthetic_dataset(output_path=None, num_observations=1000, seed=42)
         res_df = self.engine.compute_batch(df_synthetic)
@@ -228,8 +237,8 @@ class TestVoIEngine(unittest.TestCase):
             max_clipped_val = reachability_df.loc[reachability_df["Metric"] == "Maximum clipped VoI", "Value"].values[0]
             n_capable = reachability_df.loc[reachability_df["Metric"] == "Observations capable of reaching TRANSMIT", "Value"].values[0]
 
-            self.assertLess(max_clipped_val, 0.70)
-            self.assertEqual(n_capable, 0)
+            self.assertGreater(max_clipped_val, 0.70)
+            self.assertGreater(n_capable, 0)
 
 
 if __name__ == "__main__":

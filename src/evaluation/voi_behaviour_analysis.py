@@ -256,7 +256,7 @@ def build_sensitivity_table(all_results: dict) -> pd.DataFrame:
     ]
 
     scenarios = {
-        "default (w=0.20 each, thresholds 0.25/0.50/0.70)": (VoIWeights(), PolicyThresholds()),
+        "default (current VoIWeights/PolicyThresholds)": (VoIWeights(), PolicyThresholds()),
         "lower TRANSMIT threshold to 0.50": (
             VoIWeights(),
             PolicyThresholds(discard_max=0.25, buffer_max=0.35, summary_max=0.50),

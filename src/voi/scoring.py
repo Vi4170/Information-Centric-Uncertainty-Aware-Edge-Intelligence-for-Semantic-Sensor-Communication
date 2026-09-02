@@ -13,15 +13,24 @@ from src.voi.normalization import VoIInputs
 class VoIWeights:
     """Weight configuration for the baseline VoI mathematical formulation.
 
-    Default equal weights represent Version 0.1 baseline parameters:
-    w_N = w_U = w_R = w_T = w_C = 0.20
+    Version 0.2 calibrated defaults (Task 14), replacing the Version 0.1
+    equal-weight baseline (w_N = w_U = w_R = w_T = w_C = 0.20). Derived from
+    training/validation-only analysis (docs/voi_integration_analysis.md,
+    docs/voi_calibration_report.md): with this CNN's near-zero predictive
+    entropy, Uncertainty carried ~0.04% of the VoI signal at 0.20 weight, and
+    Communication Cost is a constant under the current fixed-window-size
+    scenario (no channel-variability model exists yet) rather than a
+    discriminating signal. Both are de-weighted rather than removed, so a
+    future better uncertainty estimator or channel model can regain
+    influence without a further weight change. The formula itself is
+    unchanged; only these default parameter values were recalibrated.
     """
 
-    novelty: float = 0.20
-    uncertainty: float = 0.20
-    task_relevance: float = 0.20
+    novelty: float = 0.30
+    uncertainty: float = 0.05
+    task_relevance: float = 0.35
     temporal_importance: float = 0.20
-    resource_cost: float = 0.20
+    resource_cost: float = 0.10
 
     def validate(self):
         """Validate weight parameters."""

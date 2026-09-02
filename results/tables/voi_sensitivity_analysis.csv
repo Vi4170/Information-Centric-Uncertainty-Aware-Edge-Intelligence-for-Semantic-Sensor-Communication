@@ -1,7 +1,7 @@
 scenario,n,mean_voi_score,DISCARD_pct,BUFFER_pct,SUMMARY_pct,TRANSMIT_pct
-"default (w=0.20 each, thresholds 0.25/0.50/0.70)",406,0.3685878793585611,15.27,84.73,0.0,0.0
-lower TRANSMIT threshold to 0.50,406,0.3685878793585611,15.27,0.49,84.24,0.0
-lower TRANSMIT threshold to 0.60,406,0.3685878793585611,15.27,25.86,58.87,0.0
-"zero-out uncertainty weight, redistribute to novelty+relevance",406,0.5116647234103949,14.29,1.48,84.24,0.0
-zero-out communication cost weight,406,0.4650795318989828,14.29,25.62,60.1,0.0
-double task_relevance weight (renormalised),406,0.4767288533483229,14.29,1.48,84.24,0.0
+default (current VoIWeights/PolicyThresholds),406,0.5427531636731818,14.29,0.99,70.69,14.04
+lower TRANSMIT threshold to 0.50,406,0.5427531636731818,14.29,0.0,0.99,84.73
+lower TRANSMIT threshold to 0.60,406,0.5427531636731818,14.29,0.0,43.1,42.61
+"zero-out uncertainty weight, redistribute to novelty+relevance",406,0.4593961805839256,14.29,41.87,43.84,0.0
+zero-out communication cost weight,406,0.4077913941820764,14.29,71.67,14.04,0.0
+double task_relevance weight (renormalised),406,0.4372394876887599,14.29,43.6,42.12,0.0

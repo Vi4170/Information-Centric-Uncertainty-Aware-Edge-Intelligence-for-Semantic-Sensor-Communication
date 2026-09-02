@@ -11,13 +11,17 @@ They are NOT optimized or learned values.
 # Reference change magnitude used to normalize raw mean-absolute-difference
 # values into the [0, 1] Temporal Importance score.
 #
-# A reasonable starting point for CWRU bearing vibration data:
-#   Accelerometer readings typically range ~0.1–1.0 g in magnitude.
-#   A "large" per-sample change of ~0.5 g across a 2048-sample window
-#   would produce a mean-absolute-difference of roughly 0.5.
-#
-# This is a baseline default — adjust per deployment / signal domain.
-DEFAULT_TEMPORAL_CHANGE_SCALE: float = 0.5
+# Version 0.2 calibrated default (Task 14). The original 0.5 assumed a raw
+# accelerometer "g" scale that does not match this pipeline's actual
+# per-window-pair mean-absolute-difference on the normalized CWRU signal,
+# which saturates the [0, 1] score at ~1.0 for ~90%+ of fault windows,
+# collapsing all fault severities into one indistinguishable bucket (see
+# docs/voi_integration_analysis.md, Task 13). Recalibrated to the 95th
+# percentile of mean-absolute-difference observed across ALL training-split
+# windows (label-free, train-only — data/processed/cwru, computed via the
+# unmodified compute_temporal_importance formula on X_train): ≈1.8. This
+# only rescales where scores saturate; it does not change the formula.
+DEFAULT_TEMPORAL_CHANGE_SCALE: float = 1.8
 
 # ---------------------------------------------------------------------------
 # Sequence constraints
