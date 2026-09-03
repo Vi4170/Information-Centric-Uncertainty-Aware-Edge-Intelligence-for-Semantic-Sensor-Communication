@@ -470,6 +470,8 @@
       "raw_data_available": true
     }
   },
+  "data_source_name": "University of Paderborn Bearing DataCenter",
+  "data_source_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/",
   "dataset": "paderborn",
   "expected_full_representation_size": {
     "estimated_mean_windows_per_measurement": 125.27,

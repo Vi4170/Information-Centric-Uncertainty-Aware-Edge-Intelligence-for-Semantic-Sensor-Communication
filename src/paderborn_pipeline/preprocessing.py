@@ -19,6 +19,8 @@ DATASET_NAME: str = "paderborn"
 RAW_DATA_DIR: str = os.path.join("data", "raw", "paderborn")
 PROCESSED_DATA_DIR: str = os.path.join("data", "processed", "paderborn")
 SUMMARY_JSON_PATH: str = os.path.join(PROCESSED_DATA_DIR, "paderborn_dataset_summary.json")
+OFFICIAL_DATA_SOURCE_NAME: str = "University of Paderborn Bearing DataCenter"
+OFFICIAL_DATA_SOURCE_URL: str = "https://groups.uni-paderborn.de/kat/BearingDataCenter/"
 
 WINDOW_SIZE: int = INPUT_SHAPE[0]
 STEP_SIZE: int = WINDOW_SIZE
@@ -336,6 +338,8 @@ def discover_all_bearings_summary(raw_dir: str = RAW_DATA_DIR) -> Dict[str, obje
         }
     return {
         "dataset": DATASET_NAME,
+        "data_source_name": OFFICIAL_DATA_SOURCE_NAME,
+        "data_source_url": OFFICIAL_DATA_SOURCE_URL,
         "bearing_type": BEARING_TYPE,
         "n_healthy_states": len(list_bearing_codes("healthy")),
         "n_damaged_states": len(list_bearing_codes("damaged")),
