@@ -24,18 +24,27 @@ WINDOWS_PER_FILE: int = IMS_RAW_SAMPLES_PER_FILE // WINDOW_SIZE
 NUM_BEARINGS: int = 4
 FILENAME_TIMESTAMP_FORMAT: str = "%Y.%m.%d.%H.%M.%S"
 
-RUN_IDS: Tuple[str, ...] = ("1st_test", "2nd_test", "3rd_test")
+RUN_IDS: Tuple[str, ...] = ("1st_test", "2nd_test", "3rd_test", "4th_test")
 
 RUN_SUBDIR: Dict[str, str] = {
     "1st_test": "1st_test",
     "2nd_test": "2nd_test",
     "3rd_test": os.path.join("4th_test", "txt"),
+    "4th_test": os.path.join("4th_test", "txt"),
+}
+
+RUN_FILE_SLICE: Dict[str, Tuple[int, Optional[int]]] = {
+    "1st_test": (0, None),
+    "2nd_test": (0, None),
+    "3rd_test": (0, 4448),
+    "4th_test": (4448, None),
 }
 
 CHANNELS_PER_BEARING: Dict[str, int] = {
     "1st_test": 2,
     "2nd_test": 1,
     "3rd_test": 1,
+    "4th_test": 1,
 }
 
 RUN_FAILURE_DESCRIPTIONS: Dict[str, str] = {
@@ -51,14 +60,28 @@ RUN_FAILURE_DESCRIPTIONS: Dict[str, str] = {
         "onset is documented."
     ),
     "3rd_test": (
-        "Vendor readme describes a 'Set No. 3' of 4,448 files spanning 2004-03-04 to "
-        "2004-04-04, ending in an outer race failure in bearing 3. The archive actually "
+        "Vendor readme describes a 'Set No. 3' of 4,448 files spanning 2004-03-04 09:27:46 "
+        "to 2004-04-04 19:01:57, ending in an outer race failure in bearing 3. The archive "
         "provided for this integration extracts (via its own internal folder name, "
-        "'4th_test') to 6,324 files spanning 2004-03-04 to 2004-04-18 -- more files and a "
-        "later end date than the readme's Set No. 3 description. This mismatch is preserved "
-        "here explicitly rather than silently assumed away: the readme's failure "
-        "description is carried as informational provenance only and its exact "
-        "applicability to the full extracted run is unverified."
+        "'4th_test') to 6,324 files spanning 2004-03-04 to 2004-04-18. Audited: the first "
+        "4,448 of those files, in chronological order, match the readme's documented Set 3 "
+        "file count and end timestamp exactly (file index 4447 = 2004-04-04T19:01:57, "
+        "byte-for-byte the readme's stated end). This run_id is restricted to exactly those "
+        "4,448 files via RUN_FILE_SLICE; the remaining 1,876 files are represented "
+        "separately as run_id '4th_test'. Run-level provenance only, not a per-window "
+        "label: no timestamped onset is documented."
+    ),
+    "4th_test": (
+        "Not described by the vendor readme, which documents only the first 4,448 files "
+        "(run_id '3rd_test') as 'Set No. 3'. These are the remaining 1,876 files present in "
+        "the same physical archive/folder ('4th_test'), beginning 2004-04-04T19:11:57 -- a "
+        "10-minute gap after the documented Set 3 endpoint, matching that run's normal "
+        "sampling interval with no operational discontinuity at the boundary. This is "
+        "consistent with uninterrupted continuation of the same test-to-failure rig/run "
+        "rather than a separate experiment, but since the vendor readme does not document "
+        "it, no failure description or label of any kind is asserted for this region. Kept "
+        "as a structurally separate run_id (own chronological split, own normalization "
+        "fit) rather than merged into the documented 'Set No. 3'."
     ),
 }
 
@@ -96,7 +119,14 @@ def discover_run_files(run_id: str, raw_dir: str = RAW_DATA_DIR) -> List[str]:
     if not parsed:
         raise FileNotFoundError(f"No timestamp-named IMS snapshot files found under '{run_dir}'.")
     parsed.sort(key=lambda pair: pair[0])
-    return [filename for _, filename in parsed]
+    start, stop = RUN_FILE_SLICE[run_id]
+    sliced = parsed[start:stop]
+    if not sliced:
+        raise FileNotFoundError(
+            f"RUN_FILE_SLICE {RUN_FILE_SLICE[run_id]} for run_id '{run_id}' selected zero files "
+            f"out of {len(parsed)} discovered under '{run_dir}'."
+        )
+    return [filename for _, filename in sliced]
 
 
 def compute_chronological_split_boundaries(

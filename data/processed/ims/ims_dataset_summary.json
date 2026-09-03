@@ -82,39 +82,78 @@
     },
     "3rd_test": {
       "channels_per_bearing": 1,
-      "failure_description": "Vendor readme describes a 'Set No. 3' of 4,448 files spanning 2004-03-04 to 2004-04-04, ending in an outer race failure in bearing 3. The archive actually provided for this integration extracts (via its own internal folder name, '4th_test') to 6,324 files spanning 2004-03-04 to 2004-04-18 -- more files and a later end date than the readme's Set No. 3 description. This mismatch is preserved here explicitly rather than silently assumed away: the readme's failure description is carried as informational provenance only and its exact applicability to the full extracted run is unverified.",
+      "failure_description": "Vendor readme describes a 'Set No. 3' of 4,448 files spanning 2004-03-04 09:27:46 to 2004-04-04 19:01:57, ending in an outer race failure in bearing 3. The archive provided for this integration extracts (via its own internal folder name, '4th_test') to 6,324 files spanning 2004-03-04 to 2004-04-18. Audited: the first 4,448 of those files, in chronological order, match the readme's documented Set 3 file count and end timestamp exactly (file index 4447 = 2004-04-04T19:01:57, byte-for-byte the readme's stated end). This run_id is restricted to exactly those 4,448 files via RUN_FILE_SLICE; the remaining 1,876 files are represented separately as run_id '4th_test'. Run-level provenance only, not a per-window label: no timestamped onset is documented.",
       "first_file": "2004.03.04.09.27.46",
       "first_timestamp": "2004-03-04T09:27:46",
-      "last_file": "2004.04.18.02.42.55",
-      "last_timestamp": "2004-04-18T02:42:55",
-      "n_files": 6324,
+      "last_file": "2004.04.04.19.01.57",
+      "last_timestamp": "2004-04-04T19:01:57",
+      "n_files": 4448,
       "num_bearings": 4,
       "raw_samples_per_file": 20480,
       "run_subdir": "4th_test\\txt",
       "sampling_rate_hz": 20000,
       "split_file_boundaries": {
         "adaptation": [
-          1264,
-          5060
+          889,
+          3559
         ],
         "initial": [
           0,
-          1264
+          889
         ],
         "test": [
-          5060,
-          6324
+          3559,
+          4448
         ]
       },
       "split_file_counts": {
-        "adaptation": 3796,
-        "initial": 1264,
-        "test": 1264
+        "adaptation": 2670,
+        "initial": 889,
+        "test": 889
       },
       "split_window_counts": {
-        "adaptation": 151840,
-        "initial": 50560,
-        "test": 50560
+        "adaptation": 106800,
+        "initial": 35560,
+        "test": 35560
+      },
+      "window_size": 2048,
+      "windows_per_file": 10
+    },
+    "4th_test": {
+      "channels_per_bearing": 1,
+      "failure_description": "Not described by the vendor readme, which documents only the first 4,448 files (run_id '3rd_test') as 'Set No. 3'. These are the remaining 1,876 files present in the same physical archive/folder ('4th_test'), beginning 2004-04-04T19:11:57 -- a 10-minute gap after the documented Set 3 endpoint, matching that run's normal sampling interval with no operational discontinuity at the boundary. This is consistent with uninterrupted continuation of the same test-to-failure rig/run rather than a separate experiment, but since the vendor readme does not document it, no failure description or label of any kind is asserted for this region. Kept as a structurally separate run_id (own chronological split, own normalization fit) rather than merged into the documented 'Set No. 3'.",
+      "first_file": "2004.04.04.19.11.57",
+      "first_timestamp": "2004-04-04T19:11:57",
+      "last_file": "2004.04.18.02.42.55",
+      "last_timestamp": "2004-04-18T02:42:55",
+      "n_files": 1876,
+      "num_bearings": 4,
+      "raw_samples_per_file": 20480,
+      "run_subdir": "4th_test\\txt",
+      "sampling_rate_hz": 20000,
+      "split_file_boundaries": {
+        "adaptation": [
+          375,
+          1501
+        ],
+        "initial": [
+          0,
+          375
+        ],
+        "test": [
+          1501,
+          1876
+        ]
+      },
+      "split_file_counts": {
+        "adaptation": 1126,
+        "initial": 375,
+        "test": 375
+      },
+      "split_window_counts": {
+        "adaptation": 45040,
+        "initial": 15000,
+        "test": 15000
       },
       "window_size": 2048,
       "windows_per_file": 10

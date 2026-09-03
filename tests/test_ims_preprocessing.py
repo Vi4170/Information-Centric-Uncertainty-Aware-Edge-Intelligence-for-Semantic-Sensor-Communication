@@ -1,5 +1,6 @@
 import os
 import unittest
+from datetime import datetime
 
 import numpy as np
 
@@ -16,6 +17,7 @@ from src.ims_pipeline.preprocessing import (
     discover_run_files,
     fit_initial_normalization,
     load_stream_windows,
+    parse_ims_filename_timestamp,
     verify_chronological_split_order,
     verify_no_test_leakage_into_normalization,
     verify_observation_id_uniqueness,
@@ -35,8 +37,6 @@ class TestImsPreprocessing(unittest.TestCase):
             files_a = discover_run_files(run_id)
             files_b = discover_run_files(run_id)
             self.assertEqual(files_a, files_b)
-            from src.ims_pipeline.preprocessing import parse_ims_filename_timestamp
-
             timestamps = [parse_ims_filename_timestamp(f) for f in files_a]
             self.assertTrue(all(timestamps[i] < timestamps[i + 1] for i in range(len(timestamps) - 1)))
 
@@ -154,6 +154,57 @@ class TestImsPreprocessing(unittest.TestCase):
         self.assertEqual(len(combined_ids), len(meta_1) + len(meta_2))
         self.assertTrue((meta_1["run_id"] == "1st_test").all())
         self.assertTrue((meta_2["run_id"] == "2nd_test").all())
+
+    def test_12_documented_set1_and_set2_file_counts(self):
+        self.assertEqual(len(discover_run_files("1st_test")), 2156)
+        self.assertEqual(len(discover_run_files("2nd_test")), 984)
+
+    def test_13_corrected_set3_interpretation_matches_documented_boundary(self):
+        files = discover_run_files("3rd_test")
+        self.assertEqual(len(files), 4448)
+        self.assertEqual(parse_ims_filename_timestamp(files[0]), datetime(2004, 3, 4, 9, 27, 46))
+        self.assertEqual(parse_ims_filename_timestamp(files[-1]), datetime(2004, 4, 4, 19, 1, 57))
+
+    def test_14_extra_files_represented_separately_as_4th_test(self):
+        extension_files = discover_run_files("4th_test")
+        self.assertEqual(len(extension_files), 1876)
+        self.assertEqual(parse_ims_filename_timestamp(extension_files[0]), datetime(2004, 4, 4, 19, 11, 57))
+        self.assertEqual(parse_ims_filename_timestamp(extension_files[-1]), datetime(2004, 4, 18, 2, 42, 55))
+
+        set3_files = discover_run_files("3rd_test")
+        self.assertEqual(set(set3_files) & set(extension_files), set())
+        self.assertEqual(len(set3_files) + len(extension_files), 6324)
+
+        gap_minutes = (
+            parse_ims_filename_timestamp(extension_files[0]) - parse_ims_filename_timestamp(set3_files[-1])
+        ).total_seconds() / 60
+        self.assertAlmostEqual(gap_minutes, 10.0, places=6)
+
+    def test_15_run_failure_descriptions_are_run_level_and_distinct(self):
+        summary = discover_all_runs_summary()
+        set3_description = summary["runs"]["3rd_test"]["failure_description"]
+        extension_description = summary["runs"]["4th_test"]["failure_description"]
+        self.assertIn("outer race failure in bearing 3", set3_description)
+        self.assertNotIn("outer race failure in bearing 3", extension_description)
+        self.assertIn("4,448", set3_description)
+
+    def test_16_provenance_preserved_exactly_in_generated_metadata(self):
+        metadata = build_stream_metadata("3rd_test", 3, 0)
+        raw_files = discover_run_files("3rd_test")
+        self.assertEqual(sorted(metadata["source_file"].unique()), sorted(raw_files))
+        for _, row in metadata[metadata["chronological_order_index"] == 0].iterrows():
+            self.assertEqual(row["source_file"], raw_files[0])
+            self.assertEqual(row["file_timestamp"], parse_ims_filename_timestamp(raw_files[0]).isoformat())
+        for _, row in metadata[metadata["chronological_order_index"] == len(raw_files) - 1].iterrows():
+            self.assertEqual(row["source_file"], raw_files[-1])
+            self.assertEqual(row["file_timestamp"], parse_ims_filename_timestamp(raw_files[-1]).isoformat())
+
+    def test_17_ims_not_modeled_as_uniformly_sampled(self):
+        files = discover_run_files("1st_test")
+        timestamps = [parse_ims_filename_timestamp(f) for f in files]
+        gaps = {round((timestamps[i + 1] - timestamps[i]).total_seconds() / 60) for i in range(50)}
+        self.assertIn(5, gaps)
+        self.assertIn(10, gaps)
 
 
 if __name__ == "__main__":
