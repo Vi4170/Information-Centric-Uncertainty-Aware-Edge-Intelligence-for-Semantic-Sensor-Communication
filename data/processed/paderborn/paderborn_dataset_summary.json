@@ -1,0 +1,538 @@
+{
+  "bearing_type": "6203",
+  "bearings": {
+    "K001": {
+      "damage_category": "n/a",
+      "damage_components": [],
+      "damage_methods": [],
+      "damage_modes": [],
+      "health_state": "healthy",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "K002": {
+      "damage_category": "n/a",
+      "damage_components": [],
+      "damage_methods": [],
+      "damage_modes": [],
+      "health_state": "healthy",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "K003": {
+      "damage_category": "n/a",
+      "damage_components": [],
+      "damage_methods": [],
+      "damage_modes": [],
+      "health_state": "healthy",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "K004": {
+      "damage_category": "n/a",
+      "damage_components": [],
+      "damage_methods": [],
+      "damage_modes": [],
+      "health_state": "healthy",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "K005": {
+      "damage_category": "n/a",
+      "damage_components": [],
+      "damage_methods": [],
+      "damage_modes": [],
+      "health_state": "healthy",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "K006": {
+      "damage_category": "n/a",
+      "damage_components": [],
+      "damage_methods": [],
+      "damage_modes": [],
+      "health_state": "healthy",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KA01": {
+      "damage_category": "artificial",
+      "damage_components": [
+        "OR"
+      ],
+      "damage_methods": [
+        "EDM machining"
+      ],
+      "damage_modes": [
+        "artificial"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KA03": {
+      "damage_category": "artificial",
+      "damage_components": [
+        "OR"
+      ],
+      "damage_methods": [
+        "electric engraver"
+      ],
+      "damage_modes": [
+        "artificial"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KA04": {
+      "damage_category": "real",
+      "damage_components": [
+        "OR"
+      ],
+      "damage_methods": [
+        "lifetime test"
+      ],
+      "damage_modes": [
+        "fatigue"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KA05": {
+      "damage_category": "artificial",
+      "damage_components": [
+        "OR"
+      ],
+      "damage_methods": [
+        "electric engraver"
+      ],
+      "damage_modes": [
+        "artificial"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KA06": {
+      "damage_category": "artificial",
+      "damage_components": [
+        "OR"
+      ],
+      "damage_methods": [
+        "electric engraver"
+      ],
+      "damage_modes": [
+        "artificial"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KA07": {
+      "damage_category": "artificial",
+      "damage_components": [
+        "OR"
+      ],
+      "damage_methods": [
+        "drilled"
+      ],
+      "damage_modes": [
+        "artificial"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KA08": {
+      "damage_category": "artificial",
+      "damage_components": [
+        "AR"
+      ],
+      "damage_methods": [
+        "drilled"
+      ],
+      "damage_modes": [
+        "artificial"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KA09": {
+      "damage_category": "artificial",
+      "damage_components": [
+        "OR"
+      ],
+      "damage_methods": [
+        "drilled"
+      ],
+      "damage_modes": [
+        "artificial"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KA15": {
+      "damage_category": "real",
+      "damage_components": [
+        "OR"
+      ],
+      "damage_methods": [
+        "lifetime test"
+      ],
+      "damage_modes": [
+        "plastic deformation"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KA16": {
+      "damage_category": "real",
+      "damage_components": [
+        "OR",
+        "OR"
+      ],
+      "damage_methods": [
+        "lifetime test",
+        "lifetime test"
+      ],
+      "damage_modes": [
+        "fatigue",
+        "fatigue"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KA22": {
+      "damage_category": "real",
+      "damage_components": [
+        "OR"
+      ],
+      "damage_methods": [
+        "lifetime test"
+      ],
+      "damage_modes": [
+        "fatigue"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KA30": {
+      "damage_category": "real",
+      "damage_components": [
+        "OR"
+      ],
+      "damage_methods": [
+        "lifetime test"
+      ],
+      "damage_modes": [
+        "plastic deformation"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KB23": {
+      "damage_category": "real",
+      "damage_components": [
+        "IR",
+        "IR",
+        "OR"
+      ],
+      "damage_methods": [
+        "lifetime test",
+        "lifetime test",
+        "lifetime test"
+      ],
+      "damage_modes": [
+        "fatigue",
+        "fatigue",
+        "fatigue"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KB24": {
+      "damage_category": "real",
+      "damage_components": [
+        "IR",
+        "OR"
+      ],
+      "damage_methods": [
+        "lifetime test",
+        "lifetime test"
+      ],
+      "damage_modes": [
+        "fatigue",
+        "plastic deformation"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KB27": {
+      "damage_category": "real",
+      "damage_components": [
+        "OR",
+        "IR"
+      ],
+      "damage_methods": [
+        "lifetime test",
+        "lifetime test"
+      ],
+      "damage_modes": [
+        "plastic deformation",
+        "plastic deformation"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KI01": {
+      "damage_category": "artificial",
+      "damage_components": [
+        "IR"
+      ],
+      "damage_methods": [
+        "n/a"
+      ],
+      "damage_modes": [
+        "artificial"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KI03": {
+      "damage_category": "artificial",
+      "damage_components": [
+        "IR"
+      ],
+      "damage_methods": [
+        "electric engraver"
+      ],
+      "damage_modes": [
+        "artificial"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KI04": {
+      "damage_category": "real",
+      "damage_components": [
+        "IR",
+        "OR"
+      ],
+      "damage_methods": [
+        "lifetime test",
+        "lifetime test"
+      ],
+      "damage_modes": [
+        "fatigue",
+        "plastic deformation"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KI05": {
+      "damage_category": "artificial",
+      "damage_components": [
+        "IR"
+      ],
+      "damage_methods": [
+        "electric engraver"
+      ],
+      "damage_modes": [
+        "artificial"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KI07": {
+      "damage_category": "artificial",
+      "damage_components": [
+        "IR"
+      ],
+      "damage_methods": [
+        "electric engraver"
+      ],
+      "damage_modes": [
+        "artificial"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KI08": {
+      "damage_category": "artificial",
+      "damage_components": [
+        "IR"
+      ],
+      "damage_methods": [
+        "electric engraver"
+      ],
+      "damage_modes": [
+        "artificial"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KI14": {
+      "damage_category": "real",
+      "damage_components": [
+        "IR",
+        "OR"
+      ],
+      "damage_methods": [
+        "lifetime test",
+        "lifetime test"
+      ],
+      "damage_modes": [
+        "fatigue",
+        "plastic deformation"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KI16": {
+      "damage_category": "real",
+      "damage_components": [
+        "IR"
+      ],
+      "damage_methods": [
+        "lifetime test"
+      ],
+      "damage_modes": [
+        "fatigue"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KI17": {
+      "damage_category": "real",
+      "damage_components": [
+        "IR",
+        "IR"
+      ],
+      "damage_methods": [
+        "lifetime test",
+        "lifetime test"
+      ],
+      "damage_modes": [
+        "fatigue",
+        "fatigue"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KI18": {
+      "damage_category": "real",
+      "damage_components": [
+        "IR"
+      ],
+      "damage_methods": [
+        "lifetime test"
+      ],
+      "damage_modes": [
+        "fatigue"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    },
+    "KI21": {
+      "damage_category": "real",
+      "damage_components": [
+        "IR"
+      ],
+      "damage_methods": [
+        "lifetime test"
+      ],
+      "damage_modes": [
+        "fatigue"
+      ],
+      "health_state": "damaged",
+      "n_mat_files_found": 80,
+      "raw_data_available": true
+    }
+  },
+  "dataset": "paderborn",
+  "expected_full_representation_size": {
+    "estimated_mean_windows_per_measurement": 125.27,
+    "estimated_total_bytes_all_modalities": 7881306931.2,
+    "estimated_total_windows_all_modalities": 962073.6,
+    "n_bearings": 32,
+    "n_channels_all_modalities": 3,
+    "n_measurements": 2560
+  },
+  "measurement_split_assignment": {
+    "1": "train",
+    "10": "train",
+    "11": "test",
+    "12": "train",
+    "13": "val",
+    "14": "train",
+    "15": "test",
+    "16": "train",
+    "17": "train",
+    "18": "train",
+    "19": "train",
+    "2": "train",
+    "20": "train",
+    "3": "train",
+    "4": "train",
+    "5": "val",
+    "6": "train",
+    "7": "test",
+    "8": "val",
+    "9": "train"
+  },
+  "modality_channels": {
+    "motor_current": [
+      "phase_current_1",
+      "phase_current_2"
+    ],
+    "vibration": [
+      "vibration_1"
+    ]
+  },
+  "n_damaged_states": 26,
+  "n_healthy_states": 6,
+  "n_measurements_per_condition": 20,
+  "operating_conditions": [
+    "N15_M07_F10",
+    "N09_M07_F10",
+    "N15_M01_F10",
+    "N15_M07_F04"
+  ],
+  "random_seed": 42,
+  "sampling_rate_hz": 64000,
+  "split_methodology": "Measurement-level, leakage-safe split. Every (bearing_code, operating_condition) stratum shares the same 20 measurement numbers, so a single deterministic seeded assignment of measurement_number to train/val/test (computed once, reused everywhere) guarantees every stratum is represented in every split while a single source measurement (.mat file) -- and every window generated from it -- belongs to exactly one split. No random shuffling of individual windows; splitting happens strictly at the measurement level.",
+  "split_ratios": {
+    "test": 0.15,
+    "train": 0.7,
+    "val": 0.15
+  },
+  "supporting_channel_names": [
+    "force",
+    "speed",
+    "torque",
+    "temp_2_bearing_module"
+  ],
+  "supporting_sampling_rate_hz": 4000,
+  "window_size": 2048
+}
