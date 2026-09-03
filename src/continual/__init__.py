@@ -6,6 +6,7 @@ Phase 3 (Task 19): versioned multi-prototype novelty reference.
 Phase 4A (Task 20): safety + regression gate.
 Phase 4B (Task 21): gated prototype admission controller.
 Phase 4C (Task 23): leakage-safe CNN head-only adaptation.
+Phase 4D (Task 24): safe CNN candidate activation, versioning, and rollback.
 """
 
 from src.continual.adaptation_buffer import AdaptationBuffer, AdaptationRecord, LabelStatus, check_no_overlap
@@ -31,6 +32,13 @@ from src.continual.cnn_head_adaptation import (
     freeze_backbone,
     select_rehearsal_samples,
     train_candidate_head,
+)
+from src.continual.model_registry import (
+    CompatibilityReport,
+    ModelMetadata,
+    ModelRegistry,
+    compute_architecture_signature,
+    compute_backbone_hash,
 )
 
 __all__ = [
@@ -62,4 +70,9 @@ __all__ = [
     "freeze_backbone",
     "select_rehearsal_samples",
     "train_candidate_head",
+    "CompatibilityReport",
+    "ModelMetadata",
+    "ModelRegistry",
+    "compute_architecture_signature",
+    "compute_backbone_hash",
 ]

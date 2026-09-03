@@ -1,5 +1,6 @@
 """Configuration constants for the continual-learning infrastructure
-(Task 17 Phase 1: adaptation buffer; Task 18 Phase 2: condition monitor).
+(Task 17 Phase 1: adaptation buffer; Task 18 Phase 2: condition monitor;
+Task 24 Phase 4D: model lifecycle/versioning).
 
 These are structural/monitoring constants -- not model or scoring
 parameters -- and are unrelated to src/voi/'s calibration constants.
@@ -52,3 +53,24 @@ DEFAULT_PSI_THRESHOLD: float = 0.2
 # Small constant added to class proportions before computing PSI, to avoid
 # log(0)/division-by-zero when a class has zero occurrences in a window.
 PSI_EPSILON: float = 1e-4
+
+# ---------------------------------------------------------------------------
+# Phase 4D: Model Lifecycle / Versioning (Task 24)
+# ---------------------------------------------------------------------------
+
+# Root directory for the versioned CNN model registry. Kept structurally
+# separate from the original, unversioned baseline artifact at
+# models/cwru_cnn_baseline.keras (which Task 24 does not touch) and
+# alongside DEFAULT_BUFFER_DIR's data/ convention for continual-learning
+# state.
+DEFAULT_MODEL_REGISTRY_DIR: str = "models/continual"
+
+# Within the registry: accepted, versioned models (v1/, v2/, ...).
+MODEL_VERSIONS_SUBDIR: str = "versions"
+
+# Within the registry: staged, not-yet-activated candidates, keyed by
+# caller-assigned candidate_id, never by version number.
+MODEL_CANDIDATES_SUBDIR: str = "candidates"
+
+# The single small pointer file recording which version is active.
+ACTIVE_POINTER_FILENAME: str = "active_cnn_pointer.json"
