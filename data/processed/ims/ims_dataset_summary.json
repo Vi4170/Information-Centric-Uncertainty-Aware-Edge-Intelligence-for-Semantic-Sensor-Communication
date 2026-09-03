@@ -1,0 +1,125 @@
+{
+  "dataset": "ims",
+  "initial_split_fraction": 0.2,
+  "runs": {
+    "1st_test": {
+      "channels_per_bearing": 2,
+      "failure_description": "Vendor readme (IMS Bearing Data, NSF I/UCR Center for Intelligent Maintenance Systems): at the end of the test-to-failure run, inner race defect occurred in bearing 3 and roller element defect occurred in bearing 4. Run-level provenance only, not a per-window label: no timestamped onset is documented.",
+      "first_file": "2003.10.22.12.06.24",
+      "first_timestamp": "2003-10-22T12:06:24",
+      "last_file": "2003.11.25.23.39.56",
+      "last_timestamp": "2003-11-25T23:39:56",
+      "n_files": 2156,
+      "num_bearings": 4,
+      "raw_samples_per_file": 20480,
+      "run_subdir": "1st_test",
+      "sampling_rate_hz": 20000,
+      "split_file_boundaries": {
+        "adaptation": [
+          431,
+          1725
+        ],
+        "initial": [
+          0,
+          431
+        ],
+        "test": [
+          1725,
+          2156
+        ]
+      },
+      "split_file_counts": {
+        "adaptation": 1294,
+        "initial": 431,
+        "test": 431
+      },
+      "split_window_counts": {
+        "adaptation": 103520,
+        "initial": 34480,
+        "test": 34480
+      },
+      "window_size": 2048,
+      "windows_per_file": 10
+    },
+    "2nd_test": {
+      "channels_per_bearing": 1,
+      "failure_description": "Vendor readme: at the end of the test-to-failure run, outer race failure occurred in bearing 1. Run-level provenance only, not a per-window label: no timestamped onset is documented.",
+      "first_file": "2004.02.12.10.32.39",
+      "first_timestamp": "2004-02-12T10:32:39",
+      "last_file": "2004.02.19.06.22.39",
+      "last_timestamp": "2004-02-19T06:22:39",
+      "n_files": 984,
+      "num_bearings": 4,
+      "raw_samples_per_file": 20480,
+      "run_subdir": "2nd_test",
+      "sampling_rate_hz": 20000,
+      "split_file_boundaries": {
+        "adaptation": [
+          196,
+          788
+        ],
+        "initial": [
+          0,
+          196
+        ],
+        "test": [
+          788,
+          984
+        ]
+      },
+      "split_file_counts": {
+        "adaptation": 592,
+        "initial": 196,
+        "test": 196
+      },
+      "split_window_counts": {
+        "adaptation": 23680,
+        "initial": 7840,
+        "test": 7840
+      },
+      "window_size": 2048,
+      "windows_per_file": 10
+    },
+    "3rd_test": {
+      "channels_per_bearing": 1,
+      "failure_description": "Vendor readme describes a 'Set No. 3' of 4,448 files spanning 2004-03-04 to 2004-04-04, ending in an outer race failure in bearing 3. The archive actually provided for this integration extracts (via its own internal folder name, '4th_test') to 6,324 files spanning 2004-03-04 to 2004-04-18 -- more files and a later end date than the readme's Set No. 3 description. This mismatch is preserved here explicitly rather than silently assumed away: the readme's failure description is carried as informational provenance only and its exact applicability to the full extracted run is unverified.",
+      "first_file": "2004.03.04.09.27.46",
+      "first_timestamp": "2004-03-04T09:27:46",
+      "last_file": "2004.04.18.02.42.55",
+      "last_timestamp": "2004-04-18T02:42:55",
+      "n_files": 6324,
+      "num_bearings": 4,
+      "raw_samples_per_file": 20480,
+      "run_subdir": "4th_test\\txt",
+      "sampling_rate_hz": 20000,
+      "split_file_boundaries": {
+        "adaptation": [
+          1264,
+          5060
+        ],
+        "initial": [
+          0,
+          1264
+        ],
+        "test": [
+          5060,
+          6324
+        ]
+      },
+      "split_file_counts": {
+        "adaptation": 3796,
+        "initial": 1264,
+        "test": 1264
+      },
+      "split_window_counts": {
+        "adaptation": 151840,
+        "initial": 50560,
+        "test": 50560
+      },
+      "window_size": 2048,
+      "windows_per_file": 10
+    }
+  },
+  "split_methodology": "Chronological, per-run, file-level split. Each run's timestamp-sorted files are partitioned into a contiguous leading 'initial' block (baseline/reference), a contiguous middle 'adaptation' block (future-evidence stream), and a contiguous trailing 'test' block (permanent, post-hoc-only). No shuffling. No split ever reorders or mixes files across runs. All channels/bearings sampled from the same file inherit that file's split, since they share one timestamp.",
+  "test_split_fraction": 0.2
+}
