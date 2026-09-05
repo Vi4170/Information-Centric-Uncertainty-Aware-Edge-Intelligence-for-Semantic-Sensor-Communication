@@ -1,0 +1,985 @@
+{
+  "audio": {
+    "bits_per_sample": 16,
+    "channels": 1,
+    "dropped_tail_samples_per_recording": 256,
+    "duration_seconds": 10.0,
+    "frames_per_recording": 160000,
+    "sample_rate_hz": 16000,
+    "sample_width_bytes": 2,
+    "window_size_samples": 2048,
+    "windowing": "non-overlapping fixed windows; incomplete tail dropped",
+    "windows_per_recording": 78
+  },
+  "condition_schema": {
+    "explicit_condition_fields": [
+      "condition_p_1",
+      "condition_p_2",
+      "condition_parameter",
+      "condition_v_1",
+      "condition_v_2",
+      "condition_value"
+    ],
+    "original_attribute_fields": [
+      "d1p",
+      "d1v",
+      "d2p",
+      "d2v",
+      "file_name"
+    ]
+  },
+  "dataset": "MIMII-DG",
+  "dataset_structure": {
+    "domains_observed": [
+      "source",
+      "target"
+    ],
+    "labels_observed": [
+      "anomaly",
+      "normal"
+    ],
+    "machine_type_count": 5,
+    "machine_types": [
+      "bearing",
+      "fan",
+      "gearbox",
+      "slider",
+      "valve"
+    ],
+    "official_splits_observed": [
+      "test",
+      "train"
+    ],
+    "sections": [
+      "section_00",
+      "section_01",
+      "section_02"
+    ],
+    "sections_per_machine_type": 3
+  },
+  "leakage_checks": {
+    "leakage_group_disjoint": true,
+    "official_test_not_used_for_train_validation": true,
+    "raw_original_split_preserved": true,
+    "recording_disjoint": true
+  },
+  "machines": {
+    "bearing": {
+      "recordings_total": 3599,
+      "sections": {
+        "section_00": {
+          "attribute_csvs": [
+            "attributes_00.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "vel",
+              "condition_value": "10"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "12"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "14"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "16"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "18"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "2"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "20"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "22"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "24"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "26"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "4"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "6"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "8"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 110
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1100
+          },
+          "leakage_group_ids": [
+            "bearing:section_00"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 1000
+          },
+          "project_split_counts": {
+            "excluded_official_test": 200,
+            "train": 1000
+          },
+          "recordings_total": 1200
+        },
+        "section_01": {
+          "attribute_csvs": [
+            "attributes_01.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "loc",
+              "condition_value": "A"
+            },
+            {
+              "condition_parameter": "loc",
+              "condition_value": "B"
+            },
+            {
+              "condition_parameter": "loc",
+              "condition_value": "C"
+            },
+            {
+              "condition_parameter": "loc",
+              "condition_value": "D"
+            },
+            {
+              "condition_parameter": "loc",
+              "condition_value": "E"
+            },
+            {
+              "condition_parameter": "loc",
+              "condition_value": "F"
+            },
+            {
+              "condition_parameter": "loc",
+              "condition_value": "G"
+            },
+            {
+              "condition_parameter": "loc",
+              "condition_value": "H"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 109
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1099
+          },
+          "leakage_group_ids": [
+            "bearing:section_01"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 999
+          },
+          "project_split_counts": {
+            "excluded_official_test": 200,
+            "val": 999
+          },
+          "recordings_total": 1199
+        },
+        "section_02": {
+          "attribute_csvs": [
+            "attributes_02.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "f-n",
+              "condition_value": "A"
+            },
+            {
+              "condition_parameter": "f-n",
+              "condition_value": "B"
+            },
+            {
+              "condition_parameter": "f-n",
+              "condition_value": "C"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 110
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1100
+          },
+          "leakage_group_ids": [
+            "bearing:section_02"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 1000
+          },
+          "project_split_counts": {
+            "test": 1200
+          },
+          "recordings_total": 1200
+        }
+      }
+    },
+    "fan": {
+      "recordings_total": 3600,
+      "sections": {
+        "section_00": {
+          "attribute_csvs": [
+            "attributes_00.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "m-n",
+              "condition_value": "W"
+            },
+            {
+              "condition_parameter": "m-n",
+              "condition_value": "X"
+            },
+            {
+              "condition_parameter": "m-n",
+              "condition_value": "Y"
+            },
+            {
+              "condition_parameter": "m-n",
+              "condition_value": "Z"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 110
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1100
+          },
+          "leakage_group_ids": [
+            "fan:section_00"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 1000
+          },
+          "project_split_counts": {
+            "excluded_official_test": 200,
+            "train": 1000
+          },
+          "recordings_total": 1200
+        },
+        "section_01": {
+          "attribute_csvs": [
+            "attributes_01.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "f-n",
+              "condition_value": "A"
+            },
+            {
+              "condition_parameter": "f-n",
+              "condition_value": "B"
+            },
+            {
+              "condition_parameter": "f-n",
+              "condition_value": "C"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 110
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1100
+          },
+          "leakage_group_ids": [
+            "fan:section_01"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 1000
+          },
+          "project_split_counts": {
+            "excluded_official_test": 200,
+            "val": 1000
+          },
+          "recordings_total": 1200
+        },
+        "section_02": {
+          "attribute_csvs": [
+            "attributes_02.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "n-lv",
+              "condition_value": "L1"
+            },
+            {
+              "condition_parameter": "n-lv",
+              "condition_value": "L2"
+            },
+            {
+              "condition_parameter": "n-lv",
+              "condition_value": "L3"
+            },
+            {
+              "condition_parameter": "n-lv",
+              "condition_value": "L4"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 110
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1100
+          },
+          "leakage_group_ids": [
+            "fan:section_02"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 1000
+          },
+          "project_split_counts": {
+            "test": 1200
+          },
+          "recordings_total": 1200
+        }
+      }
+    },
+    "gearbox": {
+      "recordings_total": 3600,
+      "sections": {
+        "section_00": {
+          "attribute_csvs": [
+            "attributes_00.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "volt",
+              "condition_value": "0"
+            },
+            {
+              "condition_parameter": "volt",
+              "condition_value": "1"
+            },
+            {
+              "condition_parameter": "volt",
+              "condition_value": "2"
+            },
+            {
+              "condition_parameter": "volt",
+              "condition_value": "3"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 110
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1100
+          },
+          "leakage_group_ids": [
+            "gearbox:section_00"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 1000
+          },
+          "project_split_counts": {
+            "excluded_official_test": 200,
+            "train": 1000
+          },
+          "recordings_total": 1200
+        },
+        "section_01": {
+          "attribute_csvs": [
+            "attributes_01.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "wt",
+              "condition_value": "0"
+            },
+            {
+              "condition_parameter": "wt",
+              "condition_value": "100"
+            },
+            {
+              "condition_parameter": "wt",
+              "condition_value": "130"
+            },
+            {
+              "condition_parameter": "wt",
+              "condition_value": "150"
+            },
+            {
+              "condition_parameter": "wt",
+              "condition_value": "180"
+            },
+            {
+              "condition_parameter": "wt",
+              "condition_value": "200"
+            },
+            {
+              "condition_parameter": "wt",
+              "condition_value": "230"
+            },
+            {
+              "condition_parameter": "wt",
+              "condition_value": "250"
+            },
+            {
+              "condition_parameter": "wt",
+              "condition_value": "30"
+            },
+            {
+              "condition_parameter": "wt",
+              "condition_value": "50"
+            },
+            {
+              "condition_parameter": "wt",
+              "condition_value": "80"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 110
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1100
+          },
+          "leakage_group_ids": [
+            "gearbox:section_01"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 1000
+          },
+          "project_split_counts": {
+            "excluded_official_test": 200,
+            "val": 1000
+          },
+          "recordings_total": 1200
+        },
+        "section_02": {
+          "attribute_csvs": [
+            "attributes_02.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "id",
+              "condition_value": "00"
+            },
+            {
+              "condition_parameter": "id",
+              "condition_value": "02"
+            },
+            {
+              "condition_parameter": "id",
+              "condition_value": "05"
+            },
+            {
+              "condition_parameter": "id",
+              "condition_value": "08"
+            },
+            {
+              "condition_parameter": "id",
+              "condition_value": "11"
+            },
+            {
+              "condition_parameter": "id",
+              "condition_value": "13"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 110
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1100
+          },
+          "leakage_group_ids": [
+            "gearbox:section_02"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 1000
+          },
+          "project_split_counts": {
+            "test": 1200
+          },
+          "recordings_total": 1200
+        }
+      }
+    },
+    "slider": {
+      "recordings_total": 3600,
+      "sections": {
+        "section_00": {
+          "attribute_csvs": [
+            "attributes_00.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "vel",
+              "condition_value": "100"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "1000"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "1100"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "1200"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "1300"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "200"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "300"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "400"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "500"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "600"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "700"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "800"
+            },
+            {
+              "condition_parameter": "vel",
+              "condition_value": "900"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 110
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1100
+          },
+          "leakage_group_ids": [
+            "slider:section_00"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 1000
+          },
+          "project_split_counts": {
+            "excluded_official_test": 200,
+            "train": 1000
+          },
+          "recordings_total": 1200
+        },
+        "section_01": {
+          "attribute_csvs": [
+            "attributes_01.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "ac",
+              "condition_value": "0.01"
+            },
+            {
+              "condition_parameter": "ac",
+              "condition_value": "0.02"
+            },
+            {
+              "condition_parameter": "ac",
+              "condition_value": "0.03"
+            },
+            {
+              "condition_parameter": "ac",
+              "condition_value": "0.04"
+            },
+            {
+              "condition_parameter": "ac",
+              "condition_value": "0.05"
+            },
+            {
+              "condition_parameter": "ac",
+              "condition_value": "0.06"
+            },
+            {
+              "condition_parameter": "ac",
+              "condition_value": "0.07"
+            },
+            {
+              "condition_parameter": "ac",
+              "condition_value": "0.08"
+            },
+            {
+              "condition_parameter": "ac",
+              "condition_value": "0.09"
+            },
+            {
+              "condition_parameter": "ac",
+              "condition_value": "0.10"
+            },
+            {
+              "condition_parameter": "ac",
+              "condition_value": "0.11"
+            },
+            {
+              "condition_parameter": "ac",
+              "condition_value": "0.12"
+            },
+            {
+              "condition_parameter": "ac",
+              "condition_value": "0.14"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 110
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1100
+          },
+          "leakage_group_ids": [
+            "slider:section_01"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 1000
+          },
+          "project_split_counts": {
+            "excluded_official_test": 200,
+            "val": 1000
+          },
+          "recordings_total": 1200
+        },
+        "section_02": {
+          "attribute_csvs": [
+            "attributes_02.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "f-n",
+              "condition_value": "A"
+            },
+            {
+              "condition_parameter": "f-n",
+              "condition_value": "B"
+            },
+            {
+              "condition_parameter": "f-n",
+              "condition_value": "C"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 110
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1100
+          },
+          "leakage_group_ids": [
+            "slider:section_02"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 1000
+          },
+          "project_split_counts": {
+            "test": 1200
+          },
+          "recordings_total": 1200
+        }
+      }
+    },
+    "valve": {
+      "recordings_total": 3600,
+      "sections": {
+        "section_00": {
+          "attribute_csvs": [
+            "attributes_00.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "pat",
+              "condition_value": "00"
+            },
+            {
+              "condition_parameter": "pat",
+              "condition_value": "01"
+            },
+            {
+              "condition_parameter": "pat",
+              "condition_value": "02"
+            },
+            {
+              "condition_parameter": "pat",
+              "condition_value": "03"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 110
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1100
+          },
+          "leakage_group_ids": [
+            "valve:section_00"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 1000
+          },
+          "project_split_counts": {
+            "excluded_official_test": 200,
+            "train": 1000
+          },
+          "recordings_total": 1200
+        },
+        "section_01": {
+          "attribute_csvs": [
+            "attributes_01.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "panel",
+              "condition_value": "b-c"
+            },
+            {
+              "condition_parameter": "panel",
+              "condition_value": "bs-c"
+            },
+            {
+              "condition_parameter": "panel",
+              "condition_value": "open"
+            },
+            {
+              "condition_parameter": "panel",
+              "condition_value": "s-c"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 110
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1100
+          },
+          "leakage_group_ids": [
+            "valve:section_01"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 1000
+          },
+          "project_split_counts": {
+            "excluded_official_test": 200,
+            "val": 1000
+          },
+          "recordings_total": 1200
+        },
+        "section_02": {
+          "attribute_csvs": [
+            "attributes_02.csv"
+          ],
+          "conditions_observed": [
+            {
+              "condition_parameter": "v1pat",
+              "condition_value": "04"
+            },
+            {
+              "condition_parameter": "v1pat",
+              "condition_value": "05"
+            },
+            {
+              "condition_parameter": "v2pat",
+              "condition_value": "05"
+            }
+          ],
+          "domain_counts": {
+            "source": 1090,
+            "target": 110
+          },
+          "label_counts": {
+            "anomaly": 100,
+            "normal": 1100
+          },
+          "leakage_group_ids": [
+            "valve:section_02"
+          ],
+          "official_split_counts": {
+            "test": 200,
+            "train": 1000
+          },
+          "project_split_counts": {
+            "test": 1200
+          },
+          "recordings_total": 1200
+        }
+      }
+    }
+  },
+  "metadata": {
+    "additional_condition_fields_preserved": true,
+    "all_original_attribute_columns_preserved": true,
+    "attribute_csv_preserved": true,
+    "audio_modality_separate": true,
+    "condition_parameter_primary_field": "d1p",
+    "condition_value_primary_field": "d1v",
+    "domain_preserved": true,
+    "leakage_group_identifier": "machine_type + section",
+    "machine_id_present_in_release": false,
+    "machine_id_preservation_status": "not_exposed; not fabricated",
+    "machine_id_source_field": "machine_id_source",
+    "machine_type_preserved": true,
+    "normal_anomaly_label_preserved": true,
+    "official_split_preserved": true,
+    "original_filename_preserved": true,
+    "recording_index_preserved": true,
+    "section_preserved": true
+  },
+  "modality": "audio",
+  "normalization": {
+    "excluded_official_test_used_for_fit": false,
+    "fit_scope": "project train split normal recordings only",
+    "method": "global waveform standardization",
+    "per_recording_adaptation": false,
+    "test_used_for_fit": false,
+    "validation_used_for_fit": false
+  },
+  "provenance": {
+    "archives": [
+      "bearing.zip",
+      "fan.zip",
+      "gearbox.zip",
+      "slider.zip",
+      "valve.zip"
+    ],
+    "doi": "10.5281/zenodo.6529888",
+    "license": "CC BY-NC-SA 4.0",
+    "source": "Hitachi Ltd. official MIMII-DG release",
+    "zenodo_record": "https://zenodo.org/records/6529888"
+  },
+  "raw_data": {
+    "archives_are_preserved": true,
+    "extraction_required_for_pipeline": false,
+    "original_attribute_csvs_preserved_inside_archives": true,
+    "processing_strategy": "lazy per-recording access directly from original ZIP archives",
+    "raw_directory": "D:\\MIMII_DG_Raw"
+  },
+  "recordings": {
+    "by_label": {
+      "anomaly": 1500,
+      "normal": 16499
+    },
+    "by_leakage_group": {
+      "bearing:section_00": 1200,
+      "bearing:section_01": 1199,
+      "bearing:section_02": 1200,
+      "fan:section_00": 1200,
+      "fan:section_01": 1200,
+      "fan:section_02": 1200,
+      "gearbox:section_00": 1200,
+      "gearbox:section_01": 1200,
+      "gearbox:section_02": 1200,
+      "slider:section_00": 1200,
+      "slider:section_01": 1200,
+      "slider:section_02": 1200,
+      "valve:section_00": 1200,
+      "valve:section_01": 1200,
+      "valve:section_02": 1200
+    },
+    "by_machine_type": {
+      "bearing": 3599,
+      "fan": 3600,
+      "gearbox": 3600,
+      "slider": 3600,
+      "valve": 3600
+    },
+    "by_project_split": {
+      "excluded_official_test": 2000,
+      "test": 6000,
+      "train": 5000,
+      "val": 4999
+    },
+    "by_section": {
+      "section_00": 6000,
+      "section_01": 5999,
+      "section_02": 6000
+    },
+    "total": 17999
+  },
+  "split_policy": {
+    "group_definition": "machine_type + section",
+    "group_key": [
+      "leakage_group_id"
+    ],
+    "mapping": {
+      "section_00": "train",
+      "section_01": "val",
+      "section_02": "test"
+    },
+    "reason": "prevents leakage between machine-type/section groups and preserves MIMII-DG domain structure",
+    "section_00_official_test": "excluded_official_test",
+    "section_01_official_test": "excluded_official_test",
+    "strategy": "section-level grouped split",
+    "test_source": "section_02 recordings, with official train/test provenance retained",
+    "train_source": "section_00 official training recordings only",
+    "validation_source": "section_01 official training recordings only"
+  }
+}

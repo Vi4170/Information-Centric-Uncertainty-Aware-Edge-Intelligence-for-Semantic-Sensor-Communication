@@ -1,0 +1,235 @@
+{
+  "authors": [
+    "Biao Wang",
+    "Yaguo Lei",
+    "Naipeng Li"
+  ],
+  "bearing_params": {
+    "ball_diameter_mm": 7.92,
+    "bearing_mean_diameter_mm": 34.55,
+    "contact_angle_deg": 0,
+    "inner_race_diameter_mm": 29.3,
+    "load_rating_dynamic_kN": 12.82,
+    "load_rating_static_kN": 6.65,
+    "number_of_balls": 8,
+    "outer_race_diameter_mm": 39.8
+  },
+  "bearing_split_assignment": {
+    "Bearing1_1": "val",
+    "Bearing1_2": "train",
+    "Bearing1_3": "train",
+    "Bearing1_4": "test",
+    "Bearing1_5": "train",
+    "Bearing2_1": "val",
+    "Bearing2_2": "train",
+    "Bearing2_3": "train",
+    "Bearing2_4": "train",
+    "Bearing2_5": "test",
+    "Bearing3_1": "train",
+    "Bearing3_2": "train",
+    "Bearing3_3": "test",
+    "Bearing3_4": "train",
+    "Bearing3_5": "val"
+  },
+  "bearing_type": "LDK UER204",
+  "bearings": {
+    "Bearing1_1": {
+      "bearing_lifetime": "2 h 3 min",
+      "fault_element": "Outer race",
+      "n_files_expected": 123,
+      "n_files_found": 123,
+      "operating_condition": "35Hz12kN",
+      "raw_data_available": true,
+      "split": "val"
+    },
+    "Bearing1_2": {
+      "bearing_lifetime": "2 h 41 min",
+      "fault_element": "Outer race",
+      "n_files_expected": 161,
+      "n_files_found": 161,
+      "operating_condition": "35Hz12kN",
+      "raw_data_available": true,
+      "split": "train"
+    },
+    "Bearing1_3": {
+      "bearing_lifetime": "2 h 38 min",
+      "fault_element": "Outer race",
+      "n_files_expected": 158,
+      "n_files_found": 158,
+      "operating_condition": "35Hz12kN",
+      "raw_data_available": true,
+      "split": "train"
+    },
+    "Bearing1_4": {
+      "bearing_lifetime": "2 h 2 min",
+      "fault_element": "Cage",
+      "n_files_expected": 122,
+      "n_files_found": 122,
+      "operating_condition": "35Hz12kN",
+      "raw_data_available": true,
+      "split": "test"
+    },
+    "Bearing1_5": {
+      "bearing_lifetime": "52 min",
+      "fault_element": "Inner race and outer race",
+      "n_files_expected": 52,
+      "n_files_found": 52,
+      "operating_condition": "35Hz12kN",
+      "raw_data_available": true,
+      "split": "train"
+    },
+    "Bearing2_1": {
+      "bearing_lifetime": "8 h 11 min",
+      "fault_element": "Inner race",
+      "n_files_expected": 491,
+      "n_files_found": 491,
+      "operating_condition": "37.5Hz11kN",
+      "raw_data_available": true,
+      "split": "val"
+    },
+    "Bearing2_2": {
+      "bearing_lifetime": "2 h 41 min",
+      "fault_element": "Outer race",
+      "n_files_expected": 161,
+      "n_files_found": 161,
+      "operating_condition": "37.5Hz11kN",
+      "raw_data_available": true,
+      "split": "train"
+    },
+    "Bearing2_3": {
+      "bearing_lifetime": "8 h 53 min",
+      "fault_element": "Cage",
+      "n_files_expected": 533,
+      "n_files_found": 533,
+      "operating_condition": "37.5Hz11kN",
+      "raw_data_available": true,
+      "split": "train"
+    },
+    "Bearing2_4": {
+      "bearing_lifetime": "42 min",
+      "fault_element": "Outer race",
+      "n_files_expected": 42,
+      "n_files_found": 42,
+      "operating_condition": "37.5Hz11kN",
+      "raw_data_available": true,
+      "split": "train"
+    },
+    "Bearing2_5": {
+      "bearing_lifetime": "5 h 39 min",
+      "fault_element": "Outer race",
+      "n_files_expected": 339,
+      "n_files_found": 339,
+      "operating_condition": "37.5Hz11kN",
+      "raw_data_available": true,
+      "split": "test"
+    },
+    "Bearing3_1": {
+      "bearing_lifetime": "42 h 18 min",
+      "fault_element": "Outer race",
+      "n_files_expected": 2538,
+      "n_files_found": 2538,
+      "operating_condition": "40Hz10kN",
+      "raw_data_available": true,
+      "split": "train"
+    },
+    "Bearing3_2": {
+      "bearing_lifetime": "41 h 36 min",
+      "fault_element": "Inner race, ball, cage and outer race",
+      "n_files_expected": 2496,
+      "n_files_found": 2496,
+      "operating_condition": "40Hz10kN",
+      "raw_data_available": true,
+      "split": "train"
+    },
+    "Bearing3_3": {
+      "bearing_lifetime": "6 h 11 min",
+      "fault_element": "Inner race",
+      "n_files_expected": 371,
+      "n_files_found": 371,
+      "operating_condition": "40Hz10kN",
+      "raw_data_available": true,
+      "split": "test"
+    },
+    "Bearing3_4": {
+      "bearing_lifetime": "25 h 15 min",
+      "fault_element": "Inner race",
+      "n_files_expected": 1515,
+      "n_files_found": 1515,
+      "operating_condition": "40Hz10kN",
+      "raw_data_available": true,
+      "split": "train"
+    },
+    "Bearing3_5": {
+      "bearing_lifetime": "1 h 54 min",
+      "fault_element": "Outer race",
+      "n_files_expected": 114,
+      "n_files_found": 114,
+      "operating_condition": "40Hz10kN",
+      "raw_data_available": true,
+      "split": "val"
+    }
+  },
+  "channel_names": [
+    "Horizontal_vibration_signals",
+    "Vertical_vibration_signals"
+  ],
+  "citation": "Biao Wang, Yaguo Lei, Naipeng Li, Ningbo Li, \"A Hybrid Prognostics Approach for Estimating Remaining Useful Life of Rolling Element Bearings\", IEEE Transactions on Reliability, 2018. DOI: 10.1109/TR.2018.2882682.",
+  "contact": "Biao Wang (wangbiaoxjtu@outlook.com), Prof. Yaguo Lei (yaguolei@mail.xjtu.edu.cn)",
+  "data_source_description": "Original author-distributed XJTU-SY Bearing Dataset package, with the included author documentation and multi-part RAR archive.",
+  "data_source_name": "Original XJTU-SY Bearing Dataset distribution by Xi'an Jiaotong University (XJTU) and Changxing Sumyoung Technology Co., Ltd. (SY)",
+  "dataset": "xjtu",
+  "documentation_file": "Introduction_to_XJTU-SY_Bearing_Dataset.pdf",
+  "documentation_section": "Section 2.4",
+  "expected_windows_total_all_channels": 294912,
+  "expected_windows_total_per_channel": 147456,
+  "modality_channels": {
+    "vibration": [
+      "Horizontal_vibration_signals",
+      "Vertical_vibration_signals"
+    ]
+  },
+  "n_bearings_per_condition": 5,
+  "n_bearings_total": 15,
+  "n_files_total_expected": 9216,
+  "n_files_total_found": 9216,
+  "normalization_methodology": "Z-score normalization is fitted using training-split rows only. Validation and test data never contribute to the fitted mean or standard deviation. Statistics are channel-specific because channels are processed separately.",
+  "operating_condition_details": {
+    "35Hz12kN": {
+      "radial_force_kN": 12.0,
+      "rotation_speed_hz": 35.0,
+      "rotation_speed_rpm": 2100
+    },
+    "37.5Hz11kN": {
+      "radial_force_kN": 11.0,
+      "rotation_speed_hz": 37.5,
+      "rotation_speed_rpm": 2250
+    },
+    "40Hz10kN": {
+      "radial_force_kN": 10.0,
+      "rotation_speed_hz": 40.0,
+      "rotation_speed_rpm": 2400
+    }
+  },
+  "operating_conditions": [
+    "35Hz12kN",
+    "37.5Hz11kN",
+    "40Hz10kN"
+  ],
+  "processing_methodology": "Metadata is constructed without loading signal arrays. Signal loading is performed on demand, one CSV file at a time, with optional file_indices selection.",
+  "random_seed": 42,
+  "raw_data_available": true,
+  "recording_duration_seconds": 1.28,
+  "samples_per_file": 32768,
+  "sampling_period_minutes": 1,
+  "sampling_rate_hz": 25600,
+  "sampling_rate_source": "Author-provided Introduction_to_XJTU-SY_Bearing_Dataset.pdf, Section 2.4",
+  "split_methodology": "Bearing-level leakage-safe split. Within each operating condition, 3 bearings are assigned to train, 1 to validation, and 1 to test using a deterministic seeded shuffle. Every CSV recording and every derived window from a bearing remains in that bearing's split. No window-level or file-level random splitting is used.",
+  "split_ratios": {
+    "test": 0.2,
+    "train": 0.6,
+    "val": 0.2
+  },
+  "step_size": 2048,
+  "window_size": 2048,
+  "windows_per_file": 16
+}
