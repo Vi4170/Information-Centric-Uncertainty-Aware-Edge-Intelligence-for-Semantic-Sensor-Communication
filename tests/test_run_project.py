@@ -105,5 +105,39 @@ class TestMainSkipsWhenArtifactsAlreadyExist(unittest.TestCase):
         self.assertEqual(exit_code, 0)
 
 
+class TestVoiStageCoversFullDependencyChain(unittest.TestCase):
+    def test_voi_outputs_exist_requires_integration_and_calibration_artifacts(self):
+        self.assertTrue(run_project._voi_outputs_exist())
+
+    def test_voi_outputs_exist_is_false_if_calibration_artifact_missing(self):
+        real_exists = run_project._exists
+
+        def fake_exists(*parts):
+            if parts == ("results", "tables", "calibration_validation_decision_comparison.csv"):
+                return False
+            return real_exists(*parts)
+
+        with mock.patch.object(run_project, "_exists", side_effect=fake_exists):
+            self.assertFalse(run_project._voi_outputs_exist())
+
+    def test_voi_inputs_available_on_this_repo(self):
+        self.assertTrue(run_project._voi_inputs_available())
+
+    def test_stage_voi_skips_without_calling_any_pipeline_stage_when_all_outputs_present(self):
+        with mock.patch("src.data_generation.synthetic_generator.generate_synthetic_dataset") as gen, mock.patch(
+            "src.evaluation.run_experiment.run_synthetic_experiment"
+        ) as synth, mock.patch(
+            "src.evaluation.voi_behaviour_analysis.run_voi_behaviour_analysis"
+        ) as integ, mock.patch(
+            "src.evaluation.calibration_validation.run_calibration_validation"
+        ) as calib:
+            status = run_project.stage_voi(force=False)
+        self.assertEqual(status, run_project.STAGE_SKIPPED)
+        gen.assert_not_called()
+        synth.assert_not_called()
+        integ.assert_not_called()
+        calib.assert_not_called()
+
+
 if __name__ == "__main__":
     unittest.main()

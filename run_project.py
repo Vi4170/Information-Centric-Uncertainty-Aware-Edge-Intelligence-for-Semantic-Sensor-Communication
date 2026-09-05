@@ -155,20 +155,40 @@ def stage_uncertainty(force):
     )
 
 
+def _voi_outputs_exist():
+    return (
+        _exists("results", "tables", "voi_decision_distribution.csv")
+        and _exists("results", "tables", "voi_integration_summary.csv")
+        and _exists("results", "tables", "calibration_validation_decision_comparison.csv")
+    )
+
+
+def _voi_inputs_available():
+    return _exists("models", "cwru_cnn_baseline.keras") and _exists(
+        "data", "processed", "cwru", "cwru_dataset_v1.npz"
+    )
+
+
 def stage_voi(force):
     from src.data_generation.synthetic_generator import generate_synthetic_dataset
     from src.evaluation.run_experiment import run_synthetic_experiment
+    from src.evaluation.voi_behaviour_analysis import run_voi_behaviour_analysis
+    from src.evaluation.calibration_validation import run_calibration_validation
 
     def _run():
         if force or not _exists("data", "synthetic", "synthetic_voi_dataset.csv"):
             generate_synthetic_dataset()
         run_synthetic_experiment()
+        run_voi_behaviour_analysis()
+        run_calibration_validation()
 
     return run_stage(
-        "VoI diagnostics + CWRU integration",
-        lambda: _exists("results", "tables", "voi_integration_summary.csv"),
+        "VoI diagnostics + CWRU integration + calibration validation",
+        _voi_outputs_exist,
         _run,
         force,
+        input_check=_voi_inputs_available,
+        input_missing_message="CNN model or CWRU processed dataset not found; run the CNN stage first.",
     )
 
 
@@ -256,7 +276,7 @@ def main(argv=None):
     if run_uncertainty:
         results["Uncertainty estimation"] = stage_uncertainty(args.force)
     if run_voi:
-        results["VoI diagnostics + CWRU integration"] = stage_voi(args.force)
+        results["VoI diagnostics + CWRU integration + calibration validation"] = stage_voi(args.force)
     if run_continual:
         results["Continual-learning experiment"] = stage_continual(args.force)
 

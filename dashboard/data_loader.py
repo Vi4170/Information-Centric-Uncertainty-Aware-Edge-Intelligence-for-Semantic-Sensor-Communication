@@ -65,13 +65,16 @@ def get_pipeline_stage_status():
         and _exists("results", "tables", "cnn_evaluation_summary.csv"),
         "Novelty estimation": _exists("results", "tables", "novelty_scores_summary.csv"),
         "Uncertainty estimation": _exists("results", "tables", "uncertainty_scores_summary.csv"),
-        "Task relevance / temporal / communication cost (formula modules)": _exists(
-            "src", "relevance", "relevance.py"
+        "Task relevance / temporal / communication cost (exercised on real CWRU data)": _exists(
+            "results", "tables", "relevance_scores_summary.csv"
         )
-        and _exists("src", "temporal", "temporal.py")
-        and _exists("src", "communication", "cost.py"),
-        "VoI synthetic diagnostics": _exists("results", "tables", "voi_decision_distribution.csv"),
-        "VoI CWRU integration + calibration": _exists("results", "tables", "voi_integration_summary.csv"),
+        and _exists("results", "tables", "voi_integration_summary.csv"),
+        "VoI synthetic diagnostics": _exists("results", "tables", "v01_validation_summary.csv"),
+        "VoI CWRU integration (Task 13)": _exists("results", "tables", "voi_integration_summary.csv")
+        and _exists("results", "tables", "voi_decision_distribution.csv"),
+        "VoI calibration validation (Tasks 14/15)": _exists(
+            "results", "tables", "calibration_validation_decision_comparison.csv"
+        ),
         "Continual-learning experiment (Task 25)": _exists(
             "results", "continual", "task25_cwru_continual_experiment.json"
         ),
@@ -86,6 +89,8 @@ def get_cwru_dataset_info():
         "status": STATUS_AVAILABLE,
         "experiment_status": "Preprocessing complete; CNN, novelty, uncertainty, and VoI experiments performed.",
         "summary": summary,
+        "sampling_rate_hz": summary.get("sampling_rate_hz"),
+        "window_size": summary.get("window_size"),
         "split_description": (
             "File-level split before windowing (26/7/7 of 40 source .mat files for train/val/test), "
             "so every window in a split comes only from source recordings assigned to that split -- "
@@ -98,10 +103,13 @@ def get_ims_dataset_info():
     summary = _load_json("data", "processed", "ims", "ims_dataset_summary.json")
     if summary is None:
         return {"status": STATUS_MISSING}
+    first_run = next(iter(summary.get("runs", {}).values()), {})
     return {
         "status": STATUS_AVAILABLE,
         "experiment_status": "Dataset integrated -- CNN/novelty/uncertainty/VoI experiments not yet performed.",
         "summary": summary,
+        "sampling_rate_hz": first_run.get("sampling_rate_hz"),
+        "window_size": first_run.get("window_size"),
         "split_description": summary.get("split_methodology"),
     }
 
@@ -114,6 +122,8 @@ def get_paderborn_dataset_info():
         "status": STATUS_AVAILABLE,
         "experiment_status": "Dataset integrated -- CNN/novelty/uncertainty/VoI experiments not yet performed.",
         "summary": summary,
+        "sampling_rate_hz": summary.get("sampling_rate_hz"),
+        "window_size": summary.get("window_size"),
         "split_description": summary.get("split_methodology"),
     }
 

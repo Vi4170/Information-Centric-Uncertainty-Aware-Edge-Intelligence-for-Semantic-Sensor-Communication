@@ -34,7 +34,7 @@ Input: (2048, 1) Vibration Time Series
   └── [Dense] 4 units, activation="softmax", name="output_probabilities" <── Softmax Probabilities
 ```
 
-- **Total Trainable Parameters**: 16,932 parameters
+- **Total Trainable Parameters**: 14,500 parameters
 - **Input Dimension**: `(2048, 1)` single-channel float32
 - **Penultimate Embedding Dimension**: `64` (exposed via `extract_embeddings()`)
 - **Output Dimension**: `(4,)` normalized probability distribution

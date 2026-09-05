@@ -330,19 +330,21 @@ def render_comparison():
     for name, info in (("CWRU", cwru), ("IMS", ims), ("Paderborn", pb)):
         if info["status"] != dl.STATUS_AVAILABLE:
             continue
-        s = info["summary"]
         rows.append(
             {
                 "Dataset": name,
-                "Sampling rate (Hz)": s.get("sampling_rate_hz"),
-                "Window size": s.get("window_size"),
+                "Sampling rate (Hz)": info.get("sampling_rate_hz"),
+                "Window size": info.get("window_size"),
                 "Experiment status": info["experiment_status"],
             }
         )
     st.table(pd.DataFrame(rows))
     st.caption(
         "Only dataset-integration facts are compared here. CNN/novelty/uncertainty/VoI metrics exist "
-        "for CWRU only, so no cross-dataset model-performance comparison is possible yet."
+        "for CWRU only, so no cross-dataset model-performance comparison is possible yet. "
+        "XJTU-SY and MIMII are not integrated into this repository -- no code, raw data, or "
+        "processed artifacts for either exist yet, so they are omitted rather than shown with "
+        "placeholder rows."
     )
 
     st.subheader("Edge vs. cloud vs. VoI-mediated accuracy")

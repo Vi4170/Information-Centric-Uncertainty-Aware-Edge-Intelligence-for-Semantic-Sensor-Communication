@@ -25,12 +25,16 @@ class TestDashboardDataLoader(unittest.TestCase):
         self.assertEqual(info["status"], dl.STATUS_AVAILABLE)
         self.assertEqual(info["summary"]["window_size"], 2048)
         self.assertIn("experiments performed", info["experiment_status"])
+        self.assertEqual(info["sampling_rate_hz"], 12000)
+        self.assertEqual(info["window_size"], 2048)
 
     def test_ims_dataset_info_reports_no_experiment_performed(self):
         info = dl.get_ims_dataset_info()
         self.assertEqual(info["status"], dl.STATUS_AVAILABLE)
         self.assertIn("not yet performed", info["experiment_status"])
         self.assertIn("1st_test", info["summary"]["runs"])
+        self.assertEqual(info["sampling_rate_hz"], 20000)
+        self.assertEqual(info["window_size"], 2048)
 
     def test_paderborn_dataset_info_reports_no_experiment_performed(self):
         info = dl.get_paderborn_dataset_info()
@@ -38,11 +42,17 @@ class TestDashboardDataLoader(unittest.TestCase):
         self.assertIn("not yet performed", info["experiment_status"])
         self.assertEqual(info["summary"]["n_healthy_states"], 6)
         self.assertEqual(info["summary"]["n_damaged_states"], 26)
+        self.assertEqual(info["sampling_rate_hz"], 64000)
+        self.assertEqual(info["window_size"], 2048)
 
     def test_canonical_cnn_results_match_stored_artifact(self):
         result = dl.get_canonical_cnn_results()
         self.assertEqual(result["status"], dl.STATUS_AVAILABLE)
         self.assertAlmostEqual(float(result["evaluation_summary"].iloc[0]["accuracy"]), 1.0)
+
+    def test_canonical_cnn_param_count_matches_live_checkpoint(self):
+        result = dl.get_canonical_cnn_results()
+        self.assertEqual(result["model_info"]["total_params"], 14500)
 
     def test_legacy_edge_cloud_results_distinct_from_canonical(self):
         result = dl.get_legacy_edge_cloud_results()
@@ -62,6 +72,20 @@ class TestDashboardDataLoader(unittest.TestCase):
 
         result = dl.get_relevance_results()
         self.assertEqual(result["config"]["class_relevance_map"], CLASS_RELEVANCE_MAP)
+
+    def test_relevance_results_reports_available_since_real_artifact_exists(self):
+        result = dl.get_relevance_results()
+        self.assertEqual(result["status"], dl.STATUS_AVAILABLE)
+        self.assertIsNotNone(result["summary"])
+
+    def test_pipeline_stage_status_distinguishes_voi_sub_stages(self):
+        status = dl.get_pipeline_stage_status()
+        self.assertIn("VoI synthetic diagnostics", status)
+        self.assertIn("VoI CWRU integration (Task 13)", status)
+        self.assertIn("VoI calibration validation (Tasks 14/15)", status)
+        self.assertTrue(status["VoI synthetic diagnostics"])
+        self.assertTrue(status["VoI CWRU integration (Task 13)"])
+        self.assertTrue(status["VoI calibration validation (Tasks 14/15)"])
 
     def test_voi_engine_config_matches_source_defaults(self):
         cfg = dl.get_voi_engine_config()
