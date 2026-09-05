@@ -1,0 +1,557 @@
+<title>VoI Results Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F2F5F5;
+    --surface:#FFFFFF;
+    --ink:#16211F;
+    --ink-soft:#57686B;
+    --ink-faint:#8996981f;
+    --line:#DCE3E3;
+    --signal:#0E7C82;
+    --signal-soft:#DCEFEF;
+    --signal-ink:#075458;
+    --discard:#78838C;
+    --buffer:#B4761F;
+    --summary:#2F6FA8;
+    --transmit:#1C7A50;
+    --shadow: 0 1px 2px rgba(20,40,40,0.06);
+    --font-display:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --font-body:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#121A1B;
+      --surface:#182223;
+      --ink:#E7EEEE;
+      --ink-soft:#9AACAE;
+      --ink-faint:#8996981f;
+      --line:#283435;
+      --signal:#57D8D9;
+      --signal-soft:#193233;
+      --signal-ink:#B9F1F1;
+      --discard:#8E99A1;
+      --buffer:#E0A752;
+      --summary:#6FA9E0;
+      --transmit:#4FC98A;
+      --shadow: 0 1px 2px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#121A1B;
+    --surface:#182223;
+    --ink:#E7EEEE;
+    --ink-soft:#9AACAE;
+    --ink-faint:#8996981f;
+    --line:#283435;
+    --signal:#57D8D9;
+    --signal-soft:#193233;
+    --signal-ink:#B9F1F1;
+    --discard:#8E99A1;
+    --buffer:#E0A752;
+    --summary:#6FA9E0;
+    --transmit:#4FC98A;
+    --shadow: 0 1px 2px rgba(0,0,0,0.35);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--font-body);
+    margin:0;
+    padding:56px 20px 96px;
+  }
+  .page{
+    max-width:718px;
+    margin:0 auto;
+  }
+  h1,h2,h3{
+    font-family:var(--font-display);
+    text-wrap:balance;
+    color:var(--ink);
+    letter-spacing:-0.01em;
+  }
+  p{ line-height:1.6; margin:0 0 14px; color:var(--ink);}
+  .lede{ color:var(--ink-soft); font-size:1.05rem; line-height:1.65; max-width:62ch;}
+  .num{ font-family:var(--font-mono); font-variant-numeric:tabular-nums; }
+
+  header.masthead{
+    margin-bottom:44px;
+    padding-bottom:28px;
+    border-bottom:1px solid var(--line);
+  }
+  .kicker{
+    font-family:var(--font-mono);
+    font-size:0.72rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--signal);
+    margin-bottom:10px;
+  }
+  h1{ font-size:2.15rem; font-weight:700; margin:0 0 12px; line-height:1.15;}
+  .meta-row{
+    display:flex; gap:18px; flex-wrap:wrap;
+    margin-top:18px;
+    font-family:var(--font-mono);
+    font-size:0.78rem;
+    color:var(--ink-soft);
+  }
+  .meta-row span{ white-space:nowrap; }
+  .meta-row b{ color:var(--ink); font-weight:600; }
+
+  section{ margin-bottom:52px; }
+  h2{
+    font-size:1.32rem;
+    font-weight:700;
+    margin:0 0 16px;
+    display:flex; align-items:baseline; gap:10px;
+  }
+  h2 .tag{
+    font-family:var(--font-mono);
+    font-size:0.68rem;
+    letter-spacing:0.08em;
+    color:var(--signal);
+    border:1px solid var(--signal);
+    border-radius:3px;
+    padding:2px 6px;
+    text-transform:uppercase;
+    font-weight:500;
+  }
+
+  .term{
+    background:var(--signal-soft);
+    color:var(--signal-ink);
+    border-radius:3px;
+    padding:0.05em 0.35em;
+    font-weight:600;
+    white-space:nowrap;
+  }
+
+  /* pipeline strip */
+  .pipeline{
+    display:flex; flex-wrap:wrap; align-items:center; gap:6px;
+    margin:18px 0 4px;
+  }
+  .pipeline .stage{
+    font-family:var(--font-mono);
+    font-size:0.74rem;
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:5px 9px;
+    color:var(--ink);
+    box-shadow:var(--shadow);
+  }
+  .pipeline .arrow{ color:var(--ink-soft); font-size:0.8rem; }
+
+  /* glossary */
+  .glossary{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(210px,1fr));
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    border-radius:6px;
+    overflow:hidden;
+  }
+  .glossary dt{
+    font-family:var(--font-mono);
+    font-weight:600;
+    font-size:0.82rem;
+    color:var(--signal-ink);
+    background:var(--surface);
+    padding:12px 14px 2px;
+  }
+  .glossary dd{
+    margin:0;
+    background:var(--surface);
+    padding:0 14px 12px;
+    font-size:0.85rem;
+    color:var(--ink-soft);
+    line-height:1.45;
+  }
+
+  /* dataset row */
+  .dataset{
+    display:flex; gap:14px;
+    padding:14px 0;
+    border-top:1px solid var(--line);
+  }
+  .dataset:last-child{ border-bottom:1px solid var(--line); }
+  .dataset .name{
+    font-family:var(--font-mono);
+    font-weight:600;
+    font-size:0.9rem;
+    width:110px;
+    flex:none;
+    padding-top:2px;
+  }
+  .status{
+    display:inline-block;
+    font-family:var(--font-mono);
+    font-size:0.68rem;
+    letter-spacing:0.03em;
+    padding:2px 8px;
+    border-radius:10px;
+    margin-bottom:6px;
+  }
+  .status.done{ background:color-mix(in srgb, var(--transmit) 16%, transparent); color:var(--transmit); }
+  .status.pending{ background:color-mix(in srgb, var(--buffer) 16%, transparent); color:var(--buffer); }
+  .status.absent{ background:var(--ink-faint); color:var(--ink-soft); }
+  .dataset p{ margin:0; font-size:0.92rem; color:var(--ink-soft); }
+
+  /* model blocks */
+  .model{
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:20px 22px;
+    margin-bottom:18px;
+    background:var(--surface);
+    box-shadow:var(--shadow);
+  }
+  .model .stage-label{
+    font-family:var(--font-mono);
+    font-size:0.68rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--signal);
+    margin-bottom:6px;
+  }
+  .model h3{ font-size:1.08rem; margin:0 0 4px; font-weight:700;}
+  .model .chosen{
+    font-size:0.86rem;
+    color:var(--ink-soft);
+    margin-bottom:12px;
+  }
+  .model .why{ font-size:0.94rem; }
+  .model .why b.lead{ color:var(--ink); }
+  .compare{
+    width:100%;
+    border-collapse:collapse;
+    margin:12px 0 12px;
+    font-size:0.84rem;
+  }
+  .compare th, .compare td{
+    text-align:left;
+    padding:6px 10px 6px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .compare th{
+    font-family:var(--font-mono);
+    font-weight:600;
+    color:var(--ink-soft);
+    font-size:0.72rem;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+  }
+  .compare td.figure{ font-family:var(--font-mono); font-variant-numeric:tabular-nums; }
+  .compare tr.chosen-row td{ color:var(--signal-ink); font-weight:600; }
+  .caveat{
+    font-size:0.86rem;
+    color:var(--ink-soft);
+    border-left:2px solid var(--buffer);
+    padding-left:10px;
+    margin-top:12px;
+  }
+  .not-compared{
+    font-size:0.8rem;
+    color:var(--ink-soft);
+    font-style:italic;
+    margin-top:10px;
+  }
+
+  /* result rows */
+  .result{
+    display:grid;
+    grid-template-columns:168px 1fr;
+    gap:18px;
+    padding:16px 0;
+    border-top:1px solid var(--line);
+    align-items:start;
+  }
+  .result:last-child{ border-bottom:1px solid var(--line); }
+  .result .stat{
+    font-family:var(--font-mono);
+    font-size:1.5rem;
+    font-weight:600;
+    color:var(--signal-ink);
+    line-height:1.15;
+  }
+  .result .stat-label{
+    display:block;
+    font-family:var(--font-mono);
+    font-size:0.66rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-top:4px;
+    font-weight:500;
+  }
+  .result .body p{ margin:0 0 8px; font-size:0.94rem; }
+  .result .body p:last-child{ margin-bottom:0; }
+  .result .body .meaning{ color:var(--ink); }
+  .result .body .caveat-line{ color:var(--ink-soft); font-size:0.85rem; }
+
+  /* decision chips */
+  .decisions{ display:flex; gap:8px; flex-wrap:wrap; margin:10px 0 4px; }
+  .chip{
+    font-family:var(--font-mono);
+    font-size:0.76rem;
+    padding:4px 10px;
+    border-radius:20px;
+    color:#fff;
+    white-space:nowrap;
+  }
+  .chip.discard{ background:var(--discard); }
+  .chip.buffer{ background:var(--buffer); }
+  .chip.summary{ background:var(--summary); }
+  .chip.transmit{ background:var(--transmit); }
+
+  ul.plain{ margin:0; padding-left:1.1em; }
+  ul.plain li{ margin-bottom:8px; font-size:0.94rem; line-height:1.55; }
+
+  .split{ display:grid; grid-template-columns:1fr 1fr; gap:26px; }
+  @media (max-width:600px){ .split{ grid-template-columns:1fr; } .result{ grid-template-columns:1fr; } .result .stat{font-size:1.3rem;} }
+
+  footer{
+    margin-top:60px;
+    padding-top:18px;
+    border-top:1px solid var(--line);
+    font-size:0.82rem;
+    color:var(--ink-soft);
+  }
+  footer code{ font-family:var(--font-mono); background:var(--ink-faint); padding:1px 5px; border-radius:3px; }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="kicker">Companion reading &middot; edge intelligence project</div>
+    <h1>Reading the VoI Results</h1>
+    <p class="lede">A plain-English walkthrough of every result in the project so far &mdash; what each number is, how it was produced, and which models were used to get there (and why, over the alternatives).</p>
+    <div class="meta-row">
+      <span>Dataset with results: <b>CWRU</b></span>
+      <span>Datasets integrated, no results yet: <b>IMS, Paderborn</b></span>
+      <span>Not integrated: <b>XJTU&#8209;SY, MIMII</b></span>
+    </div>
+  </header>
+
+  <section>
+    <h2>What this project actually does</h2>
+    <p>A machine reads vibration from a bearing. Sending every reading to the cloud for close inspection is expensive; ignoring everything risks missing a real fault. This project scores every reading for how <em>worth sending</em> it is &mdash; called its <span class="term">Value of Information</span>, or <span class="term">VoI</span> &mdash; and uses that score to decide: throw it away, hold onto it, send a short summary, or send the full reading. Today that decision is a policy evaluated on stored data, not a demonstrated physical transmission &mdash; no real network or free-space-optical (FSO) link has been simulated yet.</p>
+    <div class="pipeline">
+      <span class="stage">Dataset</span><span class="arrow">&rarr;</span>
+      <span class="stage">Preprocessing</span><span class="arrow">&rarr;</span>
+      <span class="stage">CNN</span><span class="arrow">&rarr;</span>
+      <span class="stage">Novelty</span><span class="arrow">&rarr;</span>
+      <span class="stage">Uncertainty</span><span class="arrow">&rarr;</span>
+      <span class="stage">Relevance</span><span class="arrow">&rarr;</span>
+      <span class="stage">Temporal</span><span class="arrow">&rarr;</span>
+      <span class="stage">Comm. cost</span><span class="arrow">&rarr;</span>
+      <span class="stage">VoI</span><span class="arrow">&rarr;</span>
+      <span class="stage">Decision</span><span class="arrow">&rarr;</span>
+      <span class="stage">Continual learning</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Key terms<span class="tag">glossary</span></h2>
+    <dl class="glossary">
+      <dt>CNN</dt><dd>Convolutional Neural Network &mdash; an AI model that learns patterns in a raw signal on its own, instead of needing hand-picked rules.</dd>
+      <dt>Embedding</dt><dd>A short list of numbers the CNN produces per reading &mdash; a compact "fingerprint" used to compare readings.</dd>
+      <dt>Novelty</dt><dd>How unfamiliar a reading looks next to a known healthy baseline.</dd>
+      <dt>Uncertainty</dt><dd>How unsure the model is about its own prediction.</dd>
+      <dt>Task Relevance</dt><dd>How much a predicted condition matters to act on (a fault outranks "normal").</dd>
+      <dt>Temporal Importance</dt><dd>How much a reading changed since the previous one.</dd>
+      <dt>Communication Cost</dt><dd>How expensive it would be to send this reading to the cloud.</dd>
+      <dt>Decision Policy</dt><dd>The fixed rule that turns a VoI score into: Discard, Buffer, Summarize, or Transmit.</dd>
+      <dt>Accuracy</dt><dd>Percent of predictions the model got exactly right.</dd>
+      <dt>Precision / Recall / F1</dt><dd>Finer-grained scoring than accuracy; F1 balances the two.</dd>
+      <dt>Confusion Matrix</dt><dd>A table showing exactly which conditions get mistaken for which.</dd>
+      <dt>Parameters</dt><dd>The number of values a model learns during training &mdash; roughly, its size.</dd>
+      <dt>Leakage-safe</dt><dd>A guarantee that no test data secretly influenced training or tuning.</dd>
+      <dt>Continual Learning</dt><dd>Carefully teaching the model a new condition later on, without corrupting what it already knows.</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>The datasets</h2>
+    <div class="dataset">
+      <div class="name">CWRU</div>
+      <div>
+        <span class="status done">results available</span>
+        <p>Real bearing vibration, 4 conditions, 12,000 samples/sec. The only dataset carried all the way through the CNN, Novelty, Uncertainty and VoI stages below.</p>
+      </div>
+    </div>
+    <div class="dataset">
+      <div class="name">IMS</div>
+      <div>
+        <span class="status pending">integrated only</span>
+        <p>Real run-to-failure recordings, 20,000 samples/sec, 4 test runs. Safely split and ready &mdash; no CNN/novelty/VoI experiment has been run on it.</p>
+      </div>
+    </div>
+    <div class="dataset">
+      <div class="name">Paderborn</div>
+      <div>
+        <span class="status pending">integrated only</span>
+        <p>Real vibration + motor-current recordings, 32 bearing codes (6 healthy, 26 damaged), 64,000 samples/sec. Same status as IMS &mdash; integrated, not yet experimented on.</p>
+      </div>
+    </div>
+    <div class="dataset">
+      <div class="name">XJTU&#8209;SY / MIMII</div>
+      <div>
+        <span class="status absent">not in project</span>
+        <p>No code, no data, no results &mdash; not part of this repository yet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The models we used &mdash; and why</h2>
+    <p class="lede" style="margin-bottom:24px;">Four places in the pipeline involve choosing a model. Where we actually tested alternatives, the numbers are below; where we didn't, that's said plainly too.</p>
+
+    <div class="model">
+      <div class="stage-label">Stage &middot; Fault classifier</div>
+      <h3>1D Convolutional Neural Network (custom, compact)</h3>
+      <p class="chosen">The model used throughout this project: <b>14,500 parameters</b>, reads the raw 2,048-sample vibration window directly &mdash; no hand-picked features. Reaches 100% on its own held-out test set.</p>
+      <p class="why"><b class="lead">Why not a bigger model?</b> A separate edge-vs-cloud experiment (a different, 1,043-sample test split) measured exactly that tradeoff:</p>
+      <table class="compare">
+        <tr><th>Model (separate edge/cloud comparison)</th><th>Accuracy</th></tr>
+        <tr><td>Compact edge CNN</td><td class="figure">73.1%</td></tr>
+        <tr><td>Cloud CNN &mdash; 504,580 parameters</td><td class="figure">80.5%</td></tr>
+      </table>
+      <p class="why">The bigger model wins on raw accuracy. This demonstrates an accuracy&ndash;model-size tradeoff &mdash; it motivates the need for an information-aware mechanism (like the VoI system built here) that can decide, reading by reading, when the extra processing or communication is actually worth it, rather than always defaulting to one extreme; the comparison itself doesn't prove VoI resolves that tradeoff well, only that the tradeoff is real. The model this project actually runs is kept deliberately simple (no attention layers, no augmentation) so it stays small enough for an edge device, while its 64-number fingerprint (<span class="term">embedding</span>) is reused for free by the Novelty stage below.</p>
+      <p class="caveat">100% on the main model's own test set (406 samples) almost certainly reflects how easy CWRU's four conditions are to separate on this clean benchmark &mdash; not proof it would generalize to noisier, real-world bearings.</p>
+    </div>
+
+    <div class="model">
+      <div class="stage-label">Stage &middot; Novelty detection</div>
+      <h3>Distance-to-healthy-centroid</h3>
+      <p class="chosen">Measures how far a new reading's fingerprint sits from the average healthy fingerprint.</p>
+      <table class="compare">
+        <tr><th>Model</th><th>F1 score</th></tr>
+        <tr><td>Isolation Forest</td><td class="figure">0.88</td></tr>
+        <tr><td>One-Class SVM</td><td class="figure">0.94</td></tr>
+        <tr><td>CNN Autoencoder</td><td class="figure">&asymp;1.00</td></tr>
+        <tr class="chosen-row"><td>Distance-to-centroid (chosen for the live pipeline)</td><td class="figure">&mdash;</td></tr>
+      </table>
+      <p class="why"><b class="lead">Why this one:</b> in a side-by-side test, the CNN Autoencoder actually scored best. The live VoI pipeline still uses the simpler distance method anyway, because it comes free from the classifier's existing fingerprint &mdash; no second model to train, store, or keep in sync &mdash; is fully deterministic, and was already accurate enough here. The stronger autoencoder is documented as a promising upgrade, not yet wired into the live pipeline.</p>
+    </div>
+
+    <div class="model">
+      <div class="stage-label">Stage &middot; Uncertainty estimation</div>
+      <h3>Entropy of the classifier's own probabilities</h3>
+      <p class="chosen">No separate model &mdash; reuses the numbers the classifier already outputs.</p>
+      <p class="not-compared">Not tested against alternatives (e.g. Bayesian or ensemble methods) &mdash; chosen purely for simplicity, since it needs no retraining.</p>
+      <p class="why"><b class="lead">Why this one:</b> zero extra cost. Its weakness shows up directly in the results: because the classifier is confident almost everywhere, this score ends up nearly flat &mdash; which is exactly why it was later down-weighted in the VoI formula (see below).</p>
+    </div>
+
+    <div class="model">
+      <div class="stage-label">Stage &middot; Continual learning</div>
+      <h3>Frozen backbone, retrain only the last layer</h3>
+      <p class="chosen">Keeps the trained classifier's body untouched; only its final 260-number decision layer is retrained on a new condition, gated by a safety check.</p>
+      <p class="not-compared">Not compared against full-model retraining as an experiment &mdash; chosen by design, for a specific safety reason.</p>
+      <p class="why"><b class="lead">Why this one:</b> freezing the body means every existing fingerprint stays mathematically identical after the update &mdash; nothing else downstream (novelty reference, stored fingerprints) needs to be redone. Cheaper and safer than retraining the whole model, at the cost of being less flexible about genuinely new signal shapes.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The results, stage by stage <span class="tag">CWRU only</span></h2>
+
+    <div class="result">
+      <div><span class="stat">100.0%</span><span class="stat-label">CNN test accuracy</span></div>
+      <div class="body">
+        <p class="meaning">The classifier got every one of 406 held-out readings right, across all four conditions.</p>
+        <p class="caveat-line">Caveat: near-perfect scores like this usually mean the benchmark is easy, not that the model is flawless.</p>
+      </div>
+    </div>
+
+    <div class="result">
+      <div><span class="stat num">0.00 &rarr; 0.88</span><span class="stat-label">Novelty score by condition</span></div>
+      <div class="body">
+        <p class="meaning">Healthy readings score close to 0; Inner Race Fault scores highest (0.88), Outer Race 0.76, Ball Fault 0.57 &mdash; a sensible ranking of "how different from healthy."</p>
+      </div>
+    </div>
+
+    <div class="result">
+      <div><span class="stat num">&asymp; 0.001</span><span class="stat-label">Uncertainty (of 1.0)</span></div>
+      <div class="body">
+        <p class="meaning">Near zero everywhere &mdash; the classifier is almost always very confident.</p>
+        <p class="caveat-line">Flagged as a weak signal: too flat to tell readings apart on its own.</p>
+      </div>
+    </div>
+
+    <div class="result">
+      <div><span class="stat num">0.10 &ndash; 1.00</span><span class="stat-label">Task relevance (fixed)</span></div>
+      <div class="body">
+        <p class="meaning">Hand-set, not learned: Normal = 0.10, Inner Race Fault = 1.00, Ball / Outer Race Fault = 0.90 each &mdash; faults simply outrank "normal" by design.</p>
+      </div>
+    </div>
+
+    <div class="result">
+      <div><span class="stat num">scale 1.8</span><span class="stat-label">Temporal importance setting</span></div>
+      <div class="body">
+        <p class="meaning">Measures how much a reading changed since the previous one. Already recalibrated once &mdash; the original setting saturated to "maximum change" on almost every fault window, so it couldn't tell severities apart.</p>
+      </div>
+    </div>
+
+    <div class="result">
+      <div><span class="stat num">&asymp; 0.50</span><span class="stat-label">Communication cost (of 1.0)</span></div>
+      <div class="body">
+        <p class="meaning">Currently near-constant for every reading, because there's no real network/channel model yet &mdash; every reading is treated as one fixed-size packet.</p>
+      </div>
+    </div>
+
+    <div class="result">
+      <div><span class="stat num">30 / 5 / 35 / 20 / 10</span><span class="stat-label">VoI weights, % (N / U / R / T / C)</span></div>
+      <div class="body">
+        <p class="meaning">In this canonical order &mdash; Novelty, Uncertainty, Relevance, Temporal, Cost &mdash; the combined VoI score currently weighs Relevance and Novelty most heavily, Temporal Importance next, Communication Cost a little, and Uncertainty almost not at all (it was too flat to matter).</p>
+        <p class="meaning" style="margin-top:10px;">On held-out test data, this sorts into:</p>
+        <div class="decisions">
+          <span class="chip discard">Discard 14.3%</span>
+          <span class="chip buffer">Buffer 1.0%</span>
+          <span class="chip summary">Summarize 70.7%</span>
+          <span class="chip transmit">Transmit 14.0%</span>
+        </div>
+        <p class="caveat-line">Only Inner Race Fault readings ever reach "Transmit" today. These four labels are the output of the decision policy evaluated on stored data &mdash; not a demonstrated physical transmission over a real or simulated communication channel.</p>
+      </div>
+    </div>
+
+    <div class="result">
+      <div><span class="stat">v1 &rarr; v2</span><span class="stat-label">Continual learning trial</span></div>
+      <div class="body">
+        <p class="meaning">One full trial: a "new" fault condition was introduced, correctly flagged as unfamiliar, safely admitted as a new known pattern, its last layer retrained, passed its own safety check, and went live as model version 2.</p>
+        <p class="caveat-line">Caveat: CWRU recordings don't actually drift over time, so this proves the <em>mechanism</em> works &mdash; not that a real emerging fault has been caught in the wild.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What we can &mdash; and can't &mdash; conclude</h2>
+    <div class="split">
+      <div>
+        <h3 style="font-size:0.95rem;color:var(--transmit);">Supported by the evidence</h3>
+        <ul class="plain">
+          <li>The full pipeline works end-to-end on one real dataset.</li>
+          <li>Every stage is reproducible &mdash; same seed, same numbers, every time.</li>
+          <li>No test data ever leaked into training or tuning at any stage.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:0.95rem;color:var(--buffer);">Not yet shown</h3>
+        <ul class="plain">
+          <li>That this generalizes to noisier, real-world bearings or other equipment.</li>
+          <li>That IMS or Paderborn would behave the same way &mdash; untested.</li>
+          <li>That the current weights and thresholds are optimal &mdash; they're hand-set, not learned.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    For the full breakdown &mdash; every table, chart, and raw figure this document summarizes &mdash; see the project's live results dashboard (<code>dashboard/app.py</code>, run via <code>run_project.py --dashboard</code>).
+  </footer>
+
+</div>
