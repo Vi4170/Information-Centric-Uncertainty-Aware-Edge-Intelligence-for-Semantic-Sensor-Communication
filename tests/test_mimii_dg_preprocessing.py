@@ -3,7 +3,7 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from src.mimii_pipeline.preprocessing import (
+from src.mimii_dg_pipeline.preprocessing import (
     EXPECTED_CHANNELS,
     EXPECTED_FRAMES_PER_RECORDING,
     EXPECTED_MACHINE_TYPES,

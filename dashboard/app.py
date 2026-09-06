@@ -342,9 +342,12 @@ def render_comparison():
     st.caption(
         "Only dataset-integration facts are compared here. CNN/novelty/uncertainty/VoI metrics exist "
         "for CWRU only, so no cross-dataset model-performance comparison is possible yet. "
-        "XJTU-SY and MIMII are not integrated into this repository -- no code, raw data, or "
-        "processed artifacts for either exist yet, so they are omitted rather than shown with "
-        "placeholder rows."
+        "XJTU-SY and MIMII-DG have code-level integration (src/xjtu_pipeline, src/mimii_dg_pipeline) "
+        "and processed dataset-summary artifacts, but no raw data is available in this environment and "
+        "no CNN/novelty/VoI experiments have been run on either, so they are omitted from the table "
+        "above rather than shown with placeholder rows. MIMII-DG is a distinct dataset from the "
+        "original MIMII dataset (different machine types, no dB/SNR subsets) -- the original MIMII "
+        "0 dB subset has not been integrated into this repository."
     )
 
     st.subheader("Edge vs. cloud vs. VoI-mediated accuracy")
