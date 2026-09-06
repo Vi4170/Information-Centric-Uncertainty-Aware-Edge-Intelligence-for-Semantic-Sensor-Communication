@@ -1,0 +1,98 @@
+{
+  "channel_index": 0,
+  "class_distribution_by_split": {
+    "test": {
+      "Healthy": 2251,
+      "Inner Race Fault": 3374,
+      "Outer Race Fault": 4133
+    },
+    "train": {
+      "Healthy": 10518,
+      "Inner Race Fault": 15783,
+      "Outer Race Fault": 19339
+    },
+    "val": {
+      "Healthy": 2250,
+      "Inner Race Fault": 3376,
+      "Outer Race Fault": 4134
+    }
+  },
+  "class_distribution_total": {
+    "Healthy": 15019,
+    "Inner Race Fault": 22533,
+    "Outer Race Fault": 27606
+  },
+  "class_names": {
+    "0": "Healthy",
+    "1": "Inner Race Fault",
+    "2": "Outer Race Fault"
+  },
+  "dataset": "paderborn",
+  "excluded_bearing_codes": {
+    "KA08": "damage_components=('AR',) is not a recognized OR/IR fault-location code in the Paderborn bearing registry; ambiguous, excluded rather than assumed.",
+    "KB23": "damage_components=('IR','IR','OR') mixes inner- and outer-race damage; no single unambiguous fault-location label applies.",
+    "KB24": "damage_components=('IR','OR') mixes inner- and outer-race damage; no single unambiguous fault-location label applies.",
+    "KB27": "damage_components=('OR','IR') mixes inner- and outer-race damage; no single unambiguous fault-location label applies.",
+    "KI04": "damage_components=('IR','OR') mixes inner- and outer-race damage; no single unambiguous fault-location label applies.",
+    "KI14": "damage_components=('IR','OR') mixes inner- and outer-race damage; no single unambiguous fault-location label applies."
+  },
+  "experiment": "3-class fault-location classification (Healthy / Inner Race / Outer Race)",
+  "included_bearing_codes": [
+    "K001",
+    "K002",
+    "K003",
+    "K004",
+    "K005",
+    "K006",
+    "KA01",
+    "KA03",
+    "KA04",
+    "KA05",
+    "KA06",
+    "KA07",
+    "KA09",
+    "KA15",
+    "KA16",
+    "KA22",
+    "KA30",
+    "KI01",
+    "KI03",
+    "KI05",
+    "KI07",
+    "KI08",
+    "KI16",
+    "KI17",
+    "KI18",
+    "KI21"
+  ],
+  "leakage_checks": {
+    "no_measurement_crosses_split": true,
+    "observation_ids_unique": true,
+    "split_disjoint_overlaps": {
+      "train_test_overlap": 0,
+      "train_val_overlap": 0,
+      "val_test_overlap": 0
+    }
+  },
+  "modality": "vibration",
+  "n_bearing_codes_excluded": 6,
+  "n_bearing_codes_included": 26,
+  "normalization": {
+    "method": "global scalar z-score, fit on train split only",
+    "train_mean": 0.0070241475477814674,
+    "train_std": 0.35162556171417236
+  },
+  "operating_condition": "N15_M07_F10",
+  "provenance": {
+    "data_source_name": "University of Paderborn Bearing DataCenter",
+    "data_source_url": "https://groups.uni-paderborn.de/kat/BearingDataCenter/"
+  },
+  "random_seed": 42,
+  "split_sizes": {
+    "test": 9758,
+    "train": 45640,
+    "val": 9760
+  },
+  "total_windows": 65158,
+  "window_size": 2048
+}

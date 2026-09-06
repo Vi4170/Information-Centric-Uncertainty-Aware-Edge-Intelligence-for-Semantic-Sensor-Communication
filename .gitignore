@@ -45,5 +45,8 @@ Thumbs.db
 # Raw CWRU .mat dataset files — obtain from CWRU Bearing Data Center manually
 data/raw/
 
+# Too large for GitHub (>100MB); regenerate with `python -m src.paderborn_pipeline.classification_task`
+data/processed/paderborn/paderborn_dataset_v1.npz
+
 # Scratch / temporary files
 scratch/
