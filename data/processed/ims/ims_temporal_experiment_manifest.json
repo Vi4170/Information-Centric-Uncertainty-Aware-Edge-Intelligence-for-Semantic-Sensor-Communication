@@ -1,0 +1,109 @@
+{
+  "analysis_targets": [
+    {
+      "bearing_id": 3,
+      "channel_index": 0,
+      "failure_note": "Vendor readme: inner race defect in bearing 3 by end of run (run-level only).",
+      "role": "documented_failure",
+      "run_id": "1st_test"
+    },
+    {
+      "bearing_id": 4,
+      "channel_index": 0,
+      "failure_note": "Vendor readme: roller element defect in bearing 4 by end of run (run-level only).",
+      "role": "documented_failure",
+      "run_id": "1st_test"
+    },
+    {
+      "bearing_id": 1,
+      "channel_index": 0,
+      "failure_note": "No documented failure for this bearing in this run.",
+      "role": "control",
+      "run_id": "1st_test"
+    },
+    {
+      "bearing_id": 1,
+      "channel_index": 0,
+      "failure_note": "Vendor readme: outer race failure in bearing 1 by end of run (run-level only).",
+      "role": "documented_failure",
+      "run_id": "2nd_test"
+    },
+    {
+      "bearing_id": 2,
+      "channel_index": 0,
+      "failure_note": "No documented failure for this bearing in this run.",
+      "role": "control",
+      "run_id": "2nd_test"
+    },
+    {
+      "bearing_id": 3,
+      "channel_index": 0,
+      "failure_note": "Vendor readme: outer race failure in bearing 3 by end of run (run-level only).",
+      "role": "documented_failure",
+      "run_id": "3rd_test"
+    },
+    {
+      "bearing_id": 1,
+      "channel_index": 0,
+      "failure_note": "No documented failure for this bearing in this run.",
+      "role": "control",
+      "run_id": "3rd_test"
+    },
+    {
+      "bearing_id": 3,
+      "channel_index": 0,
+      "failure_note": "Not a documented failure event: this run_id is the undocumented continuation of the same physical rig/bearing as 3rd_test's bearing 3 (see RUN_FAILURE_DESCRIPTIONS['4th_test']); vendor readme asserts no label for this region.",
+      "role": "undocumented_continuation",
+      "run_id": "4th_test"
+    }
+  ],
+  "dataset": "ims",
+  "experiment": "run-to-failure temporal and novelty progression analysis (no supervised classification)",
+  "leakage_checks": "verify_observation_id_uniqueness, verify_split_disjoint, verify_chronological_split_order, and verify_no_test_leakage_into_normalization (all unmodified, from src/ims_pipeline/preprocessing.py) were run and passed for every analysis target; see the full test suite for enforcement.",
+  "normalization": {
+    "method": "global scalar z-score per target, fit on 'initial' split only",
+    "per_target_train_mean_std": {
+      "1st_test_b1_c0": {
+        "mean": -0.10912727564573288,
+        "std": 0.09290867298841476
+      },
+      "1st_test_b3_c0": {
+        "mean": -0.10631585121154785,
+        "std": 0.10583201050758362
+      },
+      "1st_test_b4_c0": {
+        "mean": -0.1062735915184021,
+        "std": 0.073893241584301
+      },
+      "2nd_test_b1_c0": {
+        "mean": -0.0020085161086171865,
+        "std": 0.07730089873075485
+      },
+      "2nd_test_b2_c0": {
+        "mean": -0.0015543857589364052,
+        "std": 0.0952368900179863
+      },
+      "3rd_test_b1_c0": {
+        "mean": -0.00229621771723032,
+        "std": 0.07438519597053528
+      },
+      "3rd_test_b3_c0": {
+        "mean": -0.001978843007236719,
+        "std": 0.06644527614116669
+      },
+      "4th_test_b3_c0": {
+        "mean": -0.0025918371975421906,
+        "std": 0.06918048858642578
+      }
+    }
+  },
+  "not_computed": {
+    "task_relevance": "Requires a trained class-probability distribution (relevance_from_probabilities) or a predicted class id (relevance_from_class). Same reason as uncertainty: no legitimate per-window classifier exists for IMS.",
+    "uncertainty": "Requires a trained class-probability distribution. IMS provides no legitimate per-window label to train a classifier against; not approximated.",
+    "voi_score_and_decision": "The canonical VoI formula requires all five components. With task_relevance and uncertainty unavailable, the composite VoI score and DISCARD/BUFFER/SUMMARY/TRANSMIT decision policy are not computed for IMS rather than substituted with placeholder values."
+  },
+  "novelty_methodology": "DistanceNoveltyDetector operating on raw flattened window signal (embedding_dim=2048), not a CNN embedding, since no legitimately trained embedding exists for IMS (see module docstring). Formula, fitting, and scoring code unmodified from src/novelty/novelty.py.",
+  "random_seed": 42,
+  "reference_population": "Per-(run_id, bearing_id, channel_index) target: mean of that target's own 'initial' split raw-window signal (flattened, train-only normalized). No cross-run or cross-bearing pooling of reference populations.",
+  "temporal_methodology": "compute_temporal_importance applied unmodified with the existing default DEFAULT_TEMPORAL_CHANGE_SCALE (not re-derived for IMS), on raw flattened window signal in verified chronological order within each target."
+}

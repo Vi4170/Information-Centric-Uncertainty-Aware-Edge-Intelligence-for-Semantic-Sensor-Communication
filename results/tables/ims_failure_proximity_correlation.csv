@@ -1,0 +1,9 @@
+run_id,bearing_id,role,failure_note,n_windows,corr_trajectory_position_novelty,corr_trajectory_position_temporal_importance
+1st_test,3,documented_failure,Vendor readme: inner race defect in bearing 3 by end of run (run-level only).,21560,0.6806527277334723,0.655023100208012
+1st_test,4,documented_failure,Vendor readme: roller element defect in bearing 4 by end of run (run-level only).,21560,0.8040407604672544,0.8532613588999121
+1st_test,1,control,No documented failure for this bearing in this run.,21560,0.43135837025135426,0.5353440556980589
+2nd_test,1,documented_failure,Vendor readme: outer race failure in bearing 1 by end of run (run-level only).,9840,0.7739810084175531,0.8388495340143374
+2nd_test,2,control,No documented failure for this bearing in this run.,9840,0.5270010802788233,0.5216420585821308
+3rd_test,3,documented_failure,Vendor readme: outer race failure in bearing 3 by end of run (run-level only).,44480,0.3141983178048853,0.22212370923222416
+3rd_test,1,control,No documented failure for this bearing in this run.,44480,-0.2115859105073756,-0.21307851165942426
+4th_test,3,undocumented_continuation,Not a documented failure event: this run_id is the undocumented continuation of the same physical rig/bearing as 3rd_test's bearing 3 (see RUN_FAILURE_DESCRIPTIONS['4th_test']); vendor readme asserts no label for this region.,18760,0.6760857090179878,0.630230631975911
