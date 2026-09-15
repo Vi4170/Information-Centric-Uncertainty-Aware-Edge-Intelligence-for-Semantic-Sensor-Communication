@@ -1,0 +1,400 @@
+{
+  "10_modalities_safely_combinable": {
+    "part1_load_primary_triple": {
+      "granularity": "session-level (one condition code = one observation's source run)",
+      "modalities": [
+        "vibration",
+        "temperature",
+        "motor_current"
+      ],
+      "n_sessions": 45,
+      "status": "derived_from_published_source"
+    },
+    "part1_load_with_acoustic": {
+      "granularity": "session-level, 0 Nm subset only",
+      "modalities": [
+        "vibration",
+        "temperature",
+        "motor_current",
+        "acoustic"
+      ],
+      "n_sessions": 5,
+      "note": "Combinable in principle, but which specific condition codes overlap cannot be confirmed without either the raw acoustic filenames or a file manifest -- neither is present in this environment.",
+      "status": "unverified_no_raw_data_in_environment"
+    },
+    "part2_speed": {
+      "granularity": "session-level",
+      "modalities": [
+        "vibration",
+        "motor_current"
+      ],
+      "note": "Structurally separate from part1_load; see PART2_SPEED_NOTE.",
+      "status": "excluded_from_fusion_scope"
+    }
+  },
+  "11_exclusions": [
+    "acoustic is excluded from the primary fusion scope for every load != 0 Nm, and for every fault/severity combination not among its documented 5-file subset (exact identities undocumented).",
+    "part2_speed is excluded from the primary (4-modality) fusion scope: it has no acoustic or temperature channel, uses a different motor_current sampling rate (100 kHz vs 25.6 kHz), a different file format (CSV), and a different naming/session convention than part1_load.",
+    "sample-level (tick-by-tick) cross-DAQ timestamp synchronization between {vibration, acoustic} (SCADAS) and {temperature, motor_current} (NI) is excluded from any legitimate-fusion claim until directly verified against raw file timestamps -- it is not documented by the source."
+  ],
+  "12_missing_data_and_alignment_issues": {
+    "note": "The fetched source text does not discuss missing data, dropped samples, or sensor drift during acquisition. This audit cannot confirm the absence of such issues either -- no raw files or file manifest are present in this environment to check directly.",
+    "status": "not_documented_by_source"
+  },
+  "13_dataset_level_leakage_risks": [
+    "If this dataset is used for train/val/test splitting, splits must be assigned at the condition-code (session) level, never at the window/sample level -- consistent with every other dataset already integrated in this repository (CWRU, Paderborn, IMS, XJTU-SY).",
+    "Fault severities are artificially seeded and static per recording (not a naturally progressive degradation), so a model evaluated only within the same severity levels it was trained on risks learning a severity-code shortcut rather than a genuine fault signature; this is a modeling-evaluation risk for a future task, not a data-leakage risk in the train/val/test sense.",
+    "part1_load and part2_speed must not be silently pooled: they represent different experimental designs (induced static severity vs. varying operating speed) and mixing them without accounting for that would conflate two different sources of variation."
+  ],
+  "14_source_provenance_metadata": {
+    "authors": [
+      "Wonho Jung",
+      "Seong-Hu Kim",
+      "SungHyun Yun",
+      "Jaewoong Bae",
+      "Yong-Hwa Park"
+    ],
+    "companion_paper_citation": "Jung, W., Kim, S.-H., Yun, S., Bae, J., Park, Y.-H. (2023). \"Vibration, acoustic, temperature, and motor current dataset of rotating machine under varying operating conditions for fault diagnosis.\" Data in Brief, 48, 109049. https://doi.org/10.1016/j.dib.2023.109049",
+    "companion_paper_open_access_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10036499/",
+    "doi": "10.17632/ztmf3m7h5x.6",
+    "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
+    "license": "CC BY 4.0",
+    "publication_date": "2023-02-08",
+    "status": "confirmed_from_published_source",
+    "title": "Vibration, Acoustic, Temperature, and Motor Current Dataset of Rotating Machine Under Varying Load Conditions for Fault Diagnosis",
+    "url": "https://data.mendeley.com/datasets/ztmf3m7h5x/6",
+    "version": 6
+  },
+  "15_sufficiency_for_task_32": {
+    "blocking_for_task_32": true,
+    "conclusion": "conditionally_sufficient",
+    "reasoning": "The vibration + temperature + motor_current triple is legitimately session-matched (same experimental run, consistent file counts, shared naming) for all 45 part1_load conditions, and is sufficient to design a genuine 3-modality multisensor observation once raw data is obtained. A full 4-modality observation including acoustic is NOT supported across the general condition space -- only for a narrow, currently-unconfirmed 0 Nm subset -- and must not be forced. Sample-level cross-DAQ timestamp synchronization is unverified and must be checked directly against raw files before any fine-grained (sub-session) fusion is implemented. Raw data acquisition into this environment is a prerequisite for any part of Task 32 beyond structural design.",
+    "status": "derived_from_published_source"
+  },
+  "1_available_modalities": {
+    "detail": {
+      "acoustic": {
+        "acquisition_device": "1x PCB378B02 microphone, positioned near bearing housing A, via the same Siemens SCADAS Mobile 5PM50 system as vibration",
+        "columns": [
+          "Time Stamp",
+          "values"
+        ],
+        "coverage": "part1_load ONLY, and only at the 0 Nm load level (the authors state acoustic data was restricted to no-load conditions specifically to avoid noise from the air-cooled hysteresis brake). 5 files total: 1 Normal + a documented subset of 2 fault types at 2 severities each, all at 0 Nm.",
+        "file_format": "mat",
+        "present_in_part1_load": true,
+        "present_in_part2_speed": false,
+        "sampling_rate_hz": {
+          "part1_load": 51200,
+          "part2_speed": null
+        },
+        "sampling_rate_note": "Acoustic data does not exist in part2_speed at all.",
+        "sampling_rate_status": {
+          "part1_load": "confirmed_from_published_source",
+          "part2_speed": "not_documented_by_source"
+        },
+        "units": "Pa"
+      },
+      "motor_current": {
+        "acquisition_device": "3x Hioki CT6700 current-transformer sensors via an NI9775 module",
+        "columns": [
+          "Time Stamp",
+          "Temperature_housing_A",
+          "Temperature_housing_B",
+          "U-phase",
+          "V-phase",
+          "W-phase"
+        ],
+        "coverage": "part1_load (shares file with temperature) and part2_speed (standalone CSV, paired with an RPM reference file)",
+        "file_format": {
+          "part1_load": "tdms",
+          "part2_speed": "csv"
+        },
+        "present_in_part1_load": true,
+        "present_in_part2_speed": true,
+        "sampling_rate_hz": {
+          "part1_load": 25600,
+          "part2_speed": 100000
+        },
+        "sampling_rate_status": {
+          "part1_load": "confirmed_from_published_source",
+          "part2_speed": "confirmed_from_published_source"
+        },
+        "shares_raw_file_with": "temperature (part1_load only)",
+        "units": "ampere (A)"
+      },
+      "temperature": {
+        "acquisition_device": "2x K-type thermocouples via an NI 9211 module",
+        "columns": [
+          "Time Stamp",
+          "Temperature_housing_A",
+          "Temperature_housing_B",
+          "U-phase",
+          "V-phase",
+          "W-phase"
+        ],
+        "coverage": "part1_load ONLY. Shares one .tdms file with motor_current -- temperature and motor current are the same physical recording, not two files that must be separately aligned.",
+        "file_format": "tdms",
+        "present_in_part1_load": true,
+        "present_in_part2_speed": false,
+        "sampling_rate_hz": {
+          "part1_load": 25600,
+          "part2_speed": null
+        },
+        "sampling_rate_note": "Temperature data does not exist in part2_speed at all.",
+        "sampling_rate_status": {
+          "part1_load": "confirmed_from_published_source",
+          "part2_speed": "not_documented_by_source"
+        },
+        "shares_raw_file_with": "motor_current",
+        "units": "degrees Celsius (temperature columns); ampere (current columns)"
+      },
+      "vibration": {
+        "acquisition_device": "4x PCB352C34 ICP accelerometers (2 axes x 2 housings) via a Siemens SCADAS Mobile 5PM50 data acquisition system",
+        "columns": [
+          "Time Stamp",
+          "x_direction_housing_A",
+          "y_direction_housing_A",
+          "x_direction_housing_B",
+          "y_direction_housing_B"
+        ],
+        "coverage": "part1_load (all conditions) and part2_speed (constant + varying speed)",
+        "file_format": "mat",
+        "present_in_part1_load": true,
+        "present_in_part2_speed": true,
+        "sampling_rate_hz": {
+          "part1_load": 25600,
+          "part2_speed": null
+        },
+        "sampling_rate_note": "part2_speed vibration sampling rate is not explicitly restated for the varying-speed sub-dataset in the fetched source text; it is NOT assumed to equal the part1_load rate.",
+        "sampling_rate_status": {
+          "part1_load": "confirmed_from_published_source",
+          "part2_speed": "not_documented_by_source"
+        },
+        "units": "g (gravitational acceleration)"
+      }
+    },
+    "modalities": [
+      "acoustic",
+      "motor_current",
+      "temperature",
+      "vibration"
+    ],
+    "status": "confirmed_from_published_source"
+  },
+  "2_raw_file_formats_and_directory_structure": {
+    "explicit_folder_hierarchy_documented": {
+      "note": "No explicit folder/directory hierarchy is documented by the source; only file-naming conventions are.",
+      "status": "not_documented_by_source"
+    },
+    "formats_by_modality": {
+      "acoustic": "mat",
+      "motor_current": {
+        "part1_load": "tdms (shared file with temperature)",
+        "part2_speed": "csv"
+      },
+      "temperature": "tdms (shared file with motor_current)",
+      "vibration": "mat"
+    },
+    "part1_load_naming_convention": "{load}Nm_{fault_type}_{severity}.{ext} (severity omitted for Normal)",
+    "part2_speed_naming_convention": "{signal}_{condition}_{subset}.csv",
+    "status": "confirmed_from_published_source"
+  },
+  "3_sampling_rates": {
+    "acoustic": {
+      "sampling_rate_hz": {
+        "part1_load": 51200,
+        "part2_speed": null
+      },
+      "status": {
+        "part1_load": "confirmed_from_published_source",
+        "part2_speed": "not_documented_by_source"
+      }
+    },
+    "motor_current": {
+      "sampling_rate_hz": {
+        "part1_load": 25600,
+        "part2_speed": 100000
+      },
+      "status": {
+        "part1_load": "confirmed_from_published_source",
+        "part2_speed": "confirmed_from_published_source"
+      }
+    },
+    "temperature": {
+      "sampling_rate_hz": {
+        "part1_load": 25600,
+        "part2_speed": null
+      },
+      "status": {
+        "part1_load": "confirmed_from_published_source",
+        "part2_speed": "not_documented_by_source"
+      }
+    },
+    "vibration": {
+      "sampling_rate_hz": {
+        "part1_load": 25600,
+        "part2_speed": null
+      },
+      "status": {
+        "part1_load": "confirmed_from_published_source",
+        "part2_speed": "not_documented_by_source"
+      }
+    }
+  },
+  "4_timestamp_availability_and_resolution": {
+    "absolute_epoch_or_shared_clock_format": {
+      "note": "Whether 'Time Stamp' is absolute/wall-clock, or relative-to-recording-start, and whether it is comparable across the two separate DAQ systems, is not documented by the source.",
+      "status": "not_documented_by_source"
+    },
+    "column_present_in_every_modality": {
+      "note": "Every raw file format (vibration/acoustic .mat, temperature+current .tdms) documents a 'Time Stamp' column.",
+      "status": "confirmed_from_published_source"
+    },
+    "nominal_resolution_derived_from_sampling_rate": {
+      "acoustic_seconds": 1.953125e-05,
+      "motor_current_part2_seconds": 1e-05,
+      "status": "derived_from_published_source",
+      "temperature_current_part1_seconds": 3.90625e-05,
+      "vibration_seconds": 3.90625e-05
+    }
+  },
+  "5_recording_session_experiment_identifiers": {
+    "part1_load": "the {load}Nm_{fault_type}_{severity} filename triple",
+    "part2_speed": "the {condition}_{subset} filename pair",
+    "status": "confirmed_from_published_source"
+  },
+  "6_machine_operating_load_conditions": {
+    "part1_load_levels_nm": [
+      0,
+      2,
+      4
+    ],
+    "part2_constant_speed_rpm": 3010,
+    "part2_varying_speed_range_rpm": [
+      680,
+      2460
+    ],
+    "status": "confirmed_from_published_source",
+    "test_rig": "Siemens 3-HP three-phase AC motor (rated 1770 rpm) -> 2.07x gearbox -> shaft carrying four rotor disks -> two bearing housings (A, B) -> air-cooled hysteresis brake (AHB-3A) with a torque meter (Datum M425) for load application."
+  },
+  "7_health_fault_labels_and_granularity": {
+    "fault_type_description": {
+      "BPFI": "Bearing inner race fault, induced via a machined crack of the given depth.",
+      "BPFO": "Bearing outer race fault, induced via a machined crack of the given depth.",
+      "Misalignment": "Shaft misalignment, induced via the given lateral offset.",
+      "Normal": "Healthy baseline condition, no induced fault.",
+      "Unbalance": "Rotor unbalance, induced via an added mass of the given weight."
+    },
+    "fault_types": [
+      "Normal",
+      "BPFI",
+      "BPFO",
+      "Misalignment",
+      "Unbalance"
+    ],
+    "label_granularity": "Labels are file-level (one condition code per recording), not per-sample or per-window. Fault severities are artificially seeded (machined cracks / fixed offsets / added masses) and static for the duration of a recording -- this is a multi-class static-severity design, not a run-to-failure degradation trajectory like IMS/XJTU-SY.",
+    "severity_levels": {
+      "BPFI": [
+        "0.3mm",
+        "1.0mm",
+        "3.0mm"
+      ],
+      "BPFO": [
+        "0.3mm",
+        "1.0mm",
+        "3.0mm"
+      ],
+      "Misalignment": [
+        "0.1mm",
+        "0.3mm",
+        "0.5mm"
+      ],
+      "Normal": [],
+      "Unbalance": [
+        "583mg",
+        "1169mg",
+        "1751mg",
+        "2239mg",
+        "3318mg"
+      ]
+    },
+    "status": "confirmed_from_published_source"
+  },
+  "8_modalities_from_same_physical_experiment": {
+    "acoustic_caveat": "Source states 5 acoustic files: 1 Normal (0 Nm) plus 2 fault types at 2 severities each, all restricted to 0 Nm. The specific fault-type and severity identities of that subset are NOT stated in the fetched source text and are deliberately not enumerated here -- listing specific values would be inventing a correspondence the source does not confirm.",
+    "basis": "The source states these three modalities were acquired simultaneously on the same testbed for each condition; independently, their file counts (45 = 45) and shared {load}Nm_{fault}_{severity} naming convention are mutually consistent with this claim for part1_load.",
+    "confirmed_same_experiment": [
+      "vibration",
+      "temperature",
+      "motor_current"
+    ],
+    "status": "confirmed_from_published_source"
+  },
+  "9_cross_modal_synchronization_legitimacy": {
+    "acoustic_synchronization": {
+      "basis": "Source states 5 acoustic files: 1 Normal (0 Nm) plus 2 fault types at 2 severities each, all restricted to 0 Nm. The specific fault-type and severity identities of that subset are NOT stated in the fetched source text and are deliberately not enumerated here -- listing specific values would be inventing a correspondence the source does not confirm.",
+      "meaning": "Acoustic can only be session-matched to vibration/temperature/motor_current for the narrow 0 Nm subset it exists in, and even there the exact matching condition codes are not confirmed by the fetched source text.",
+      "modalities": [
+        "acoustic"
+      ],
+      "status": "excluded_from_fusion_scope"
+    },
+    "sample_level_synchronization": {
+      "basis": "Vibration/acoustic are acquired by the Siemens SCADAS system; temperature/motor_current are acquired by separate NI modules (NI 9211, NI9775). Each produces its own 'Time Stamp' column. The source does not document a shared trigger, shared clock, or any explicit synchronization procedure between the SCADAS and NI acquisition systems.",
+      "meaning": "Per-sample or per-timestamp fusion (e.g. aligning vibration sample N with a specific current sample by matching Time Stamp values across the two DAQ systems) is NOT established by the source and MUST NOT be assumed. Any future implementation must either verify this directly against raw file timestamps or fuse at a coarser (e.g. windowed/resampled) granularity that does not depend on cross-DAQ sample alignment.",
+      "modalities": [
+        "vibration",
+        "temperature",
+        "motor_current"
+      ],
+      "status": "not_documented_by_source"
+    },
+    "session_level_correspondence": {
+      "basis": "The source states these three modalities were acquired simultaneously on the same testbed for each condition; independently, their file counts (45 = 45) and shared {load}Nm_{fault}_{severity} naming convention are mutually consistent with this claim for part1_load.",
+      "meaning": "A given {load}Nm_{fault}_{severity} condition code legitimately identifies one shared physical experimental run across these three modalities. It is legitimate to treat one condition code as one multimodal session.",
+      "modalities": [
+        "vibration",
+        "temperature",
+        "motor_current"
+      ],
+      "status": "confirmed_from_published_source"
+    }
+  },
+  "dataset": "multimodal",
+  "internal_consistency_checks": {
+    "n_conditions_part1_derived": 15,
+    "n_temperature_current_files_match": true,
+    "n_temperature_current_files_part1_derived": 45,
+    "n_temperature_current_files_part1_source_stated": 45,
+    "n_vibration_files_match": true,
+    "n_vibration_files_part1_derived": 45,
+    "n_vibration_files_part1_source_stated": 45
+  },
+  "part2_speed_sub_dataset": {
+    "fault_types": [
+      "normal",
+      "inner",
+      "outer",
+      "ball"
+    ],
+    "file_counts": {
+      "motor_current_varying_speed": 28,
+      "rpm_reference": 28,
+      "vibration_constant_speed": 4,
+      "vibration_varying_speed": 28
+    },
+    "format": "csv",
+    "note": "A separate sub-dataset covering constant (3010 rpm) and varying (680-2460 rpm) speed conditions. Contains only vibration + motor current + an RPM reference signal (CSV format) -- no acoustic or temperature channel exists for these recordings at all. Motor current is sampled at 100 kHz here versus 25.6 kHz in part1_load. Treated as structurally distinct from part1_load: different file format, different naming convention, different current sampling rate, and a reduced modality set.",
+    "status": "excluded_from_fusion_scope"
+  },
+  "raw_data_available_in_environment": false,
+  "status_vocabulary": {
+    "confirmed_from_published_source": "Directly stated by the dataset's published documentation.",
+    "derived_from_published_source": "Computed from confirmed facts via a documented, non-arbitrary transformation.",
+    "excluded_from_fusion_scope": "Deliberately excluded from the primary multisensor-fusion scope, with a stated reason.",
+    "not_documented_by_source": "The published source does not state this; not assumed or invented.",
+    "unverified_no_raw_data_in_environment": "Would require inspecting real files; no raw data exists in this environment."
+  },
+  "task": 31,
+  "title": "Audit and lock the primary multimodal dataset"
+}
