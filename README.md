@@ -42,6 +42,9 @@ Preprocessing & Windowing
                    DISCARD | BUFFER | SUMMARY | TRANSMIT
                                      |
                                      v
+                   Communication Channel(Wi-Fi/LoRa/FSO)
+                                     |
+                                     v
                                  Receiver
 ```
 
