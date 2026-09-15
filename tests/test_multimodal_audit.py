@@ -116,12 +116,19 @@ class TestSeverityAndFileCountConsistency(unittest.TestCase):
         self.assertLess(N_ACOUSTIC_FILES_PART1_SOURCE_STATED, N_VIBRATION_FILES_PART1_SOURCE_STATED)
 
 
-class TestRawDataAbsence(unittest.TestCase):
-    def test_16_raw_data_directory_does_not_exist_in_this_environment(self):
-        self.assertFalse(os.path.isdir(RAW_DATA_DIR))
+class TestRawDataEnvironmentConsistency(unittest.TestCase):
+    """These check internal consistency, not a fixed presence/absence --
+    raw data was absent when Task 31 was written and has since been added
+    (Task 32's prerequisite), so hardcoding either state here would go
+    stale. See tests/test_multimodal_observation_schema.py for the tests
+    that actually exercise the raw data now that it exists."""
 
-    def test_17_raw_data_root_available_returns_false(self):
-        self.assertFalse(raw_data_root_available())
+    def test_16_raw_data_root_available_matches_directory_reality(self):
+        expected = os.path.isdir(RAW_DATA_DIR) and any(os.scandir(RAW_DATA_DIR))
+        self.assertEqual(raw_data_root_available(), expected)
+
+    def test_17_raw_data_root_available_returns_a_bool(self):
+        self.assertIsInstance(raw_data_root_available(), bool)
 
 
 class TestAuditDocument(unittest.TestCase):
@@ -139,7 +146,6 @@ class TestAuditDocument(unittest.TestCase):
 
     def test_20_raw_data_available_flag_matches_environment(self):
         self.assertEqual(self.audit["raw_data_available_in_environment"], raw_data_root_available())
-        self.assertFalse(self.audit["raw_data_available_in_environment"])
 
     def test_21_doi_is_the_locked_dataset(self):
         self.assertEqual(self.audit["14_source_provenance_metadata"]["doi"], OFFICIAL_DOI)
@@ -185,7 +191,10 @@ class TestAuditDocument(unittest.TestCase):
     def test_28_sufficiency_conclusion_is_conditional_not_unconditional(self):
         sufficiency = self.audit["15_sufficiency_for_task_32"]
         self.assertEqual(sufficiency["conclusion"], "conditionally_sufficient")
-        self.assertTrue(sufficiency["blocking_for_task_32"])
+        self.assertEqual(
+            sufficiency["blocking_for_task_32"],
+            not self.audit["raw_data_available_in_environment"],
+        )
 
     def test_29_internal_consistency_checks_pass(self):
         checks = self.audit["internal_consistency_checks"]

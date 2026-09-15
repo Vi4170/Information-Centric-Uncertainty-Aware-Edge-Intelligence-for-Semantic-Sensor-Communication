@@ -66,7 +66,7 @@
     "version": 6
   },
   "15_sufficiency_for_task_32": {
-    "blocking_for_task_32": true,
+    "blocking_for_task_32": false,
     "conclusion": "conditionally_sufficient",
     "reasoning": "The vibration + temperature + motor_current triple is legitimately session-matched (same experimental run, consistent file counts, shared naming) for all 45 part1_load conditions, and is sufficient to design a genuine 3-modality multisensor observation once raw data is obtained. A full 4-modality observation including acoustic is NOT supported across the general condition space -- only for a narrow, currently-unconfirmed 0 Nm subset -- and must not be forced. Sample-level cross-DAQ timestamp synchronization is unverified and must be checked directly against raw files before any fine-grained (sub-session) fusion is implemented. Raw data acquisition into this environment is a prerequisite for any part of Task 32 beyond structural design.",
     "status": "derived_from_published_source"
@@ -387,7 +387,7 @@
     "note": "A separate sub-dataset covering constant (3010 rpm) and varying (680-2460 rpm) speed conditions. Contains only vibration + motor current + an RPM reference signal (CSV format) -- no acoustic or temperature channel exists for these recordings at all. Motor current is sampled at 100 kHz here versus 25.6 kHz in part1_load. Treated as structurally distinct from part1_load: different file format, different naming convention, different current sampling rate, and a reduced modality set.",
     "status": "excluded_from_fusion_scope"
   },
-  "raw_data_available_in_environment": false,
+  "raw_data_available_in_environment": true,
   "status_vocabulary": {
     "confirmed_from_published_source": "Directly stated by the dataset's published documentation.",
     "derived_from_published_source": "Computed from confirmed facts via a documented, non-arbitrary transformation.",

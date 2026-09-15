@@ -1,0 +1,46 @@
+{
+  "acoustic_exclusion_reason": "Confirmed by direct inspection of raw file metadata: every one of the 5 acoustic .mat files (function_record.creation_time) was recorded on 2021-07-05 or 2021-07-06, while the corresponding vibration files for the same nominal condition code were recorded between 2021-06-25 and 2021-06-30 -- a separate, later measurement campaign, not the same physical experimental run. Acoustic is excluded from the canonical multisensor observation entirely.",
+  "alignment_strategy": {
+    "acoustic": "Not applicable -- acoustic is excluded from the canonical observation entirely.",
+    "common_temporal_reference": "Elapsed time since each recording's OWN first sample (t=0 at that file's start), NOT absolute wall-clock time and NOT a shared sample index.",
+    "per_modality_window_extraction": "For window index i, each modality independently selects the sample range covering elapsed time [i * WINDOW_DURATION_SECONDS, (i+1) * WINDOW_DURATION_SECONDS) using that modality's OWN measured sampling rate. No interpolation or resampling of raw values is performed -- only the sample INDEX range selected differs per modality to cover the same physical time interval.",
+    "residual_limitation": "This assumes each recording's own t=0 corresponds to the same physical moment (e.g. reaching steady-state operation) across modalities, which is plausible for a single continuous steady-condition recording but is not independently verified. This is a documented, defensible default, not a proven exact synchronization -- large-gap interpolation across sessions is never performed.",
+    "why_not_absolute_clock": "Measured absolute start-time offset between the vibration and temperature/current systems varies across sessions (~3.4 minutes on one day, ~30 minutes on another) -- no fixed correction exists.",
+    "why_not_shared_sample_index": "The two systems' measured sample rates differ slightly (25600.0 Hz vs ~25608.2 Hz); over a multi-minute recording this accumulates a real sample-index drift of thousands of samples, so 'sample N of vibration' is not 'sample N of current' even within one file."
+  },
+  "canonical_modalities": [
+    "vibration",
+    "temperature",
+    "motor_current"
+  ],
+  "min_required_modalities": [
+    "vibration",
+    "temperature_current"
+  ],
+  "n_conditions_discovered": 45,
+  "n_observations": 56205,
+  "n_observations_by_split": {
+    "test": 8993,
+    "train": 38219,
+    "val": 8993
+  },
+  "nominal_sampling_rate_hz": 25600,
+  "prerequisite": "Task 31 (src/multimodal_pipeline/dataset_audit.py)",
+  "random_seed": 42,
+  "split_ratios": {
+    "test": 0.15,
+    "train": 0.7,
+    "val": 0.15
+  },
+  "task": 32,
+  "title": "Canonical multisensor observation definition",
+  "vibration_channel_order": [
+    "x_direction_housing_A",
+    "y_direction_housing_A",
+    "x_direction_housing_B",
+    "y_direction_housing_B"
+  ],
+  "vibration_channel_order_source": "Published paper (Jung et al., 2023) only. The raw .mat file's own channel labels are generic ('Point1'..'Point4'), not self-describing -- this ordering is NOT independently verifiable from file metadata alone.",
+  "window_duration_seconds": 0.08,
+  "window_size_samples": 2048
+}
