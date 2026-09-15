@@ -42,7 +42,7 @@ Preprocessing & Windowing
                    DISCARD | BUFFER | SUMMARY | TRANSMIT
                                      |
                                      v
-                    Free Space Optical channel (not yet built) -> Receiver
+                                 Receiver
 ```
 
 `VoI = 0.30*Novelty + 0.05*Uncertainty + 0.35*TaskRelevance + 0.20*TemporalImportance - 0.10*CommCost`
