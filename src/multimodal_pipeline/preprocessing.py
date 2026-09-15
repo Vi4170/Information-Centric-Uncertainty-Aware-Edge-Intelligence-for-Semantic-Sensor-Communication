@@ -120,6 +120,14 @@ def _read_vibration_mat(path: str) -> Dict[str, np.ndarray]:
     }
 
 
+class CorruptRawFileError(ValueError):
+    """Raised when a raw file's own internal channels are inconsistent
+    (e.g. some empty) -- a genuine data-quality issue, not a bug in this
+    reader. Never caught to silently fabricate data; callers that iterate
+    many conditions should catch this specifically to exclude just the
+    affected condition, never to invent replacement values."""
+
+
 def _read_temperature_current_tdms(path: str) -> Dict[str, np.ndarray]:
     """Read one raw temperature+current .tdms file into
     {channel_name: 1D float32 array}, covering both TEMPERATURE_CHANNEL_NAMES
@@ -155,6 +163,22 @@ def _read_temperature_current_tdms(path: str) -> Dict[str, np.ndarray]:
         result[name] = arr
     for name, arr in zip(MOTOR_CURRENT_CHANNEL_NAMES, current_arrays):
         result[name] = arr
+
+    # Genuine data-quality issue found while implementing Task 34: at least
+    # one real file (4Nm_BPFO_10.tdms) has two of its three current channels
+    # empty (0 samples) while every other channel in the same file has the
+    # full sample count -- a real acquisition/logging gap, not corruption
+    # introduced here. All 5 channels in one file share one sample grid
+    # (verified elsewhere), so any length mismatch or zero-length channel
+    # means this file cannot be trusted for temperature or motor_current --
+    # raised here rather than silently fabricated or partially trusted.
+    lengths = {name: len(arr) for name, arr in result.items()}
+    distinct_lengths = set(lengths.values())
+    if len(distinct_lengths) != 1 or 0 in distinct_lengths:
+        raise CorruptRawFileError(
+            f"'{path}': inconsistent or empty channel lengths, refusing to use this file: {lengths}"
+        )
+
     return result
 
 

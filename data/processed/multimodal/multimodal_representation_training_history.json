@@ -1,0 +1,134 @@
+{
+  "motor_current": {
+    "batch_size": 32,
+    "epochs": 8,
+    "excluded_conditions": [
+      {
+        "condition_code": "0Nm_BPFO_03",
+        "modality": "motor_current",
+        "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_03.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+      },
+      {
+        "condition_code": "0Nm_BPFO_10",
+        "modality": "motor_current",
+        "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_10.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+      },
+      {
+        "condition_code": "0Nm_BPFO_30",
+        "modality": "motor_current",
+        "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_30.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+      },
+      {
+        "condition_code": "2Nm_BPFO_10",
+        "modality": "motor_current",
+        "reason": "'data\\raw\\multimodal\\temperature_current\\2Nm_BPFO_10.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+      },
+      {
+        "condition_code": "4Nm_BPFO_03",
+        "modality": "motor_current",
+        "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_03.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+      },
+      {
+        "condition_code": "4Nm_BPFO_30",
+        "modality": "motor_current",
+        "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_30.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+      },
+      {
+        "condition_code": "4Nm_BPFO_10",
+        "modality": "motor_current",
+        "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_10.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+      }
+    ],
+    "modality": "motor_current",
+    "n_train_windows": 33725,
+    "n_val_windows": 8244,
+    "train_accuracy": [
+      0.4873535931110382,
+      0.48892512917518616,
+      0.48892512917518616,
+      0.4890140891075134,
+      0.5012602210044861,
+      0.5063899159431458,
+      0.542802095413208,
+      0.6226834654808044
+    ],
+    "train_loss": [
+      1.261762261390686,
+      1.248429298400879,
+      1.240506887435913,
+      1.2231475114822388,
+      1.1813257932662964,
+      1.1694499254226685,
+      1.0866787433624268,
+      0.9283164143562317
+    ],
+    "val_accuracy": [
+      0.18182921409606934,
+      0.18182921409606934,
+      0.18182921409606934,
+      0.18182921409606934,
+      0.17964580655097961,
+      0.18182921409606934,
+      0.18170790374279022,
+      0.18182921409606934
+    ],
+    "val_loss": [
+      1.690639853477478,
+      1.7191691398620605,
+      1.7810031175613403,
+      1.735324501991272,
+      1.7061794996261597,
+      1.763529896736145,
+      1.8839218616485596,
+      2.5290088653564453
+    ]
+  },
+  "vibration": {
+    "batch_size": 32,
+    "epochs": 8,
+    "excluded_conditions": [],
+    "modality": "vibration",
+    "n_train_windows": 38250,
+    "n_val_windows": 9000,
+    "train_accuracy": [
+      0.8362091779708862,
+      0.9307189583778381,
+      0.93895423412323,
+      0.9422745108604431,
+      0.9427189826965332,
+      0.945359468460083,
+      0.9475032687187195,
+      0.94813072681427
+    ],
+    "train_loss": [
+      0.38493111729621887,
+      0.18013902008533478,
+      0.14823748171329498,
+      0.135837584733963,
+      0.13496221601963043,
+      0.12609052658081055,
+      0.11969570815563202,
+      0.11838993430137634
+    ],
+    "val_accuracy": [
+      0.9890000224113464,
+      0.9993333220481873,
+      0.9997777938842773,
+      1.0,
+      0.9227777719497681,
+      0.9509999752044678,
+      0.9948889017105103,
+      0.9677777886390686
+    ],
+    "val_loss": [
+      0.07656855136156082,
+      0.015756435692310333,
+      0.006869391538202763,
+      0.006883287336677313,
+      0.2039758861064911,
+      0.12899188697338104,
+      0.015844237059354782,
+      0.09744156152009964
+    ]
+  }
+}

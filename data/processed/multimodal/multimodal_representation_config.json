@@ -1,0 +1,67 @@
+{
+  "fault_type_labels": [
+    "Normal",
+    "BPFI",
+    "BPFO",
+    "Misalignment",
+    "Unbalance"
+  ],
+  "known_limitation_zero_normal_val_test_support": "Task 32's condition-level split is unstratified and only 3 Normal conditions exist in the whole dataset; with this session's seed, all 3 landed in train, leaving 0 Normal-class observations in val/test. Training proceeds on all 5 classes; Normal-class representation quality cannot be validated on held-out data. The split itself was not modified to fix this -- see module docstring.",
+  "model_paths": {
+    "motor_current": "models\\multimodal\\motor_current_encoder.keras",
+    "vibration": "models\\multimodal\\vibration_encoder.keras"
+  },
+  "motor_current": {
+    "architecture": "build_baseline_cnn (src/cnn/model.py, unmodified)",
+    "channels": [
+      "U-phase",
+      "V-phase",
+      "W-phase"
+    ],
+    "embedding_dim": 64,
+    "input_shape": [
+      2049,
+      3
+    ],
+    "reuse_justification": "same as vibration; separate model instance, own weights, never concatenated with vibration input.",
+    "reused_existing_cwru_encoder": true
+  },
+  "num_classes": 5,
+  "task": 34,
+  "temperature": {
+    "architecture": "identity passthrough of Task 33's per-window per-channel mean (train-only normalized); no learned model",
+    "channels": [
+      "Temperature_housing_A",
+      "Temperature_housing_B"
+    ],
+    "representation_dim": 2,
+    "reuse_justification": "Task 33 already reduced temperature to 2 real per-channel means; training a network on 2 numbers would add parameters and leakage-risk surface with no principled basis, violating the avoid-unnecessary-complexity requirement.",
+    "reused_existing_cwru_encoder": false
+  },
+  "title": "Modality-specific learned representations",
+  "training": {
+    "batch_size": 32,
+    "epochs": 8,
+    "fit_only_on_split": "train",
+    "optimizer_learning_rate": 0.001,
+    "random_seed": 42,
+    "test_split_touched_during_training": false,
+    "validation_split_used_for_monitoring_only": "val"
+  },
+  "vibration": {
+    "architecture": "build_baseline_cnn (src/cnn/model.py, unmodified)",
+    "channels": [
+      "x_direction_housing_A",
+      "y_direction_housing_A",
+      "x_direction_housing_B",
+      "y_direction_housing_B"
+    ],
+    "embedding_dim": 64,
+    "input_shape": [
+      2048,
+      4
+    ],
+    "reuse_justification": "input_shape/num_classes are genuine constructor parameters; Conv1D/GAP/Dense stack is channel-count-agnostic; Paderborn already validated this reuse pattern at a different sampling rate and class count.",
+    "reused_existing_cwru_encoder": true
+  }
+}
