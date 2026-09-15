@@ -1,0 +1,26 @@
+{
+  "motor_current": {
+    "fit_only_on_split": "train",
+    "mean": 0.001400451776944087,
+    "modality": "motor_current",
+    "n_samples": 216645318,
+    "n_train_conditions": 31,
+    "std": 2.2836643384368305
+  },
+  "temperature": {
+    "fit_only_on_split": "train",
+    "mean": 28.835076501481666,
+    "modality": "temperature",
+    "n_samples": 156722148,
+    "n_train_conditions": 31,
+    "std": 1.6827378453041444
+  },
+  "vibration": {
+    "fit_only_on_split": "train",
+    "mean": -5.957443658338119e-05,
+    "modality": "vibration",
+    "n_samples": 313344000,
+    "n_train_conditions": 31,
+    "std": 4.607126315645831
+  }
+}

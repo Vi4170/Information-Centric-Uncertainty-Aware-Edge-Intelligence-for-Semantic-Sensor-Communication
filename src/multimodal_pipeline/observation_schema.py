@@ -447,9 +447,23 @@ def _observation_id(condition: str, window_index: int) -> str:
 
 
 def _n_windows_for_duration(duration_seconds: Optional[float]) -> int:
+    """Number of non-overlapping windows a recording of this duration supports.
+
+    Task 33 note: every documented condition duration (60/120/300s) is an
+    exact multiple of WINDOW_DURATION_SECONDS (0.08s) by construction, so
+    the true count is always an exact integer. Floor division on the raw
+    floats (duration_seconds // WINDOW_DURATION_SECONDS) undercounts by one
+    for every condition here due to binary floating-point representation
+    (e.g. 300.0 // 0.08 == 3749.0 in Python, even though 300.0 / 0.08 ==
+    3750.0 exactly) -- confirmed directly against real vibration files,
+    which support exactly duration_seconds * NOMINAL_SAMPLING_RATE_HZ /
+    WINDOW_SIZE_SAMPLES windows. round() is float-epsilon tolerant and
+    gives the correct count; this was a floor-division precision artifact,
+    not a modeling choice, so it is fixed here rather than carried forward.
+    """
     if duration_seconds is None:
         return 0
-    return int(duration_seconds // WINDOW_DURATION_SECONDS)
+    return int(round(duration_seconds / WINDOW_DURATION_SECONDS))
 
 
 def build_observation_index(raw_dir: str = RAW_DATA_DIR) -> pd.DataFrame:

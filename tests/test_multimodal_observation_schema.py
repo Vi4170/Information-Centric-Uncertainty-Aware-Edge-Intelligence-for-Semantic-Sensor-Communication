@@ -316,8 +316,9 @@ class TestRealRawDataIntegration(unittest.TestCase):
 
     def test_48_observation_count_matches_duration_over_window_duration(self):
         normal_0nm = self.index_df[self.index_df["condition_code"] == "0Nm_Normal"]
-        expected = int(300.0 // obs.WINDOW_DURATION_SECONDS)
+        expected = int(round(300.0 / obs.WINDOW_DURATION_SECONDS))
         self.assertEqual(len(normal_0nm), expected)
+        self.assertEqual(expected, 3750)
 
     def test_49_split_counts_sum_to_total_observations(self):
         counts = self.index_df["split"].value_counts()

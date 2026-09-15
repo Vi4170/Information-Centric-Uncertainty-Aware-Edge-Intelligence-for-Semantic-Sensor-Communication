@@ -18,11 +18,11 @@
     "temperature_current"
   ],
   "n_conditions_discovered": 45,
-  "n_observations": 56205,
+  "n_observations": 56250,
   "n_observations_by_split": {
-    "test": 8993,
-    "train": 38219,
-    "val": 8993
+    "test": 9000,
+    "train": 38250,
+    "val": 9000
   },
   "nominal_sampling_rate_hz": 25600,
   "prerequisite": "Task 31 (src/multimodal_pipeline/dataset_audit.py)",
