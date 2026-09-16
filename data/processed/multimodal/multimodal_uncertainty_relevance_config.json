@@ -1,0 +1,489 @@
+{
+  "configurations": {
+    "vibration_current": {
+      "config": "vibration_current",
+      "fault_type_labels": [
+        "Normal",
+        "BPFI",
+        "BPFO",
+        "Misalignment",
+        "Unbalance"
+      ],
+      "modalities": [
+        "vibration",
+        "motor_current"
+      ],
+      "model_path": "models\\multimodal\\fusion\\vibration_current.keras",
+      "model_version": "task35_v1",
+      "num_classes": 5,
+      "probability_dim": 5,
+      "relevance_map": {
+        "BPFI": 1.0,
+        "BPFO": 0.9,
+        "Misalignment": null,
+        "Normal": 0.1,
+        "Unbalance": null
+      },
+      "relevance_method": "local 5-class 'class_mapping' lookup on argmax predicted class (src/relevance/relevance.py's own class_mapping strategy, reimplemented locally because its public API hard-validates 4 classes with no override)",
+      "relevance_undefined_classes": [
+        "Misalignment",
+        "Unbalance"
+      ],
+      "representation_source": "Task 35 frozen fusion head (fused representation -> softmax classifier), inference only, not retrained",
+      "splits": {
+        "test": {
+          "class_support": {
+            "BPFI": 0,
+            "BPFO": 0,
+            "Misalignment": 2998,
+            "Normal": 0,
+            "Unbalance": 4497
+          },
+          "n_observations": 7495,
+          "relevance_summary": {
+            "mean_defined": 0.10000000149011612,
+            "n": 7495,
+            "n_defined": 3,
+            "n_undefined": 7492
+          },
+          "uncertainty_summary": {
+            "max": 0.4309759736061096,
+            "mean": 0.01476612314581871,
+            "median": 0.00019920892373193055,
+            "min": 2.881253569064768e-10,
+            "n": 7495,
+            "std": 0.050307560712099075
+          }
+        },
+        "train": {
+          "class_support": {
+            "BPFI": 5992,
+            "BPFO": 0,
+            "Misalignment": 4497,
+            "Normal": 6747,
+            "Unbalance": 16489
+          },
+          "n_observations": 33725,
+          "relevance_summary": {
+            "mean_defined": 0.5609624981880188,
+            "n": 33725,
+            "n_defined": 11699,
+            "n_undefined": 22026
+          },
+          "uncertainty_summary": {
+            "max": 0.4777044355869293,
+            "mean": 0.05380970239639282,
+            "median": 0.00010201821714872494,
+            "min": 6.867247742681215e-11,
+            "n": 33725,
+            "std": 0.11962312459945679
+          }
+        },
+        "val": {
+          "class_support": {
+            "BPFI": 749,
+            "BPFO": 0,
+            "Misalignment": 5996,
+            "Normal": 0,
+            "Unbalance": 1499
+          },
+          "n_observations": 8244,
+          "relevance_summary": {
+            "mean_defined": 0.4753340780735016,
+            "n": 8244,
+            "n_defined": 1796,
+            "n_undefined": 6448
+          },
+          "uncertainty_summary": {
+            "max": 0.4873974621295929,
+            "mean": 0.04840868338942528,
+            "median": 5.295837581797969e-06,
+            "min": 6.867247742681215e-11,
+            "n": 8244,
+            "std": 0.11621653288602829
+          }
+        }
+      },
+      "uncertainty_fitting_stage": "none -- compute_predictive_entropy is a stateless function of probabilities; nothing is fit on any split",
+      "uncertainty_method": "src.uncertainty.uncertainty.compute_predictive_entropy (unmodified, canonical), normalized Shannon entropy over the fused model's own softmax output"
+    },
+    "vibration_current_temperature": {
+      "config": "vibration_current_temperature",
+      "fault_type_labels": [
+        "Normal",
+        "BPFI",
+        "BPFO",
+        "Misalignment",
+        "Unbalance"
+      ],
+      "modalities": [
+        "vibration",
+        "motor_current",
+        "temperature"
+      ],
+      "model_path": "models\\multimodal\\fusion\\vibration_current_temperature.keras",
+      "model_version": "task35_v1",
+      "num_classes": 5,
+      "probability_dim": 5,
+      "relevance_map": {
+        "BPFI": 1.0,
+        "BPFO": 0.9,
+        "Misalignment": null,
+        "Normal": 0.1,
+        "Unbalance": null
+      },
+      "relevance_method": "local 5-class 'class_mapping' lookup on argmax predicted class (src/relevance/relevance.py's own class_mapping strategy, reimplemented locally because its public API hard-validates 4 classes with no override)",
+      "relevance_undefined_classes": [
+        "Misalignment",
+        "Unbalance"
+      ],
+      "representation_source": "Task 35 frozen fusion head (fused representation -> softmax classifier), inference only, not retrained",
+      "splits": {
+        "test": {
+          "class_support": {
+            "BPFI": 0,
+            "BPFO": 0,
+            "Misalignment": 2998,
+            "Normal": 0,
+            "Unbalance": 4497
+          },
+          "n_observations": 7495,
+          "relevance_summary": {
+            "mean_defined": null,
+            "n": 7495,
+            "n_defined": 0,
+            "n_undefined": 7495
+          },
+          "uncertainty_summary": {
+            "max": 0.38909226655960083,
+            "mean": 0.007286405190825462,
+            "median": 1.8720109437708743e-05,
+            "min": 2.3148812033912947e-10,
+            "n": 7495,
+            "std": 0.025785069912672043
+          }
+        },
+        "train": {
+          "class_support": {
+            "BPFI": 5992,
+            "BPFO": 0,
+            "Misalignment": 4497,
+            "Normal": 6747,
+            "Unbalance": 16489
+          },
+          "n_observations": 33725,
+          "relevance_summary": {
+            "mean_defined": 0.5511670112609863,
+            "n": 33725,
+            "n_defined": 11953,
+            "n_undefined": 21772
+          },
+          "uncertainty_summary": {
+            "max": 0.43404287099838257,
+            "mean": 0.04093918576836586,
+            "median": 2.090333327942062e-05,
+            "min": 6.867247742681215e-11,
+            "n": 33725,
+            "std": 0.10424233227968216
+          }
+        },
+        "val": {
+          "class_support": {
+            "BPFI": 749,
+            "BPFO": 0,
+            "Misalignment": 5996,
+            "Normal": 0,
+            "Unbalance": 1499
+          },
+          "n_observations": 8244,
+          "relevance_summary": {
+            "mean_defined": 0.9987999796867371,
+            "n": 8244,
+            "n_defined": 750,
+            "n_undefined": 7494
+          },
+          "uncertainty_summary": {
+            "max": 0.5169699192047119,
+            "mean": 0.02694592997431755,
+            "median": 1.91959361472982e-06,
+            "min": 6.867247742681215e-11,
+            "n": 8244,
+            "std": 0.08772891759872437
+          }
+        }
+      },
+      "uncertainty_fitting_stage": "none -- compute_predictive_entropy is a stateless function of probabilities; nothing is fit on any split",
+      "uncertainty_method": "src.uncertainty.uncertainty.compute_predictive_entropy (unmodified, canonical), normalized Shannon entropy over the fused model's own softmax output"
+    },
+    "vibration_only": {
+      "config": "vibration_only",
+      "fault_type_labels": [
+        "Normal",
+        "BPFI",
+        "BPFO",
+        "Misalignment",
+        "Unbalance"
+      ],
+      "modalities": [
+        "vibration"
+      ],
+      "model_path": "models\\multimodal\\fusion\\vibration_only.keras",
+      "model_version": "task35_v1",
+      "num_classes": 5,
+      "probability_dim": 5,
+      "relevance_map": {
+        "BPFI": 1.0,
+        "BPFO": 0.9,
+        "Misalignment": null,
+        "Normal": 0.1,
+        "Unbalance": null
+      },
+      "relevance_method": "local 5-class 'class_mapping' lookup on argmax predicted class (src/relevance/relevance.py's own class_mapping strategy, reimplemented locally because its public API hard-validates 4 classes with no override)",
+      "relevance_undefined_classes": [
+        "Misalignment",
+        "Unbalance"
+      ],
+      "representation_source": "Task 35 frozen fusion head (fused representation -> softmax classifier), inference only, not retrained",
+      "splits": {
+        "test": {
+          "class_support": {
+            "BPFI": 0,
+            "BPFO": 1500,
+            "Misalignment": 3000,
+            "Normal": 0,
+            "Unbalance": 4500
+          },
+          "n_observations": 9000,
+          "relevance_summary": {
+            "mean_defined": 0.8537999391555786,
+            "n": 9000,
+            "n_defined": 9000,
+            "n_undefined": 0
+          },
+          "uncertainty_summary": {
+            "max": 0.779787540435791,
+            "mean": 0.32002848386764526,
+            "median": 0.2578943073749542,
+            "min": 5.263063940219581e-06,
+            "n": 9000,
+            "std": 0.30377396941185
+          }
+        },
+        "train": {
+          "class_support": {
+            "BPFI": 6000,
+            "BPFO": 4500,
+            "Misalignment": 4500,
+            "Normal": 6750,
+            "Unbalance": 16500
+          },
+          "n_observations": 38250,
+          "relevance_summary": {
+            "mean_defined": 0.7479585409164429,
+            "n": 38250,
+            "n_defined": 38158,
+            "n_undefined": 92
+          },
+          "uncertainty_summary": {
+            "max": 0.7767714262008667,
+            "mean": 0.37780436873435974,
+            "median": 0.5403306484222412,
+            "min": 6.867247742681215e-11,
+            "n": 38250,
+            "std": 0.28770607709884644
+          }
+        },
+        "val": {
+          "class_support": {
+            "BPFI": 750,
+            "BPFO": 750,
+            "Misalignment": 6000,
+            "Normal": 0,
+            "Unbalance": 1500
+          },
+          "n_observations": 9000,
+          "relevance_summary": {
+            "mean_defined": 0.8504000306129456,
+            "n": 9000,
+            "n_defined": 9000,
+            "n_undefined": 0
+          },
+          "uncertainty_summary": {
+            "max": 0.7105865478515625,
+            "mean": 0.14375236630439758,
+            "median": 0.044664110988378525,
+            "min": 6.867247742681215e-11,
+            "n": 9000,
+            "std": 0.22055786848068237
+          }
+        }
+      },
+      "uncertainty_fitting_stage": "none -- compute_predictive_entropy is a stateless function of probabilities; nothing is fit on any split",
+      "uncertainty_method": "src.uncertainty.uncertainty.compute_predictive_entropy (unmodified, canonical), normalized Shannon entropy over the fused model's own softmax output"
+    },
+    "vibration_temperature": {
+      "config": "vibration_temperature",
+      "fault_type_labels": [
+        "Normal",
+        "BPFI",
+        "BPFO",
+        "Misalignment",
+        "Unbalance"
+      ],
+      "modalities": [
+        "vibration",
+        "temperature"
+      ],
+      "model_path": "models\\multimodal\\fusion\\vibration_temperature.keras",
+      "model_version": "task35_v1",
+      "num_classes": 5,
+      "probability_dim": 5,
+      "relevance_map": {
+        "BPFI": 1.0,
+        "BPFO": 0.9,
+        "Misalignment": null,
+        "Normal": 0.1,
+        "Unbalance": null
+      },
+      "relevance_method": "local 5-class 'class_mapping' lookup on argmax predicted class (src/relevance/relevance.py's own class_mapping strategy, reimplemented locally because its public API hard-validates 4 classes with no override)",
+      "relevance_undefined_classes": [
+        "Misalignment",
+        "Unbalance"
+      ],
+      "representation_source": "Task 35 frozen fusion head (fused representation -> softmax classifier), inference only, not retrained",
+      "splits": {
+        "test": {
+          "class_support": {
+            "BPFI": 0,
+            "BPFO": 1498,
+            "Misalignment": 2998,
+            "Normal": 0,
+            "Unbalance": 4497
+          },
+          "n_observations": 8993,
+          "relevance_summary": {
+            "mean_defined": 0.8170576691627502,
+            "n": 8993,
+            "n_defined": 8993,
+            "n_undefined": 0
+          },
+          "uncertainty_summary": {
+            "max": 0.7844415307044983,
+            "mean": 0.3244858980178833,
+            "median": 0.45657703280448914,
+            "min": 1.0529553037486039e-05,
+            "n": 8993,
+            "std": 0.3035484552383423
+          }
+        },
+        "train": {
+          "class_support": {
+            "BPFI": 5992,
+            "BPFO": 4494,
+            "Misalignment": 4497,
+            "Normal": 6747,
+            "Unbalance": 16489
+          },
+          "n_observations": 38219,
+          "relevance_summary": {
+            "mean_defined": 0.7157406806945801,
+            "n": 38219,
+            "n_defined": 37832,
+            "n_undefined": 387
+          },
+          "uncertainty_summary": {
+            "max": 0.7845013737678528,
+            "mean": 0.3839472532272339,
+            "median": 0.537264883518219,
+            "min": 6.867247742681215e-11,
+            "n": 38219,
+            "std": 0.2874079942703247
+          }
+        },
+        "val": {
+          "class_support": {
+            "BPFI": 749,
+            "BPFO": 749,
+            "Misalignment": 5996,
+            "Normal": 0,
+            "Unbalance": 1499
+          },
+          "n_observations": 8993,
+          "relevance_summary": {
+            "mean_defined": 0.8532859086990356,
+            "n": 8993,
+            "n_defined": 8993,
+            "n_undefined": 0
+          },
+          "uncertainty_summary": {
+            "max": 0.721892774105072,
+            "mean": 0.16051368415355682,
+            "median": 0.05684041231870651,
+            "min": 6.867247742681215e-11,
+            "n": 8993,
+            "std": 0.22492729127407074
+          }
+        }
+      },
+      "uncertainty_fitting_stage": "none -- compute_predictive_entropy is a stateless function of probabilities; nothing is fit on any split",
+      "uncertainty_method": "src.uncertainty.uncertainty.compute_predictive_entropy (unmodified, canonical), normalized Shannon entropy over the fused model's own softmax output"
+    }
+  },
+  "excluded_conditions": [
+    {
+      "condition_code": "0Nm_BPFO_03",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_03.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "0Nm_BPFO_10",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_10.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "0Nm_BPFO_30",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_30.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "2Nm_BPFO_10",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\2Nm_BPFO_10.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "4Nm_BPFO_03",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_03.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "4Nm_BPFO_30",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_30.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "4Nm_BPFO_10",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_10.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "2Nm_BPFO_03",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\2Nm_BPFO_03.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "2Nm_BPFO_30",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\2Nm_BPFO_30.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    }
+  ],
+  "not_computed_in_this_task": [
+    "voi_score",
+    "communication_cost",
+    "decision",
+    "temporal_importance"
+  ],
+  "relevance_source": "local 5-class reimplementation of src.relevance.relevance's class_mapping strategy (protected module unmodified)",
+  "task": 37,
+  "title": "Multisensor uncertainty and task interpretation",
+  "uncertainty_source": "src.uncertainty.uncertainty.compute_predictive_entropy (unmodified, canonical)"
+}
