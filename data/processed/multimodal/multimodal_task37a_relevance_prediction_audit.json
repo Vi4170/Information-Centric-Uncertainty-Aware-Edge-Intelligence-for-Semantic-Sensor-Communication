@@ -1,0 +1,235 @@
+{
+  "prediction_distributions": {
+    "vibration_current": {
+      "test": {
+        "n": 7495,
+        "predicted_distribution": {
+          "Misalignment": 2998,
+          "Normal": 3,
+          "Unbalance": 4494
+        },
+        "true_distribution": {
+          "Misalignment": 2998,
+          "Unbalance": 4497
+        }
+      },
+      "train": {
+        "n": 33725,
+        "predicted_distribution": {
+          "BPFI": 5992,
+          "Misalignment": 4498,
+          "Normal": 5707,
+          "Unbalance": 17528
+        },
+        "true_distribution": {
+          "BPFI": 5992,
+          "Misalignment": 4497,
+          "Normal": 6747,
+          "Unbalance": 16489
+        }
+      },
+      "val": {
+        "n": 8244,
+        "predicted_distribution": {
+          "BPFI": 749,
+          "Misalignment": 4912,
+          "Normal": 1047,
+          "Unbalance": 1536
+        },
+        "true_distribution": {
+          "BPFI": 749,
+          "Misalignment": 5996,
+          "Unbalance": 1499
+        }
+      }
+    },
+    "vibration_current_temperature": {
+      "test": {
+        "n": 7495,
+        "predicted_distribution": {
+          "Misalignment": 2998,
+          "Unbalance": 4497
+        },
+        "true_distribution": {
+          "Misalignment": 2998,
+          "Unbalance": 4497
+        }
+      },
+      "train": {
+        "n": 33725,
+        "predicted_distribution": {
+          "BPFI": 5992,
+          "Misalignment": 4497,
+          "Normal": 5961,
+          "Unbalance": 17275
+        },
+        "true_distribution": {
+          "BPFI": 5992,
+          "Misalignment": 4497,
+          "Normal": 6747,
+          "Unbalance": 16489
+        }
+      },
+      "val": {
+        "n": 8244,
+        "predicted_distribution": {
+          "BPFI": 749,
+          "Misalignment": 5208,
+          "Normal": 1,
+          "Unbalance": 2286
+        },
+        "true_distribution": {
+          "BPFI": 749,
+          "Misalignment": 5996,
+          "Unbalance": 1499
+        }
+      }
+    },
+    "vibration_only": {
+      "test": {
+        "n": 9000,
+        "predicted_distribution": {
+          "BPFI": 7538,
+          "Normal": 1462
+        },
+        "true_distribution": {
+          "BPFO": 1500,
+          "Misalignment": 3000,
+          "Unbalance": 4500
+        }
+      },
+      "train": {
+        "n": 38250,
+        "predicted_distribution": {
+          "BPFI": 27472,
+          "Normal": 10686,
+          "Unbalance": 92
+        },
+        "true_distribution": {
+          "BPFI": 6000,
+          "BPFO": 4500,
+          "Misalignment": 4500,
+          "Normal": 6750,
+          "Unbalance": 16500
+        }
+      },
+      "val": {
+        "n": 9000,
+        "predicted_distribution": {
+          "BPFI": 7504,
+          "Normal": 1496
+        },
+        "true_distribution": {
+          "BPFI": 750,
+          "BPFO": 750,
+          "Misalignment": 6000,
+          "Unbalance": 1500
+        }
+      }
+    },
+    "vibration_temperature": {
+      "test": {
+        "n": 8993,
+        "predicted_distribution": {
+          "BPFI": 7165,
+          "Normal": 1828
+        },
+        "true_distribution": {
+          "BPFO": 1498,
+          "Misalignment": 2998,
+          "Unbalance": 4497
+        }
+      },
+      "train": {
+        "n": 38219,
+        "predicted_distribution": {
+          "BPFI": 25883,
+          "Normal": 11949,
+          "Unbalance": 387
+        },
+        "true_distribution": {
+          "BPFI": 5992,
+          "BPFO": 4494,
+          "Misalignment": 4497,
+          "Normal": 6747,
+          "Unbalance": 16489
+        }
+      },
+      "val": {
+        "n": 8993,
+        "predicted_distribution": {
+          "BPFI": 7527,
+          "Normal": 1466
+        },
+        "true_distribution": {
+          "BPFI": 749,
+          "BPFO": 749,
+          "Misalignment": 5996,
+          "Unbalance": 1499
+        }
+      }
+    }
+  },
+  "relevance_mapping": {
+    "conclusion": "B_PARTIAL_MAPPING_ONLY",
+    "rationale": "Repository audit (src/relevance/, docs/task_relevance_report.md, src/multimodal_pipeline/dataset_audit.py) and the externally-cited companion dataset paper (Jung et al. 2023, Data in Brief 48:109049 -- the only project-referenced external source for this dataset) were both searched for a task-importance/criticality ranking covering Misalignment and Unbalance. Neither establishes one: the paper is a pure data-acquisition methodology descriptor with no stated fault priority, and this repository's own CWRU CLASS_RELEVANCE_MAP is explicitly self-documented (docs/task_relevance_report.md section 6) as 'initial design parameters... NOT optimized, learned, or calibrated' -- domain reasoning specific to 4 bearing-race-fault classes that does not conceptually cover rotor/shaft-level failure modes at all. Normal/BPFI/BPFO are reused verbatim by genuine physical fault-category correspondence (same defect location semantics as CWRU's Inner/Outer race faults); Misalignment and Unbalance have no defensible source anywhere searched. Conclusion: PARTIAL mapping only -- the three defined values are preserved unchanged; the two undefined values are NOT invented.",
+    "relevance_map": {
+      "BPFI": 1.0,
+      "BPFO": 0.9,
+      "Misalignment": null,
+      "Normal": 0.1,
+      "Unbalance": null
+    },
+    "undefined_relevance_classes": [
+      "Misalignment",
+      "Unbalance"
+    ]
+  },
+  "reload_consistency": {
+    "vibration_current": {
+      "config": "vibration_current",
+      "delta": 0.0009488551646713583,
+      "n_observations_checked": 33725,
+      "reload_consistent": true,
+      "reload_measured_train_accuracy": 0.9524981467753891,
+      "reported_train_accuracy": 0.9515492916107178
+    },
+    "vibration_current_temperature": {
+      "config": "vibration_current_temperature",
+      "delta": 0.002016311070051291,
+      "n_observations_checked": 33725,
+      "reload_consistent": true,
+      "reload_measured_train_accuracy": 0.9638843587842847,
+      "reported_train_accuracy": 0.9618680477142334
+    },
+    "vibration_only": {
+      "config": "vibration_only",
+      "delta": 0.7044967440842024,
+      "n_observations_checked": 38250,
+      "reload_consistent": false,
+      "reload_measured_train_accuracy": 0.253202614379085,
+      "reported_train_accuracy": 0.9576993584632874
+    },
+    "vibration_temperature": {
+      "config": "vibration_temperature",
+      "delta": 0.7199036986335218,
+      "n_observations_checked": 38219,
+      "reload_consistent": false,
+      "reload_measured_train_accuracy": 0.2452445118919909,
+      "reported_train_accuracy": 0.9651482105255127
+    }
+  },
+  "reload_inconsistent_configs": [
+    "vibration_only",
+    "vibration_temperature"
+  ],
+  "task": "37A",
+  "task_38_readiness": {
+    "blocking_issues": [
+      "reload_inconsistent_model_artifacts",
+      "incomplete_relevance_mapping"
+    ],
+    "recommendation": "Task 38 should NOT proceed on vibration_only or vibration_temperature until their fusion head artifacts are regenerated and verified reload-consistent (see reload_consistency above). vibration_current and vibration_current_temperature reload consistently but have almost no test-split observations with a defined relevance score, because relevance is undefined for Misalignment/Unbalance and those are nearly the only true classes present in their test split -- not a model defect. No configuration currently has both a fully trustworthy model artifact and complete relevance coverage at the same time."
+  },
+  "title": "Relevance mapping and prediction audit"
+}
