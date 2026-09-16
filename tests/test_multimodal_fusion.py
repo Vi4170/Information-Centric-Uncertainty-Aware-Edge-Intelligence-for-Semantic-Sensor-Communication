@@ -151,6 +151,24 @@ class TestRepresentationTableAndAssembly(unittest.TestCase):
         X, y, meta = fu.assemble_fusion_split_arrays("vibration_only", table)
         self.assertIn(_CORRUPT_CONDITION, set(meta["condition_code"]))
 
+    def test_23b_corrupt_current_condition_retained_in_temperature_config(self):
+        # Task 35 corrective audit regression test: invalid current must NOT
+        # remove an otherwise-valid temperature observation sharing the same
+        # raw file. 4Nm_BPFO_10 has genuinely valid temperature channels
+        # (confirmed by direct raw-channel inspection of all 45 files) even
+        # though its current channels are genuinely invalid.
+        table, excluded = fu.build_split_representation_table("val", self.vib_model, self.cur_model, self.norm)
+        self.assertFalse(any(e["condition_code"] == _CORRUPT_CONDITION and e["modality"] == "temperature" for e in excluded))
+        X, y, meta = fu.assemble_fusion_split_arrays("vibration_temperature", table)
+        self.assertIn(_CORRUPT_CONDITION, set(meta["condition_code"]))
+
+    def test_23c_corrupt_current_condition_still_excluded_from_current_temperature_config(self):
+        # The stricter configuration requires motor_current too, so it must
+        # still exclude the condition -- current itself is genuinely invalid.
+        table, _ = fu.build_split_representation_table("val", self.vib_model, self.cur_model, self.norm)
+        X, y, meta = fu.assemble_fusion_split_arrays("vibration_current_temperature", table)
+        self.assertNotIn(_CORRUPT_CONDITION, set(meta["condition_code"]))
+
     def test_24_no_zero_filled_substitution_for_missing_current(self):
         table, _ = fu.build_split_representation_table("val", self.vib_model, self.cur_model, self.norm)
         corrupt_rows = table[table["condition_code"] == _CORRUPT_CONDITION]
@@ -239,8 +257,15 @@ class TestTrainOnlyFittingAndLeakage(unittest.TestCase):
             requested_splits.append(split)
             return real_build(split, *args, **kwargs)
 
-        with patch.object(pp, "get_condition_registry", return_value=fake_registry), patch.object(
-            fu, "build_split_representation_table", side_effect=spy
+        # train_all_fusion_heads() saves each config to fusion_model_path(),
+        # which reads the module-level FUSION_MODEL_DIR -- redirect it to a
+        # scratch directory so this test (which trains throwaway 1-epoch
+        # models on a synthetic 3-row registry) can never overwrite the real
+        # production fusion models on disk.
+        with tempfile.TemporaryDirectory() as tmp, patch.object(
+            pp, "get_condition_registry", return_value=fake_registry
+        ), patch.object(fu, "build_split_representation_table", side_effect=spy), patch.object(
+            fu, "FUSION_MODEL_DIR", tmp
         ):
             fu.train_all_fusion_heads(epochs=1)
 
@@ -292,7 +317,7 @@ class TestSavedFusionConfig(unittest.TestCase):
         self.assertFalse(self.config["training"]["test_split_touched_during_training"])
 
     def test_38_bpfo_limitation_disclosed(self):
-        key = "known_limitation_bpfo_missing_from_current_and_temperature_configs"
+        key = "known_limitation_bpfo_missing_from_current_configs"
         self.assertIn(key, self.config)
         self.assertIn("BPFO", self.config[key])
 
@@ -300,10 +325,17 @@ class TestSavedFusionConfig(unittest.TestCase):
         coverage = self.config["class_coverage_by_configuration"]["vibration_only"]
         self.assertEqual(coverage["classes_with_zero_training_support"], [])
 
-    def test_40_class_coverage_shows_bpfo_missing_for_current_configs(self):
-        for name in ("vibration_current", "vibration_current_temperature", "vibration_temperature"):
+    def test_40_class_coverage_shows_bpfo_missing_only_for_current_requiring_configs(self):
+        for name in ("vibration_current", "vibration_current_temperature"):
             coverage = self.config["class_coverage_by_configuration"][name]
             self.assertIn("BPFO", coverage["classes_with_zero_training_support"])
+
+    def test_40b_class_coverage_shows_bpfo_retained_for_vibration_temperature(self):
+        # Corrective-audit regression: temperature alone is genuinely valid
+        # for BPFO, so vibration_temperature must NOT lose BPFO the way the
+        # current-requiring configurations correctly do.
+        coverage = self.config["class_coverage_by_configuration"]["vibration_temperature"]
+        self.assertNotIn("BPFO", coverage["classes_with_zero_training_support"])
 
     def test_41_excluded_conditions_all_bpfo(self):
         excluded_codes = {e["condition_code"] for e in self.config["excluded_conditions"]}

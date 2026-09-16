@@ -50,17 +50,17 @@
       ]
     },
     "vibration_temperature": {
-      "classes_with_zero_training_support": [
-        "BPFO"
-      ],
+      "classes_with_zero_training_support": [],
       "train_classes_present": [
         "BPFI",
+        "BPFO",
         "Misalignment",
         "Normal",
         "Unbalance"
       ],
       "val_classes_present": [
         "BPFI",
+        "BPFO",
         "Misalignment",
         "Unbalance"
       ]
@@ -127,41 +127,41 @@
     {
       "condition_code": "0Nm_BPFO_03",
       "modality": "motor_current",
-      "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_03.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+      "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_03.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
     },
     {
       "condition_code": "0Nm_BPFO_10",
       "modality": "motor_current",
-      "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_10.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+      "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_10.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
     },
     {
       "condition_code": "0Nm_BPFO_30",
       "modality": "motor_current",
-      "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_30.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+      "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_30.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
     },
     {
       "condition_code": "2Nm_BPFO_10",
       "modality": "motor_current",
-      "reason": "'data\\raw\\multimodal\\temperature_current\\2Nm_BPFO_10.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+      "reason": "'data\\raw\\multimodal\\temperature_current\\2Nm_BPFO_10.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
     },
     {
       "condition_code": "4Nm_BPFO_03",
       "modality": "motor_current",
-      "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_03.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+      "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_03.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
     },
     {
       "condition_code": "4Nm_BPFO_30",
       "modality": "motor_current",
-      "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_30.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+      "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_30.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
     },
     {
       "condition_code": "4Nm_BPFO_10",
       "modality": "motor_current",
-      "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_10.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+      "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_10.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
     }
   ],
   "fused_dim": 64,
-  "known_limitation_bpfo_missing_from_current_and_temperature_configs": "Discovered while implementing Task 35 (corrects Task 34's report, which only surfaced one affected file): ALL 9 BPFO conditions (every load x severity) share the identical corrupt raw file pattern -- two empty current channels in the same temperature+current .tdms file -- not just the single condition Task 34 happened to touch. Every fusion configuration requiring motor_current or temperature (vibration_current, vibration_temperature, vibration_current_temperature) therefore trains and validates with ZERO BPFO examples -- effectively a 4-class problem for those configurations, even though the output layer still has 5 units. Only vibration_only retains genuine 5-class coverage. See class_coverage_by_configuration for the exact per-configuration class lists; not fabricated, not worked around, not hidden.",
+  "known_limitation_bpfo_missing_from_current_configs": "Discovered while implementing Task 35, corrected by Task 35's corrective audit (docs/multimodal_task35_bpfo_temperature_audit.md): ALL 9 BPFO conditions (every load x severity) have 2 of their 3 current-phase channels empty in the raw temperature+current .tdms file. The initial Task 35 implementation incorrectly treated this as invalidating BOTH current AND temperature (they share one raw file), excluding BPFO from every configuration that used either modality. Direct inspection of all 45 raw files confirmed temperature's own 2 channels are fully present, correctly lengthed, and physically plausible in every one of the 9 BPFO files -- only current is genuinely invalid. Fusion configurations requiring motor_current (vibration_current, vibration_current_temperature) therefore still train and validate with ZERO BPFO examples -- effectively a 4-class problem for those two configurations, even though the output layer still has 5 units. vibration_only and vibration_temperature both retain genuine 5-class coverage, including BPFO. See class_coverage_by_configuration for the exact per-configuration class lists; not fabricated, not worked around, not hidden.",
   "known_limitation_weak_motor_current_standalone_accuracy": "Task 34 found motor_current's standalone validation accuracy is near chance (~18%) for this 5-class task. Not modified, tuned, or worked around here -- fusion configurations that include motor_current are trained and reported exactly as observed; whether current contributes complementary information is left to a later task, not decided here.",
   "known_limitation_zero_normal_val_test_support": "Task 32's condition-level split is unstratified and only 3 Normal conditions exist in the whole dataset; with this session's seed, all 3 landed in train, leaving 0 Normal-class observations in val/test. Training proceeds on all 5 classes; Normal-class representation quality cannot be validated on held-out data. The split itself was not modified to fix this -- see module docstring.",
   "modality_embedding_dims": {

@@ -128,13 +128,51 @@ class CorruptRawFileError(ValueError):
     affected condition, never to invent replacement values."""
 
 
-def _read_temperature_current_tdms(path: str) -> Dict[str, np.ndarray]:
+def _validate_channel_group(
+    result: Dict[str, np.ndarray],
+    names: Tuple[str, ...],
+    group_label: str,
+    path: str,
+) -> None:
+    """Raise CorruptRawFileError if THIS modality's own channel group (and
+    only this group) has inconsistent or empty lengths. Deliberately scoped
+    to one physical channel type at a time -- Task 35's corrective audit
+    found that validating all 5 TDMS channels together (the original Task 33
+    check) incorrectly invalidated temperature whenever current alone was
+    corrupt, even though temperature and current are logically independent
+    modalities that merely happen to share one raw file. See
+    docs/multimodal_task35_bpfo_temperature_audit.md."""
+    lengths = {name: len(result[name]) for name in names}
+    distinct_lengths = set(lengths.values())
+    if len(distinct_lengths) != 1 or 0 in distinct_lengths:
+        raise CorruptRawFileError(
+            f"'{path}': inconsistent or empty {group_label} channel lengths, "
+            f"refusing to use this file for {group_label}: {lengths}"
+        )
+
+
+def _read_temperature_current_tdms(
+    path: str,
+    require_temperature: bool = True,
+    require_current: bool = True,
+) -> Dict[str, np.ndarray]:
     """Read one raw temperature+current .tdms file into
     {channel_name: 1D float32 array}, covering both TEMPERATURE_CHANNEL_NAMES
     and MOTOR_CURRENT_CHANNEL_NAMES. Channels are matched to a physical name
     by their own 'DAC~Channel~Type' property (Temperature/Current), then
     assigned in acquisition order -- never by trusting a hardcoded device
     path string, so this is robust to minor path/module numbering changes.
+
+    `require_temperature`/`require_current` control which channel GROUP is
+    validated for internal consistency (non-empty, matching length) before
+    this function returns successfully -- a caller that only needs one
+    modality should not fail because the OTHER modality's channels (sharing
+    this same raw file) happen to be corrupt. Both default to True (the
+    original, strictest behaviour) for any caller that genuinely needs both
+    or does not specify. The returned dict always contains all channels that
+    could be read, regardless of which groups were validated; an unvalidated
+    group's data (if corrupt) is simply not raised on -- callers that did not
+    require it must not consume it.
     """
     tdms = TdmsFile.read(path)
     temperature_arrays: List[np.ndarray] = []
@@ -164,20 +202,17 @@ def _read_temperature_current_tdms(path: str) -> Dict[str, np.ndarray]:
     for name, arr in zip(MOTOR_CURRENT_CHANNEL_NAMES, current_arrays):
         result[name] = arr
 
-    # Genuine data-quality issue found while implementing Task 34: at least
-    # one real file (4Nm_BPFO_10.tdms) has two of its three current channels
-    # empty (0 samples) while every other channel in the same file has the
-    # full sample count -- a real acquisition/logging gap, not corruption
-    # introduced here. All 5 channels in one file share one sample grid
-    # (verified elsewhere), so any length mismatch or zero-length channel
-    # means this file cannot be trusted for temperature or motor_current --
-    # raised here rather than silently fabricated or partially trusted.
-    lengths = {name: len(arr) for name, arr in result.items()}
-    distinct_lengths = set(lengths.values())
-    if len(distinct_lengths) != 1 or 0 in distinct_lengths:
-        raise CorruptRawFileError(
-            f"'{path}': inconsistent or empty channel lengths, refusing to use this file: {lengths}"
-        )
+    # Genuine data-quality issue found while implementing Task 34, and
+    # confirmed by Task 35's corrective audit to affect all 9 BPFO
+    # conditions (every load x severity): the raw archive's current channels
+    # are missing 2 of 3 phases for these files (0 samples), while their
+    # temperature channels are fully present and physically plausible. Each
+    # group is validated independently -- never fabricated, never
+    # zero-filled, never conflated with the other modality's validity.
+    if require_temperature:
+        _validate_channel_group(result, TEMPERATURE_CHANNEL_NAMES, "Temperature", path)
+    if require_current:
+        _validate_channel_group(result, MOTOR_CURRENT_CHANNEL_NAMES, "Current", path)
 
     return result
 
@@ -240,7 +275,13 @@ def condition_window_availability(condition_row: pd.Series) -> Dict[str, object]
 
     tc_rate = _measured_temperature_current_rate_hz(condition_row["temperature_current_path"])
     tc_window_size = int(round(schema.WINDOW_DURATION_SECONDS * tc_rate))
-    tc_channels = _read_temperature_current_tdms(condition_row["temperature_current_path"])
+    # Only temperature's own validity is required here: this function reports
+    # a sample count from the shared acquisition clock, and the value it
+    # reads (the first channel, inserted in temperature-then-current order)
+    # is a temperature channel -- current's validity is irrelevant to it.
+    tc_channels = _read_temperature_current_tdms(
+        condition_row["temperature_current_path"], require_temperature=True, require_current=False
+    )
     tc_n_samples = len(next(iter(tc_channels.values())))
     n_temperature_current = _n_real_windows(tc_n_samples, tc_window_size)
 
@@ -268,6 +309,16 @@ def fit_modality_normalization(
     values only, streaming through each train condition's raw file exactly
     once (never concatenating all train data into one array). Matches the
     global-mean/std convention already used by CWRU/Paderborn/XJTU-SY/IMS.
+
+    A train condition whose raw file is internally corrupt FOR THIS
+    MODALITY's own channel group (see CorruptRawFileError -- e.g. all 9 BPFO
+    conditions for motor_current) is excluded from the fitted statistic and
+    recorded in the returned `excluded_conditions`, never fabricated. Only
+    the modality actually being fit is validated: fitting "temperature" does
+    not require motor_current's channels to be valid in the same file, and
+    vice versa (Task 35's corrective audit found the previous single
+    all-5-channels check would have made this raise uncaught instead of
+    excluding cleanly).
     """
     if modality not in schema.CANONICAL_MODALITIES:
         raise ValueError(f"Unknown modality '{modality}'. Expected one of {schema.CANONICAL_MODALITIES}")
@@ -280,17 +331,28 @@ def fit_modality_normalization(
     total_sum = 0.0
     total_sumsq = 0.0
     total_count = 0
+    n_conditions_used = 0
+    excluded_conditions: List[Dict[str, str]] = []
 
     for _, row in train_rows.iterrows():
         if modality == "vibration":
             channels = _read_vibration_mat(row["vibration_path"])
         else:
-            all_channels = _read_temperature_current_tdms(row["temperature_current_path"])
-            names = (
-                MOTOR_CURRENT_CHANNEL_NAMES if modality == "motor_current" else TEMPERATURE_CHANNEL_NAMES
-            )
+            names = MOTOR_CURRENT_CHANNEL_NAMES if modality == "motor_current" else TEMPERATURE_CHANNEL_NAMES
+            try:
+                all_channels = _read_temperature_current_tdms(
+                    row["temperature_current_path"],
+                    require_temperature=(modality == "temperature"),
+                    require_current=(modality == "motor_current"),
+                )
+            except CorruptRawFileError as exc:
+                excluded_conditions.append(
+                    {"condition_code": row["condition_code"], "modality": modality, "reason": str(exc)}
+                )
+                continue
             channels = {name: all_channels[name] for name in names}
 
+        n_conditions_used += 1
         for arr in channels.values():
             arr64 = arr.astype(np.float64)
             total_sum += float(arr64.sum())
@@ -311,8 +373,9 @@ def fit_modality_normalization(
         "mean": float(mean),
         "std": float(std),
         "n_samples": int(total_count),
-        "n_train_conditions": int(len(train_rows)),
+        "n_train_conditions": int(n_conditions_used),
         "fit_only_on_split": "train",
+        "excluded_conditions": excluded_conditions,
     }
 
 
@@ -408,7 +471,9 @@ def build_motor_current_windows_for_condition(
     condition_window_availability()."""
     tc_rate = _measured_temperature_current_rate_hz(condition_row["temperature_current_path"])
     tc_window_size = int(round(schema.WINDOW_DURATION_SECONDS * tc_rate))
-    channels = _read_temperature_current_tdms(condition_row["temperature_current_path"])
+    channels = _read_temperature_current_tdms(
+        condition_row["temperature_current_path"], require_temperature=False, require_current=True
+    )
 
     per_channel_windows = [
         window_channel_signal(channels[name], window_size=tc_window_size, step_size=tc_window_size)
@@ -452,7 +517,12 @@ def build_temperature_features_for_condition(
     appropriate representation, not an information-losing shortcut."""
     tc_rate = _measured_temperature_current_rate_hz(condition_row["temperature_current_path"])
     tc_window_size = int(round(schema.WINDOW_DURATION_SECONDS * tc_rate))
-    channels = _read_temperature_current_tdms(condition_row["temperature_current_path"])
+    # Only temperature's own channel group must be valid -- motor_current
+    # sharing this raw file may be corrupt (e.g. all 9 BPFO conditions)
+    # without that affecting temperature's genuinely independent validity.
+    channels = _read_temperature_current_tdms(
+        condition_row["temperature_current_path"], require_temperature=True, require_current=False
+    )
 
     per_channel_windows = [
         window_channel_signal(channels[name], window_size=tc_window_size, step_size=tc_window_size)

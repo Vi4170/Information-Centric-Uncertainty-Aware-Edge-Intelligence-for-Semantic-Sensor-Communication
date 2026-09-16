@@ -226,6 +226,66 @@ class TestMissingModalityHandling(unittest.TestCase):
 
 
 @unittest.skipUnless(_RAW_DATA_AVAILABLE, "raw multimodal data not present in this environment")
+class TestModalitySpecificCorruptionHandling(unittest.TestCase):
+    """Task 35 corrective audit: direct inspection of all 45 raw
+    temperature_current .tdms files confirmed all 9 BPFO conditions have 2
+    of 3 current-phase channels empty, while their 2 temperature channels
+    are fully present, correctly lengthed, and physically plausible in
+    every one of those same 9 files. Corruption in one modality's own
+    channel group must never be inferred to also invalidate the other
+    modality sharing the same raw file. See
+    docs/multimodal_task35_bpfo_temperature_audit.md."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.row = pp.get_condition_row(_SMALL_CONDITION_2)  # 0Nm_BPFO_10
+
+    def test_41_temperature_only_read_succeeds_for_bpfo(self):
+        channels = pp._read_temperature_current_tdms(
+            self.row["temperature_current_path"], require_temperature=True, require_current=False
+        )
+        for name in pp.TEMPERATURE_CHANNEL_NAMES:
+            self.assertGreater(len(channels[name]), 0)
+
+    def test_42_current_only_read_raises_for_bpfo(self):
+        with self.assertRaises(pp.CorruptRawFileError):
+            pp._read_temperature_current_tdms(
+                self.row["temperature_current_path"], require_temperature=False, require_current=True
+            )
+
+    def test_43_default_read_still_raises_when_both_required(self):
+        with self.assertRaises(pp.CorruptRawFileError):
+            pp._read_temperature_current_tdms(self.row["temperature_current_path"])
+
+    def test_44_build_temperature_features_succeeds_for_bpfo(self):
+        X, meta = pp.build_temperature_features_for_condition(self.row)
+        self.assertGreater(len(X), 0)
+        self.assertEqual(X.shape[1], len(pp.TEMPERATURE_CHANNEL_NAMES))
+
+    def test_45_build_motor_current_windows_still_raises_for_bpfo(self):
+        with self.assertRaises(pp.CorruptRawFileError):
+            pp.build_motor_current_windows_for_condition(self.row)
+
+    def test_46_condition_window_availability_succeeds_despite_corrupt_current(self):
+        availability = pp.condition_window_availability(self.row)
+        self.assertGreater(availability["n_temperature_current"], 0)
+
+    def test_47_fit_modality_normalization_motor_current_excludes_only_bpfo_train_conditions(self):
+        result = pp.fit_modality_normalization("motor_current")
+        excluded_codes = {e["condition_code"] for e in result["excluded_conditions"]}
+        self.assertTrue(len(excluded_codes) > 0)
+        self.assertTrue(all("BPFO" in code for code in excluded_codes))
+
+    def test_48_fit_modality_normalization_temperature_excludes_nothing_for_bpfo(self):
+        result = pp.fit_modality_normalization("temperature")
+        self.assertEqual(result["excluded_conditions"], [])
+
+    def test_49_fit_modality_normalization_vibration_excludes_nothing(self):
+        result = pp.fit_modality_normalization("vibration")
+        self.assertEqual(result["excluded_conditions"], [])
+
+
+@unittest.skipUnless(_RAW_DATA_AVAILABLE, "raw multimodal data not present in this environment")
 class TestObservationIdConsistency(unittest.TestCase):
     def test_34_shared_window_indices_have_identical_ids_across_modalities(self):
         row = pp.get_condition_row(_SMALL_CONDITION)

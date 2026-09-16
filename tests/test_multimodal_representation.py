@@ -164,7 +164,13 @@ class TestChannelPreservationAndProvenance(unittest.TestCase):
 @unittest.skipUnless(_RAW_DATA_AVAILABLE, "raw multimodal data not present in this environment")
 class TestCorruptFileHandling(unittest.TestCase):
     """4Nm_BPFO_10.tdms genuinely has two empty current channels (found while
-    implementing Task 34) -- verifies it is excluded, not fabricated."""
+    implementing Task 34) -- verifies motor_current is excluded, not
+    fabricated. Task 35's corrective audit (direct raw-channel inspection of
+    all 45 files, see docs/multimodal_task35_bpfo_temperature_audit.md)
+    confirmed temperature's own 2 channels are fully valid in this same
+    file, despite sharing it with the invalid current channels -- so
+    temperature must NOT be excluded here, unlike the pre-correction
+    behaviour."""
 
     def test_22_motor_current_excludes_corrupt_condition(self):
         row = pp.get_condition_row(_CORRUPT_CONDITION)
@@ -172,10 +178,11 @@ class TestCorruptFileHandling(unittest.TestCase):
         self.assertTrue(any(e["condition_code"] == _CORRUPT_CONDITION for e in excluded))
         self.assertNotIn(_CORRUPT_CONDITION, set(meta.get("condition_code", [])))
 
-    def test_23_temperature_excludes_corrupt_condition(self):
+    def test_23_temperature_is_not_excluded_by_corrupt_current_in_same_file(self):
         row = pp.get_condition_row(_CORRUPT_CONDITION)
         _, _, meta, excluded = rep.assemble_split_arrays("temperature", row["split"])
-        self.assertTrue(any(e["condition_code"] == _CORRUPT_CONDITION for e in excluded))
+        self.assertFalse(any(e["condition_code"] == _CORRUPT_CONDITION for e in excluded))
+        self.assertIn(_CORRUPT_CONDITION, set(meta["condition_code"]))
 
     def test_24_vibration_is_unaffected_by_the_corrupt_tdms_file(self):
         row = pp.get_condition_row(_CORRUPT_CONDITION)
@@ -183,13 +190,31 @@ class TestCorruptFileHandling(unittest.TestCase):
         self.assertEqual(excluded, [])
         self.assertIn(_CORRUPT_CONDITION, set(meta["condition_code"]))
 
-    def test_25_corrupt_file_raises_specific_exception_type(self):
+    def test_25_corrupt_file_raises_specific_exception_type_when_current_required(self):
         row = pp.get_condition_row(_CORRUPT_CONDITION)
         with self.assertRaises(pp.CorruptRawFileError):
-            pp._read_temperature_current_tdms(row["temperature_current_path"])
+            pp._read_temperature_current_tdms(
+                row["temperature_current_path"], require_temperature=False, require_current=True
+            )
 
     def test_26_corrupt_file_error_is_a_value_error_subclass(self):
         self.assertTrue(issubclass(pp.CorruptRawFileError, ValueError))
+
+    def test_27_temperature_only_read_succeeds_despite_corrupt_current(self):
+        row = pp.get_condition_row(_CORRUPT_CONDITION)
+        channels = pp._read_temperature_current_tdms(
+            row["temperature_current_path"], require_temperature=True, require_current=False
+        )
+        for name in pp.TEMPERATURE_CHANNEL_NAMES:
+            self.assertGreater(len(channels[name]), 0)
+
+    def test_28_default_read_still_raises_when_both_required(self):
+        # Backward-compatible default: an unflagged call still validates
+        # both groups, so any existing caller that genuinely needs both
+        # keeps the original strict behaviour.
+        row = pp.get_condition_row(_CORRUPT_CONDITION)
+        with self.assertRaises(pp.CorruptRawFileError):
+            pp._read_temperature_current_tdms(row["temperature_current_path"])
 
 
 class TestTrainOnlyFittingAndLeakage(unittest.TestCase):

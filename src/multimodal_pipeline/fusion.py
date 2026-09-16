@@ -36,12 +36,20 @@ output interchangeably. Concatenation always follows MODALITY_ORDER =
 (vibration, motor_current, temperature); a configuration simply omits
 absent modalities from that fixed order -- never reorders them.
 
-Missing/corrupt current handling: reuses Task 34's ``pp.CorruptRawFileError``
-exactly (the same real file, 4Nm_BPFO_10.tdms, that has two empty current
-channels). A condition where that error is raised is excluded from every
-configuration that requires motor_current OR temperature (both live in the
-same raw file) -- never fabricated, never zero-filled. vibration_only is
-unaffected, since it never reads that file.
+Missing/corrupt current handling: reuses Task 34's ``pp.CorruptRawFileError``,
+raised independently per modality (Task 35's corrective audit, see
+docs/multimodal_task35_bpfo_temperature_audit.md). Direct inspection of all
+45 raw temperature_current .tdms files confirmed the corruption is scoped to
+current only: all 9 BPFO conditions (every load x severity) have exactly 2
+of their 3 current-phase channels empty, while both temperature channels in
+those same files are fully present, correctly lengthed, and physically
+plausible. A condition is therefore excluded ONLY from configurations that
+require the specific modality whose own channel group failed validation --
+motor_current-requiring configurations (vibration_current,
+vibration_current_temperature) exclude all 9 BPFO conditions, but
+vibration_temperature does not, since temperature alone is genuinely valid
+there. vibration_only is unaffected either way, since it never reads that
+file. Never fabricated, never zero-filled.
 
 Window-count mismatch handling: Task 33 established that vibration can have
 exactly one more window per condition than motor_current/temperature (a
@@ -152,7 +160,6 @@ def build_split_representation_table(
         vib_lookup = dict(zip(mv["observation_id"], vib_emb))
 
         cur_lookup: Dict[str, np.ndarray] = {}
-        current_valid = True
         try:
             Xc, mc = pp.build_motor_current_windows_for_condition(
                 row, normalization=normalization_params["motor_current"]
@@ -160,15 +167,21 @@ def build_split_representation_table(
             cur_emb = rep.get_motor_current_embeddings(motor_current_model, Xc)
             cur_lookup = dict(zip(mc["observation_id"], cur_emb))
         except pp.CorruptRawFileError as exc:
-            current_valid = False
             excluded.append({"condition_code": row["condition_code"], "modality": "motor_current", "reason": str(exc)})
 
+        # Temperature shares its raw file with motor_current, but the two
+        # are physically independent channel groups -- Task 35's corrective
+        # audit (see docs/multimodal_task35_bpfo_temperature_audit.md)
+        # confirmed by direct raw-channel inspection that all 9 BPFO
+        # conditions have fully valid temperature data despite invalid
+        # current data. Temperature's own validity is therefore checked
+        # independently here, never inferred from current's outcome.
         temp_lookup: Dict[str, np.ndarray] = {}
-        if current_valid:
-            # Same raw file as motor_current; if that file is corrupt, don't
-            # attempt (and don't double-record) temperature separately.
+        try:
             Xt, mt = pp.build_temperature_features_for_condition(row, normalization=normalization_params["temperature"])
             temp_lookup = dict(zip(mt["observation_id"], Xt))
+        except pp.CorruptRawFileError as exc:
+            excluded.append({"condition_code": row["condition_code"], "modality": "temperature", "reason": str(exc)})
 
         for observation_id, vibration_embedding in vib_lookup.items():
             records.append(
@@ -405,21 +418,27 @@ def build_fusion_config_record(
             "whether current contributes complementary information is left "
             "to a later task, not decided here."
         ),
-        "known_limitation_bpfo_missing_from_current_and_temperature_configs": (
-            "Discovered while implementing Task 35 (corrects Task 34's report, "
-            "which only surfaced one affected file): ALL 9 BPFO conditions "
-            "(every load x severity) share the identical corrupt raw file "
-            "pattern -- two empty current channels in the same temperature+"
-            "current .tdms file -- not just the single condition Task 34 "
-            "happened to touch. Every fusion configuration requiring "
-            "motor_current or temperature (vibration_current, "
-            "vibration_temperature, vibration_current_temperature) therefore "
-            "trains and validates with ZERO BPFO examples -- effectively a "
-            "4-class problem for those configurations, even though the "
-            "output layer still has 5 units. Only vibration_only retains "
-            "genuine 5-class coverage. See class_coverage_by_configuration "
-            "for the exact per-configuration class lists; not fabricated, "
-            "not worked around, not hidden."
+        "known_limitation_bpfo_missing_from_current_configs": (
+            "Discovered while implementing Task 35, corrected by Task 35's "
+            "corrective audit (docs/multimodal_task35_bpfo_temperature_audit.md): "
+            "ALL 9 BPFO conditions (every load x severity) have 2 of their 3 "
+            "current-phase channels empty in the raw temperature+current "
+            ".tdms file. The initial Task 35 implementation incorrectly "
+            "treated this as invalidating BOTH current AND temperature "
+            "(they share one raw file), excluding BPFO from every "
+            "configuration that used either modality. Direct inspection of "
+            "all 45 raw files confirmed temperature's own 2 channels are "
+            "fully present, correctly lengthed, and physically plausible in "
+            "every one of the 9 BPFO files -- only current is genuinely "
+            "invalid. Fusion configurations requiring motor_current "
+            "(vibration_current, vibration_current_temperature) therefore "
+            "still train and validate with ZERO BPFO examples -- effectively "
+            "a 4-class problem for those two configurations, even though the "
+            "output layer still has 5 units. vibration_only and "
+            "vibration_temperature both retain genuine 5-class coverage, "
+            "including BPFO. See class_coverage_by_configuration for the "
+            "exact per-configuration class lists; not fabricated, not worked "
+            "around, not hidden."
         ),
         "excluded_conditions": excluded_conditions or [],
     }
