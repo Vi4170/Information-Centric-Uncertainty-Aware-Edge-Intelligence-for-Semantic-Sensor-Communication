@@ -6,81 +6,81 @@
       {
         "condition_code": "0Nm_BPFO_03",
         "modality": "motor_current",
-        "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_03.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+        "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_03.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
       },
       {
         "condition_code": "0Nm_BPFO_10",
         "modality": "motor_current",
-        "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_10.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+        "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_10.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
       },
       {
         "condition_code": "0Nm_BPFO_30",
         "modality": "motor_current",
-        "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_30.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+        "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_30.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
       },
       {
         "condition_code": "2Nm_BPFO_10",
         "modality": "motor_current",
-        "reason": "'data\\raw\\multimodal\\temperature_current\\2Nm_BPFO_10.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+        "reason": "'data\\raw\\multimodal\\temperature_current\\2Nm_BPFO_10.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
       },
       {
         "condition_code": "4Nm_BPFO_03",
         "modality": "motor_current",
-        "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_03.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+        "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_03.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
       },
       {
         "condition_code": "4Nm_BPFO_30",
         "modality": "motor_current",
-        "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_30.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+        "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_30.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
       },
       {
         "condition_code": "4Nm_BPFO_10",
         "modality": "motor_current",
-        "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_10.tdms': inconsistent or empty channel lengths, refusing to use this file: {'Temperature_housing_A': 1536492, 'Temperature_housing_B': 1536492, 'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+        "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_10.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
       }
     ],
     "modality": "motor_current",
     "n_train_windows": 33725,
     "n_val_windows": 8244,
     "train_accuracy": [
-      0.4873535931110382,
+      0.48738324642181396,
       0.48892512917518616,
-      0.48892512917518616,
-      0.4890140891075134,
-      0.5012602210044861,
-      0.5063899159431458,
-      0.542802095413208,
-      0.6226834654808044
+      0.48880651593208313,
+      0.4958636164665222,
+      0.515433669090271,
+      0.5604743957519531,
+      0.6429058313369751,
+      0.6970496773719788
     ],
     "train_loss": [
-      1.261762261390686,
-      1.248429298400879,
-      1.240506887435913,
-      1.2231475114822388,
-      1.1813257932662964,
-      1.1694499254226685,
-      1.0866787433624268,
-      0.9283164143562317
+      1.2617336511611938,
+      1.248199701309204,
+      1.236082673072815,
+      1.1926498413085938,
+      1.1456055641174316,
+      1.0061602592468262,
+      0.89220130443573,
+      0.8194222450256348
     ],
     "val_accuracy": [
       0.18182921409606934,
       0.18182921409606934,
       0.18182921409606934,
       0.18182921409606934,
-      0.17964580655097961,
       0.18182921409606934,
-      0.18170790374279022,
+      0.18668122589588165,
+      0.17309558391571045,
       0.18182921409606934
     ],
     "val_loss": [
-      1.690639853477478,
-      1.7191691398620605,
-      1.7810031175613403,
-      1.735324501991272,
-      1.7061794996261597,
-      1.763529896736145,
-      1.8839218616485596,
-      2.5290088653564453
+      1.6904109716415405,
+      1.732897400856018,
+      1.8327715396881104,
+      1.7495219707489014,
+      1.7657142877578735,
+      1.9355939626693726,
+      2.089470386505127,
+      1.580546498298645
     ]
   },
   "vibration": {
