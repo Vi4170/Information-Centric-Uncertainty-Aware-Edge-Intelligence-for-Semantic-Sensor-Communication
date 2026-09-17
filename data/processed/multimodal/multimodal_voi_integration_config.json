@@ -1,0 +1,696 @@
+{
+  "communication_cost_source": "src.communication.cost.compute_communication_cost (unmodified), nominal constant identical to CWRU/Paderborn -- no FSO/channel model introduced",
+  "configurations": {
+    "vibration_current": {
+      "config": "vibration_current",
+      "fused_dim": 64,
+      "modalities": [
+        "vibration",
+        "motor_current"
+      ],
+      "novelty_n_train_normal_reference": 6747,
+      "novelty_reference_class": 0,
+      "novelty_reference_class_name": "Normal",
+      "resource_cost_nominal_value": 0.5049152,
+      "splits": {
+        "test": {
+          "class_support": {
+            "BPFI": 0,
+            "BPFO": 0,
+            "Misalignment": 2998,
+            "Normal": 0,
+            "Unbalance": 4497
+          },
+          "communication_cost_availability": {
+            "n": 7495,
+            "n_available": 7495,
+            "pct_available": 100.0
+          },
+          "decision_counts": {
+            "BUFFER": 0,
+            "DISCARD": 3,
+            "SUMMARY": 0,
+            "TRANSMIT": 0,
+            "UNDEFINED_RELEVANCE": 7492
+          },
+          "n_observations": 7495,
+          "novelty_availability": {
+            "n": 7495,
+            "n_available": 7495,
+            "pct_available": 100.0
+          },
+          "relevance_coverage": {
+            "n": 7495,
+            "n_defined": 3,
+            "n_undefined": 7492,
+            "pct_defined": 0.04
+          },
+          "temporal_importance_availability": {
+            "n": 7495,
+            "n_available": 7495,
+            "pct_available": 100.0
+          },
+          "uncertainty_availability": {
+            "n": 7495,
+            "n_available": 7495,
+            "pct_available": 100.0
+          },
+          "voi_availability": {
+            "n_computed": 3,
+            "n_undefined_relevance": 7492
+          }
+        },
+        "train": {
+          "class_support": {
+            "BPFI": 5992,
+            "BPFO": 0,
+            "Misalignment": 4497,
+            "Normal": 6747,
+            "Unbalance": 16489
+          },
+          "communication_cost_availability": {
+            "n": 33725,
+            "n_available": 33725,
+            "pct_available": 100.0
+          },
+          "decision_counts": {
+            "BUFFER": 1099,
+            "DISCARD": 5707,
+            "SUMMARY": 4856,
+            "TRANSMIT": 37,
+            "UNDEFINED_RELEVANCE": 22026
+          },
+          "n_observations": 33725,
+          "novelty_availability": {
+            "n": 33725,
+            "n_available": 33725,
+            "pct_available": 100.0
+          },
+          "relevance_coverage": {
+            "n": 33725,
+            "n_defined": 11699,
+            "n_undefined": 22026,
+            "pct_defined": 34.6894
+          },
+          "temporal_importance_availability": {
+            "n": 33725,
+            "n_available": 33725,
+            "pct_available": 100.0
+          },
+          "uncertainty_availability": {
+            "n": 33725,
+            "n_available": 33725,
+            "pct_available": 100.0
+          },
+          "voi_availability": {
+            "n_computed": 11699,
+            "n_undefined_relevance": 22026
+          }
+        },
+        "val": {
+          "class_support": {
+            "BPFI": 749,
+            "BPFO": 0,
+            "Misalignment": 5996,
+            "Normal": 0,
+            "Unbalance": 1499
+          },
+          "communication_cost_availability": {
+            "n": 8244,
+            "n_available": 8244,
+            "pct_available": 100.0
+          },
+          "decision_counts": {
+            "BUFFER": 544,
+            "DISCARD": 1047,
+            "SUMMARY": 205,
+            "TRANSMIT": 0,
+            "UNDEFINED_RELEVANCE": 6448
+          },
+          "n_observations": 8244,
+          "novelty_availability": {
+            "n": 8244,
+            "n_available": 8244,
+            "pct_available": 100.0
+          },
+          "relevance_coverage": {
+            "n": 8244,
+            "n_defined": 1796,
+            "n_undefined": 6448,
+            "pct_defined": 21.7855
+          },
+          "temporal_importance_availability": {
+            "n": 8244,
+            "n_available": 8244,
+            "pct_available": 100.0
+          },
+          "uncertainty_availability": {
+            "n": 8244,
+            "n_available": 8244,
+            "pct_available": 100.0
+          },
+          "voi_availability": {
+            "n_computed": 1796,
+            "n_undefined_relevance": 6448
+          }
+        }
+      }
+    },
+    "vibration_current_temperature": {
+      "config": "vibration_current_temperature",
+      "fused_dim": 64,
+      "modalities": [
+        "vibration",
+        "motor_current",
+        "temperature"
+      ],
+      "novelty_n_train_normal_reference": 6747,
+      "novelty_reference_class": 0,
+      "novelty_reference_class_name": "Normal",
+      "resource_cost_nominal_value": 0.5049152,
+      "splits": {
+        "test": {
+          "class_support": {
+            "BPFI": 0,
+            "BPFO": 0,
+            "Misalignment": 2998,
+            "Normal": 0,
+            "Unbalance": 4497
+          },
+          "communication_cost_availability": {
+            "n": 7495,
+            "n_available": 7495,
+            "pct_available": 100.0
+          },
+          "decision_counts": {
+            "BUFFER": 0,
+            "DISCARD": 0,
+            "SUMMARY": 0,
+            "TRANSMIT": 0,
+            "UNDEFINED_RELEVANCE": 7495
+          },
+          "n_observations": 7495,
+          "novelty_availability": {
+            "n": 7495,
+            "n_available": 7495,
+            "pct_available": 100.0
+          },
+          "relevance_coverage": {
+            "n": 7495,
+            "n_defined": 0,
+            "n_undefined": 7495,
+            "pct_defined": 0.0
+          },
+          "temporal_importance_availability": {
+            "n": 7495,
+            "n_available": 7495,
+            "pct_available": 100.0
+          },
+          "uncertainty_availability": {
+            "n": 7495,
+            "n_available": 7495,
+            "pct_available": 100.0
+          },
+          "voi_availability": {
+            "n_computed": 0,
+            "n_undefined_relevance": 7495
+          }
+        },
+        "train": {
+          "class_support": {
+            "BPFI": 5992,
+            "BPFO": 0,
+            "Misalignment": 4497,
+            "Normal": 6747,
+            "Unbalance": 16489
+          },
+          "communication_cost_availability": {
+            "n": 33725,
+            "n_available": 33725,
+            "pct_available": 100.0
+          },
+          "decision_counts": {
+            "BUFFER": 1261,
+            "DISCARD": 5961,
+            "SUMMARY": 4724,
+            "TRANSMIT": 7,
+            "UNDEFINED_RELEVANCE": 21772
+          },
+          "n_observations": 33725,
+          "novelty_availability": {
+            "n": 33725,
+            "n_available": 33725,
+            "pct_available": 100.0
+          },
+          "relevance_coverage": {
+            "n": 33725,
+            "n_defined": 11953,
+            "n_undefined": 21772,
+            "pct_defined": 35.4426
+          },
+          "temporal_importance_availability": {
+            "n": 33725,
+            "n_available": 33725,
+            "pct_available": 100.0
+          },
+          "uncertainty_availability": {
+            "n": 33725,
+            "n_available": 33725,
+            "pct_available": 100.0
+          },
+          "voi_availability": {
+            "n_computed": 11953,
+            "n_undefined_relevance": 21772
+          }
+        },
+        "val": {
+          "class_support": {
+            "BPFI": 749,
+            "BPFO": 0,
+            "Misalignment": 5996,
+            "Normal": 0,
+            "Unbalance": 1499
+          },
+          "communication_cost_availability": {
+            "n": 8244,
+            "n_available": 8244,
+            "pct_available": 100.0
+          },
+          "decision_counts": {
+            "BUFFER": 686,
+            "DISCARD": 1,
+            "SUMMARY": 63,
+            "TRANSMIT": 0,
+            "UNDEFINED_RELEVANCE": 7494
+          },
+          "n_observations": 8244,
+          "novelty_availability": {
+            "n": 8244,
+            "n_available": 8244,
+            "pct_available": 100.0
+          },
+          "relevance_coverage": {
+            "n": 8244,
+            "n_defined": 750,
+            "n_undefined": 7494,
+            "pct_defined": 9.0975
+          },
+          "temporal_importance_availability": {
+            "n": 8244,
+            "n_available": 8244,
+            "pct_available": 100.0
+          },
+          "uncertainty_availability": {
+            "n": 8244,
+            "n_available": 8244,
+            "pct_available": 100.0
+          },
+          "voi_availability": {
+            "n_computed": 750,
+            "n_undefined_relevance": 7494
+          }
+        }
+      }
+    },
+    "vibration_only": {
+      "config": "vibration_only",
+      "fused_dim": 64,
+      "modalities": [
+        "vibration"
+      ],
+      "novelty_n_train_normal_reference": 6750,
+      "novelty_reference_class": 0,
+      "novelty_reference_class_name": "Normal",
+      "resource_cost_nominal_value": 0.5049152,
+      "splits": {
+        "test": {
+          "class_support": {
+            "BPFI": 0,
+            "BPFO": 1500,
+            "Misalignment": 3000,
+            "Normal": 0,
+            "Unbalance": 4500
+          },
+          "communication_cost_availability": {
+            "n": 9000,
+            "n_available": 9000,
+            "pct_available": 100.0
+          },
+          "decision_counts": {
+            "BUFFER": 816,
+            "DISCARD": 6,
+            "SUMMARY": 746,
+            "TRANSMIT": 3,
+            "UNDEFINED_RELEVANCE": 7429
+          },
+          "n_observations": 9000,
+          "novelty_availability": {
+            "n": 9000,
+            "n_available": 9000,
+            "pct_available": 100.0
+          },
+          "relevance_coverage": {
+            "n": 9000,
+            "n_defined": 1571,
+            "n_undefined": 7429,
+            "pct_defined": 17.4556
+          },
+          "temporal_importance_availability": {
+            "n": 9000,
+            "n_available": 9000,
+            "pct_available": 100.0
+          },
+          "uncertainty_availability": {
+            "n": 9000,
+            "n_available": 9000,
+            "pct_available": 100.0
+          },
+          "voi_availability": {
+            "n_computed": 1571,
+            "n_undefined_relevance": 7429
+          }
+        },
+        "train": {
+          "class_support": {
+            "BPFI": 6000,
+            "BPFO": 4500,
+            "Misalignment": 4500,
+            "Normal": 6750,
+            "Unbalance": 16500
+          },
+          "communication_cost_availability": {
+            "n": 38250,
+            "n_available": 38250,
+            "pct_available": 100.0
+          },
+          "decision_counts": {
+            "BUFFER": 3444,
+            "DISCARD": 6070,
+            "SUMMARY": 7016,
+            "TRANSMIT": 40,
+            "UNDEFINED_RELEVANCE": 21680
+          },
+          "n_observations": 38250,
+          "novelty_availability": {
+            "n": 38250,
+            "n_available": 38250,
+            "pct_available": 100.0
+          },
+          "relevance_coverage": {
+            "n": 38250,
+            "n_defined": 16570,
+            "n_undefined": 21680,
+            "pct_defined": 43.3203
+          },
+          "temporal_importance_availability": {
+            "n": 38250,
+            "n_available": 38250,
+            "pct_available": 100.0
+          },
+          "uncertainty_availability": {
+            "n": 38250,
+            "n_available": 38250,
+            "pct_available": 100.0
+          },
+          "voi_availability": {
+            "n_computed": 16570,
+            "n_undefined_relevance": 21680
+          }
+        },
+        "val": {
+          "class_support": {
+            "BPFI": 750,
+            "BPFO": 750,
+            "Misalignment": 6000,
+            "Normal": 0,
+            "Unbalance": 1500
+          },
+          "communication_cost_availability": {
+            "n": 9000,
+            "n_available": 9000,
+            "pct_available": 100.0
+          },
+          "decision_counts": {
+            "BUFFER": 745,
+            "DISCARD": 1341,
+            "SUMMARY": 748,
+            "TRANSMIT": 7,
+            "UNDEFINED_RELEVANCE": 6159
+          },
+          "n_observations": 9000,
+          "novelty_availability": {
+            "n": 9000,
+            "n_available": 9000,
+            "pct_available": 100.0
+          },
+          "relevance_coverage": {
+            "n": 9000,
+            "n_defined": 2841,
+            "n_undefined": 6159,
+            "pct_defined": 31.5667
+          },
+          "temporal_importance_availability": {
+            "n": 9000,
+            "n_available": 9000,
+            "pct_available": 100.0
+          },
+          "uncertainty_availability": {
+            "n": 9000,
+            "n_available": 9000,
+            "pct_available": 100.0
+          },
+          "voi_availability": {
+            "n_computed": 2841,
+            "n_undefined_relevance": 6159
+          }
+        }
+      }
+    },
+    "vibration_temperature": {
+      "config": "vibration_temperature",
+      "fused_dim": 64,
+      "modalities": [
+        "vibration",
+        "temperature"
+      ],
+      "novelty_n_train_normal_reference": 6747,
+      "novelty_reference_class": 0,
+      "novelty_reference_class_name": "Normal",
+      "resource_cost_nominal_value": 0.5049152,
+      "splits": {
+        "test": {
+          "class_support": {
+            "BPFI": 0,
+            "BPFO": 1498,
+            "Misalignment": 2998,
+            "Normal": 0,
+            "Unbalance": 4497
+          },
+          "communication_cost_availability": {
+            "n": 8993,
+            "n_available": 8993,
+            "pct_available": 100.0
+          },
+          "decision_counts": {
+            "BUFFER": 750,
+            "DISCARD": 2,
+            "SUMMARY": 746,
+            "TRANSMIT": 2,
+            "UNDEFINED_RELEVANCE": 7493
+          },
+          "n_observations": 8993,
+          "novelty_availability": {
+            "n": 8993,
+            "n_available": 8993,
+            "pct_available": 100.0
+          },
+          "relevance_coverage": {
+            "n": 8993,
+            "n_defined": 1500,
+            "n_undefined": 7493,
+            "pct_defined": 16.6796
+          },
+          "temporal_importance_availability": {
+            "n": 8993,
+            "n_available": 8993,
+            "pct_available": 100.0
+          },
+          "uncertainty_availability": {
+            "n": 8993,
+            "n_available": 8993,
+            "pct_available": 100.0
+          },
+          "voi_availability": {
+            "n_computed": 1500,
+            "n_undefined_relevance": 7493
+          }
+        },
+        "train": {
+          "class_support": {
+            "BPFI": 5992,
+            "BPFO": 4494,
+            "Misalignment": 4497,
+            "Normal": 6747,
+            "Unbalance": 16489
+          },
+          "communication_cost_availability": {
+            "n": 38219,
+            "n_available": 38219,
+            "pct_available": 100.0
+          },
+          "decision_counts": {
+            "BUFFER": 4242,
+            "DISCARD": 6274,
+            "SUMMARY": 6239,
+            "TRANSMIT": 5,
+            "UNDEFINED_RELEVANCE": 21459
+          },
+          "n_observations": 38219,
+          "novelty_availability": {
+            "n": 38219,
+            "n_available": 38219,
+            "pct_available": 100.0
+          },
+          "relevance_coverage": {
+            "n": 38219,
+            "n_defined": 16760,
+            "n_undefined": 21459,
+            "pct_defined": 43.8525
+          },
+          "temporal_importance_availability": {
+            "n": 38219,
+            "n_available": 38219,
+            "pct_available": 100.0
+          },
+          "uncertainty_availability": {
+            "n": 38219,
+            "n_available": 38219,
+            "pct_available": 100.0
+          },
+          "voi_availability": {
+            "n_computed": 16760,
+            "n_undefined_relevance": 21459
+          }
+        },
+        "val": {
+          "class_support": {
+            "BPFI": 749,
+            "BPFO": 749,
+            "Misalignment": 5996,
+            "Normal": 0,
+            "Unbalance": 1499
+          },
+          "communication_cost_availability": {
+            "n": 8993,
+            "n_available": 8993,
+            "pct_available": 100.0
+          },
+          "decision_counts": {
+            "BUFFER": 749,
+            "DISCARD": 848,
+            "SUMMARY": 749,
+            "TRANSMIT": 0,
+            "UNDEFINED_RELEVANCE": 6647
+          },
+          "n_observations": 8993,
+          "novelty_availability": {
+            "n": 8993,
+            "n_available": 8993,
+            "pct_available": 100.0
+          },
+          "relevance_coverage": {
+            "n": 8993,
+            "n_defined": 2346,
+            "n_undefined": 6647,
+            "pct_defined": 26.087
+          },
+          "temporal_importance_availability": {
+            "n": 8993,
+            "n_available": 8993,
+            "pct_available": 100.0
+          },
+          "uncertainty_availability": {
+            "n": 8993,
+            "n_available": 8993,
+            "pct_available": 100.0
+          },
+          "voi_availability": {
+            "n_computed": 2346,
+            "n_undefined_relevance": 6647
+          }
+        }
+      }
+    }
+  },
+  "excluded_conditions": [
+    {
+      "condition_code": "0Nm_BPFO_03",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_03.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "0Nm_BPFO_10",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_10.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "0Nm_BPFO_30",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\0Nm_BPFO_30.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "2Nm_BPFO_10",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\2Nm_BPFO_10.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "4Nm_BPFO_03",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_03.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "4Nm_BPFO_30",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_30.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "4Nm_BPFO_10",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\4Nm_BPFO_10.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "2Nm_BPFO_03",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\2Nm_BPFO_03.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    },
+    {
+      "condition_code": "2Nm_BPFO_30",
+      "modality": "motor_current",
+      "reason": "'data\\raw\\multimodal\\temperature_current\\2Nm_BPFO_30.tdms': inconsistent or empty Current channel lengths, refusing to use this file for Current: {'U-phase': 1536492, 'V-phase': 0, 'W-phase': 0}"
+    }
+  ],
+  "not_computed_in_this_task": [
+    "fso_channel_simulation"
+  ],
+  "novelty_source": "src.novelty.novelty.DistanceNoveltyDetector (unmodified), fresh per-config Normal-only reference, train-only fit",
+  "relevance_source": "src.multimodal_pipeline.uncertainty_relevance.compute_relevance_batch (Task 37/38, unmodified here)",
+  "status": "REAL_EXPERIMENT_EXECUTED",
+  "task": 39,
+  "temporal_importance_source": "src.temporal.temporal.compute_temporal_importance (unmodified), on Task 36's fused_representation feature space, ordered by Task 32 window_index within condition_code",
+  "thresholds": {
+    "buffer_max": 0.5,
+    "discard_max": 0.25,
+    "summary_max": 0.7
+  },
+  "title": "Complete multimodal VoI integration",
+  "uncertainty_source": "src.uncertainty.uncertainty.compute_predictive_entropy (unmodified)",
+  "undefined_relevance_handling": "Observations with NaN task_relevance (predicted class Misalignment or Unbalance) are never passed to the VoI engine. They receive voi_score=NaN and decision='UNDEFINED_RELEVANCE', counted separately in voi_availability/decision_counts per split.",
+  "voi_engine_source": "src.voi.voi_engine.VoIEngine.compute_batch (unmodified, canonical; same usage pattern as CWRU/Paderborn)",
+  "weights": {
+    "novelty": 0.3,
+    "resource_cost": 0.1,
+    "task_relevance": 0.35,
+    "temporal_importance": 0.2,
+    "uncertainty": 0.05
+  }
+}
