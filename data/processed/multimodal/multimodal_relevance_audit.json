@@ -1,0 +1,171 @@
+{
+  "defined_classes": [
+    "Normal",
+    "BPFI",
+    "BPFO"
+  ],
+  "downstream_handling_of_undefined": "Task 39 VoI integration: observations whose predicted class is Misalignment or Unbalance receive relevance_score=NaN and are NOT passed to the VoI engine (which rejects NaN inputs). These observations are given voi_score=NaN and decision='UNDEFINED_RELEVANCE' in the output. They are counted and reported separately in Task 40's decision summary. NaN is never replaced with 0 or any other number.",
+  "five_class_map": {
+    "BPFI": 1.0,
+    "BPFO": 0.9,
+    "Misalignment": null,
+    "Normal": 0.1,
+    "Unbalance": null
+  },
+  "mapping_conclusion": "Task 38 evidence audit found no defensible basis for defining relevance values for Misalignment or Unbalance. The five-class map remains PARTIAL: Normal=0.10, BPFI=1.00, BPFO=0.90 are defined by genuine physical fault-category correspondence with CWRU's CLASS_RELEVANCE_MAP; Misalignment and Unbalance remain explicitly undefined (None). No fabrication.",
+  "mapping_status": "B_PARTIAL_MAPPING_ONLY",
+  "per_class_evidence": {
+    "BPFI": {
+      "relevance_value": 1.0,
+      "reuse_basis": "Genuine physical equivalence: BPFI = ball-pass-frequency inner-race defect, exactly the same bearing defect location as CWRU's 'Inner Race Fault'. Maximum relevance (1.00) applies for the same fault-criticality reason. Reused verbatim.",
+      "source": "CWRU CLASS_RELEVANCE_MAP[1] 'Inner Race Fault' (src/relevance/config.py)",
+      "status": "defined",
+      "why_not_fabricated": "N/A -- value exists in authoritative project source."
+    },
+    "BPFO": {
+      "relevance_value": 0.9,
+      "reuse_basis": "Genuine physical equivalence: BPFO = ball-pass-frequency outer-race defect, exactly the same bearing defect location as CWRU's 'Outer Race Fault' (index 3). High relevance (0.90) applies. NOTE: CWRU index 2 (Ball Fault) coincidentally also has value 0.90 in CWRU's map, but BPFO is NOT a ball defect -- the source is CLASS_RELEVANCE_MAP[3] (Outer Race Fault), not [2] (Ball Fault).",
+      "source": "CWRU CLASS_RELEVANCE_MAP[3] 'Outer Race Fault' (src/relevance/config.py)",
+      "status": "defined",
+      "why_not_fabricated": "N/A -- value exists in authoritative project source."
+    },
+    "Misalignment": {
+      "relevance_value": null,
+      "source": "None found",
+      "sources_searched": [
+        "src/relevance/config.py (CLASS_RELEVANCE_MAP -- 4-class, bearing-race only)",
+        "docs/task_relevance_report.md (bearing-race severity only, no rotor/shaft coverage)",
+        "Jung et al. 2023, Data in Brief 48:109049 (data-acquisition descriptor; no fault priority)",
+        "General rotating-machine fault literature (context-dependent; not tied to this dataset)"
+      ],
+      "status": "undefined",
+      "why_not_fabricated": "Misalignment (rotor/shaft misalignment) is a genuinely different failure-mode category from bearing-race defects. Its operational criticality relative to BPFI/BPFO is context-dependent (machine type, speed, load, maintenance policy) and is not established by any source cited in or tied to this repository's experimental design. No authoritative ranking exists in: this repo's own CLASS_RELEVANCE_MAP, its documentation, or the only project-cited external paper for this dataset (Jung et al. 2023). Using an arbitrary value, a mean of defined values, or copying BPFI/BPFO's value without basis would violate the task requirement to not fabricate. Kept as None."
+    },
+    "Normal": {
+      "relevance_value": 0.1,
+      "reuse_basis": "Genuine physical equivalence: 'Normal' (no fault) in the KAIST dataset is the same operational condition as 'Normal' in CWRU's bearing-fault scheme -- neither has an active fault, so low relevance (0.10) applies equally. Reused verbatim, not imputed.",
+      "source": "CWRU CLASS_RELEVANCE_MAP[0] (src/relevance/config.py)",
+      "status": "defined",
+      "why_not_fabricated": "N/A -- value exists in authoritative project source."
+    },
+    "Unbalance": {
+      "relevance_value": null,
+      "source": "None found",
+      "sources_searched": [
+        "src/relevance/config.py (CLASS_RELEVANCE_MAP -- 4-class, bearing-race only)",
+        "docs/task_relevance_report.md (bearing-race severity only, no rotor/shaft coverage)",
+        "Jung et al. 2023, Data in Brief 48:109049 (data-acquisition descriptor; no fault priority)",
+        "General rotating-machine fault literature (context-dependent; not tied to this dataset)"
+      ],
+      "status": "undefined",
+      "why_not_fabricated": "Unbalance (rotor mass imbalance) is a genuinely different failure-mode category from bearing-race defects. Same reasoning as Misalignment: no authoritative source in this repository or its cited external references establishes a relevance value for this class in this specific experimental context. Kept as None."
+    }
+  },
+  "protected_modules_unchanged": [
+    "src/voi/",
+    "src/relevance/",
+    "src/cnn/",
+    "src/novelty/",
+    "src/uncertainty/"
+  ],
+  "relevance_coverage_by_config_and_split": {
+    "vibration_current": {
+      "test": {
+        "n": 7495,
+        "n_defined": 3,
+        "n_undefined": 7492,
+        "pct_defined": 0.04,
+        "pct_undefined": 99.96
+      },
+      "train": {
+        "n": 33725,
+        "n_defined": 11699,
+        "n_undefined": 22026,
+        "pct_defined": 34.6894,
+        "pct_undefined": 65.3106
+      },
+      "val": {
+        "n": 8244,
+        "n_defined": 1796,
+        "n_undefined": 6448,
+        "pct_defined": 21.7855,
+        "pct_undefined": 78.2145
+      }
+    },
+    "vibration_current_temperature": {
+      "test": {
+        "n": 7495,
+        "n_defined": 0,
+        "n_undefined": 7495,
+        "pct_defined": 0.0,
+        "pct_undefined": 100.0
+      },
+      "train": {
+        "n": 33725,
+        "n_defined": 11953,
+        "n_undefined": 21772,
+        "pct_defined": 35.4426,
+        "pct_undefined": 64.5574
+      },
+      "val": {
+        "n": 8244,
+        "n_defined": 750,
+        "n_undefined": 7494,
+        "pct_defined": 9.0975,
+        "pct_undefined": 90.9025
+      }
+    },
+    "vibration_only": {
+      "test": {
+        "n": 9000,
+        "n_defined": 1571,
+        "n_undefined": 7429,
+        "pct_defined": 17.4556,
+        "pct_undefined": 82.5444
+      },
+      "train": {
+        "n": 38250,
+        "n_defined": 16570,
+        "n_undefined": 21680,
+        "pct_defined": 43.3203,
+        "pct_undefined": 56.6797
+      },
+      "val": {
+        "n": 9000,
+        "n_defined": 2841,
+        "n_undefined": 6159,
+        "pct_defined": 31.5667,
+        "pct_undefined": 68.4333
+      }
+    },
+    "vibration_temperature": {
+      "test": {
+        "n": 8993,
+        "n_defined": 1500,
+        "n_undefined": 7493,
+        "pct_defined": 16.6796,
+        "pct_undefined": 83.3204
+      },
+      "train": {
+        "n": 38219,
+        "n_defined": 16760,
+        "n_undefined": 21459,
+        "pct_defined": 43.8525,
+        "pct_undefined": 56.1475
+      },
+      "val": {
+        "n": 8993,
+        "n_defined": 2346,
+        "n_undefined": 6647,
+        "pct_defined": 26.087,
+        "pct_undefined": 73.913
+      }
+    }
+  },
+  "task": "38",
+  "title": "Multimodal relevance: evidence audit and 5-class map",
+  "undefined_classes": [
+    "Misalignment",
+    "Unbalance"
+  ]
+}
