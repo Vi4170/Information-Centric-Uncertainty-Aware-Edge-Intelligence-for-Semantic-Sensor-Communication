@@ -1,0 +1,120 @@
+{
+  "checks": {
+    "component_and_decision_availability": {
+      "always_available_factors_checked": [
+        "novelty",
+        "uncertainty",
+        "temporal_importance",
+        "resource_cost"
+      ],
+      "always_available_factors_non_finite_counts": {
+        "novelty": 0,
+        "resource_cost": 0,
+        "temporal_importance": 0,
+        "uncertainty": 0
+      },
+      "check": "component_and_decision_availability",
+      "n_observations": 211383,
+      "n_relevance_defined": 67789,
+      "n_relevance_undefined": 143594,
+      "passed": true
+    },
+    "cross_artifact_count_consistency": {
+      "check": "cross_artifact_count_consistency",
+      "mismatches": [],
+      "passed": true
+    },
+    "deterministic_observation_ids": {
+      "check": "deterministic_observation_ids",
+      "n_observations": 56250,
+      "passed": true,
+      "rebuild_matches_itself": true,
+      "rebuild_matches_persisted_index": true
+    },
+    "model_reload_consistency": {
+      "check": "model_reload_consistency",
+      "passed": true,
+      "per_configuration": {
+        "vibration_current": {
+          "config": "vibration_current",
+          "delta": 0.0009488551646713583,
+          "n_observations_checked": 33725,
+          "reload_consistent": true,
+          "reload_measured_train_accuracy": 0.9524981467753891,
+          "reported_train_accuracy": 0.9515492916107178
+        },
+        "vibration_current_temperature": {
+          "config": "vibration_current_temperature",
+          "delta": 0.002016311070051291,
+          "n_observations_checked": 33725,
+          "reload_consistent": true,
+          "reload_measured_train_accuracy": 0.9638843587842847,
+          "reported_train_accuracy": 0.9618680477142334
+        },
+        "vibration_only": {
+          "config": "vibration_only",
+          "delta": 0.0007320140857322022,
+          "n_observations_checked": 38250,
+          "reload_consistent": true,
+          "reload_measured_train_accuracy": 0.9584313725490196,
+          "reported_train_accuracy": 0.9576993584632874
+        },
+        "vibration_temperature": {
+          "config": "vibration_temperature",
+          "delta": 0.0033229687308781175,
+          "n_observations_checked": 38219,
+          "reload_consistent": true,
+          "reload_measured_train_accuracy": 0.9684711792563908,
+          "reported_train_accuracy": 0.9651482105255127
+        }
+      }
+    },
+    "required_artifacts_exist": {
+      "check": "required_artifacts_exist",
+      "missing": [],
+      "n_required": 16,
+      "passed": true
+    },
+    "split_integrity_and_no_leakage": {
+      "check": "split_integrity_and_no_leakage",
+      "configurations_checked": [
+        "vibration_current",
+        "vibration_current_temperature",
+        "vibration_only",
+        "vibration_temperature"
+      ],
+      "n_observations_checked": 211383,
+      "passed": true
+    },
+    "train_only_fitting": {
+      "check": "train_only_fitting",
+      "fusion_head_fit_only_on_split": "train",
+      "fusion_head_test_split_touched_during_training": false,
+      "novelty_n_train_normal_reference_by_config": {
+        "vibration_current": 6747,
+        "vibration_current_temperature": 6747,
+        "vibration_only": 6750,
+        "vibration_temperature": 6747
+      },
+      "passed": true
+    }
+  },
+  "failed_checks": [],
+  "fso_introduced": false,
+  "pipeline_ready_for_communication_channel_experiment": true,
+  "pipeline_stages_validated": [
+    "sensors",
+    "preprocessing",
+    "modality_representations",
+    "fusion",
+    "novelty",
+    "uncertainty",
+    "relevance",
+    "temporal_importance",
+    "communication_cost",
+    "canonical_voi",
+    "decision"
+  ],
+  "task": 42,
+  "title": "End-to-end edge intelligence validation"
+}
