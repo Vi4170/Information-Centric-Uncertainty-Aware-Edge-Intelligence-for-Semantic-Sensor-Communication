@@ -1,0 +1,1027 @@
+{
+  "configurations": {
+    "vibration_current": {
+      "splits": {
+        "test": {
+          "class_distribution_by_decision": {
+            "BUFFER": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "DISCARD": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 3
+            },
+            "SUMMARY": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "TRANSMIT": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "UNDEFINED_RELEVANCE": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 2998,
+              "Normal": 0,
+              "Unbalance": 4494
+            }
+          },
+          "decision_counts": {
+            "BUFFER": 0,
+            "DISCARD": 3,
+            "SUMMARY": 0,
+            "TRANSMIT": 0,
+            "UNDEFINED_RELEVANCE": 7492
+          },
+          "decision_percentages": {
+            "BUFFER": 0.0,
+            "DISCARD": 0.04,
+            "SUMMARY": 0.0,
+            "TRANSMIT": 0.0,
+            "UNDEFINED_RELEVANCE": 99.96
+          },
+          "n_observations": 7495,
+          "relevance_coverage": {
+            "n": 7495,
+            "n_defined": 3,
+            "n_undefined": 7492,
+            "pct_defined": 0.04,
+            "pct_undefined": 99.96
+          },
+          "unavailable_observations": {
+            "n_canonical_observations": 9000,
+            "n_in_decision_pipeline": 7495,
+            "n_unavailable_for_this_configuration": 1505,
+            "pct_unavailable": 16.7222
+          },
+          "voi_distribution": {
+            "n_valid": 3,
+            "raw_voi_score": {
+              "max": 0.0800187613815069,
+              "mean": 0.06808815461893873,
+              "median": 0.063189098611474,
+              "min": 0.0610566038638353,
+              "std": 0.01038707931780896
+            },
+            "voi_score": {
+              "max": 0.0800187613815069,
+              "mean": 0.06808815461893873,
+              "median": 0.063189098611474,
+              "min": 0.0610566038638353,
+              "std": 0.01038707931780896
+            }
+          }
+        },
+        "train": {
+          "class_distribution_by_decision": {
+            "BUFFER": {
+              "BPFI": 1099,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "DISCARD": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 5426,
+              "Unbalance": 281
+            },
+            "SUMMARY": {
+              "BPFI": 4856,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "TRANSMIT": {
+              "BPFI": 37,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "UNDEFINED_RELEVANCE": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 4497,
+              "Normal": 1321,
+              "Unbalance": 16208
+            }
+          },
+          "decision_counts": {
+            "BUFFER": 1099,
+            "DISCARD": 5707,
+            "SUMMARY": 4856,
+            "TRANSMIT": 37,
+            "UNDEFINED_RELEVANCE": 22026
+          },
+          "decision_percentages": {
+            "BUFFER": 3.2587,
+            "DISCARD": 16.9222,
+            "SUMMARY": 14.3988,
+            "TRANSMIT": 0.1097,
+            "UNDEFINED_RELEVANCE": 65.3106
+          },
+          "n_observations": 33725,
+          "relevance_coverage": {
+            "n": 33725,
+            "n_defined": 11699,
+            "n_undefined": 22026,
+            "pct_defined": 34.6894,
+            "pct_undefined": 65.3106
+          },
+          "unavailable_observations": {
+            "n_canonical_observations": 38250,
+            "n_in_decision_pipeline": 33725,
+            "n_unavailable_for_this_configuration": 4525,
+            "pct_unavailable": 11.8301
+          },
+          "voi_distribution": {
+            "n_valid": 11699,
+            "raw_voi_score": {
+              "max": 0.7995084822212223,
+              "mean": 0.31623712813724386,
+              "median": 0.4712532259558205,
+              "min": -0.0101467849788491,
+              "std": 0.2599688824177279
+            },
+            "voi_score": {
+              "max": 0.7995084822212223,
+              "mean": 0.31624270669997223,
+              "median": 0.4712532259558205,
+              "min": 0.0,
+              "std": 0.25996203633592846
+            }
+          }
+        },
+        "val": {
+          "class_distribution_by_decision": {
+            "BUFFER": {
+              "BPFI": 544,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "DISCARD": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 1046,
+              "Normal": 0,
+              "Unbalance": 1
+            },
+            "SUMMARY": {
+              "BPFI": 205,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "TRANSMIT": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "UNDEFINED_RELEVANCE": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 4950,
+              "Normal": 0,
+              "Unbalance": 1498
+            }
+          },
+          "decision_counts": {
+            "BUFFER": 544,
+            "DISCARD": 1047,
+            "SUMMARY": 205,
+            "TRANSMIT": 0,
+            "UNDEFINED_RELEVANCE": 6448
+          },
+          "decision_percentages": {
+            "BUFFER": 6.5987,
+            "DISCARD": 12.7001,
+            "SUMMARY": 2.4867,
+            "TRANSMIT": 0.0,
+            "UNDEFINED_RELEVANCE": 78.2145
+          },
+          "n_observations": 8244,
+          "relevance_coverage": {
+            "n": 8244,
+            "n_defined": 1796,
+            "n_undefined": 6448,
+            "pct_defined": 21.7855,
+            "pct_undefined": 78.2145
+          },
+          "unavailable_observations": {
+            "n_canonical_observations": 9000,
+            "n_in_decision_pipeline": 8244,
+            "n_unavailable_for_this_configuration": 756,
+            "pct_unavailable": 8.4
+          },
+          "voi_distribution": {
+            "n_valid": 1796,
+            "raw_voi_score": {
+              "max": 0.5582060158287052,
+              "mean": 0.23567529731336845,
+              "median": 0.06749382428824896,
+              "min": 0.0273304857313632,
+              "std": 0.21823511939492152
+            },
+            "voi_score": {
+              "max": 0.5582060158287052,
+              "mean": 0.23567529731336845,
+              "median": 0.06749382428824896,
+              "min": 0.0273304857313632,
+              "std": 0.21823511939492152
+            }
+          }
+        }
+      }
+    },
+    "vibration_current_temperature": {
+      "splits": {
+        "test": {
+          "class_distribution_by_decision": {
+            "BUFFER": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "DISCARD": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "SUMMARY": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "TRANSMIT": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "UNDEFINED_RELEVANCE": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 2998,
+              "Normal": 0,
+              "Unbalance": 4497
+            }
+          },
+          "decision_counts": {
+            "BUFFER": 0,
+            "DISCARD": 0,
+            "SUMMARY": 0,
+            "TRANSMIT": 0,
+            "UNDEFINED_RELEVANCE": 7495
+          },
+          "decision_percentages": {
+            "BUFFER": 0.0,
+            "DISCARD": 0.0,
+            "SUMMARY": 0.0,
+            "TRANSMIT": 0.0,
+            "UNDEFINED_RELEVANCE": 100.0
+          },
+          "n_observations": 7495,
+          "relevance_coverage": {
+            "n": 7495,
+            "n_defined": 0,
+            "n_undefined": 7495,
+            "pct_defined": 0.0,
+            "pct_undefined": 100.0
+          },
+          "unavailable_observations": {
+            "n_canonical_observations": 9000,
+            "n_in_decision_pipeline": 7495,
+            "n_unavailable_for_this_configuration": 1505,
+            "pct_unavailable": 16.7222
+          },
+          "voi_distribution": {
+            "n_valid": 0,
+            "raw_voi_score": null,
+            "voi_score": null
+          }
+        },
+        "train": {
+          "class_distribution_by_decision": {
+            "BUFFER": {
+              "BPFI": 1261,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "DISCARD": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 5745,
+              "Unbalance": 216
+            },
+            "SUMMARY": {
+              "BPFI": 4724,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "TRANSMIT": {
+              "BPFI": 7,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "UNDEFINED_RELEVANCE": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 4497,
+              "Normal": 1002,
+              "Unbalance": 16273
+            }
+          },
+          "decision_counts": {
+            "BUFFER": 1261,
+            "DISCARD": 5961,
+            "SUMMARY": 4724,
+            "TRANSMIT": 7,
+            "UNDEFINED_RELEVANCE": 21772
+          },
+          "decision_percentages": {
+            "BUFFER": 3.7391,
+            "DISCARD": 17.6753,
+            "SUMMARY": 14.0074,
+            "TRANSMIT": 0.0208,
+            "UNDEFINED_RELEVANCE": 64.5574
+          },
+          "n_observations": 33725,
+          "relevance_coverage": {
+            "n": 33725,
+            "n_defined": 11953,
+            "n_undefined": 21772,
+            "pct_defined": 35.4426,
+            "pct_undefined": 64.5574
+          },
+          "unavailable_observations": {
+            "n_canonical_observations": 38250,
+            "n_in_decision_pipeline": 33725,
+            "n_unavailable_for_this_configuration": 4525,
+            "pct_unavailable": 11.8301
+          },
+          "voi_distribution": {
+            "n_valid": 11953,
+            "raw_voi_score": {
+              "max": 0.7460117042099003,
+              "mean": 0.2990556802628902,
+              "median": 0.4699642572586302,
+              "min": -0.0095491799507449,
+              "std": 0.2595414360828894
+            },
+            "voi_score": {
+              "max": 0.7460117042099003,
+              "mean": 0.29906058803841984,
+              "median": 0.4699642572586302,
+              "min": 0.0,
+              "std": 0.25953573655432305
+            }
+          }
+        },
+        "val": {
+          "class_distribution_by_decision": {
+            "BUFFER": {
+              "BPFI": 686,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "DISCARD": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 1
+            },
+            "SUMMARY": {
+              "BPFI": 63,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "TRANSMIT": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "UNDEFINED_RELEVANCE": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 5996,
+              "Normal": 0,
+              "Unbalance": 1498
+            }
+          },
+          "decision_counts": {
+            "BUFFER": 686,
+            "DISCARD": 1,
+            "SUMMARY": 63,
+            "TRANSMIT": 0,
+            "UNDEFINED_RELEVANCE": 7494
+          },
+          "decision_percentages": {
+            "BUFFER": 8.3212,
+            "DISCARD": 0.0121,
+            "SUMMARY": 0.7642,
+            "TRANSMIT": 0.0,
+            "UNDEFINED_RELEVANCE": 90.9025
+          },
+          "n_observations": 8244,
+          "relevance_coverage": {
+            "n": 8244,
+            "n_defined": 750,
+            "n_undefined": 7494,
+            "pct_defined": 9.0975,
+            "pct_undefined": 90.9025
+          },
+          "unavailable_observations": {
+            "n_canonical_observations": 9000,
+            "n_in_decision_pipeline": 8244,
+            "n_unavailable_for_this_configuration": 756,
+            "pct_unavailable": 8.4
+          },
+          "voi_distribution": {
+            "n_valid": 750,
+            "raw_voi_score": {
+              "max": 0.5292991578613285,
+              "mean": 0.4835408184897917,
+              "median": 0.48242866546258956,
+              "min": 0.0660121960565447,
+              "std": 0.018503657375391135
+            },
+            "voi_score": {
+              "max": 0.5292991578613285,
+              "mean": 0.4835408184897917,
+              "median": 0.48242866546258956,
+              "min": 0.0660121960565447,
+              "std": 0.018503657375391135
+            }
+          }
+        }
+      }
+    },
+    "vibration_only": {
+      "splits": {
+        "test": {
+          "class_distribution_by_decision": {
+            "BUFFER": {
+              "BPFI": 0,
+              "BPFO": 751,
+              "Misalignment": 65,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "DISCARD": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 6
+            },
+            "SUMMARY": {
+              "BPFI": 0,
+              "BPFO": 746,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "TRANSMIT": {
+              "BPFI": 0,
+              "BPFO": 3,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "UNDEFINED_RELEVANCE": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 2935,
+              "Normal": 0,
+              "Unbalance": 4494
+            }
+          },
+          "decision_counts": {
+            "BUFFER": 816,
+            "DISCARD": 6,
+            "SUMMARY": 746,
+            "TRANSMIT": 3,
+            "UNDEFINED_RELEVANCE": 7429
+          },
+          "decision_percentages": {
+            "BUFFER": 9.0667,
+            "DISCARD": 0.0667,
+            "SUMMARY": 8.2889,
+            "TRANSMIT": 0.0333,
+            "UNDEFINED_RELEVANCE": 82.5444
+          },
+          "n_observations": 9000,
+          "relevance_coverage": {
+            "n": 9000,
+            "n_defined": 1571,
+            "n_undefined": 7429,
+            "pct_defined": 17.4556,
+            "pct_undefined": 82.5444
+          },
+          "unavailable_observations": {
+            "n_canonical_observations": 9000,
+            "n_in_decision_pipeline": 9000,
+            "n_unavailable_for_this_configuration": 0,
+            "pct_unavailable": 0.0
+          },
+          "voi_distribution": {
+            "n_valid": 1571,
+            "raw_voi_score": {
+              "max": 0.7287905156646731,
+              "mean": 0.4670360218536056,
+              "median": 0.4163913577845124,
+              "min": 0.0350672755390405,
+              "std": 0.1080104594838097
+            },
+            "voi_score": {
+              "max": 0.7287905156646731,
+              "mean": 0.4670360218536056,
+              "median": 0.4163913577845124,
+              "min": 0.0350672755390405,
+              "std": 0.1080104594838097
+            }
+          }
+        },
+        "train": {
+          "class_distribution_by_decision": {
+            "BUFFER": {
+              "BPFI": 1938,
+              "BPFO": 1506,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "DISCARD": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 5615,
+              "Unbalance": 455
+            },
+            "SUMMARY": {
+              "BPFI": 4059,
+              "BPFO": 2957,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "TRANSMIT": {
+              "BPFI": 3,
+              "BPFO": 37,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "UNDEFINED_RELEVANCE": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 4500,
+              "Normal": 1135,
+              "Unbalance": 16045
+            }
+          },
+          "decision_counts": {
+            "BUFFER": 3444,
+            "DISCARD": 6070,
+            "SUMMARY": 7016,
+            "TRANSMIT": 40,
+            "UNDEFINED_RELEVANCE": 21680
+          },
+          "decision_percentages": {
+            "BUFFER": 9.0039,
+            "DISCARD": 15.8693,
+            "SUMMARY": 18.3425,
+            "TRANSMIT": 0.1046,
+            "UNDEFINED_RELEVANCE": 56.6797
+          },
+          "n_observations": 38250,
+          "relevance_coverage": {
+            "n": 38250,
+            "n_defined": 16570,
+            "n_undefined": 21680,
+            "pct_defined": 43.3203,
+            "pct_undefined": 56.6797
+          },
+          "unavailable_observations": {
+            "n_canonical_observations": 38250,
+            "n_in_decision_pipeline": 38250,
+            "n_unavailable_for_this_configuration": 0,
+            "pct_unavailable": 0.0
+          },
+          "voi_distribution": {
+            "n_valid": 16570,
+            "raw_voi_score": {
+              "max": 0.7551155567203526,
+              "mean": 0.3377021975287515,
+              "median": 0.455449583384848,
+              "min": -0.0116327503280444,
+              "std": 0.2390610911768461
+            },
+            "voi_score": {
+              "max": 0.7551155567203526,
+              "mean": 0.3377256036859703,
+              "median": 0.455449583384848,
+              "min": 0.0,
+              "std": 0.23902776222564664
+            }
+          }
+        },
+        "val": {
+          "class_distribution_by_decision": {
+            "BUFFER": {
+              "BPFI": 745,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "DISCARD": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 1340,
+              "Normal": 0,
+              "Unbalance": 1
+            },
+            "SUMMARY": {
+              "BPFI": 5,
+              "BPFO": 743,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "TRANSMIT": {
+              "BPFI": 0,
+              "BPFO": 7,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "UNDEFINED_RELEVANCE": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 4660,
+              "Normal": 0,
+              "Unbalance": 1499
+            }
+          },
+          "decision_counts": {
+            "BUFFER": 745,
+            "DISCARD": 1341,
+            "SUMMARY": 748,
+            "TRANSMIT": 7,
+            "UNDEFINED_RELEVANCE": 6159
+          },
+          "decision_percentages": {
+            "BUFFER": 8.2778,
+            "DISCARD": 14.9,
+            "SUMMARY": 8.3111,
+            "TRANSMIT": 0.0778,
+            "UNDEFINED_RELEVANCE": 68.4333
+          },
+          "n_observations": 9000,
+          "relevance_coverage": {
+            "n": 9000,
+            "n_defined": 2841,
+            "n_undefined": 6159,
+            "pct_defined": 31.5667,
+            "pct_undefined": 68.4333
+          },
+          "unavailable_observations": {
+            "n_canonical_observations": 9000,
+            "n_in_decision_pipeline": 9000,
+            "n_unavailable_for_this_configuration": 0,
+            "pct_unavailable": 0.0
+          },
+          "voi_distribution": {
+            "n_valid": 2841,
+            "raw_voi_score": {
+              "max": 0.7398185431991581,
+              "mean": 0.28966838194737565,
+              "median": 0.4422394186292652,
+              "min": 0.0132899839431047,
+              "std": 0.24748947195863916
+            },
+            "voi_score": {
+              "max": 0.7398185431991581,
+              "mean": 0.28966838194737565,
+              "median": 0.4422394186292652,
+              "min": 0.0132899839431047,
+              "std": 0.24748947195863916
+            }
+          }
+        }
+      }
+    },
+    "vibration_temperature": {
+      "splits": {
+        "test": {
+          "class_distribution_by_decision": {
+            "BUFFER": {
+              "BPFI": 0,
+              "BPFO": 750,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "DISCARD": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 2
+            },
+            "SUMMARY": {
+              "BPFI": 0,
+              "BPFO": 746,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "TRANSMIT": {
+              "BPFI": 0,
+              "BPFO": 2,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "UNDEFINED_RELEVANCE": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 2998,
+              "Normal": 0,
+              "Unbalance": 4495
+            }
+          },
+          "decision_counts": {
+            "BUFFER": 750,
+            "DISCARD": 2,
+            "SUMMARY": 746,
+            "TRANSMIT": 2,
+            "UNDEFINED_RELEVANCE": 7493
+          },
+          "decision_percentages": {
+            "BUFFER": 8.3398,
+            "DISCARD": 0.0222,
+            "SUMMARY": 8.2953,
+            "TRANSMIT": 0.0222,
+            "UNDEFINED_RELEVANCE": 83.3204
+          },
+          "n_observations": 8993,
+          "relevance_coverage": {
+            "n": 8993,
+            "n_defined": 1500,
+            "n_undefined": 7493,
+            "pct_defined": 16.6796,
+            "pct_undefined": 83.3204
+          },
+          "unavailable_observations": {
+            "n_canonical_observations": 9000,
+            "n_in_decision_pipeline": 8993,
+            "n_unavailable_for_this_configuration": 7,
+            "pct_unavailable": 0.0778
+          },
+          "voi_distribution": {
+            "n_valid": 1500,
+            "raw_voi_score": {
+              "max": 0.7069738924537663,
+              "mean": 0.4618881094194754,
+              "median": 0.4224846348200801,
+              "min": 0.050241582468152,
+              "std": 0.10681699824715765
+            },
+            "voi_score": {
+              "max": 0.7069738924537663,
+              "mean": 0.4618881094194754,
+              "median": 0.4224846348200801,
+              "min": 0.050241582468152,
+              "std": 0.10681699824715765
+            }
+          }
+        },
+        "train": {
+          "class_distribution_by_decision": {
+            "BUFFER": {
+              "BPFI": 2744,
+              "BPFO": 1498,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "DISCARD": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 5908,
+              "Unbalance": 366
+            },
+            "SUMMARY": {
+              "BPFI": 3248,
+              "BPFO": 2991,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "TRANSMIT": {
+              "BPFI": 0,
+              "BPFO": 5,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "UNDEFINED_RELEVANCE": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 4497,
+              "Normal": 839,
+              "Unbalance": 16123
+            }
+          },
+          "decision_counts": {
+            "BUFFER": 4242,
+            "DISCARD": 6274,
+            "SUMMARY": 6239,
+            "TRANSMIT": 5,
+            "UNDEFINED_RELEVANCE": 21459
+          },
+          "decision_percentages": {
+            "BUFFER": 11.0992,
+            "DISCARD": 16.4159,
+            "SUMMARY": 16.3243,
+            "TRANSMIT": 0.0131,
+            "UNDEFINED_RELEVANCE": 56.1475
+          },
+          "n_observations": 38219,
+          "relevance_coverage": {
+            "n": 38219,
+            "n_defined": 16760,
+            "n_undefined": 21459,
+            "pct_defined": 43.8525,
+            "pct_undefined": 56.1475
+          },
+          "unavailable_observations": {
+            "n_canonical_observations": 38250,
+            "n_in_decision_pipeline": 38219,
+            "n_unavailable_for_this_configuration": 31,
+            "pct_unavailable": 0.081
+          },
+          "voi_distribution": {
+            "n_valid": 16760,
+            "raw_voi_score": {
+              "max": 0.7496280729804997,
+              "mean": 0.3246510339202336,
+              "median": 0.4451125092838768,
+              "min": -0.0094425132664951,
+              "std": 0.2299187975805934
+            },
+            "voi_score": {
+              "max": 0.7496280729804997,
+              "mean": 0.3246558345723198,
+              "median": 0.4451125092838768,
+              "min": 0.0,
+              "std": 0.22991197519856066
+            }
+          }
+        },
+        "val": {
+          "class_distribution_by_decision": {
+            "BUFFER": {
+              "BPFI": 749,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "DISCARD": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 847,
+              "Normal": 0,
+              "Unbalance": 1
+            },
+            "SUMMARY": {
+              "BPFI": 0,
+              "BPFO": 749,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "TRANSMIT": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 0,
+              "Normal": 0,
+              "Unbalance": 0
+            },
+            "UNDEFINED_RELEVANCE": {
+              "BPFI": 0,
+              "BPFO": 0,
+              "Misalignment": 5149,
+              "Normal": 0,
+              "Unbalance": 1498
+            }
+          },
+          "decision_counts": {
+            "BUFFER": 749,
+            "DISCARD": 848,
+            "SUMMARY": 749,
+            "TRANSMIT": 0,
+            "UNDEFINED_RELEVANCE": 6647
+          },
+          "decision_percentages": {
+            "BUFFER": 8.3287,
+            "DISCARD": 9.4296,
+            "SUMMARY": 8.3287,
+            "TRANSMIT": 0.0,
+            "UNDEFINED_RELEVANCE": 73.913
+          },
+          "n_observations": 8993,
+          "relevance_coverage": {
+            "n": 8993,
+            "n_defined": 2346,
+            "n_undefined": 6647,
+            "pct_defined": 26.087,
+            "pct_undefined": 73.913
+          },
+          "unavailable_observations": {
+            "n_canonical_observations": 9000,
+            "n_in_decision_pipeline": 8993,
+            "n_unavailable_for_this_configuration": 7,
+            "pct_unavailable": 0.0778
+          },
+          "voi_distribution": {
+            "n_valid": 2346,
+            "raw_voi_score": {
+              "max": 0.69245159030304,
+              "mean": 0.33866051798383595,
+              "median": 0.4445930931751493,
+              "min": 0.0250854987651109,
+              "std": 0.22267070961118385
+            },
+            "voi_score": {
+              "max": 0.69245159030304,
+              "mean": 0.33866051798383595,
+              "median": 0.4445930931751493,
+              "min": 0.0250854987651109,
+              "std": 0.22267070961118385
+            }
+          }
+        }
+      }
+    }
+  },
+  "decision_categories": [
+    "DISCARD",
+    "BUFFER",
+    "SUMMARY",
+    "TRANSMIT",
+    "UNDEFINED_RELEVANCE"
+  ],
+  "decision_policy_source": "src.voi.decision_policy.evaluate_decision via VoIEngine.compute_batch (unmodified, canonical) -- verified, not recomputed",
+  "task": 40,
+  "title": "Multimodal communication decision reporting",
+  "undefined_relevance_handling": "UNDEFINED_RELEVANCE is always reported as its own category, included in the percentage denominator (never excluded, never folded into DISCARD, never treated as 0)."
+}
