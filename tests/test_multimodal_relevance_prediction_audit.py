@@ -86,6 +86,82 @@ class TestPredictionDistributionComputation(unittest.TestCase):
         dist = rpa.compute_prediction_distribution(df, "vibration_only", "test")
         self.assertEqual(dist["n"], 1)
 
+    def test_08b_percentages_computed_correctly(self):
+        df = pd.DataFrame(
+            {
+                "fusion_config": ["vibration_only"] * 4,
+                "split": ["test"] * 4,
+                "fault_type": ["BPFO", "BPFO", "Misalignment", "Unbalance"],
+                "predicted_fault_type": ["BPFO", "BPFO", "BPFO", "Unbalance"],
+            }
+        )
+        dist = rpa.compute_prediction_distribution(df, "vibration_only", "test")
+        self.assertEqual(dist["true_distribution_pct"], {"BPFO": 50.0, "Misalignment": 25.0, "Unbalance": 25.0})
+        self.assertEqual(dist["predicted_distribution_pct"]["BPFO"], 75.0)
+
+    def test_08c_empty_subset_percentages_are_empty_dict(self):
+        df = pd.DataFrame(columns=["fusion_config", "split", "fault_type", "predicted_fault_type"])
+        dist = rpa.compute_prediction_distribution(df, "vibration_only", "test")
+        self.assertEqual(dist["true_distribution_pct"], {})
+        self.assertEqual(dist["predicted_distribution_pct"], {})
+
+
+class TestRelevanceCoverageComputation(unittest.TestCase):
+    """Task 37C: number/percentage of observations with defined relevance,
+    and class coverage for the existing relevance mapping (synthetic, no I/O)."""
+
+    def _make_df(self):
+        return pd.DataFrame(
+            {
+                "fusion_config": ["vibration_current"] * 5,
+                "split": ["test"] * 5,
+                "fault_type": ["Normal", "BPFI", "BPFO", "Misalignment", "Unbalance"],
+                "predicted_fault_type": ["Normal", "BPFI", "Misalignment", "Misalignment", "Unbalance"],
+                "relevance_score": [0.10, 1.00, float("nan"), float("nan"), float("nan")],
+            }
+        )
+
+    def test_22_defined_and_undefined_counts_correct(self):
+        cov = rpa.compute_relevance_coverage(self._make_df(), "vibration_current", "test")
+        self.assertEqual(cov["n"], 5)
+        self.assertEqual(cov["n_defined"], 2)
+        self.assertEqual(cov["n_undefined"], 3)
+        self.assertEqual(cov["pct_defined"], 40.0)
+        self.assertEqual(cov["pct_undefined"], 60.0)
+
+    def test_23_coverage_by_predicted_class_correct(self):
+        cov = rpa.compute_relevance_coverage(self._make_df(), "vibration_current", "test")
+        by_class = cov["coverage_by_predicted_class"]
+        self.assertEqual(by_class["Normal"], {"n": 1, "n_defined": 1})
+        self.assertEqual(by_class["BPFI"], {"n": 1, "n_defined": 1})
+        self.assertEqual(by_class["Misalignment"], {"n": 2, "n_defined": 0})
+        self.assertEqual(by_class["Unbalance"], {"n": 1, "n_defined": 0})
+        self.assertEqual(by_class["BPFO"], {"n": 0, "n_defined": 0})
+
+    def test_24_empty_subset_returns_zeroed_coverage(self):
+        df = pd.DataFrame(columns=["fusion_config", "split", "fault_type", "predicted_fault_type", "relevance_score"])
+        cov = rpa.compute_relevance_coverage(df, "vibration_current", "test")
+        self.assertEqual(cov["n"], 0)
+        self.assertEqual(cov["n_defined"], 0)
+        self.assertEqual(cov["pct_defined"], 0.0)
+
+    def test_25_never_treats_undefined_as_zero_relevance(self):
+        # A relevance_score of exactly 0.0 must count as DEFINED (it is a
+        # real, if minimal, value), while NaN must count as UNDEFINED --
+        # the two must never be conflated.
+        df = pd.DataFrame(
+            {
+                "fusion_config": ["vibration_only"] * 2,
+                "split": ["test"] * 2,
+                "fault_type": ["Normal", "Misalignment"],
+                "predicted_fault_type": ["Normal", "Misalignment"],
+                "relevance_score": [0.0, float("nan")],
+            }
+        )
+        cov = rpa.compute_relevance_coverage(df, "vibration_only", "test")
+        self.assertEqual(cov["n_defined"], 1)
+        self.assertEqual(cov["n_undefined"], 1)
+
 
 class TestNoProtectedModuleModification(unittest.TestCase):
     def test_09_module_never_imports_voi(self):
@@ -123,6 +199,47 @@ class TestRealAudit(unittest.TestCase):
     def test_13_all_four_configurations_handled(self):
         self.assertEqual(set(self.record["prediction_distributions"].keys()), set(fu.FUSION_CONFIGS.keys()))
         self.assertEqual(set(self.record["reload_consistency"].keys()), set(fu.FUSION_CONFIGS.keys()))
+        self.assertEqual(set(self.record["relevance_coverage"].keys()), set(fu.FUSION_CONFIGS.keys()))
+
+    def test_13b_task_37c_record_shape(self):
+        self.assertEqual(self.record["task"], "37C")
+        self.assertIn("supersedes", self.record)
+
+    def test_13c_all_four_models_now_reload_consistent(self):
+        # Task 37B's retrain fix should have landed before this audit runs.
+        for name, info in self.record["reload_consistency"].items():
+            self.assertTrue(info["reload_consistent"], f"{name} is still reload-inconsistent")
+        self.assertEqual(self.record["reload_inconsistent_configs"], [])
+
+    def test_13d_no_reload_inconsistency_blocking_issue_remains(self):
+        self.assertNotIn("reload_inconsistent_model_artifacts", self.record["task_38_readiness"]["blocking_issues"])
+
+    def test_13e_relevance_coverage_has_all_splits_per_config(self):
+        for name, splits in self.record["relevance_coverage"].items():
+            self.assertEqual(set(splits.keys()), {"train", "val", "test"})
+            for split_info in splits.values():
+                self.assertIn("pct_defined", split_info)
+                self.assertIn("coverage_by_predicted_class", split_info)
+
+    def test_13f_vibration_only_temperature_have_nondegenerate_coverage(self):
+        # Post-fix: these configs must no longer show the collapsed-model
+        # near-zero-diversity behavior found in Task 37A.
+        for name in ("vibration_only", "vibration_temperature"):
+            for split in ("train", "val", "test"):
+                pct = self.record["relevance_coverage"][name][split]["pct_defined"]
+                self.assertGreater(pct, 5.0, f"{name}/{split} still looks collapsed ({pct}% defined)")
+
+    def test_13g_current_configs_test_coverage_remains_near_zero_by_composition(self):
+        # Not a defect: test's true labels for these configs are almost
+        # entirely Misalignment/Unbalance (undefined relevance) -- confirmed
+        # independent of model quality in Task 37C's investigation.
+        for name in ("vibration_current", "vibration_current_temperature"):
+            pct = self.record["relevance_coverage"][name]["test"]["pct_defined"]
+            self.assertLess(pct, 1.0)
+
+    def test_13h_test_split_coverage_summary_present_in_readiness(self):
+        summary = self.record["task_38_readiness"]["test_split_pct_defined_relevance_by_config"]
+        self.assertEqual(set(summary.keys()), set(fu.FUSION_CONFIGS.keys()))
 
     def test_14_modality_validity_unchanged_bpfo_pattern(self):
         for config_name in ("vibration_only", "vibration_temperature"):

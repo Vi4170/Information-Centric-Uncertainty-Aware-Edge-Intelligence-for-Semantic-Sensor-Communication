@@ -8,9 +8,18 @@
           "Normal": 3,
           "Unbalance": 4494
         },
+        "predicted_distribution_pct": {
+          "Misalignment": 40.0,
+          "Normal": 0.04,
+          "Unbalance": 59.96
+        },
         "true_distribution": {
           "Misalignment": 2998,
           "Unbalance": 4497
+        },
+        "true_distribution_pct": {
+          "Misalignment": 40.0,
+          "Unbalance": 60.0
         }
       },
       "train": {
@@ -21,11 +30,23 @@
           "Normal": 5707,
           "Unbalance": 17528
         },
+        "predicted_distribution_pct": {
+          "BPFI": 17.7672,
+          "Misalignment": 13.3373,
+          "Normal": 16.9222,
+          "Unbalance": 51.9733
+        },
         "true_distribution": {
           "BPFI": 5992,
           "Misalignment": 4497,
           "Normal": 6747,
           "Unbalance": 16489
+        },
+        "true_distribution_pct": {
+          "BPFI": 17.7672,
+          "Misalignment": 13.3343,
+          "Normal": 20.0059,
+          "Unbalance": 48.8925
         }
       },
       "val": {
@@ -36,10 +57,21 @@
           "Normal": 1047,
           "Unbalance": 1536
         },
+        "predicted_distribution_pct": {
+          "BPFI": 9.0854,
+          "Misalignment": 59.5827,
+          "Normal": 12.7001,
+          "Unbalance": 18.6317
+        },
         "true_distribution": {
           "BPFI": 749,
           "Misalignment": 5996,
           "Unbalance": 1499
+        },
+        "true_distribution_pct": {
+          "BPFI": 9.0854,
+          "Misalignment": 72.7317,
+          "Unbalance": 18.1829
         }
       }
     },
@@ -50,9 +82,17 @@
           "Misalignment": 2998,
           "Unbalance": 4497
         },
+        "predicted_distribution_pct": {
+          "Misalignment": 40.0,
+          "Unbalance": 60.0
+        },
         "true_distribution": {
           "Misalignment": 2998,
           "Unbalance": 4497
+        },
+        "true_distribution_pct": {
+          "Misalignment": 40.0,
+          "Unbalance": 60.0
         }
       },
       "train": {
@@ -63,11 +103,23 @@
           "Normal": 5961,
           "Unbalance": 17275
         },
+        "predicted_distribution_pct": {
+          "BPFI": 17.7672,
+          "Misalignment": 13.3343,
+          "Normal": 17.6753,
+          "Unbalance": 51.2231
+        },
         "true_distribution": {
           "BPFI": 5992,
           "Misalignment": 4497,
           "Normal": 6747,
           "Unbalance": 16489
+        },
+        "true_distribution_pct": {
+          "BPFI": 17.7672,
+          "Misalignment": 13.3343,
+          "Normal": 20.0059,
+          "Unbalance": 48.8925
         }
       },
       "val": {
@@ -78,10 +130,21 @@
           "Normal": 1,
           "Unbalance": 2286
         },
+        "predicted_distribution_pct": {
+          "BPFI": 9.0854,
+          "Misalignment": 63.1732,
+          "Normal": 0.0121,
+          "Unbalance": 27.7293
+        },
         "true_distribution": {
           "BPFI": 749,
           "Misalignment": 5996,
           "Unbalance": 1499
+        },
+        "true_distribution_pct": {
+          "BPFI": 9.0854,
+          "Misalignment": 72.7317,
+          "Unbalance": 18.1829
         }
       }
     },
@@ -89,21 +152,45 @@
       "test": {
         "n": 9000,
         "predicted_distribution": {
-          "BPFI": 7538,
-          "Normal": 1462
+          "BPFI": 65,
+          "BPFO": 1500,
+          "Misalignment": 2935,
+          "Normal": 6,
+          "Unbalance": 4494
+        },
+        "predicted_distribution_pct": {
+          "BPFI": 0.7222,
+          "BPFO": 16.6667,
+          "Misalignment": 32.6111,
+          "Normal": 0.0667,
+          "Unbalance": 49.9333
         },
         "true_distribution": {
           "BPFO": 1500,
           "Misalignment": 3000,
           "Unbalance": 4500
+        },
+        "true_distribution_pct": {
+          "BPFO": 16.6667,
+          "Misalignment": 33.3333,
+          "Unbalance": 50.0
         }
       },
       "train": {
         "n": 38250,
         "predicted_distribution": {
-          "BPFI": 27472,
-          "Normal": 10686,
-          "Unbalance": 92
+          "BPFI": 6000,
+          "BPFO": 4500,
+          "Misalignment": 4500,
+          "Normal": 6070,
+          "Unbalance": 17180
+        },
+        "predicted_distribution_pct": {
+          "BPFI": 15.6863,
+          "BPFO": 11.7647,
+          "Misalignment": 11.7647,
+          "Normal": 15.8693,
+          "Unbalance": 44.915
         },
         "true_distribution": {
           "BPFI": 6000,
@@ -111,19 +198,42 @@
           "Misalignment": 4500,
           "Normal": 6750,
           "Unbalance": 16500
+        },
+        "true_distribution_pct": {
+          "BPFI": 15.6863,
+          "BPFO": 11.7647,
+          "Misalignment": 11.7647,
+          "Normal": 17.6471,
+          "Unbalance": 43.1373
         }
       },
       "val": {
         "n": 9000,
         "predicted_distribution": {
-          "BPFI": 7504,
-          "Normal": 1496
+          "BPFI": 750,
+          "BPFO": 750,
+          "Misalignment": 4646,
+          "Normal": 1341,
+          "Unbalance": 1513
+        },
+        "predicted_distribution_pct": {
+          "BPFI": 8.3333,
+          "BPFO": 8.3333,
+          "Misalignment": 51.6222,
+          "Normal": 14.9,
+          "Unbalance": 16.8111
         },
         "true_distribution": {
           "BPFI": 750,
           "BPFO": 750,
           "Misalignment": 6000,
           "Unbalance": 1500
+        },
+        "true_distribution_pct": {
+          "BPFI": 8.3333,
+          "BPFO": 8.3333,
+          "Misalignment": 66.6667,
+          "Unbalance": 16.6667
         }
       }
     },
@@ -131,21 +241,43 @@
       "test": {
         "n": 8993,
         "predicted_distribution": {
-          "BPFI": 7165,
-          "Normal": 1828
+          "BPFO": 1498,
+          "Misalignment": 2998,
+          "Normal": 2,
+          "Unbalance": 4495
+        },
+        "predicted_distribution_pct": {
+          "BPFO": 16.6574,
+          "Misalignment": 33.337,
+          "Normal": 0.0222,
+          "Unbalance": 49.9833
         },
         "true_distribution": {
           "BPFO": 1498,
           "Misalignment": 2998,
           "Unbalance": 4497
+        },
+        "true_distribution_pct": {
+          "BPFO": 16.6574,
+          "Misalignment": 33.337,
+          "Unbalance": 50.0056
         }
       },
       "train": {
         "n": 38219,
         "predicted_distribution": {
-          "BPFI": 25883,
-          "Normal": 11949,
-          "Unbalance": 387
+          "BPFI": 5992,
+          "BPFO": 4494,
+          "Misalignment": 4497,
+          "Normal": 6274,
+          "Unbalance": 16962
+        },
+        "predicted_distribution_pct": {
+          "BPFI": 15.6781,
+          "BPFO": 11.7585,
+          "Misalignment": 11.7664,
+          "Normal": 16.4159,
+          "Unbalance": 44.3811
         },
         "true_distribution": {
           "BPFI": 5992,
@@ -153,20 +285,401 @@
           "Misalignment": 4497,
           "Normal": 6747,
           "Unbalance": 16489
+        },
+        "true_distribution_pct": {
+          "BPFI": 15.6781,
+          "BPFO": 11.7585,
+          "Misalignment": 11.7664,
+          "Normal": 17.6535,
+          "Unbalance": 43.1435
         }
       },
       "val": {
         "n": 8993,
         "predicted_distribution": {
-          "BPFI": 7527,
-          "Normal": 1466
+          "BPFI": 749,
+          "BPFO": 749,
+          "Misalignment": 5145,
+          "Normal": 848,
+          "Unbalance": 1502
+        },
+        "predicted_distribution_pct": {
+          "BPFI": 8.3287,
+          "BPFO": 8.3287,
+          "Misalignment": 57.2112,
+          "Normal": 9.4296,
+          "Unbalance": 16.7019
         },
         "true_distribution": {
           "BPFI": 749,
           "BPFO": 749,
           "Misalignment": 5996,
           "Unbalance": 1499
+        },
+        "true_distribution_pct": {
+          "BPFI": 8.3287,
+          "BPFO": 8.3287,
+          "Misalignment": 66.6741,
+          "Unbalance": 16.6685
         }
+      }
+    }
+  },
+  "relevance_coverage": {
+    "vibration_current": {
+      "test": {
+        "coverage_by_predicted_class": {
+          "BPFI": {
+            "n": 0,
+            "n_defined": 0
+          },
+          "BPFO": {
+            "n": 0,
+            "n_defined": 0
+          },
+          "Misalignment": {
+            "n": 2998,
+            "n_defined": 0
+          },
+          "Normal": {
+            "n": 3,
+            "n_defined": 3
+          },
+          "Unbalance": {
+            "n": 4494,
+            "n_defined": 0
+          }
+        },
+        "n": 7495,
+        "n_defined": 3,
+        "n_undefined": 7492,
+        "pct_defined": 0.04,
+        "pct_undefined": 99.96
+      },
+      "train": {
+        "coverage_by_predicted_class": {
+          "BPFI": {
+            "n": 5992,
+            "n_defined": 5992
+          },
+          "BPFO": {
+            "n": 0,
+            "n_defined": 0
+          },
+          "Misalignment": {
+            "n": 4498,
+            "n_defined": 0
+          },
+          "Normal": {
+            "n": 5707,
+            "n_defined": 5707
+          },
+          "Unbalance": {
+            "n": 17528,
+            "n_defined": 0
+          }
+        },
+        "n": 33725,
+        "n_defined": 11699,
+        "n_undefined": 22026,
+        "pct_defined": 34.6894,
+        "pct_undefined": 65.3106
+      },
+      "val": {
+        "coverage_by_predicted_class": {
+          "BPFI": {
+            "n": 749,
+            "n_defined": 749
+          },
+          "BPFO": {
+            "n": 0,
+            "n_defined": 0
+          },
+          "Misalignment": {
+            "n": 4912,
+            "n_defined": 0
+          },
+          "Normal": {
+            "n": 1047,
+            "n_defined": 1047
+          },
+          "Unbalance": {
+            "n": 1536,
+            "n_defined": 0
+          }
+        },
+        "n": 8244,
+        "n_defined": 1796,
+        "n_undefined": 6448,
+        "pct_defined": 21.7855,
+        "pct_undefined": 78.2145
+      }
+    },
+    "vibration_current_temperature": {
+      "test": {
+        "coverage_by_predicted_class": {
+          "BPFI": {
+            "n": 0,
+            "n_defined": 0
+          },
+          "BPFO": {
+            "n": 0,
+            "n_defined": 0
+          },
+          "Misalignment": {
+            "n": 2998,
+            "n_defined": 0
+          },
+          "Normal": {
+            "n": 0,
+            "n_defined": 0
+          },
+          "Unbalance": {
+            "n": 4497,
+            "n_defined": 0
+          }
+        },
+        "n": 7495,
+        "n_defined": 0,
+        "n_undefined": 7495,
+        "pct_defined": 0.0,
+        "pct_undefined": 100.0
+      },
+      "train": {
+        "coverage_by_predicted_class": {
+          "BPFI": {
+            "n": 5992,
+            "n_defined": 5992
+          },
+          "BPFO": {
+            "n": 0,
+            "n_defined": 0
+          },
+          "Misalignment": {
+            "n": 4497,
+            "n_defined": 0
+          },
+          "Normal": {
+            "n": 5961,
+            "n_defined": 5961
+          },
+          "Unbalance": {
+            "n": 17275,
+            "n_defined": 0
+          }
+        },
+        "n": 33725,
+        "n_defined": 11953,
+        "n_undefined": 21772,
+        "pct_defined": 35.4426,
+        "pct_undefined": 64.5574
+      },
+      "val": {
+        "coverage_by_predicted_class": {
+          "BPFI": {
+            "n": 749,
+            "n_defined": 749
+          },
+          "BPFO": {
+            "n": 0,
+            "n_defined": 0
+          },
+          "Misalignment": {
+            "n": 5208,
+            "n_defined": 0
+          },
+          "Normal": {
+            "n": 1,
+            "n_defined": 1
+          },
+          "Unbalance": {
+            "n": 2286,
+            "n_defined": 0
+          }
+        },
+        "n": 8244,
+        "n_defined": 750,
+        "n_undefined": 7494,
+        "pct_defined": 9.0975,
+        "pct_undefined": 90.9025
+      }
+    },
+    "vibration_only": {
+      "test": {
+        "coverage_by_predicted_class": {
+          "BPFI": {
+            "n": 65,
+            "n_defined": 65
+          },
+          "BPFO": {
+            "n": 1500,
+            "n_defined": 1500
+          },
+          "Misalignment": {
+            "n": 2935,
+            "n_defined": 0
+          },
+          "Normal": {
+            "n": 6,
+            "n_defined": 6
+          },
+          "Unbalance": {
+            "n": 4494,
+            "n_defined": 0
+          }
+        },
+        "n": 9000,
+        "n_defined": 1571,
+        "n_undefined": 7429,
+        "pct_defined": 17.4556,
+        "pct_undefined": 82.5444
+      },
+      "train": {
+        "coverage_by_predicted_class": {
+          "BPFI": {
+            "n": 6000,
+            "n_defined": 6000
+          },
+          "BPFO": {
+            "n": 4500,
+            "n_defined": 4500
+          },
+          "Misalignment": {
+            "n": 4500,
+            "n_defined": 0
+          },
+          "Normal": {
+            "n": 6070,
+            "n_defined": 6070
+          },
+          "Unbalance": {
+            "n": 17180,
+            "n_defined": 0
+          }
+        },
+        "n": 38250,
+        "n_defined": 16570,
+        "n_undefined": 21680,
+        "pct_defined": 43.3203,
+        "pct_undefined": 56.6797
+      },
+      "val": {
+        "coverage_by_predicted_class": {
+          "BPFI": {
+            "n": 750,
+            "n_defined": 750
+          },
+          "BPFO": {
+            "n": 750,
+            "n_defined": 750
+          },
+          "Misalignment": {
+            "n": 4646,
+            "n_defined": 0
+          },
+          "Normal": {
+            "n": 1341,
+            "n_defined": 1341
+          },
+          "Unbalance": {
+            "n": 1513,
+            "n_defined": 0
+          }
+        },
+        "n": 9000,
+        "n_defined": 2841,
+        "n_undefined": 6159,
+        "pct_defined": 31.5667,
+        "pct_undefined": 68.4333
+      }
+    },
+    "vibration_temperature": {
+      "test": {
+        "coverage_by_predicted_class": {
+          "BPFI": {
+            "n": 0,
+            "n_defined": 0
+          },
+          "BPFO": {
+            "n": 1498,
+            "n_defined": 1498
+          },
+          "Misalignment": {
+            "n": 2998,
+            "n_defined": 0
+          },
+          "Normal": {
+            "n": 2,
+            "n_defined": 2
+          },
+          "Unbalance": {
+            "n": 4495,
+            "n_defined": 0
+          }
+        },
+        "n": 8993,
+        "n_defined": 1500,
+        "n_undefined": 7493,
+        "pct_defined": 16.6796,
+        "pct_undefined": 83.3204
+      },
+      "train": {
+        "coverage_by_predicted_class": {
+          "BPFI": {
+            "n": 5992,
+            "n_defined": 5992
+          },
+          "BPFO": {
+            "n": 4494,
+            "n_defined": 4494
+          },
+          "Misalignment": {
+            "n": 4497,
+            "n_defined": 0
+          },
+          "Normal": {
+            "n": 6274,
+            "n_defined": 6274
+          },
+          "Unbalance": {
+            "n": 16962,
+            "n_defined": 0
+          }
+        },
+        "n": 38219,
+        "n_defined": 16760,
+        "n_undefined": 21459,
+        "pct_defined": 43.8525,
+        "pct_undefined": 56.1475
+      },
+      "val": {
+        "coverage_by_predicted_class": {
+          "BPFI": {
+            "n": 749,
+            "n_defined": 749
+          },
+          "BPFO": {
+            "n": 749,
+            "n_defined": 749
+          },
+          "Misalignment": {
+            "n": 5145,
+            "n_defined": 0
+          },
+          "Normal": {
+            "n": 848,
+            "n_defined": 848
+          },
+          "Unbalance": {
+            "n": 1502,
+            "n_defined": 0
+          }
+        },
+        "n": 8993,
+        "n_defined": 2346,
+        "n_undefined": 6647,
+        "pct_defined": 26.087,
+        "pct_undefined": 73.913
       }
     }
   },
@@ -204,32 +717,35 @@
     },
     "vibration_only": {
       "config": "vibration_only",
-      "delta": 0.7044967440842024,
+      "delta": 0.0007320140857322022,
       "n_observations_checked": 38250,
-      "reload_consistent": false,
-      "reload_measured_train_accuracy": 0.253202614379085,
+      "reload_consistent": true,
+      "reload_measured_train_accuracy": 0.9584313725490196,
       "reported_train_accuracy": 0.9576993584632874
     },
     "vibration_temperature": {
       "config": "vibration_temperature",
-      "delta": 0.7199036986335218,
+      "delta": 0.0033229687308781175,
       "n_observations_checked": 38219,
-      "reload_consistent": false,
-      "reload_measured_train_accuracy": 0.2452445118919909,
+      "reload_consistent": true,
+      "reload_measured_train_accuracy": 0.9684711792563908,
       "reported_train_accuracy": 0.9651482105255127
     }
   },
-  "reload_inconsistent_configs": [
-    "vibration_only",
-    "vibration_temperature"
-  ],
-  "task": "37A",
+  "reload_inconsistent_configs": [],
+  "supersedes": "37A (data/processed/multimodal/multimodal_task37a_relevance_prediction_audit.json is now stale: it was computed against the corrupted vibration_only/vibration_temperature fusion heads)",
+  "task": "37C",
   "task_38_readiness": {
     "blocking_issues": [
-      "reload_inconsistent_model_artifacts",
       "incomplete_relevance_mapping"
     ],
-    "recommendation": "Task 38 should NOT proceed on vibration_only or vibration_temperature until their fusion head artifacts are regenerated and verified reload-consistent (see reload_consistency above). vibration_current and vibration_current_temperature reload consistently but have almost no test-split observations with a defined relevance score, because relevance is undefined for Misalignment/Unbalance and those are nearly the only true classes present in their test split -- not a model defect. No configuration currently has both a fully trustworthy model artifact and complete relevance coverage at the same time."
+    "recommendation": "All four fusion heads are now reload-consistent (no model-artifact blocker remains). The relevance-mapping gap (Misalignment/Unbalance undefined) is unchanged and remains a structural limitation, not a bug: vibration_only/vibration_temperature now have real, non-degenerate relevance coverage (~17-44% defined across splits). vibration_current/vibration_current_temperature still have almost no test-split coverage (0.00-0.04% defined) because their test split's true labels are almost entirely Misalignment/Unbalance -- a test-composition limitation confirmed independent of model quality, not something a retrain can fix. Task 38 may reasonably proceed for vibration_only/vibration_temperature; for vibration_current/vibration_current_temperature, Task 38 should explicitly restrict itself to observations with a defined relevance score and disclose the resulting near-total test-split exclusion rather than silently computing VoI over an unrepresentative handful of observations.",
+    "test_split_pct_defined_relevance_by_config": {
+      "vibration_current": 0.04,
+      "vibration_current_temperature": 0.0,
+      "vibration_only": 17.4556,
+      "vibration_temperature": 16.6796
+    }
   },
-  "title": "Relevance mapping and prediction audit"
+  "title": "Post-regeneration prediction distribution and relevance audit"
 }
