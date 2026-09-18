@@ -78,6 +78,21 @@ class TestRawDataAvailabilityChecks(unittest.TestCase):
                 (base / "KI04").mkdir(parents=True)
                 self.assertTrue(run_project._raw_paderborn_available())
 
+    def test_raw_multimodal_available_requires_both_subdirs_populated(self):
+        import tempfile
+        from pathlib import Path
+
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            with self._with_tmp_root(tmp_path):
+                base = tmp_path / "data" / "raw" / "multimodal"
+                (base / "vibration").mkdir(parents=True)
+                (base / "vibration" / "a.mat").write_bytes(b"")
+                self.assertFalse(run_project._raw_multimodal_available())
+                (base / "temperature_current").mkdir(parents=True)
+                (base / "temperature_current" / "a.tdms").write_bytes(b"")
+                self.assertTrue(run_project._raw_multimodal_available())
+
 
 class TestArgParsing(unittest.TestCase):
     def test_all_flag_parses(self):
@@ -94,6 +109,13 @@ class TestArgParsing(unittest.TestCase):
         self.assertTrue(args.ims)
         self.assertTrue(args.continual)
         self.assertFalse(args.paderborn)
+
+    def test_new_stage_flags_parse(self):
+        parser = run_project.build_arg_parser()
+        args = parser.parse_args(["--paderborn-experiments", "--ims-experiments", "--multimodal"])
+        self.assertTrue(args.paderborn_experiments)
+        self.assertTrue(args.ims_experiments)
+        self.assertTrue(args.multimodal)
 
     def test_no_args_prints_help_and_returns_zero(self):
         self.assertEqual(run_project.main([]), 0)
@@ -137,6 +159,34 @@ class TestVoiStageCoversFullDependencyChain(unittest.TestCase):
         synth.assert_not_called()
         integ.assert_not_called()
         calib.assert_not_called()
+
+
+class TestNewStagesSkipWhenOutputsExist(unittest.TestCase):
+    def test_stage_paderborn_experiments_skips_without_training_when_outputs_present(self):
+        with mock.patch(
+            "src.paderborn_pipeline.classification_task.save_paderborn_classification_dataset"
+        ) as build, mock.patch(
+            "src.evaluation.paderborn_cnn_experiment.run_paderborn_cnn_pipeline"
+        ) as train, mock.patch(
+            "src.evaluation.paderborn_voi_behaviour_analysis.run_paderborn_voi_behaviour_analysis"
+        ) as voi:
+            status = run_project.stage_paderborn_experiments(force=False)
+        self.assertEqual(status, run_project.STAGE_SKIPPED)
+        build.assert_not_called()
+        train.assert_not_called()
+        voi.assert_not_called()
+
+    def test_stage_ims_experiments_skips_without_running_when_outputs_present(self):
+        with mock.patch("src.evaluation.ims_temporal_analysis.run_ims_temporal_analysis") as run_fn:
+            status = run_project.stage_ims_experiments(force=False)
+        self.assertEqual(status, run_project.STAGE_SKIPPED)
+        run_fn.assert_not_called()
+
+    def test_stage_multimodal_skips_without_spawning_subprocesses_when_output_present(self):
+        with mock.patch.object(run_project.subprocess, "run") as run_fn:
+            status = run_project.stage_multimodal(force=False)
+        self.assertEqual(status, run_project.STAGE_SKIPPED)
+        run_fn.assert_not_called()
 
 
 if __name__ == "__main__":

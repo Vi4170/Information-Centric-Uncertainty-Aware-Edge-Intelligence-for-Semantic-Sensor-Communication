@@ -1,16 +1,22 @@
 """Master orchestration entry point for the Information-Centric Uncertainty-Aware Edge Intelligence project.
 
 Runs the project's existing pipelines in dependency order:
-Dataset -> Preprocessing -> CNN -> Novelty -> Uncertainty -> VoI -> Continual Learning -> Dashboard.
+Dataset -> Preprocessing -> CNN -> Novelty -> Uncertainty -> VoI -> Continual Learning
+-> Paderborn/IMS experiments -> Multimodal fusion + VoI track (Tasks 31-42) -> Dashboard.
 
 Calls the existing project modules directly; it does not reimplement any research logic.
 Each stage is skipped if its output artifact already exists, unless --force is given.
+XJTU-SY and MIMII-DG have preprocessing pipelines only (src/xjtu_pipeline/,
+src/mimii_dg_pipeline/) -- no CNN/VoI experiment exists for either yet, so there is
+no stage for them here.
 
 Usage:
-    python run_project.py --all
+    python run_project.py --all                       # everything below, in order
     python run_project.py --datasets
     python run_project.py --cwru --ims --paderborn
     python run_project.py --cnn --novelty --uncertainty --voi --continual
+    python run_project.py --paderborn-experiments --ims-experiments
+    python run_project.py --multimodal                # Tasks 31-42, needs data/raw/multimodal/
     python run_project.py --all --force
     python run_project.py --dashboard
 """
@@ -54,6 +60,16 @@ def _raw_ims_available():
 def _raw_paderborn_available():
     d = _p("data", "raw", "paderborn")
     return d.is_dir() and all((d / code).is_dir() for code in ("K001", "KA01", "KB23", "KI04"))
+
+
+def _raw_multimodal_available():
+    d = _p("data", "raw", "multimodal")
+    return (
+        (d / "vibration").is_dir()
+        and any((d / "vibration").glob("*.mat"))
+        and (d / "temperature_current").is_dir()
+        and any((d / "temperature_current").glob("*.tdms"))
+    )
 
 
 def run_stage(name, output_check, run_fn, force, input_check=None, input_missing_message=""):
@@ -211,6 +227,72 @@ def stage_continual(force):
     )
 
 
+def stage_paderborn_experiments(force):
+    from src.paderborn_pipeline.classification_task import DATASET_V1_PATH, save_paderborn_classification_dataset
+    from src.evaluation.paderborn_cnn_experiment import run_paderborn_cnn_pipeline
+    from src.evaluation.paderborn_voi_behaviour_analysis import run_paderborn_voi_behaviour_analysis
+
+    def _run():
+        if force or not _exists("data", "processed", "paderborn", "paderborn_dataset_v1.npz"):
+            save_paderborn_classification_dataset()
+        run_paderborn_cnn_pipeline(data_path=str(DATASET_V1_PATH))
+        run_paderborn_voi_behaviour_analysis()
+
+    return run_stage(
+        "Paderborn CNN + VoI experiments",
+        lambda: _exists("models", "paderborn_cnn_baseline.keras")
+        and _exists("results", "tables", "paderborn_voi_decision_distribution.csv"),
+        _run,
+        force,
+        input_check=_raw_paderborn_available,
+        input_missing_message="data/raw/paderborn not found or incomplete (extracted Paderborn archives must be added manually).",
+    )
+
+
+def stage_ims_experiments(force):
+    from src.evaluation.ims_temporal_analysis import run_ims_temporal_analysis
+
+    return run_stage(
+        "IMS novelty/temporal-importance analysis",
+        lambda: _exists("results", "tables", "ims_temporal_progression_summary.csv"),
+        run_ims_temporal_analysis,
+        force,
+        input_check=lambda: _exists("data", "processed", "ims", "ims_dataset_summary.json"),
+        input_missing_message="IMS not preprocessed; run --ims first.",
+    )
+
+
+_MULTIMODAL_MODULES = (
+    "src.multimodal_pipeline.dataset_audit",
+    "src.multimodal_pipeline.observation_schema",
+    "src.multimodal_pipeline.preprocessing",
+    "src.multimodal_pipeline.representation",
+    "src.multimodal_pipeline.fusion",
+    "src.multimodal_pipeline.novelty",
+    "src.multimodal_pipeline.uncertainty_relevance",
+    "src.multimodal_pipeline.relevance",
+    "src.multimodal_pipeline.voi_integration",
+    "src.multimodal_pipeline.communication_decision",
+    "src.multimodal_pipeline.voi_behaviour_analysis",
+    "src.multimodal_pipeline.end_to_end_validation",
+)
+
+
+def stage_multimodal(force):
+    def _run():
+        for module in _MULTIMODAL_MODULES:
+            subprocess.run([sys.executable, "-m", module], cwd=str(PROJECT_ROOT), check=True)
+
+    return run_stage(
+        "Multimodal fusion + VoI track (Tasks 31-42)",
+        lambda: _exists("data", "processed", "multimodal", "multimodal_end_to_end_validation_config.json"),
+        _run,
+        force,
+        input_check=_raw_multimodal_available,
+        input_missing_message="data/raw/multimodal not found or incomplete (extracted KAIST vibration/temperature_current archives must be added manually).",
+    )
+
+
 def stage_dashboard():
     print("\n--- Launching dashboard ---")
     subprocess.run([sys.executable, "-m", "streamlit", "run", str(_p("dashboard", "app.py"))], cwd=str(PROJECT_ROOT))
@@ -229,6 +311,9 @@ def build_arg_parser():
     parser.add_argument("--uncertainty", action="store_true", help="Run uncertainty estimation.")
     parser.add_argument("--voi", action="store_true", help="Run VoI synthetic diagnostics + CWRU integration.")
     parser.add_argument("--continual", action="store_true", help="Run the CWRU continual-learning experiment (Task 25).")
+    parser.add_argument("--paderborn-experiments", action="store_true", help="Train Paderborn CNN + run its VoI behaviour analysis.")
+    parser.add_argument("--ims-experiments", action="store_true", help="Run IMS novelty/temporal-importance run-to-failure analysis.")
+    parser.add_argument("--multimodal", action="store_true", help="Run the full multimodal fusion + VoI track (Tasks 31-42).")
     parser.add_argument("--dashboard", action="store_true", help="Launch the Streamlit results dashboard after any requested stages.")
     parser.add_argument("--force", action="store_true", help="Recompute stages even if their output artifacts already exist.")
     return parser
@@ -247,6 +332,9 @@ def main(argv=None):
     run_uncertainty = args.all or args.uncertainty
     run_voi = args.all or args.voi
     run_continual = args.all or args.continual
+    run_paderborn_experiments = args.all or args.paderborn_experiments
+    run_ims_experiments = args.all or args.ims_experiments
+    run_multimodal = args.all or args.multimodal
 
     if not any(
         [
@@ -256,6 +344,9 @@ def main(argv=None):
             run_uncertainty,
             run_voi,
             run_continual,
+            run_paderborn_experiments,
+            run_ims_experiments,
+            run_multimodal,
             args.dashboard,
         ]
     ):
@@ -279,6 +370,12 @@ def main(argv=None):
         results["VoI diagnostics + CWRU integration + calibration validation"] = stage_voi(args.force)
     if run_continual:
         results["Continual-learning experiment"] = stage_continual(args.force)
+    if run_paderborn_experiments:
+        results["Paderborn CNN + VoI experiments"] = stage_paderborn_experiments(args.force)
+    if run_ims_experiments:
+        results["IMS novelty/temporal-importance analysis"] = stage_ims_experiments(args.force)
+    if run_multimodal:
+        results["Multimodal fusion + VoI track (Tasks 31-42)"] = stage_multimodal(args.force)
 
     print("\n=== Execution Summary ===")
     for stage, status in results.items():
